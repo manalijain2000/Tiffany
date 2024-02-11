@@ -167,6 +167,11 @@
 </div>
 
 </div>
+
+
+<div class="whatsapp">
+  <img src="img/whatsapp.png" alt="">
+</div>
 <script>
 
   function redirectToContactUsPage() {
