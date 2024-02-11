@@ -21,7 +21,7 @@
       fade: true,
       cssEase: 'linear',
       autoplay: true,
-      autoplaySpeed: 1000
+      autoplaySpeed: 3000
    });
 
    $('.team-slider , .customer-slider').slick({
@@ -53,37 +53,38 @@
    
  });
  
-   $('.partner-box').slick({
-      centerPadding: '60px',
-      slidesToShow: 5,
-      autoplay: true,
-      autoplaySpeed: 400,
-      responsive: [
-         {
-            breakpoint: 768,
-            settings: {
-               arrows: false,
-               centerMode: true,
-               centerPadding: '40px',
-               slidesToShow: 3
-            }
-         },
-         {
-            breakpoint: 480,
-            settings: {
-               arrows: false,
-               centerMode: true,
-               centerPadding: '40px',
-               slidesToShow: 1
-            }
-         }
-      ]
-   });
+   // $('.partner-box').slick({
+   //    centerPadding: '60px',
+   //    slidesToShow: 5,
+   //    autoplay: true,
+   //    autoplaySpeed: 400,
+   //    responsive: [
+   //       {
+   //          breakpoint: 768,
+   //          settings: {
+   //             arrows: false,
+   //             centerMode: true,
+   //             centerPadding: '40px',
+   //             slidesToShow: 3
+   //          }
+   //       },
+   //       {
+   //          breakpoint: 480,
+   //          settings: {
+   //             arrows: false,
+   //             centerMode: true,
+   //             centerPadding: '40px',
+   //             slidesToShow: 1
+   //          }
+   //       }
+   //    ]
+   // });
 
 
    $('.Happy-Customers').slick({
-      dots: true,
+      dots: false,
       infinite: false,
+      arrows:true,
       speed: 300,
       slidesToShow: 1,
       slidesToScroll: 1,
