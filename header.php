@@ -1,6 +1,6 @@
-<div class="container-fluid p-0 page-header">
-    <nav class="navbar py-3 navbar-expand-lg navbar-light bg-white">
-        <div class="container-fluid">
+<div class="container-fluid page-header p-0">
+    <nav class="navbar  navbar-expand-lg navbar-light">
+        <div class="container-fluid align-items-start header-box">
             <a class="navbar-brand logo-img p-0" href="index.php">
                 <img src="img/dark-logo.png" alt="" class="w-100">
             </a>
