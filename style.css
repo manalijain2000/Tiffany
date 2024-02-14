@@ -488,7 +488,7 @@ body {
   border-bottom: 1px solid;
 }
 
-.page-header {
+/* .page-header {
   position: absolute;
   top: 0;
   right: 0;
@@ -496,16 +496,9 @@ body {
   padding: 20px 0;
   z-index: 1;
   background-color: transparent;
-}
+} */
 
-.page-header.is-sticky {
-  position: fixed;
-  /* box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1); */
-  padding: 20px 0;
-  padding-top: 0px;
-  background-color: transparent;
-  animation: slideDown 0.35s ease-out;
-}
+
 
 @keyframes slideDown {
   from {
@@ -1414,127 +1407,7 @@ background:linear-gradient(to right, #2196F3, #FF8C00, #FFC107);
   margin-top: 10px;
 }
 
-@media only screen and (max-width: 600px) {
-  .heading.text-center.long-heading::after {
-  
-      top: 55px;
-      
-  }
-  .enquire-box .input-group{
-      width: 100%;
 
-  }
-  .enquire-box .form-select{
-    width: 100%;
-  }
-  .view,
-  .breakup {
-    width: 100%;
-  }
-
-  .img-fluid.m-2 {
-      margin: 5px auto;
-      width: 100%;
-  }
-  /* .header-slider .carousel-caption{
-    left: 0%;
-    bottom: 20%;
-  } */
-  .why-people-love-img {
-    width: 100%;
-    margin: 0 auto;
-  }
-  .navbar-light .navbar-toggler{
-    z-index: 9999;
-  }
-
-  .page-header .navbar-collapse {
-    background-color: white;
-    padding: 10px;
-    background-color: white;
-    padding: 10px;
-    height: 100vh;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    /* ///mobilefull menu */
-    position: fixed;
-    z-index: 1050 ;
-    top: 0;
-    left: 0;
-    background: white;
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    /* overflow-x: hidden; */
-    -webkit-transition: all 0s;
-    transition: all 0s;
-  }
-
-  /* .header-slider .carousel-caption .carusel-text-inside{
-    width: 300px;
-    margin-left: -27px;
-    position: relative;
-    margin-top: -24px;
-    padding: 35px 30px;
-    padding-bottom: 0;
-  }
-  .header-slider .carousel-caption .carusel-text{
-    width: 250px;
-  } */
-  /* .header-slider .header-slider .slick-dots{
-    left: 5%;
-  } */
-
-
-
-
-  .card-box img {
-    width: 13%;
-  }
-
-  .header-slider {
-    min-height: 400px;
-  }
-
-  .header-slider img {
-    min-height: 400px;
-  }
-
-  /* .header-slider .carousel-caption .inner-text {
-    font-size: 18px;
-    text-transform: capitalize;
-} */
-  /* .header-slider .carusel-text-inside .dot{
-position: absolute;
-height: 15px;
-width: 15px;
-border-radius: 50%;
-right: 0;
-
-} */
-  /* .carousel-caption .carusel-text-inside::after {
-  
-  border-top: 35px solid #2c2e53;
-  border-right: 304px solid transparent;
-  
-  right: 23px;
-  bottom: -32px;
-}
-.carousel-caption .carusel-text-inside .header-btn {
-  margin-bottom: -42px;
-  z-index: 1;
-  padding: 7px 15px;
-  font-weight: 600;
-  position: relative;
-  border-radius: 40px;
-}
-.carousel-caption .carusel-text-inside .dot{
-  display: none;
-} */
-}
 
 .h-40px {
   height: 40px;
@@ -2669,7 +2542,23 @@ table.dataTable thead th, table.dataTable thead td {
     .navbar::after{
       opacity: 0;
     }
-    .page-header.is-sticky .navbar::after{
+    .page-header {
+      /* position: fixed;
+      padding: 20px 0;
+      padding-top: 0px;
+      background-color: white; */
+      animation: slideDown 0.35s ease-out;
+      z-index: 99;
+      position: sticky;
+      position: -webkit-sticky;
+      top: 0;
+    /*     z-index: 1; */
+    background: white;
+    }
+    .page-header .navbar{
+      z-index: 9;
+    }
+    .page-header::after{
       
     content: "";
     display: block;
@@ -2716,7 +2605,12 @@ table.dataTable thead th, table.dataTable thead td {
       margin-bottom: 35px;
       max-width: 100%;
     }
-    
+    .box-item .img-box{
+    height: 40px;
+    width: 40px;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    }
     .flip-box {
       -ms-transform-style: preserve-3d;
       transform-style: preserve-3d;
@@ -2891,4 +2785,129 @@ table.dataTable thead th, table.dataTable thead td {
   width: 550px; 
   overflow: hidden;
   text-overflow: ellipsis; 
+}
+
+@media only screen and (max-width: 600px) {
+  .page-header::after{
+    bottom: -30px;
+  }
+  .heading.text-center.long-heading::after {
+  
+      top: 55px;
+      
+  }
+  .enquire-box .input-group{
+      width: 100%;
+
+  }
+  .enquire-box .form-select{
+    width: 100%;
+  }
+  .view,
+  .breakup {
+    width: 100%;
+  }
+
+  .img-fluid.m-2 {
+      margin: 5px auto;
+      width: 100%;
+  }
+  /* .header-slider .carousel-caption{
+    left: 0%;
+    bottom: 20%;
+  } */
+  .why-people-love-img {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .navbar-light .navbar-toggler{
+    z-index: 9999;
+  }
+
+  .page-header .navbar-collapse {
+    background-color: white;
+    padding: 10px;
+    background-color: white;
+    padding: 10px;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* ///mobilefull menu */
+    position: fixed;
+    z-index: 1050 ;
+    top: 0;
+    left: 0;
+    background: white;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    /* overflow-x: hidden; */
+    -webkit-transition: all 0s;
+    transition: all 0s;
+  }
+
+  /* .header-slider .carousel-caption .carusel-text-inside{
+    width: 300px;
+    margin-left: -27px;
+    position: relative;
+    margin-top: -24px;
+    padding: 35px 30px;
+    padding-bottom: 0;
+  }
+  .header-slider .carousel-caption .carusel-text{
+    width: 250px;
+  } */
+  /* .header-slider .header-slider .slick-dots{
+    left: 5%;
+  } */
+
+
+
+
+  .card-box img {
+    width: 13%;
+  }
+
+  .header-slider {
+    min-height: 400px;
+  }
+
+  .header-slider img {
+    min-height: 400px;
+  }
+
+  /* .header-slider .carousel-caption .inner-text {
+    font-size: 18px;
+    text-transform: capitalize;
+} */
+  /* .header-slider .carusel-text-inside .dot{
+position: absolute;
+height: 15px;
+width: 15px;
+border-radius: 50%;
+right: 0;
+
+} */
+  /* .carousel-caption .carusel-text-inside::after {
+  
+  border-top: 35px solid #2c2e53;
+  border-right: 304px solid transparent;
+  
+  right: 23px;
+  bottom: -32px;
+}
+.carousel-caption .carusel-text-inside .header-btn {
+  margin-bottom: -42px;
+  z-index: 1;
+  padding: 7px 15px;
+  font-weight: 600;
+  position: relative;
+  border-radius: 40px;
+}
+.carousel-caption .carusel-text-inside .dot{
+  display: none;
+} */
 }

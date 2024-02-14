@@ -9,7 +9,7 @@
          <section class=" ">
             <div class="container-fluid text-center text-md-start mt-5 w-100 link">
                <!-- Grid row -->
-               <div class="row mt-3">
+               <div class="row mt-3 text-center">
                   <!-- Grid column -->
                   <div class="col-md-3 col-lg-4 col-xl-2 mx-auto mb-4 mt-5">
                      <!-- Content -->
@@ -84,7 +84,7 @@
                      <!-- Links -->
                      <h6 class="text-uppercase fw-bold">Contact Us</h6>
                      <hr class="mb-4 mt-0 d-inline-block mx-auto hr-line" />
-                     <div class="d-flex justify-content-between justify-content-md-start">
+                     <div class="d-flex justify-content-center">
                         <a href="https://www.google.com/" target="_blank" class="socialmedia"><i
                               class="fab fa-facebook-f"></i></a><br><br>
                         <a href="https://www.google.com/" target="_blank" class="socialmedia"> <i
@@ -101,19 +101,20 @@
 
                      <div>
                        
-                        <div class="d-flex justify-content-center justify-content-md-start mt-4">
+                        <div class="d-flex justify-content-center  mt-4">
                            
                            <span> <span class="">Call Us</span> :  </span>
                            <span class="d-block ms-3"><a href="tel:+1800-890-6544" class="d-block text-white">1800-890-6544</a></span>
                         </div>
                         
-                        <div class="d-flex justify-content-center justify-content-md-start mt-3">
+                        <div class="d-flex justify-content-center  mt-3">
                            <span><span>Email Us</span> : </span>
                            <span class="d-block ms-3"><a href="mailto:info@tiffanyfinance.com" class="text-white">info@tiffanyfinance.com</a></span>
                         </div>
-                        <div class="d-flex justify-content-center justify-content-md-start mt-3">
-                           <span><span class="white-space-nowrap">Address : </span> </span>
-                           <span class="d-block ms-3"><a  class="text-white">
+                        <div class="d-flex justify-content-center  mt-3">
+                        <span class="white-space-no-wrap"><span>Address </span> : </span>
+                          
+                           <span class="d-block ms-1"><a  class="text-white">
                            1st Floor, Tiffany Tower, Bhilwara-311001, Rajasthan </a></span>
                         </div>
                      </div>

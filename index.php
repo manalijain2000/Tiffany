@@ -121,12 +121,15 @@ $conn->close();
             <?php } ?>
          </div>
          <div class="box-container">
-            <div class="row">
+            <div class="row w-100">
                <div class="col-md-4">
                <div class="box-item">
                   <div class="flip-box flip-box-top">
                      <div class="flip-box-front flip-box-front-top text-center">
                      <div class="inner ">
+                        <div class="img-box">
+                           <img src="img/Loan-Against-property.png" alt="" class="w-100">
+                        </div>
                         <h3 class="flip-box-header">Loan Against Property</h3>
                         <p>Against Property Turn Your Property into Cash with Ease with our Loan</p>
                         <!-- <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img"> -->
@@ -148,8 +151,12 @@ $conn->close();
                <div class="col-md-4">
                <div class="box-item">
                   <div class="flip-box">
+                     
                      <div class="flip-box-front text-center">
                      <div class="inner ">
+                     <div class="img-box">
+                     <img src="img/home-construction-loan.png" alt="" class="w-100">
+                     </div>
                         <h3 class="flip-box-header">Loan Against Property</h3>
                         <p>Against Property Turn Your Property into Cash with Ease with our Loan</p>
                         <!-- <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img"> -->
