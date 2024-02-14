@@ -34,7 +34,7 @@ $conn->close();
    
    <div class="container-fluid p-0 ">
       <div class=" header-slider home-slider">
-         <div class="carousel-items" style='z-index:9999!important;'>
+         <div class="carousel-items" >
             <img src="img/1.png" class="d-block w-100" alt="...">
             <div class="carousel-caption">
                <div class="header-box">
@@ -43,7 +43,8 @@ $conn->close();
                   </div>
                   <div class="carusel-text-inside">
                      <h5 class="inner-text">Loans against property</h5>
-                     <button class="btn btn-sm btn-theme header-btn" onclick="alert('asfbh')" id = 'caroasal-item-1'><a herf="http://localhost/tiffany27/about.php">ssApply Now</a></button>
+                     <button class="btn btn-sm btn-theme header-btn">
+                        <a href="https://www.w3schools.com" >Apply Now</a></button>
                   </div>
                </div>
             </div>
@@ -58,7 +59,7 @@ $conn->close();
                   </div>
                   <div class="carusel-text-inside">
                      <h5 class="inner-text">Laon against property</h5>
-                     <button class="btn btn-sm btn-theme header-btn your-element"><a herf="#">Apply Now</a></button>
+                     <button class="btn btn-sm btn-theme header-btn your-element"><a href="https://www.w3schools.com">Apply Now</a></button>
                   </div>
                </div>
             </div>
@@ -86,7 +87,7 @@ $conn->close();
                   </div>
                   <div class="carusel-text-inside">
                      <h5 class="inner-text">Laon against property</h5>
-                     <button class="btn btn-sm btn-theme header-btn"><a herf="#">Apply Now</a></button>
+                     <button class="btn btn-sm btn-theme header-btn"><a href="https://www.w3schools.com">Apply Now</a></button>
                   </div>
                </div>
             </div>
@@ -119,6 +120,65 @@ $conn->close();
                </div>
             <?php } ?>
          </div>
+         <div class="box-container">
+            <div class="row w-100">
+               <div class="col-md-4">
+               <div class="box-item">
+                  <div class="flip-box flip-box-top">
+                     <div class="flip-box-front flip-box-front-top text-center">
+                     <div class="inner ">
+                        <div class="img-box">
+                           <img src="img/Loan-Against-property.png" alt="" class="w-100">
+                        </div>
+                        <h3 class="flip-box-header">Loan Against Property</h3>
+                        <p>Against Property Turn Your Property into Cash with Ease with our Loan</p>
+                        <!-- <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img"> -->
+                     </div>
+                     </div>
+                     <div class="flip-box-back flip-box-back-top  flip-card-back-top text-center" style="background-image: url('img/LAP.jpg');">
+                     <div class="inner ">
+                        <div class="d-flex justify-content-center">
+                           <button onclick="redirectToApplyNowPage('
+                                    <?= $product['loan_category'] ?>')" class="btn btn-sm btn-theme-sec me-4"> Apply Now </button>
+                           <button onclick="briefDescription('
+                                    <?= $product['loan_category'] ?>')" class="btn btn-sm btn-theme-sec"> Know More </button>
+                        </div>
+                     </div>
+                     </div>
+                  </div>
+               </div>
+               </div>
+               <div class="col-md-4">
+               <div class="box-item">
+                  <div class="flip-box">
+                     
+                     <div class="flip-box-front text-center">
+                     <div class="inner ">
+                     <div class="img-box">
+                     <img src="img/home-construction-loan.png" alt="" class="w-100">
+                     </div>
+                        <h3 class="flip-box-header">Loan Against Property</h3>
+                        <p>Against Property Turn Your Property into Cash with Ease with our Loan</p>
+                        <!-- <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img"> -->
+                     </div>
+                     </div>
+                     <div class="flip-box-back text-center" style="background-image: url('img/LAP.jpg');">
+                     <div class="inner ">
+                        <div class="d-flex justify-content-center">
+                           <button onclick="redirectToApplyNowPage('
+                                    <?= $product['loan_category'] ?>')" class="btn btn-sm btn-theme-sec me-4"> Apply Now </button>
+                           <button onclick="briefDescription('
+                                    <?= $product['loan_category'] ?>')" class="btn btn-sm btn-theme-sec"> Know More </button>
+                        </div>
+                     </div>
+                     </div>
+                  </div>
+               </div>
+               </div>
+               
+            </div>
+         </div>
+       
       </div>
    </div>
    <div class="container-fluid review-slider d-none mt-5 pt-3 ">
@@ -213,6 +273,25 @@ $conn->close();
          </div>
       </div>
    </div>
+   <div class="container-fluid ">
+      <div class="p-5 bg-darker ms-5">
+         <div class="row">
+            <div class="col-md-6 me-md-5">
+            <p class="text-white fs-30px">Ready to fulfil your dreams? <br>
+                  	Just enter your Email or Phone Number 
+               </p>
+            </div>
+            <div class="col-md-5">
+            <div class="d-flex justify-content-between bg-white mb-3 p-2">
+               <input type="email" class="formInput border-0 " placeholder="Enter Email or Phone Number" value="">
+            <button type="button" class="btn btn-sm btn-theme">Submit</button></div>
+            <p class="text-white fs-13px pb-0">	Our Executive will get in touch with you shortly </p>
+            </div>
+         </div>
+                 
+
+      </div>
+   </div>
    <div class="bg-lights mb-0 mt-5 py-3 d-none ">
       <h5 class="mt-4 text-center heading mt-5">People love us because we are- </h5>
    </div>
@@ -300,32 +379,53 @@ $conn->close();
       </div>
    </div>
 
-   <div class="container mt-5 mb-5">
-      <h3 class="heading text-center mb-5"> Happy Customers </h3>
+   <div class="container-fluid  mt-5 mb-5 py-5   ">
+      <div class="container">
+
+      
+      
       <div class="Happy-Customers  ">
          <?php foreach ($customerReviews as $customerReview) { ?> 
             <div>
-               <div class="d-md-flex justify-content-center mx-md-5">
-                  <div class="col-md-3 me-md-3">
-                     <img src=<?= $customerReview['customer_image'] ? $customerReview['customer_image'] : '"img/client2.png"' ?> alt="" class="w-100 " style="height:300px;">
-                  </div>
-                  <div class="col-md-7 border p-3 client-review-box  bg-light">
+            <h3 class="heading mb-5 ms-md-5"> Happy Customers </h3>
+               <div class="row justify-content-center">
+
+                  <div class="col-md-6   client-review-box ">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 130 78" fill="none" >
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M52 0V52H26V78H0V0H52ZM130 0H78V78H104V52H130V0Z" fill="#2c2e53"/>
+                        </svg></span>
+                     <p class="mb-0 mt-3  text-theme   name"><?= $customerReview['customer_review'] ?></p>
+                     <span class="d-block text-end">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 130 78" fill="none" style="
+            transform: rotate(180deg);">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M52 0V52H26V78H0V0H52ZM130 0H78V78H104V52H130V0Z" fill="#2c2e53"/>
+                  </svg>
+                     </span>
                      <div class="d-flex mb-3 flex-wrap justify-content-between">
-                        <span class="fw-bold d-block fs-5 "> <?= $customerReview['customer_name'] ?> </span>
+                        <span class="fw-bold d-block text-theme  mt-5 fs-5 "> <?= $customerReview['customer_name'] ?> </span>
                      </div>
-                     <p class="mb-0 mt-3  name"><?= $customerReview['customer_review'] ?></p>
+                  </div>
+                  <div class="col-md-5 align-self-center">
+                     <div class="img-box">
+                        <div>
+
+                       
+                     <img src=<?= $customerReview['customer_image'] ? $customerReview['customer_image'] : '"img/client2.png"' ?> alt="" class="w-100 " style="height:300px;">
+                     </div>
+                     </div>
                   </div>
                </div>
             </div>
          <?php } ?>
       </div>
    </div>
+   </div>
 
    <div class="container py-5 mb-5 border-bottom">
       <h5 class="text-center heading">Our Partners</h5>
-      <div class="row partner-box mt-5 pt-4">
+      <div class="row partner-box mt-5 pt-4 justify-content-center">
          <?php foreach ($bankPartners as $bankPartner) { ?>
-            <div>
+            <div class="img-box">
                <img src="<?= $bankPartner['bank_image'] ?>" alt="">
             </div>
          <?php } ?>

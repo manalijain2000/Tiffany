@@ -1,15 +1,15 @@
 
-   const header = document.querySelector(".page-header");
-   const toggleClass = "is-sticky";
+   // const header = document.querySelector(".page-header");
+   // const toggleClass = "is-sticky";
 
-   window.addEventListener("scroll", () => {
-      const currentScroll = window.pageYOffset;
-      if (currentScroll > 150) {
-         header.classList.add(toggleClass);
-      } else {
-         header.classList.remove(toggleClass);
-      }
-   });
+   // window.addEventListener("scroll", () => {
+   //    const currentScroll = window.pageYOffset;
+   //    if (currentScroll > 150) {
+   //       header.classList.add(toggleClass);
+   //    } else {
+   //       header.classList.remove(toggleClass);
+   //    }
+   // });
    
 
    $('.home-slider').slick({
@@ -21,7 +21,7 @@
       fade: true,
       cssEase: 'linear',
       autoplay: true,
-      autoplaySpeed: 1000
+      autoplaySpeed: 3000
    });
 
    $('.team-slider , .customer-slider').slick({
@@ -53,37 +53,38 @@
    
  });
  
-   $('.partner-box').slick({
-      centerPadding: '60px',
-      slidesToShow: 5,
-      autoplay: true,
-      autoplaySpeed: 400,
-      responsive: [
-         {
-            breakpoint: 768,
-            settings: {
-               arrows: false,
-               centerMode: true,
-               centerPadding: '40px',
-               slidesToShow: 3
-            }
-         },
-         {
-            breakpoint: 480,
-            settings: {
-               arrows: false,
-               centerMode: true,
-               centerPadding: '40px',
-               slidesToShow: 1
-            }
-         }
-      ]
-   });
+   // $('.partner-box').slick({
+   //    centerPadding: '60px',
+   //    slidesToShow: 5,
+   //    autoplay: true,
+   //    autoplaySpeed: 400,
+   //    responsive: [
+   //       {
+   //          breakpoint: 768,
+   //          settings: {
+   //             arrows: false,
+   //             centerMode: true,
+   //             centerPadding: '40px',
+   //             slidesToShow: 3
+   //          }
+   //       },
+   //       {
+   //          breakpoint: 480,
+   //          settings: {
+   //             arrows: false,
+   //             centerMode: true,
+   //             centerPadding: '40px',
+   //             slidesToShow: 1
+   //          }
+   //       }
+   //    ]
+   // });
 
 
    $('.Happy-Customers').slick({
-      dots: true,
+      dots: false,
       infinite: false,
+      arrows:true,
       speed: 300,
       slidesToShow: 1,
       slidesToScroll: 1,
