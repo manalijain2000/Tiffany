@@ -125,13 +125,13 @@ $conn->close();
     </div>
   </div>
   <div class="container">
-    <div class="row mt-5 meet-team-box">
+    <div class="row mt-5 meet-team-box justify-content-between">
       <h4 class="heading text-center mb-4 ">Meet The Team</h4>
       <?php foreach ($teamMembers as $teamMember) { ?>
-        <div class="col-md-4 text-center">
+        <div class="col-md-3 p-3 img-team-box">
         <div class="team-img" onclick="viewDetail('<?= $teamMember['first_name'] . ($teamMember['middle_name'] ? " " . $teamMember['middle_name'] : '') . ($teamMember['last_name'] ? " " . $teamMember['last_name'] : '') ?>', '<?= $teamMember['designation'] ?>', '<?= $teamMember['member_image'] ? $teamMember['member_image'] : 'img/client3.png' ?>', '<?= $teamMember['description'] ?>')">
             <img src="<?= $teamMember['member_image'] ? $teamMember['member_image']  : 'img/client3.png' ?>" alt="">
-            <div>
+            <div class="mt-3">
               <h6><?= $teamMember['first_name'] .($teamMember['middle_name'] ? " ".$teamMember['middle_name'] : '') .($teamMember['last_name'] ? " ".$teamMember['last_name'] : '')  ?></h6>
               <label class="team-position fw-bold "><?= $teamMember['designation'] ?></label>
             </div>

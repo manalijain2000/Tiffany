@@ -550,7 +550,7 @@ body {
 
 .Happy-Customers .img-box::after {
   content: '';
-  background: #fecb29;
+  background: #2d2f54;
   position: absolute;
   top: -37px;
   left: -30px;
@@ -561,7 +561,7 @@ body {
 
 .Happy-Customers .img-box::before {
   content: '';
-  background: #fecb29;
+  background: #2d2f54;
   position: absolute;
   bottom: -14px;
   right: -14px;
@@ -1047,13 +1047,13 @@ input[type="range"]:focus::-ms-fill-upper {
   border-radius: 20px;
 }
  */
-.team-img img {
-  width: 80%;
+.team-img img { 
+  width: 100%;
   margin: 0 auto;
-  margin-bottom: 10px;
-  border-radius: 10px;
 }
-
+.img-team-box:hover{
+  box-shadow: 0px 0px 13px 1px rgba(0, 0, 0, 0.63);
+}
 .sec-icon {
   position: relative;
   display: inline-block;
@@ -1369,6 +1369,9 @@ background:linear-gradient(to right, #2196F3, #FF8C00, #FFC107);
 
 ::-webkit-scrollbar {
   width: 15px;
+}
+.card-feel::-webkit-scrollbar {
+  width: 5px;
 }
 
 .sidebar::-webkit-scrollbar {
@@ -2125,7 +2128,7 @@ label[dir=rtl] .range-slider {
     column-gap: 20px;
   }
   .side-calculate .emi-btn{
-    transform: translate(12%, 0px);
+    transform: translate(29%, 0px);
   }
 }
 
@@ -2141,13 +2144,7 @@ label[dir=rtl] .range-slider {
   }
 }
 
-@media (max-width:600px) {
-  #gallery {
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
-    column-count: 1;
-  }
-}
+
 
 #gallery img {
   width: 100%;
@@ -2358,7 +2355,7 @@ a {
 
 .home-slider .slick-dots {
   position: absolute;
-  bottom: 20%!important;
+  bottom: 25%!important;
   width: 50px!important;
   left: 12%!important;
   height:175px;
@@ -2549,11 +2546,11 @@ table.dataTable thead th, table.dataTable thead td {
       background-color: white; */
       animation: slideDown 0.35s ease-out;
       z-index: 99;
-      position: sticky;
+      position: fixed;
       position: -webkit-sticky;
       top: 0;
     /*     z-index: 1; */
-    background: white;
+    
     }
     .page-header .navbar{
       z-index: 9;
@@ -2569,8 +2566,11 @@ table.dataTable thead th, table.dataTable thead td {
     width: 100%;
     background: url("img/bg-header.png") 0 bottom no-repeat;
     background-size: 100% auto;
-    opacity: 1;
+    opacity: 0;
 
+    }
+    .page-header.is-sticky::after{
+      opacity: 1;
     }
     .page-header.is-sticky .header-box{
       z-index: 99;
@@ -2910,4 +2910,18 @@ right: 0;
 .carousel-caption .carusel-text-inside .dot{
   display: none;
 } */
+}
+
+@media (max-width:600px) {
+  #gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+  .home-slider .carousel-caption{
+    width: 215px!important;
+  }
+  .home-slider .header-box::before{
+    height: 240px;
+  }
 }
