@@ -84,7 +84,7 @@
                      <!-- Links -->
                      <h6 class="text-uppercase fw-bold">Contact Us</h6>
                      <hr class="mb-4 mt-0 d-inline-block mx-auto hr-line" />
-                     <div class="d-flex justify-content-center">
+                     <div class="d-flex justify-content-start">
                         <a href="https://www.google.com/" target="_blank" class="socialmedia"><i
                               class="fab fa-facebook-f"></i></a><br><br>
                         <a href="https://www.google.com/" target="_blank" class="socialmedia"> <i
@@ -101,20 +101,20 @@
 
                      <div>
                        
-                        <div class="d-flex justify-content-center  mt-4">
+                        <div class="d-flex justify-content-start  mt-4">
                            
                            <span> <span class="">Call Us</span> :  </span>
                            <span class="d-block ms-3"><a href="tel:+1800-890-6544" class="d-block text-white">1800-890-6544</a></span>
                         </div>
                         
-                        <div class="d-flex justify-content-center  mt-3">
+                        <div class="d-flex justify-content-start  mt-3">
                            <span><span>Email Us</span> : </span>
                            <span class="d-block ms-3"><a href="mailto:info@tiffanyfinance.com" class="text-white">info@tiffanyfinance.com</a></span>
                         </div>
-                        <div class="d-flex justify-content-center  mt-3">
-                        <span class="white-space-no-wrap"><span>Address </span> : </span>
+                        <div class="d-flex justify-content-start  mt-3">
+                        <span class=""><span>Address </span> : </span>
                           
-                           <span class="d-block ms-1"><a  class="text-white">
+                           <span class="d-block ms-1"><a  class="text-white text-start">
                            1st Floor, Tiffany Tower, Bhilwara-311001, Rajasthan </a></span>
                         </div>
                      </div>

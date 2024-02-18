@@ -274,7 +274,7 @@ $conn->close();
       </div>
    </div>
    <div class="container-fluid ">
-      <div class="p-5 bg-darker ms-5">
+      <div class="p-2 p-md-5 bg-darker ms-md-5">
          <div class="row">
             <div class="col-md-6 me-md-5">
             <p class="text-white fs-30px">Ready to fulfil your dreams? <br>
@@ -282,7 +282,7 @@ $conn->close();
                </p>
             </div>
             <div class="col-md-5">
-            <div class="d-flex justify-content-between bg-white mb-3 p-2">
+            <div class="d-flex flex-wrap justify-content-between bg-white mb-3 p-2">
                <input type="email" class="formInput border-0 " placeholder="Enter Email or Phone Number" value="">
             <button type="button" class="btn btn-sm btn-theme">Submit</button></div>
             <p class="text-white fs-13px pb-0">	Our Executive will get in touch with you shortly </p>
@@ -389,7 +389,15 @@ $conn->close();
             <div>
             <h3 class="heading mb-5 ms-md-5"> Happy Customers </h3>
                <div class="row justify-content-center">
+               <div class="col-md-5 align-self-center">
+                     <div class="img-box">
+                        <div>
 
+                       
+                     <img src=<?= $customerReview['customer_image'] ? $customerReview['customer_image'] : '"img/client2.png"' ?> alt="" class="w-100 " style="height:300px;">
+                     </div>
+                     </div>
+                  </div>
                   <div class="col-md-6   client-review-box ">
                         <span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 130 78" fill="none" >
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M52 0V52H26V78H0V0H52ZM130 0H78V78H104V52H130V0Z" fill="#2c2e53"/>
@@ -405,15 +413,7 @@ $conn->close();
                         <span class="fw-bold d-block text-theme  mt-5 fs-5 "> <?= $customerReview['customer_name'] ?> </span>
                      </div>
                   </div>
-                  <div class="col-md-5 align-self-center">
-                     <div class="img-box">
-                        <div>
-
-                       
-                     <img src=<?= $customerReview['customer_image'] ? $customerReview['customer_image'] : '"img/client2.png"' ?> alt="" class="w-100 " style="height:300px;">
-                     </div>
-                     </div>
-                  </div>
+                 
                </div>
             </div>
          <?php } ?>
