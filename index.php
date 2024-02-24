@@ -5,8 +5,9 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Tiffany Finance Private Limited</title>
-    <link rel="shortcut icon" href="img/dark-logo-sm.png">
- <link rel="stylesheet" href="style.css">
+   <link rel="shortcut icon" href="img/dark-logo-sm.png">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="footer.css">
    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css" />
    <link rel="stylesheet" type="text/css" href="custom-bootstrap/bootstrap.css" />
    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
@@ -31,73 +32,92 @@ $conn->close();
 <body>
    <!-- header -->
    <?php include('header.php') ?>
-   
+
    <div class="container-fluid p-0 ">
-      <div class=" header-slider home-slider">
-         <div class="carousel-items" >
-            <img src="img/1.png" class="d-block w-100" alt="...">
+      <div class=" header-slider home-slider  ">
+         <div class="carousel-items">
+            <img src="img/slider/umeed.jpeg" class="d-block w-100" alt="...">
             <div class="carousel-caption">
                <div class="header-box">
                   <div class="carusel-text">
-                     <h5 class="inner-text">Stop dreaming, start Living with a</h5>
+                     <h5 class="inner-text">Kya aapko kabhi umeed se zyada </h5>
                   </div>
                   <div class="carusel-text-inside">
-                     <h5 class="inner-text">Loans against property</h5>
-                     <button class="btn btn-sm btn-theme header-btn">
-                        <a href="https://www.w3schools.com" >Apply Now</a></button>
+                     <h5 class="inner-text second-line">loan mila hai?</h5>
+                     <a class=" btn btn-sm btn-theme-sec aapko <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
+                        href="apply-now.php">Apply Now</a>
                   </div>
                </div>
             </div>
          </div>
          <div class="carousel-items">
-            <img src="img/2.png" class="d-block w-100" alt="...">
+            <img src="img/slider/loan.png" class="d-block w-100" alt="...">
             <div class="carousel-caption  ">
                <div class="header-box">
                   <div class="carusel-text">
-                     <h5 class="inner-text">Stop dreaming, start Living with a
+                     <h5 class="inner-text">Stop Dreaming, Start Living with
                      </h5>
                   </div>
                   <div class="carusel-text-inside">
-                     <h5 class="inner-text">Laon against property</h5>
-                     <button class="btn btn-sm btn-theme header-btn your-element"><a href="https://www.w3schools.com">Apply Now</a></button>
+                     <h5 class="inner-text second-line">our Loan Against Property</h5>
+                     <a class="  btn btn-sm btn-theme-sec aapko <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
+                        href="apply-now.php">Apply Now</a>
                   </div>
                </div>
             </div>
          </div>
-         <!-- <div class="carousel-items">
-            <img src="img/3.png" class="d-block w-100" alt="...">
+
+         <div class="carousel-items">
+            <img src="img/slider/vechile.png" class="d-block w-100" alt="...">
             <div class="carousel-caption  ">
                <div class="header-box">
                   <div class="carusel-text">
-                     <h5 class="inner-text">Stop dreaming, start Living with a</h5>
+                     <h5 class="inner-text">Drive Your Dreams Forward with </h5>
                   </div>
                   <div class="carusel-text-inside">
-                     <h5 class="inner-text">Laon against property</h5>
-                     <button class="btn btn-sm btn-theme header-btn"><a herf="#">Apply Now</a></button>
+                     <h5 class="inner-text second-line">Our Vehicle Loans</h5>
+                     <a class="  btn btn-sm btn-theme-sec aapko <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
+                        href="apply-now.php">Apply Now</a>
                   </div>
                </div>
             </div>
-         </div> -->
+         </div>
          <div class="carousel-items">
-            <img src="img/4.png" class="d-block w-100" alt="...">
+            <img src="img/slider/personal.png" class="d-block w-100" alt="...">
             <div class="carousel-caption  ">
                <div class="header-box">
                   <div class="carusel-text">
-                     <h5 class="inner-text">Stop dreaming, start Living with a</h5>
+                     <h5 class="inner-text">Turning Plans into Action with</h5>
                   </div>
                   <div class="carusel-text-inside">
-                     <h5 class="inner-text">Laon against property</h5>
-                     <button class="btn btn-sm btn-theme header-btn"><a href="https://www.w3schools.com">Apply Now</a></button>
+                     <h5 class="inner-text second-line">Our Personal Loans</h5>
+                     <a class="  btn btn-sm btn-theme-sec aapko <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
+                        href="apply-now.php">Apply Now</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="carousel-items">
+            <img src="img/slider/business.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption  ">
+               <div class="header-box">
+                  <div class="carusel-text">
+                     <h5 class="inner-text">Turning Visions into Ventures with </h5>
+                  </div>
+                  <div class="carusel-text-inside">
+                     <h5 class="inner-text second-line">Our Business Loans </h5>
+                     <a class="  btn btn-sm btn-theme-sec aapko <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
+                        href="apply-now.php">Apply Now</a>
                   </div>
                </div>
             </div>
          </div>
       </div>
    </div>
-   <div class=" container flip-main-box mt-5">
+   <div class="container  mt-5">
       <h2 class=" text-center heading mb-5 ">Our Products</h2>
-      <div class="container text-center">
-         <div class="row">
+      <div class=" text-center">
+         <!-- <div class="row">
             <?php foreach ($products as $product_key => $product) { ?>
                <div class="col-md-4 mb-3">
                   <div class="card">
@@ -119,69 +139,180 @@ $conn->close();
                   </div>
                </div>
             <?php } ?>
-         </div>
+         </div> -->
          <div class="box-container">
             <div class="row w-100">
                <div class="col-md-4">
-               <div class="box-item">
-                  <div class="flip-box flip-box-top">
-                     <div class="flip-box-front flip-box-front-top text-center">
-                     <div class="inner ">
-                        <div class="img-box">
-                           <img src="img/Loan-Against-property.png" alt="" class="w-100">
+                  <div class="box-item">
+                     <div class="flip-box flip-box-top">
+                        <div class="flip-box-front flip-box-front-top text-center">
+                           <div class="inner ">
+                              <div class="img-box">
+                                 <img src="img/loans.png" alt="" class="product-image">
+                              </div><br>
+                              <h3 class="flip-box-header">Loan Against Property</h3>
+                              <p>Turn Your Property into Cash with Ease with our Loan Against Property</p>
+                              <!-- <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img"> -->
+                           </div>
                         </div>
-                        <h3 class="flip-box-header">Loan Against Property</h3>
-                        <p>Against Property Turn Your Property into Cash with Ease with our Loan</p>
-                        <!-- <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img"> -->
-                     </div>
-                     </div>
-                     <div class="flip-box-back flip-box-back-top  flip-card-back-top text-center" style="background-image: url('img/LAP.jpg');">
-                     <div class="inner ">
-                        <div class="d-flex justify-content-center">
-                           <button onclick="redirectToApplyNowPage('
-                                    <?= $product['loan_category'] ?>')" class="btn btn-sm btn-theme-sec me-4"> Apply Now </button>
-                           <button onclick="briefDescription('
-                                    <?= $product['loan_category'] ?>')" class="btn btn-sm btn-theme-sec"> Know More </button>
+                        <div class="flip-box-back flip-box-back-top  flip-card-back-top text-center"
+                           style="background-image: url('img/2.png');">
+                           <div class="inner ">
+                              <div class="d-flex justify-content-center">
+                                 <a class=" nav-link btn btn-sm btn-theme-sec me-3 <?= basename($_SERVER['REQUEST_URI']) == 'loan-against-property.php' ? 'active' : '' ?>"
+                                    href="loan-against-property.php">Know More</a>
+                                 <a class=" nav-link btn btn-sm btn-theme-sec <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
+                                    href="apply-now.php">Apply Now</a>
+                              </div>
+                           </div>
                         </div>
-                     </div>
                      </div>
                   </div>
-               </div>
                </div>
                <div class="col-md-4">
-               <div class="box-item">
-                  <div class="flip-box">
-                     
-                     <div class="flip-box-front text-center">
-                     <div class="inner ">
-                     <div class="img-box">
-                     <img src="img/home-construction-loan.png" alt="" class="w-100">
-                     </div>
-                        <h3 class="flip-box-header">Loan Against Property</h3>
-                        <p>Against Property Turn Your Property into Cash with Ease with our Loan</p>
-                        <!-- <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img"> -->
-                     </div>
-                     </div>
-                     <div class="flip-box-back text-center" style="background-image: url('img/LAP.jpg');">
-                     <div class="inner ">
-                        <div class="d-flex justify-content-center">
-                           <button onclick="redirectToApplyNowPage('
-                                    <?= $product['loan_category'] ?>')" class="btn btn-sm btn-theme-sec me-4"> Apply Now </button>
-                           <button onclick="briefDescription('
-                                    <?= $product['loan_category'] ?>')" class="btn btn-sm btn-theme-sec"> Know More </button>
+                  <div class="box-item">
+                     <div class="flip-box">
+
+                        <div class="flip-box-front text-center">
+                           <div class="inner ">
+                              <div class="img-box">
+                                 <img src="img/house.png" alt="" class="product-image">
+                              </div><br>
+                              <h3 class="flip-box-header">Home Construction Loan</h3>
+                              <p>Crafting Homes, Crafting Dreams: Building Your Dream Home Together </p>
+                              <!-- <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img"> -->
+                           </div>
                         </div>
-                     </div>
+                        <div class="flip-box-back text-center" style="background-image: url('img/home.jpg');">
+                           <div class="inner ">
+                              <div class="d-flex justify-content-center">
+                                 <a class=" nav-link btn btn-sm btn-theme-sec me-3 <?= basename($_SERVER['REQUEST_URI']) == 'home-construction-loan.php' ? 'active' : '' ?>"
+                                    href="home-construction-loan.php">Know More</a>
+                                 <a class=" nav-link btn btn-sm btn-theme-sec <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
+                                    href="apply-now.php">Apply Now</a>
+                              </div>
+                           </div>
+                        </div>
                      </div>
                   </div>
                </div>
+               <div class="col-md-4">
+                  <div class="box-item">
+                     <div class="flip-box">
+
+                        <div class="flip-box-front text-center">
+                           <div class="inner ">
+                              <div class="img-box">
+                                 <img src="img/two.png" alt="" class="product-image">
+                              </div><br>
+                              <h3 class="flip-box-header">Two Wheeler Loan</h3>
+                              <p>Feel the Freedom: Let Our Two-Wheeler Loan Be Your Wings </p>
+                              <!-- <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img"> -->
+                           </div>
+                        </div>
+                        <div class="flip-box-back text-center" style="background-image: url('img/twoloan.jpg');">
+                           <div class="inner ">
+                              <div class="d-flex justify-content-center">
+                                 <a class=" nav-link btn btn-sm btn-theme-sec me-3 <?= basename($_SERVER['REQUEST_URI']) == 'commercial-vehicle-loan.php' ? 'active' : '' ?>"
+                                    href="commercial-vehicle-loan.php">Know More</a>
+                                 <a class=" nav-link btn btn-sm btn-theme-sec <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
+                                    href="apply-now.php">Apply Now</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
                </div>
-               
+               <div class="col-md-4">
+                  <div class="box-item">
+                     <div class="flip-box">
+
+                        <div class="flip-box-front text-center">
+                           <div class="inner ">
+                              <div class="img-box">
+                                 <img src="img/truck.png" alt="" class="product-image">
+                              </div><br><br>
+                              <h3 class="flip-box-header vechile-loan">Commercial Vehicle Loan </h3>
+                              <p>On the Road to Prosperity: Let Our CV Loan Accelerate Your Growth </p>
+                              <!-- <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img"> -->
+                           </div>
+                        </div>
+                        <div class="flip-box-back text-center" style="background-image: url('img/vechile.png');">
+                           <div class="inner ">
+                              <div class="d-flex justify-content-center">
+                                 <a class=" nav-link btn btn-sm btn-theme-sec me-3 <?= basename($_SERVER['REQUEST_URI']) == 'commercial-vehicle-loan.php' ? 'active' : '' ?>"
+                                    href="commercial-vehicle-loan.php">Know More</a>
+                                 <a class=" nav-link btn btn-sm btn-theme-sec <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
+                                    href="apply-now.php">Apply Now</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="box-item">
+                     <div class="flip-box">
+
+                        <div class="flip-box-front text-center">
+                           <div class="inner ">
+                              <div class="img-box">
+                                 <img src="img/bl1.png" alt="" class="product-image">
+                              </div><br><br>
+                              <h3 class="flip-box-header vechile-loan">Business Loan</h3>
+                              <p>From Vision to Reality: Our Loan Makes Dreams Come True </p>
+                              <!-- <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img"> -->
+                           </div>
+                        </div>
+                        <div class="flip-box-back text-center" style="background-image: url('img/BL.jpg');">
+                           <div class="inner ">
+                              <div class="d-flex justify-content-center">
+                                 <a class=" nav-link btn btn-sm btn-theme-sec me-3 <?= basename($_SERVER['REQUEST_URI']) == 'personal-loan.php' ? 'active' : '' ?>"
+                                    href="personal-loan.php">Know More</a>
+                                 <a class=" nav-link btn btn-sm btn-theme-sec <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
+                                    href="apply-now.php">Apply Now</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="box-item">
+                     <div class="flip-box">
+
+                        <div class="flip-box-front text-center">
+                           <div class="inner ">
+                              <div class="img-box ">
+                                 <img src="img/edu.png" alt="" class="product-image text-center">
+                              </div><br><br>
+                              <h3 class="flip-box-header vechile-loan">Personal Loan</h3>
+                              <p>Every Dream Has a Beginning: Let Our Personal Loan Start Yours </p>
+                              <!-- <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img"> -->
+                           </div>
+                        </div>
+                        <div class="flip-box-back text-center" style="background-image: url('img/PL.jpg');">
+                           <div class="inner ">
+                              <div class="d-flex justify-content-center">
+                                 <a class=" nav-link btn btn-sm btn-theme-sec me-3 <?= basename($_SERVER['REQUEST_URI']) == 'business-loan.php' ? 'active' : '' ?>"
+                                    href="business-loan.php">Know More</a>
+                                 <a class=" nav-link btn btn-sm btn-theme-sec <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
+                                    href="apply-now.php">Apply Now</a>
+                              </div>
+                           </div>
+
+                        </div>
+
+                     </div>
+
+                  </div>
+               </div>
             </div>
          </div>
-       
       </div>
    </div>
-   <div class="container-fluid review-slider d-none mt-5 pt-3 ">
+   <!-- <div class="container-fluid review-slider d-none mt-5 pt-3 ">
       <div class="container  ">
          <div class="row justify-content-between">
             <div class="col-md-4">
@@ -223,8 +354,8 @@ $conn->close();
             </div>
          </div>
       </div>
-   </div>
-   <div class="container-fluid mt-5 why-us-box ">
+   </div> -->
+   <div class="container-fluid mt-5 why-us-box  ">
       <div class="container   py-5">
          <h3 class="text-center heading mb-3 long-heading">Why People love Tiffany Finance?</h3>
          <p> Because we are the first priority for our customers since 2017. Our customers trust on us and are
@@ -255,7 +386,7 @@ $conn->close();
             <div class="col-md-2  mb-3 mb-md-0">
                <div class="card-box text-center icon">
                   <img src="img/Icons/4_Quick.png" alt="">
-                  <h6 class="mt-2">Quicks</h6>
+                  <h6 class="mt-2">Quick</h6>
                </div>
             </div>
             <div class="col-md-2  mb-3 mb-md-0">
@@ -273,22 +404,23 @@ $conn->close();
          </div>
       </div>
    </div>
-   <div class="container-fluid ">
-      <div class="p-2 p-md-5 bg-darker ms-md-5">
+   <div class="container-fluid ready">
+      <div class="p-2 p-md-5  ms-md-5">
          <div class="row">
             <div class="col-md-6 me-md-5">
-            <p class="text-white fs-30px">Ready to fulfil your dreams? <br>
-                  	Just enter your Email or Phone Number 
+               <p class="text-white fs-30px me-5">Ready to fulfill your dreams? <br>
+                  Just enter your Email or Phone Number
                </p>
             </div>
-            <div class="col-md-5">
-            <div class="d-flex flex-wrap justify-content-between bg-white mb-3 p-2">
-               <input type="email" class="formInput border-0 " placeholder="Enter Email or Phone Number" value="">
-            <button type="button" class="btn btn-sm btn-theme">Submit</button></div>
-            <p class="text-white fs-13px pb-0">	Our Executive will get in touch with you shortly </p>
+            <div class="col-md-5 ms-5">
+               <div class="d-flex flex-wrap justify-content-between bg-white mb-3 p-2 input">
+                  <input type="email" class="formInput border-0 " placeholder="Enter Email or Phone Number" value="">
+                  <button type="button" class="btn btn-sm btn-theme">Submit</button>
+               </div>
+               <p class="text-white executive pb-0"> Our Executive will get in touch with you shortly. </p>
             </div>
          </div>
-                 
+
 
       </div>
    </div>
@@ -382,43 +514,51 @@ $conn->close();
    <div class="container-fluid  mt-5 mb-5 py-5   ">
       <div class="container">
 
-      
-      
-      <div class="Happy-Customers  ">
-         <?php foreach ($customerReviews as $customerReview) { ?> 
-            <div>
-            <h3 class="heading mb-5 ms-md-5"> Happy Customers </h3>
-               <div class="row justify-content-center">
-               <div class="col-md-5 align-self-center">
-                     <div class="img-box">
-                        <div>
 
-                       
-                     <img src=<?= $customerReview['customer_image'] ? $customerReview['customer_image'] : '"img/client2.png"' ?> alt="" class="w-100 " style="height:300px;">
+
+         <div class="Happy-Customers  ">
+            <?php foreach ($customerReviews as $customerReview) { ?>
+               <div>
+                  <h3 class="heading mb-5 ms-md-5"> Happy Customers </h3>
+                  <div class="row justify-content-center">
+                     <div class="col-md-5 align-self-center">
+                        <div class="img-box">
+                           <div>
+
+
+                              <img src=<?= $customerReview['customer_image'] ? $customerReview['customer_image'] : '"img/client2.png"' ?> alt="" class=" " style="height:300px;">
+                           </div>
+                        </div>
                      </div>
-                     </div>
-                  </div>
-                  <div class="col-md-6   client-review-box ">
-                        <span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 130 78" fill="none" >
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M52 0V52H26V78H0V0H52ZM130 0H78V78H104V52H130V0Z" fill="#2c2e53"/>
-                        </svg></span>
-                     <p class="mb-0 mt-3  text-theme   name"><?= $customerReview['customer_review'] ?></p>
-                     <span class="d-block text-end">
-                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 130 78" fill="none" style="
+                     <div class="col-md-6   client-review-box ">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 130 78"
+                              fill="none">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                 d="M52 0V52H26V78H0V0H52ZM130 0H78V78H104V52H130V0Z" fill="#2c2e53" />
+                           </svg></span>
+                        <p class="mb-0 mt-3  text-theme   name">
+                           <?= $customerReview['customer_review'] ?>
+                        </p>
+                        <span class="d-block text-end">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 130 78" fill="none"
+                              style="
             transform: rotate(180deg);">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M52 0V52H26V78H0V0H52ZM130 0H78V78H104V52H130V0Z" fill="#2c2e53"/>
-                  </svg>
-                     </span>
-                     <div class="d-flex mb-3 flex-wrap justify-content-between">
-                        <span class="fw-bold d-block text-theme  mt-5 fs-5 "> <?= $customerReview['customer_name'] ?> </span>
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                 d="M52 0V52H26V78H0V0H52ZM130 0H78V78H104V52H130V0Z" fill="#2c2e53" />
+                           </svg>
+                        </span>
+                        <div class="d-flex mb-3 flex-wrap justify-content-between">
+                           <span class="fw-bold d-block text-theme  mt-5 fs-5 ">
+                              <?= $customerReview['customer_name'] ?>
+                           </span>
+                        </div>
                      </div>
+
                   </div>
-                 
                </div>
-            </div>
-         <?php } ?>
+            <?php } ?>
+         </div>
       </div>
-   </div>
    </div>
 
    <div class="container py-5 mb-5 border-bottom">
@@ -426,15 +566,71 @@ $conn->close();
       <div class="row partner-box mt-5 pt-4 justify-content-center">
          <?php foreach ($bankPartners as $bankPartner) { ?>
             <div class="img-box">
-               <img src="<?= $bankPartner['bank_image'] ?>" alt="">
+               <img src="<?= $bankPartner['bank_image'] ?>" alt="" class="bank-partners">
             </div>
          <?php } ?>
       </div>
    </div>
-   
+
    <!-- Loader -->
-  
-   <?php include('footer.php') ?>
+
+   <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>Quick Links</h4>
+  	 			<ul>
+  	 				<li><a href="#" class="links">About Us</a></li>
+  	 				<li><a href="#">Vision & Mission</a></li>
+  	 				<li><a href="#">Core Values</a></li>
+  	 				<li><a href="#">Our Team</a></li>
+					<li><a href="#">Life at Tiffany Finance</a></li>
+					<li><a href="#">FAQs </a></li>
+
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col second-line">
+  	 			<h4 >Loan Products</h4>
+  	 			<ul>
+  	 				<li><a href="#">Loan Against Property</a></li>
+  	 				<li><a href="#">Home Construction Loan</a></li>
+  	 				<li><a href="#">Two Wheeler Loan</a></li>
+  	 				<li><a href="#">Commercial Vehicle Loan</a></li>
+  	 				<li><a href="#">Personal Loan</a></li>
+					<li><a href="#">Business Loan</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col  ">
+  	 			<h4 class="third">Useful Links</h4>
+  	 			<ul class="third">
+  	 				<li><a href="#">Fair Pratice Code</a></li>
+  	 				<li><a href="#">Privacy Policy</a></li>
+  	 				<li><a href="#">Terms & Conditions</a></li>
+  	 				<li><a href="#">Disclaimer</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col ">
+  	 			<h4>Follow Us On</h4>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a><br>
+  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+					<a href="#"><i class="fab fa-youtube"></i></a>
+					<a href="#"><i class="fab fa-whatsapp"></i></a>
+					<br><br>
+                    <p class="address">Tiffany Finance Private Limited</p>
+                    <p>CIN - U67190RJ2017PTC057988<br>
+					Head Office Address - 1<sup>st</sup> Floor, Tiffany Tower, Bhilwara-311001, Rajasthan </p><br>
+                        <a href="#" class="phone-icon"><i class="fa fa-phone"></i></a><span>1800-890-6544</span><br>
+					<a href="#"><i class="fas fa-envelope"></i></a><span>info@tiffanyfinance.com</span>
+  	 			</div>
+  	 		</div>
+         
+  	 	</div>
+         <hr >
+  	 </div>
+  </footer>
 
    <!-- End of .container -->
 </body>
@@ -471,7 +667,7 @@ $conn->close();
       window.location.href = url;
    }
 
-   $('#caroasal-item-1').on('click', function(){
+   $('#caroasal-item-1').on('click', function () {
       console.log('dksnjd')
    })
    // jQuery('.slick-slider').on('click', '.slick-slide', function (e) {
@@ -484,18 +680,18 @@ $conn->close();
    // });
 
    emiCalculator()
-//    $(document).ready(function(){
-//     $('.slick-slider').slick();
+   //    $(document).ready(function(){
+   //     $('.slick-slider').slick();
 
-//     // Previous button click handler
-//     $('.prev-button').click(function(){
-//         $('.slick-slider').slick('slickPrev');
-//     });
+   //     // Previous button click handler
+   //     $('.prev-button').click(function(){
+   //         $('.slick-slider').slick('slickPrev');
+   //     });
 
-//     // Next button click handler
-//     $('.next-button').click(function(){
-//         $('.slick-slider').slick('slickNext');
-//     });
-// });
+   //     // Next button click handler
+   //     $('.next-button').click(function(){
+   //         $('.slick-slider').slick('slickNext');
+   //     });
+   // });
 
 </script>

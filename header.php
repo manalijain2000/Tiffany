@@ -2,7 +2,7 @@
     <nav class="navbar  navbar-expand-lg navbar-light">
         <div class="container-fluid align-items-start header-box">
             <a class="navbar-brand logo-img p-0" href="index.php">
-                <img src="img/dark-logo.png" alt="" class="w-100">
+                <img src="img/dark-logo.png" alt="" class="logo-img">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"

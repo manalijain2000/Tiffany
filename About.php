@@ -30,13 +30,14 @@ $conn->close();
   <?php include('header.php') ?>
   <div class="container-fluid p-0 banner-header">
     <div class=" header-slider">
-      <img src="img/about.jpg" class="d-block w-100" alt="...">
-      <h3 class="heading">About us</h3>
+      <img src="img/loan-header.jpg" class="d-block w-100 loan-header" alt="...">
+   
+      <div class="top-left">Your Trusted Financial Preferred Lender</div>
     </div>
   </div>
   <div class="container mt-5">
     <div class="row">
-      <div class="col-md-7">
+      
         <h5 class="heading mb-4"> Who We Are?</h5>
         <p> Incorporated in 2017, Tiffany Finance is a fast-growing NBFC (Non-Banking Finance Company) based out of
           Bhilwara, Rajasthan with a niche leadership in retail financing. </p>
@@ -50,10 +51,8 @@ $conn->close();
           </br> We are known for dedicated customer service and safe and fair business practices. Our services are
           efficient and trusted by diverse range of customers. The process of applying for loans is fast and easy with a
           quick disbursement of funds within 5-7 days. </p>
-      </div>
-      <div class="col-md-5 text-end">
-        <img src="img/whoweare.webp" alt="" class="w-70">
-      </div>
+      
+      
     </div>
   </div>
   <div class="container-fluid  bg-light">
@@ -62,12 +61,14 @@ $conn->close();
       <div class="row justify-content-center mt-5 py-5 ">
         <h4 class="heading  text-center mb-4"> Our Vision & Mission</h4>
         <div class="col-md-5 p-4 bg-theme">
-          <h5 class="fs-3">Vision</h5>
+          <img src="img/values/vision.png" class="vision-img">
+          <span class="fs-1">Vision</span><br><br>
           <p>Vision Statement: To offer financial services to the underserved and under resourced market and transform
             into a most trusted financier in India serving a large number of customers.</p>
         </div>
         <div class="col-md-5 p-4 bg-theme-sec">
-          <h5 class="fs-3">Mission</h5>
+        <img src="img/values/mission.png" class="vision-img2">
+          <span class="fs-1">Mission</span><br><br>
           <p>Mission Statement: To provide sustainable financing and reach maximum number of underserved micro, small
             and
             medium enterprises by providing them easy and quick loans at the best interest rate possible, hence creating
@@ -82,46 +83,62 @@ $conn->close();
   <div class="container">
     <div class="row mt-5 values-box">
       <h5 class="heading text-center mb-4">Our Core Values</h5>
-      <div class="col-md-4  mb-3">
-        <div class="card ">
-          <h5>We keep our commitments & are ethical to our work.</h5>
+      <div class="row">
+      <div class="col  mb-3">
+        <div class="text-center">
+          <img src="img/values/integrity.png" class="values">
+          <br>
+          <h4 class="value-des">Integrity</h4>
         </div>
       </div>
-      <div class="col-md-4  mb-3">
-        <div class="card ">
-          <h5>We value honesty and openness in communication and act with integrity.</h5>
+      <div class="col  mb-3">
+        <div class="text-center ">
+        <img src="img/values/trust.png" class="values">
+        <br>
+          <h4 class="value-des">Trust</h4>
         </div>
       </div>
-      <div class="col-md-4  mb-3">
-        <div class="card ">
-          <h5>We all work together as a team and cherish a great work culture.</h5>
+      <div class="col mb-3">
+        <div class="text-center">
+        <img src="img/values/bulb.png" class="values">
+        <h4 class="value-des">Innovation</h4>
         </div>
       </div>
-      <div class="col-md-4  mb-3">
-        <div class="card ">
-          <h5>We believe in building good customer relationships and providing quality service.</h5>
+      <div class="col mb-3">
+      <div class="text-center">
+        <img src="img/values/team work.png" class="values">
+        <h4 class="value-des">Team Work</h4>
         </div>
       </div>
-      <div class="col-md-4  mb-3">
-        <div class="card ">
-          <h5>We embrace opportunities to learn, improve and seek growth for all stakeholders.</h5>
+</div>
+<div class="row">
+      <div class="col  mb-3">
+      <div class="text-center">
+        <img src="img/values/growth.png" class="values">
+        <h4 class="value-des">Growth</h4>
         </div>
       </div>
-      <div class="col-md-4  mb-3">
-        <div class="card ">
-          <h5>We encourage our people to take new challenges and to be a competent team in the industry.</h5>
+      <div class="col  mb-3">
+      <div class="text-center">
+        <img src="img/values/leadership.png" class="values">
+        <h4 class="value-des">Leadership</h4>
         </div>
       </div>
-      <div class="col-md-4 mb-3">
-        <div class="card ">
-          <h5>We adapt, seek and generate new ideas.</h5>
+      <div class="col  mb-3">
+      <div class="text-center">
+        <img src="img/values/qs.png" class="values">
+        <h4 class="value-des">Quality Service</h4>
         </div>
       </div>
-      <div class="col-md-4  mb-3">
-        <div class="card ">
-          <h5>We believe in respect for all.</h5>
+      <div class="col  mb-3">
+      <div class="text-center">
+        <img src="img/values/respect.png" class="values">
+        <h4 class="value-des">Respect</h4>
         </div>
       </div>
+
+</div>
+      
     </div>
   </div>
   <div class="container">
