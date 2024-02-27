@@ -74,7 +74,7 @@
 <script>
     function redirectToParticularDiv(page, targetedDiv) {
         var hashValue = window.location.hash;
-        var currentPage = window.location.pathname.split('/').pop();=
+        var currentPage = window.location.pathname.split('/').pop();
         var valueAfterHash = hashValue.substring(1);
         if(valueAfterHash != targetedDiv) {
             var concateUrl = page + '#' + targetedDiv;
