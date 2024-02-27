@@ -15,20 +15,18 @@
                         <a class="nav-link <?= basename($_SERVER['REQUEST_URI']) == 'index.php' || basename($_SERVER['REQUEST_URI']) == '' ? 'active' : '' ?>" aria-current="page" href="index.php">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle <?= basename($_SERVER['REQUEST_URI']) == 'About.php' ? 'active' : '' ?>" aria-current="page" href="About.php"
-                        id="navbarDropdownabout" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
+                        <a class="nav-link dropdown-toggle <?= basename($_SERVER['REQUEST_URI']) == 'About.php' ? 'active' : '' ?>" aria-current="page" href="About.php" id="navbarDropdownabout" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownabout">
-                            <li>
+                            <li onclick = 'redirectToParticularDiv("About.php", "who-we-are")'>
                                 <a class="dropdown-item">Who We Are?</a>
                             </li>
-                            <li>
-                                <a class="dropdown-item  ">Vision and Mission   </a>
+                            <li onclick = 'redirectToParticularDiv("About.php", "vision-n-mission")'>
+                                <a class="dropdown-item ">Vision and Mission   </a>
                             </li>
-                            <li>
+                            <li onclick = 'redirectToParticularDiv("About.php", "our-values")'>
                                 <a class="dropdown-item ">Our Values</a>
                             </li>
-                            <li>
+                            <li onclick = 'redirectToParticularDiv("About.php", "our-team")'>
                                 <a class="dropdown-item ">Our Team </a>
                             </li>
                            
@@ -72,3 +70,25 @@
 </div>
 
 <?php include('sideCalculator.php') ?>
+
+<script>
+    function redirectToParticularDiv(page, targetedDiv) {
+        var hashValue = window.location.hash;
+        var currentPage = window.location.pathname.split('/').pop();=
+        var valueAfterHash = hashValue.substring(1);
+        if(valueAfterHash != targetedDiv) {
+            var concateUrl = page + '#' + targetedDiv;
+            window.location.href = concateUrl;
+        }
+        if (valueAfterHash) {
+            var targetDiv = document.getElementById(valueAfterHash);
+            if (targetDiv) {
+                var offset = window.innerWidth < 768 ? 20 : 200;
+                window.scrollTo({
+                top: targetDiv.offsetTop - offset,
+                behavior: 'smooth'
+                });
+            }
+            }
+    }
+</script>

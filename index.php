@@ -117,244 +117,79 @@ $conn->close();
    <div class="container  mt-5">
       <h2 class=" text-center heading mb-5 ">Our Products</h2>
       <div class=" text-center">
-         <!-- <div class="row">
-            <?php foreach ($products as $product_key => $product) { ?>
-               <div class="col-md-4 mb-3">
-                  <div class="card">
-                     <div class="side front">
-                        <img src="<?= $product['product_url'] ?>" alt="money" class="product">
-                     </div>
-                     <div class="side back">
-                        <div>
-                            <h5 class = 'fw-bold'> <?= $product['product_title'] ?> </h5>
-                           <p> <?= $product['product_description'] ?> </p>
-                           <div class="d-flex justify-content-center">
-                              <button onclick="redirectToApplyNowPage('<?= $product['loan_category'] ?>')"
-                                 class="btn btn-sm btn-theme-sec me-4"> Apply Now </button>
-                              <button onclick="briefDescription('<?= $product['loan_category'] ?>')"
-                                 class="btn btn-sm btn-theme-sec"> Know More </button>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            <?php } ?>
-         </div> -->
          <div class="box-container">
             <div class="row w-100">
-               <div class="col-md-4">
-                  <div class="box-item">
-                     <div class="flip-box flip-box-top">
-                        <div class="flip-box-front flip-box-front-top text-center">
-                           <div class="inner ">
-                              <div class="img-box">
-                                 <img src="img/loans.png" alt="" class="product-image">
-                              </div><br>
-                              <h3 class="flip-box-header">Loan Against Property</h3>
-                              <p>Turn Your Property into Cash with Ease with our Loan Against Property</p>
-                              <!-- <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img"> -->
-                           </div>
-                        </div>
-                        <div class="flip-box-back flip-box-back-top  flip-card-back-top text-center"
-                           style="background-image: url('img/2.png');">
-                           <div class="inner ">
-                              <div class="d-flex justify-content-center">
-                                 <a class=" nav-link btn btn-sm btn-theme-sec me-3 <?= basename($_SERVER['REQUEST_URI']) == 'loan-against-property.php' ? 'active' : '' ?>"
-                                    href="loan-against-property.php">Know More</a>
-                                 <a class=" nav-link btn btn-sm btn-theme-sec <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
-                                    href="apply-now.php">Apply Now</a>
+               <?php foreach ($products as $product_key => $product) { ?>
+                  <?php if ($product_key == 0 || $product_key == 2 || $product_key == 4) { ?>
+                     <div class="col-md-4">
+                        <div class="box-item">
+                           <div class="flip-box flip-box-top">
+                              <div class="flip-box-front flip-box-front-top text-center">
+                                 <div class="inner ">
+                                    <div class="img-box">
+                                       <img src="img/loans.png" alt="" class="product-image">
+                                    </div><br>
+                                    <h3 class="flip-box-header">
+                                       <?= $product['product_title'] ?>
+                                    </h3>
+                                    <p>
+                                       <?= $product['product_description'] ?>
+                                    </p>
+                                 </div>
+                              </div>
+                              <div class="flip-box-back flip-box-back-top  flip-card-back-top text-center"
+                                 style="background-image: url('<?= $product['product_url'] ?>');">
+                                 <div class="inner ">
+                                    <div class="d-flex justify-content-center">
+                                       <a class=" nav-link btn btn-sm btn-theme-sec me-3 <?= basename($_SERVER['REQUEST_URI']) == 'loan-against-property.php' ? 'active' : '' ?>"
+                                          href="loan-against-property.php">Know More</a>
+                                       <a class=" nav-link btn btn-sm btn-theme-sec <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
+                                          href="apply-now.php">Apply Now</a>
+                                    </div>
+                                 </div>
                               </div>
                            </div>
                         </div>
                      </div>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="box-item">
-                     <div class="flip-box">
-
-                        <div class="flip-box-front text-center">
-                           <div class="inner ">
-                              <div class="img-box">
-                                 <img src="img/house.png" alt="" class="product-image">
-                              </div><br>
-                              <h3 class="flip-box-header">Home Construction Loan</h3>
-                              <p>Crafting Homes, Crafting Dreams: Building Your Dream Home Together </p>
-                              <!-- <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img"> -->
-                           </div>
-                        </div>
-                        <div class="flip-box-back text-center" style="background-image: url('img/home.jpg');">
-                           <div class="inner ">
-                              <div class="d-flex justify-content-center">
-                                 <a class=" nav-link btn btn-sm btn-theme-sec me-3 <?= basename($_SERVER['REQUEST_URI']) == 'home-construction-loan.php' ? 'active' : '' ?>"
-                                    href="home-construction-loan.php">Know More</a>
-                                 <a class=" nav-link btn btn-sm btn-theme-sec <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
-                                    href="apply-now.php">Apply Now</a>
+                  <?php } else { ?>
+                     <div class="col-md-4">
+                        <div class="box-item">
+                           <div class="flip-box">
+                              <div class="flip-box-front text-center">
+                                 <div class="inner ">
+                                    <div class="img-box">
+                                       <img src="img/house.png" alt="" class="product-image">
+                                    </div><br>
+                                    <h3 class="flip-box-header">
+                                       <?= $product['product_title'] ?>
+                                    </h3>
+                                    <p>
+                                       <?= $product['product_description'] ?>
+                                    </p>
+                                    <!-- <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img"> -->
+                                 </div>
+                              </div>
+                              <div class="flip-box-back text-center"
+                                 style="background-image: url('<?= $product['product_url'] ?>');">
+                                 <div class="inner ">
+                                    <div class="d-flex justify-content-center">
+                                       <a class=" nav-link btn btn-sm btn-theme-sec me-3 <?= basename($_SERVER['REQUEST_URI']) == 'home-construction-loan.php' ? 'active' : '' ?>"
+                                          href="home-construction-loan.php">Know More</a>
+                                       <a class=" nav-link btn btn-sm btn-theme-sec <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
+                                          href="apply-now.php">Apply Now</a>
+                                    </div>
+                                 </div>
                               </div>
                            </div>
                         </div>
                      </div>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="box-item">
-                     <div class="flip-box">
-
-                        <div class="flip-box-front text-center">
-                           <div class="inner ">
-                              <div class="img-box">
-                                 <img src="img/two.png" alt="" class="product-image">
-                              </div><br>
-                              <h3 class="flip-box-header">Two Wheeler Loan</h3>
-                              <p>Feel the Freedom: Let Our Two-Wheeler Loan Be Your Wings </p>
-                              <!-- <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img"> -->
-                           </div>
-                        </div>
-                        <div class="flip-box-back text-center" style="background-image: url('img/twoloan.jpg');">
-                           <div class="inner ">
-                              <div class="d-flex justify-content-center">
-                                 <a class=" nav-link btn btn-sm btn-theme-sec me-3 <?= basename($_SERVER['REQUEST_URI']) == 'commercial-vehicle-loan.php' ? 'active' : '' ?>"
-                                    href="commercial-vehicle-loan.php">Know More</a>
-                                 <a class=" nav-link btn btn-sm btn-theme-sec <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
-                                    href="apply-now.php">Apply Now</a>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-
-               </div>
-               <div class="col-md-4">
-                  <div class="box-item">
-                     <div class="flip-box">
-
-                        <div class="flip-box-front text-center">
-                           <div class="inner ">
-                              <div class="img-box">
-                                 <img src="img/truck.png" alt="" class="product-image">
-                              </div><br><br>
-                              <h3 class="flip-box-header vechile-loan">Commercial Vehicle Loan </h3>
-                              <p>On the Road to Prosperity: Let Our CV Loan Accelerate Your Growth </p>
-                              <!-- <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img"> -->
-                           </div>
-                        </div>
-                        <div class="flip-box-back text-center" style="background-image: url('img/vechile.png');">
-                           <div class="inner ">
-                              <div class="d-flex justify-content-center">
-                                 <a class=" nav-link btn btn-sm btn-theme-sec me-3 <?= basename($_SERVER['REQUEST_URI']) == 'commercial-vehicle-loan.php' ? 'active' : '' ?>"
-                                    href="commercial-vehicle-loan.php">Know More</a>
-                                 <a class=" nav-link btn btn-sm btn-theme-sec <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
-                                    href="apply-now.php">Apply Now</a>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="box-item">
-                     <div class="flip-box">
-
-                        <div class="flip-box-front text-center">
-                           <div class="inner ">
-                              <div class="img-box">
-                                 <img src="img/bl1.png" alt="" class="product-image">
-                              </div><br><br>
-                              <h3 class="flip-box-header vechile-loan">Business Loan</h3>
-                              <p>From Vision to Reality: Our Loan Makes Dreams Come True </p>
-                              <!-- <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img"> -->
-                           </div>
-                        </div>
-                        <div class="flip-box-back text-center" style="background-image: url('img/BL.jpg');">
-                           <div class="inner ">
-                              <div class="d-flex justify-content-center">
-                                 <a class=" nav-link btn btn-sm btn-theme-sec me-3 <?= basename($_SERVER['REQUEST_URI']) == 'personal-loan.php' ? 'active' : '' ?>"
-                                    href="personal-loan.php">Know More</a>
-                                 <a class=" nav-link btn btn-sm btn-theme-sec <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
-                                    href="apply-now.php">Apply Now</a>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="box-item">
-                     <div class="flip-box">
-
-                        <div class="flip-box-front text-center">
-                           <div class="inner ">
-                              <div class="img-box ">
-                                 <img src="img/edu.png" alt="" class="product-image text-center">
-                              </div><br><br>
-                              <h3 class="flip-box-header vechile-loan">Personal Loan</h3>
-                              <p>Every Dream Has a Beginning: Let Our Personal Loan Start Yours </p>
-                              <!-- <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img"> -->
-                           </div>
-                        </div>
-                        <div class="flip-box-back text-center" style="background-image: url('img/PL.jpg');">
-                           <div class="inner ">
-                              <div class="d-flex justify-content-center">
-                                 <a class=" nav-link btn btn-sm btn-theme-sec me-3 <?= basename($_SERVER['REQUEST_URI']) == 'business-loan.php' ? 'active' : '' ?>"
-                                    href="business-loan.php">Know More</a>
-                                 <a class=" nav-link btn btn-sm btn-theme-sec <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
-                                    href="apply-now.php">Apply Now</a>
-                              </div>
-                           </div>
-
-                        </div>
-
-                     </div>
-
-                  </div>
-               </div>
+                  <?php } ?>
+               <?php } ?>
             </div>
          </div>
       </div>
    </div>
-   <!-- <div class="container-fluid review-slider d-none mt-5 pt-3 ">
-      <div class="container  ">
-         <div class="row justify-content-between">
-            <div class="col-md-4">
-               <img src="img/why-people.webp" alt="" class="w-100">
-            </div>
-            <div class="col-md-7">
-               <h6 class="text-theme-light mb-2 mt-3 mt-md-0">Our Fast and Easy application process makes your loan work
-                  easy.
-               </h6>
-               <h3 class="heading  mb-2">Why People love Tiffany Finance</h3>
-               <p class=""> Because we are the first priority for our customers since 2017. Our customers trust on us
-                  and are
-                  happy with the services we are delivering. We help you achieve your milestones at different stages of
-                  life
-                  and be with you in all your aspirations and dreams. We believe that our team of experienced
-                  professionals
-                  listen to you and suggest the best possible solution to all your financial needs.
-               </p>
-               <div class="">
-                  <h6 class="mb-3">
-                     Fast & Easy Application Process.
-                  </h6>
-                  <div class="d-flex flex-wrap">
-                     <div class="d-flex align-items-center  num-card mb-2 py-2 me-2">
-                        <span>1</span>
-                        <label class="d-block">Choose Loan Amount</label>
-                     </div>
-                     <div class="d-flex align-items-center   num-card mb-2 py-2 me-2">
-                        <span>2</span>
-                        <label class="d-block">Approved Your Loan</label>
-                     </div>
-                     <div class="d-flex align-items-center num-card mb-2 py-2 me-2">
-                        <span>3</span>
-                        <label class="d-block">Get Your Cash</label>
-                     </div>
-                  </div>
-                  <button class="btn btn-sm btn-theme mt-4"> View Our Loans </button>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div> -->
+
    <div class="container-fluid mt-5 why-us-box  ">
       <div class="container   py-5">
          <h3 class="text-center heading mb-3 long-heading">Why People love Tiffany Finance?</h3>
@@ -513,9 +348,6 @@ $conn->close();
 
    <div class="container-fluid  mt-5 mb-5 py-5   ">
       <div class="container">
-
-
-
          <div class="Happy-Customers  ">
             <?php foreach ($customerReviews as $customerReview) { ?>
                <div>
@@ -524,8 +356,6 @@ $conn->close();
                      <div class="col-md-5 align-self-center">
                         <div class="img-box">
                            <div>
-
-
                               <img src=<?= $customerReview['customer_image'] ? $customerReview['customer_image'] : '"img/client2.png"' ?> alt="" class=" " style="height:300px;">
                            </div>
                         </div>
@@ -541,8 +371,7 @@ $conn->close();
                         </p>
                         <span class="d-block text-end">
                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 130 78" fill="none"
-                              style="
-            transform: rotate(180deg);">
+                              style="transform: rotate(180deg);">
                               <path fill-rule="evenodd" clip-rule="evenodd"
                                  d="M52 0V52H26V78H0V0H52ZM130 0H78V78H104V52H130V0Z" fill="#2c2e53" />
                            </svg>
@@ -575,62 +404,62 @@ $conn->close();
    <!-- Loader -->
 
    <footer class="footer">
-  	 <div class="container">
-  	 	<div class="row">
-  	 		<div class="footer-col">
-  	 			<h4>Quick Links</h4>
-  	 			<ul>
-  	 				<li><a href="#" class="links">About Us</a></li>
-  	 				<li><a href="#">Vision & Mission</a></li>
-  	 				<li><a href="#">Core Values</a></li>
-  	 				<li><a href="#">Our Team</a></li>
-					<li><a href="#">Life at Tiffany Finance</a></li>
-					<li><a href="#">FAQs </a></li>
+      <div class="container">
+         <div class="row">
+            <div class="footer-col">
+               <h4>Quick Links</h4>
+               <ul>
+                  <li><a href="#" class="links">About Us</a></li>
+                  <li><a href="#">Vision & Mission</a></li>
+                  <li><a href="#">Core Values</a></li>
+                  <li><a href="#">Our Team</a></li>
+                  <li><a href="#">Life at Tiffany Finance</a></li>
+                  <li><a href="#">FAQs </a></li>
 
-  	 			</ul>
-  	 		</div>
-  	 		<div class="footer-col second-line">
-  	 			<h4 >Loan Products</h4>
-  	 			<ul>
-  	 				<li><a href="#">Loan Against Property</a></li>
-  	 				<li><a href="#">Home Construction Loan</a></li>
-  	 				<li><a href="#">Two Wheeler Loan</a></li>
-  	 				<li><a href="#">Commercial Vehicle Loan</a></li>
-  	 				<li><a href="#">Personal Loan</a></li>
-					<li><a href="#">Business Loan</a></li>
-  	 			</ul>
-  	 		</div>
-  	 		<div class="footer-col  ">
-  	 			<h4 class="third">Useful Links</h4>
-  	 			<ul class="third">
-  	 				<li><a href="#">Fair Pratice Code</a></li>
-  	 				<li><a href="#">Privacy Policy</a></li>
-  	 				<li><a href="#">Terms & Conditions</a></li>
-  	 				<li><a href="#">Disclaimer</a></li>
-  	 			</ul>
-  	 		</div>
-  	 		<div class="footer-col ">
-  	 			<h4>Follow Us On</h4>
-  	 			<div class="social-links">
-  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
-  	 				<a href="#"><i class="fab fa-twitter"></i></a>
-  	 				<a href="#"><i class="fab fa-instagram"></i></a><br>
-  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
-					<a href="#"><i class="fab fa-youtube"></i></a>
-					<a href="#"><i class="fab fa-whatsapp"></i></a>
-					<br><br>
-                    <p class="address">Tiffany Finance Private Limited</p>
-                    <p>CIN - U67190RJ2017PTC057988<br>
-					Head Office Address - 1<sup>st</sup> Floor, Tiffany Tower, Bhilwara-311001, Rajasthan </p><br>
-                        <a href="#" class="phone-icon"><i class="fa fa-phone"></i></a><span>1800-890-6544</span><br>
-					<a href="#"><i class="fas fa-envelope"></i></a><span>info@tiffanyfinance.com</span>
-  	 			</div>
-  	 		</div>
-         
-  	 	</div>
-         <hr >
-  	 </div>
-  </footer>
+               </ul>
+            </div>
+            <div class="footer-col second-line">
+               <h4>Loan Products</h4>
+               <ul>
+                  <li><a href="#">Loan Against Property</a></li>
+                  <li><a href="#">Home Construction Loan</a></li>
+                  <li><a href="#">Two Wheeler Loan</a></li>
+                  <li><a href="#">Commercial Vehicle Loan</a></li>
+                  <li><a href="#">Personal Loan</a></li>
+                  <li><a href="#">Business Loan</a></li>
+               </ul>
+            </div>
+            <div class="footer-col  ">
+               <h4 class="third">Useful Links</h4>
+               <ul class="third">
+                  <li><a href="#">Fair Pratice Code</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms & Conditions</a></li>
+                  <li><a href="#">Disclaimer</a></li>
+               </ul>
+            </div>
+            <div class="footer-col ">
+               <h4>Follow Us On</h4>
+               <div class="social-links">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a><br>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                  <a href="#"><i class="fab fa-whatsapp"></i></a>
+                  <br><br>
+                  <p class="address">Tiffany Finance Private Limited</p>
+                  <p>CIN - U67190RJ2017PTC057988<br>
+                     Head Office Address - 1<sup>st</sup> Floor, Tiffany Tower, Bhilwara-311001, Rajasthan </p><br>
+                  <a href="#" class="phone-icon"><i class="fa fa-phone"></i></a><span>1800-890-6544</span><br>
+                  <a href="#"><i class="fas fa-envelope"></i></a><span>info@tiffanyfinance.com</span>
+               </div>
+            </div>
+
+         </div>
+         <hr>
+      </div>
+   </footer>
 
    <!-- End of .container -->
 </body>
