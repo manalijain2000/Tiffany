@@ -7,6 +7,7 @@
   <title>Personal Loan - Tiffany Finance Private Limited</title>
    <link rel="shortcut icon" href="img/dark-logo-sm.png">
  <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="footer.css">
   <!-- <link rel="stylesheet" href="bootstrap/font-awesome-min.css"> -->
   <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css" />
   <link rel="stylesheet" type="text/css" href="custom-bootstrap/bootstrap.css" />
@@ -36,11 +37,11 @@ $conn->close();
   <div class="container mt-5">
     <div class="row justify-content-between">
       <div class="col-md-7">
-        <p>Dreams do come true! You can achieve whatever you have wished for. Your dream university, dream wedding,
+        <p class="paragraph">Dreams do come true! You can achieve whatever you have wished for. Your dream university, dream wedding,
           dream destination to travel, you can make these dreams a reality with our personal loan.</p>
-        <p>Tiffany Finance offers secure financing for all your immediate financial objectives, including travel,
+        <p class="paragraph">Tiffany Finance offers secure financing for all your immediate financial objectives, including travel,
           education, weddings, healthcare crisis, business needs, shopping, and more.</p>
-        <p>Our tailored solutions are designed according to your specific requirements with minimal documentation,
+        <p class="paragraph">Our tailored solutions are designed according to your specific requirements with minimal documentation,
           appealing interest rates, and a flexible loan repayment period. Personal loans are unsecured, meaning no
           collateral is required.</p>
       </div>
@@ -187,7 +188,7 @@ $conn->close();
   </div>
   <div class="container mt-5">
     <h4 class="heading"> EMI Calculator </h4>
-    <p>Our Personal Loan EMI Calculator empowers you to make informed decisions, plan your finances efficiently, and
+    <p class="paragraph">Our Personal Loan EMI Calculator empowers you to make informed decisions, plan your finances efficiently, and
       ensure that your loan obligations are manageable and aligned with your financial goals. By adjusting variables
       like the loan amount, interest rate, and tenure, you can visualize various repayment options. This enables you to
       choose a loan structure that aligns with your financial capabilities.</p>
@@ -288,7 +289,7 @@ $conn->close();
             <div class="col-md-5">
               <div class="wrapper mb-2 ">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                  <p class="mb-0">Amount</p>
+                  <p class="mb-0 paragraph">Amount</p>
                   <div class="input-group w-fit-200">
                     <input onfocusout="LAPsetInputUsFormat()" onfocusin="LAPsetInputNormalForm()" type="text"
                       value="1,00,000" id='lap-set-amount-loan-against-property' class="form-control form-control-sm">
@@ -304,7 +305,7 @@ $conn->close();
               </div>
               <div class="wrapper mb-2 ">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                  <p class="mb-0">Tenure</p>
+                  <p class="mb-0 paragraph">Tenure</p>
                   <div class="input-group w-fit-200">
                     <input type="text" onfocusout='LAPsetInputRangeVal(this)' value="36"
                       id='lap-set-tenur-loan-against-propertye' class="form-control form-control-sm">
@@ -322,7 +323,7 @@ $conn->close();
               </div>
               <div class="wrapper mb-2 ">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                  <p class="mb-0">Interest</p>
+                  <p class="mb-0 paragraph">Interest</p>
                   <div class="input-group w-fit-200">
                     <input type="text" onfocusout='LAPsetInputRangeVal(this)' value="18"
                       id='lap-set-interest-loan-against-property' class="form-control form-control-sm">
@@ -340,22 +341,22 @@ $conn->close();
             <div class="col-md-4">
               <div class="h-100 rounded py-3 px-4 pt-4 bg-lights">
                 <div class='chart-details mb-3 d-flex align-items-center  text-start '>
-                  <p class="fs-6 calculator-label me-3  mb-0">Principal</p>
-                  <p id="lap-principal-amt-id" class="fw-bold mb-0">2342</p>
+                  <p class="fs-6 calculator-label me-3  mb-0 paragraph">Principal</p>
+                  <p id="lap-principal-amt-id" class="fw-bold mb-0 paragraph">2342</p>
                 </div>
                 <div class='chart-details mb-3 d-flex align-items-center  text-start '>
-                  <p class="fs-6  calculator-label  me-3  mb-0">Interest</p>
-                  <p id="lap-interest-amt-id" class="fw-bold mb-0 ">2%</p>
+                  <p class="fs-6  calculator-label  me-3  mb-0 paragraph">Interest</p>
+                  <p id="lap-interest-amt-id" class="fw-bold mb-0 paragraph">2%</p>
                 </div>
                 <div class='chart-details mb-3 d-flex align-items-center  text-start '>
-                  <p class="fs-6  calculator-label me-3  mb-0">Total Payable</p>
-                  <p id="lap-total-payble-amt-id" class="fw-bold mb-0">343420</p>
+                  <p class="fs-6  calculator-label me-3  mb-0 paragraph">Total Payable</p>
+                  <p id="lap-total-payble-amt-id" class="fw-bold mb-0 paragraph">343420</p>
                 </div>
                 <div class='chart-details mb-3 d-flex align-items-center  text-start '>
-                  <p class="fs-6 calculator-label  me-3  mb-0">
+                  <p class="fs-6 calculator-label  me-3  mb-0 paragraph">
                     Monthly Payable
                   </p>
-                  <p id="lap-monthly-payble-amt-id" class="fw-bold mb-0">343420</p>
+                  <p id="lap-monthly-payble-amt-id" class="fw-bold mb-0 paragraph">343420</p>
                 </div>
               </div>
             </div>
@@ -375,7 +376,7 @@ $conn->close();
             Now</a></button>
       </div>
     </div>
-    <p> Disclaimer: This EMI Calculator gives approximate amount of EMI (Equated Monthly Installment), loan amount and
+    <p class="paragraph"> Disclaimer: This EMI Calculator gives approximate amount of EMI (Equated Monthly Installment), loan amount and
       interest which you will pay. Actual values may change based on your loan application and our company’s policies.
       Above EMI calculation results are just for your idea and by no means can replace the results and advice of our
       professional team. T&C Apply. </p>

@@ -7,6 +7,7 @@
   <title>Home Construction Loan - Tiffany Finance Private Limited</title>
    <link rel="shortcut icon" href="img/dark-logo-sm.png">
  <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="footer.css">
   <!-- <link rel="stylesheet" href="bootstrap/font-awesome-min.css"> -->
   <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css" />
   <link rel="stylesheet" type="text/css" href="custom-bootstrap/bootstrap.css" />
@@ -37,7 +38,7 @@ $conn->close();
   <div class="container mt-5">
     <div class="row align-items-center">
       <div class="col-md-8">
-        <p>Our home construction loan makes your dream home a reality. Unlike traditional mortgages for existing homes,
+        <p class="paragraph">Our home construction loan makes your dream home a reality. Unlike traditional mortgages for existing homes,
           a construction loan is tailored for building a brand-new house from the scratch. It works in stages, with
           funds released at every stage of construction. You don’t have to manage a lot of funds together as you get
           funds in installments as per your requirement. You pay interest only on the amount you've borrowed for each
@@ -60,7 +61,7 @@ $conn->close();
         <div class="card h-100">
           <div class="card-body">
             <h5>Phased Disbursements</h5>
-            <p> Funds are released in stages as the construction progresses, ensuring that money is available when
+            <p class="paragraph"> Funds are released in stages as the construction progresses, ensuring that money is available when
               needed</p>
           </div>
         </div>
@@ -70,7 +71,7 @@ $conn->close();
           <div class="card-body">
             <h5>Interest-Only Payments </span>
             </h5>
-            <p> During construction, you often pay interest only on the disbursed amount, which can help manage
+            <p class="paragraph"> During construction, you often pay interest only on the disbursed amount, which can help manage
               early-stage expenses.</p>
           </div>
         </div>
@@ -79,7 +80,7 @@ $conn->close();
         <div class="card h-100">
           <div class="card-body">
             <h5>Flexible Loan Tenure</h5>
-            <p>Construct the home you want with flexible tenure of up to 12 years.</p>
+            <p class="paragraph">Construct the home you want with flexible tenure of up to 12 years.</p>
           </div>
         </div>
       </div>
@@ -87,7 +88,7 @@ $conn->close();
         <div class="card h-100">
           <div class="card-body">
             <h5>Top-Up Options on Existing Loan </h5>
-            <p>Construction costs can increase anytime, so these rising costs can develop the need for more funds. You
+            <p class="paragraph">Construction costs can increase anytime, so these rising costs can develop the need for more funds. You
               can get our top up loan and refinance your current loan </p>
           </div>
         </div>
@@ -96,7 +97,7 @@ $conn->close();
         <div class="card h-100">
           <div class="card-body">
             <h5>Multiple payment modes</h5>
-            <p>You can pay your EMIs through E-NACH/ACH/ECS and various other modes.</p>
+            <p class="paragraph">You can pay your EMIs through E-NACH/ACH/ECS and various other modes.</p>
           </div>
         </div>
       </div>
@@ -104,7 +105,7 @@ $conn->close();
         <div class="card h-100">
           <div class="card-body">
             <h5>Customized Loan Options</h5>
-            <p> Our offerings are tailored to meet the unique needs of your construction projects. </p>
+            <p class="paragraph"> Our offerings are tailored to meet the unique needs of your construction projects. </p>
           </div>
         </div>
       </div>
@@ -112,7 +113,7 @@ $conn->close();
         <div class="card h-100">
           <div class="card-body">
             <h5>Loan amount</h5>
-            <p>We offer loan amount starting @ ₹2 lakhs up to ₹30 lakhs <span class="text-danger">*</span>
+            <p class="paragraph">We offer loan amount starting @ ₹2 lakhs up to ₹30 lakhs <span class="text-danger">*</span>
             </p>
           </div>
         </div>
@@ -121,7 +122,7 @@ $conn->close();
         <div class="card h-100">
           <div class="card-body">
             <h5>Attractive interest rates</h5>
-            <p>Get interest rates starting @15% per annum <span class="text-danger">*</span>
+            <p class="paragraph">Get interest rates starting @15% per annum <span class="text-danger">*</span>
             </p>
           </div>
         </div>
@@ -156,7 +157,7 @@ $conn->close();
     <div class="row">
       <div class="col-md-12">
         <h4 class="heading">Documents Required for Home Construction Loan</h4>
-        <p>Below is the list of documents required for home construction loan: </p>
+        <p class="paragraph">Below is the list of documents required for home construction loan: </p>
       </div>
     </div>
     <div class="row">
@@ -220,10 +221,10 @@ $conn->close();
 
   <div class="container">
     <h4 class="heading">EMI Calculator for Home Construction Loan</h4>
-    <p>Our Home Construction Loan EMI Calculator is a versatile tool that empowers you to make informed financial
+    <p class="paragraph">Our Home Construction Loan EMI Calculator is a versatile tool that empowers you to make informed financial
       decisions when seeking a construction loan. It simplifies the loan planning process and helps ensure that the loan
       is aligned with your financial goals</p>
-    <p>You can use the calculator to determine the loan amount that you can comfortably afford based on your monthly
+    <p class="paragraph">You can use the calculator to determine the loan amount that you can comfortably afford based on your monthly
       budget.</p>
     <div class=" mt-5">
       <div class="modal-content pb-3 mb-4">
@@ -372,22 +373,22 @@ $conn->close();
             <div class="col-md-4">
               <div class="h-100 rounded py-3 px-4 pt-4 bg-lights">
                 <div class='chart-details mb-3 d-flex align-items-center  text-start '>
-                  <p class="fs-6 calculator-label me-3  mb-0">Principal</p>
-                  <p id="lap-principal-amt-id" class="fw-bold mb-0">2342</p>
+                  <p class="fs-6 calculator-label me-3  mb-0 paragraph">Principal</p>
+                  <p id="lap-principal-amt-id" class="fw-bold mb-0 paragraph">2342</p>
                 </div>
                 <div class='chart-details mb-3 d-flex align-items-center  text-start '>
-                  <p class="fs-6  calculator-label  me-3  mb-0">Interest</p>
-                  <p id="lap-interest-amt-id" class="fw-bold mb-0 ">2%</p>
+                  <p class="fs-6  calculator-label  me-3  mb-0 paragraph">Interest</p>
+                  <p id="lap-interest-amt-id" class="fw-bold mb-0 paragraph">2%</p>
                 </div>
                 <div class='chart-details mb-3 d-flex align-items-center  text-start '>
-                  <p class="fs-6  calculator-label me-3  mb-0">Total Payable</p>
-                  <p id="lap-total-payble-amt-id" class="fw-bold mb-0">343420</p>
+                  <p class="fs-6  calculator-label me-3  mb-0 paragraph">Total Payable</p>
+                  <p id="lap-total-payble-amt-id" class="fw-bold mb-0 paragraph">343420</p>
                 </div>
                 <div class='chart-details mb-3 d-flex align-items-center  text-start '>
-                  <p class="fs-6 calculator-label  me-3  mb-0">
+                  <p class="fs-6 calculator-label  me-3  mb-0 paragraph">
                     Monthly Payable
                   </p>
-                  <p id="lap-monthly-payble-amt-id" class="fw-bold mb-0">343420</p>
+                  <p id="lap-monthly-payble-amt-id" class="fw-bold mb-0 paragraph">343420</p>
                 </div>
               </div>
             </div>
@@ -452,7 +453,7 @@ $conn->close();
       </div>
       <div class="col-md-8">
         <h4>How to use Home Construction Loan EMI Calculator?</h4>
-        <p>Using a Home Construction Loan EMI Calculator is straightforward. Here are the steps to use it: </p>
+        <p class="paragraph">Using a Home Construction Loan EMI Calculator is straightforward. Here are the steps to use it: </p>
         <span>
           <b>Enter Loan Details:</b>
         </span>
@@ -463,24 +464,26 @@ $conn->close();
           <li>Loan Tenure: Enter the loan tenure that aligns with your financial planning. Our loan tenure is minimum 2
             years and maximum 12 years. </li>
         </ol>
-        <span>
+        <span class="paragraph">
           <b>Click Calculate</b>After entering the loan details, click the "Calculate" button on the calculator. </span>
-        <span>
+        <span class="paragraph">
           <b>View Results : </b>The calculator will provide you with the Equated Monthly Installment (EMI) amount, which
           is the monthly payment you need to make to repay the loan. </span>
-        <span>
+        <span class="paragraph">
           <b>Analyze the Results : </b>
+          <br>
         </span>
+        
         <ol>
           <li>Examine the EMI amount to assess whether it fits within your budget and financial capabilities. </li>
           <li>Check the total interest amount you'll pay over the loan tenure to understand the cost of the loan. </li>
           <li>Examine the amortization schedule if provided. This schedule shows how your EMI payments are distributed
             between principal and interest over time.</li>
         </ol>
-        <span>
+        <span class="paragraph">
           <b>Adjust Parameters:</b>If the initial results don't meet your requirements, you can adjust the loan amount,
           interest rate, or tenure to see how these changes impact your EMI </span>
-        <span>
+        <span class="paragraph">
           <b>Plan Your Finances:</b>Use the EMI amount and the total interest cost to plan your finances and ensure that
           the loan is manageable within your budget. </span>
       </div>

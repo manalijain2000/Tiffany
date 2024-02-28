@@ -7,6 +7,7 @@
   <title>Loan Against Property - Tiffany Finance Private Limited</title>
    <link rel="shortcut icon" href="img/dark-logo-sm.png">
  <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="footer.css">
   <!-- <link rel="stylesheet" href="bootstrap/font-awesome-min.css"> -->
   <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css" />
   <link rel="stylesheet" type="text/css" href="custom-bootstrap/bootstrap.css" />
@@ -38,14 +39,14 @@ $conn->close();
     <div class="row">
       <div class="col-md-7">
         <h4 class="heading mb-3"> Know About Tiffany Finance Loan Against Property </h4>
-        <p>Loan Against Property (LAP) can be used for both your business and personal needs. With Tiffany Finance
+        <p class="paragraph">Loan Against Property (LAP) can be used for both your business and personal needs. With Tiffany Finance
           Property Loan, you can manage to do it all including funding your children education, wedding expenses,
           medical treatment, business requirements or construction/renovation</p>
-        <p>Tiffany Finance provides customized loans against all kinds of residential and commercial properties to
+        <p class="paragraph">Tiffany Finance provides customized loans against all kinds of residential and commercial properties to
           salary and self-employed individuals as well as to small and medium enterprises. Your property comes under
           your most valuable asset and you can make use of it to take easy and quick loan to fulfil your requirements.
         </p>
-        <p>Apply for Property Loan today via website or directly contacting our support team via email, chat or phone.
+        <p class="paragraph">Apply for Property Loan today via website or directly contacting our support team via email, chat or phone.
           If you have any query or you need any information, feel free to contact our team. Our streamlined process with
           minimum documentation ensures a hassle-free experience for every customer.</p>
       </div>
@@ -57,7 +58,7 @@ $conn->close();
 
   <div class="container mt-5">
     <h4 class="heading mb-3 "> Calculate The Maximum Loan Amount You Can Get? </h4>
-    <p>Find out how much loan amount you can get on your property with our loan to value calculator based on the market
+    <p class="paragraph">Find out how much loan amount you can get on your property with our loan to value calculator based on the market
       value and nature of the property you have, your monthly dues and income.</p>
 
   </div>
@@ -69,7 +70,7 @@ $conn->close();
         <div class="card h-100">
           <div class="card-body">
             <h5>Loan for both commercial and residential properties with high LTV</h5>
-            <p> If you are mortgaging your residential property, you can get loan amount of 60% of the property’s value
+            <p class="paragraph"> If you are mortgaging your residential property, you can get loan amount of 60% of the property’s value
               and if you are mortgaging commercial property, you can get loan amount of 70% of the property’s value.</p>
           </div>
         </div>
@@ -79,7 +80,7 @@ $conn->close();
           <div class="card-body">
             <h5>Loan Tenure Up To 12 years <span class="text-danger">*</span>
             </h5>
-            <p>: Tiffany Finance gives you advantage of repaying your loan till 12 years. You don’t have to worry about
+            <p class="paragraph">: Tiffany Finance gives you advantage of repaying your loan till 12 years. You don’t have to worry about
               repaying the principal amount faster. Enjoy tenure of 12 years and fulfill your goals with ease.</p>
           </div>
         </div>
@@ -88,7 +89,7 @@ $conn->close();
         <div class="card h-100">
           <div class="card-body">
             <h5>Property insurance and life credit shield options available</h5>
-            <p>For your safety and convenience we also offer insurance for your property and other credit shield options
+            <p class="paragraph">For your safety and convenience we also offer insurance for your property and other credit shield options
             </p>
           </div>
         </div>
@@ -98,7 +99,7 @@ $conn->close();
           <div class="card-body">
             <h5>Loan starting from Rs.1 lakh onwards <span class="text-danger">*</span>
             </h5>
-            <p>Now get loan starting from just Rs.1 lakh onwards. You can effectively use your collateral to get even a
+            <p class="paragraph">Now get loan starting from just Rs.1 lakh onwards. You can effectively use your collateral to get even a
               small loan amount. </p>
           </div>
         </div>
@@ -107,7 +108,7 @@ $conn->close();
         <div class="card h-100">
           <div class="card-body">
             <h5>Transparency in process</h5>
-            <p>We ensure complete transparency in whole loan process, there are no hidden charges or fees. Our aim is to
+            <p class="paragraph">We ensure complete transparency in whole loan process, there are no hidden charges or fees. Our aim is to
               offer competitive interest rates with transparency in everything we do.</p>
           </div>
         </div>
@@ -116,7 +117,7 @@ $conn->close();
         <div class="card h-100">
           <div class="card-body">
             <h5>Customized Products</h5>
-            <p>We offer customized loans if a customer demands in any situation and even fulfill requirements on
+            <p class="paragraph">We offer customized loans if a customer demands in any situation and even fulfill requirements on
               individual basis. </p>
           </div>
         </div>
@@ -125,7 +126,7 @@ $conn->close();
         <div class="card h-100">
           <div class="card-body">
             <h5>Quick Loan Disbursal with hassle free documentation</h5>
-            <p>With our quick and transparent processes, we make sure that you get your loan amount smoothly and on time
+            <p class="paragraph">With our quick and transparent processes, we make sure that you get your loan amount smoothly and on time
               with easy documentation</p>
           </div>
         </div>
@@ -139,7 +140,7 @@ $conn->close();
   <div class="container mt-5">
     <div class="row">
       <h4 class="heading">Eligibility Criteria For LAP</h4>
-      <p>Tiffany Finance provides Loan Against Property to all the salaried, self-employed individuals and SMEs and
+      <p class="paragraph">Tiffany Finance provides Loan Against Property to all the salaried, self-employed individuals and SMEs and
         there is a customized loan for each category you belong to. There is a product based on your needs and
         requirements. How much loan amount you can avail, depends upon the valuation of your property. Like, if you are
         mortgaging your residential property, you can get loan amount of 60% of the property’s value and if you are
@@ -208,7 +209,7 @@ $conn->close();
     <div class="row">
       <div class="col-md-8">
         <h4 class="heading">Documents Required For LAP</h4>
-        <p>Tiffany Finance documentation process is simple and hassle free. There are minimum documents required to
+        <p class="paragraph">Tiffany Finance documentation process is simple and hassle free. There are minimum documents required to
           complete the application process like documents which shows proof of your age, address, name, income source
           and property documents which you are giving on mortgage. </p>
         <div class="">
@@ -407,7 +408,7 @@ $conn->close();
       </tbody>
     </table>
     </div>
-    <p>
+    <p class="paragraph">
       <b>Note: </b> Stamp duty, Other Stamp, MODT, e-filing charges, GST, Fee, Taxes and other statutory dues applicable
       on the Security documents or Transaction documents may vary depending on the location and will be charged from the
       borrower in addition to processing fees.
@@ -428,7 +429,7 @@ $conn->close();
             <div class="col-md-5">
               <div class="wrapper mb-2 ">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                  <p class="mb-0">Amount</p>
+                  <p class="mb-0 paragraph">Amount</p>
                   <div class="input-group w-fit-200">
                     <input onfocusout="LAPsetInputUsFormat()" onfocusin="LAPsetInputNormalForm()" type="text"
                       value="10,00,000" id='lap-set-amount-loan-against-property' class="form-control form-control-sm">
@@ -444,7 +445,7 @@ $conn->close();
               </div>
               <div class="wrapper mb-2 ">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                  <p class="mb-0">Tenure</p>
+                  <p class="mb-0 paragraph">Tenure</p>
                   <div class="input-group w-fit-200">
                     <input type="text" onfocusout='LAPsetInputRangeVal(this)' value="60"
                       id='lap-set-tenur-loan-against-propertye' class="form-control form-control-sm">
@@ -461,7 +462,7 @@ $conn->close();
               </div>
               <div class="wrapper mb-2 ">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                  <p class="mb-0">Interest</p>
+                  <p class="mb-0 paragraph">Interest</p>
                   <div class="input-group w-fit-200">
                     <input type="text" onfocusout='LAPsetInputRangeVal(this)' value="18"
                       id='lap-set-interest-loan-against-property' class="form-control form-control-sm">
@@ -478,22 +479,22 @@ $conn->close();
             <div class="col-md-4">
               <div class="h-100 rounded py-3 px-4 pt-4 bg-lights">
                 <div class='chart-details mb-3 d-flex align-items-center  text-start '>
-                  <p class="fs-6 calculator-label me-3  mb-0">Principal</p>
-                  <p id="lap-principal-amt-id" class="fw-bold mb-0">2342</p>
+                  <p class="fs-6 calculator-label me-3  mb-0 paragraph">Principal</p>
+                  <p id="lap-principal-amt-id" class="fw-bold mb-0 paragraph">2342</p>
                 </div>
                 <div class='chart-details mb-3 d-flex align-items-center  text-start '>
-                  <p class="fs-6  calculator-label  me-3  mb-0">Interest</p>
-                  <p id="lap-interest-amt-id" class="fw-bold mb-0 ">2%</p>
+                  <p class="fs-6  calculator-label  me-3  mb-0 paragraph">Interest</p>
+                  <p id="lap-interest-amt-id" class="fw-bold mb-0 paragraph">2%</p>
                 </div>
                 <div class='chart-details mb-3 d-flex align-items-center  text-start '>
-                  <p class="fs-6  calculator-label me-3  mb-0">Total Payable</p>
-                  <p id="lap-total-payble-amt-id" class="fw-bold mb-0">343420</p>
+                  <p class="fs-6  calculator-label me-3  mb-0 paragraph">Total Payable</p>
+                  <p id="lap-total-payble-amt-id" class="fw-bold mb-0 paragraph">343420</p>
                 </div>
                 <div class='chart-details mb-3 d-flex align-items-center  text-start '>
-                  <p class="fs-6 calculator-label  me-3  mb-0">
+                  <p class="fs-6 calculator-label  me-3  mb-0 paragraph">
                     Monthly Payable
                   </p>
-                  <p id="lap-monthly-payble-amt-id" class="fw-bold mb-0">343420</p>
+                  <p id="lap-monthly-payble-amt-id" class="fw-bold mb-0 paragraph">343420</p>
                 </div>
               </div>
             </div>
@@ -512,7 +513,7 @@ $conn->close();
           onclick="redirectToApplyNowPage('loan-against-property')"><a herf="javascript:void(0)">Apply Now</a></button>
       </div>
     </div>
-    <p> Disclaimer: This EMI Calculator gives approximate amount of EMI (Equated Monthly Installment), loan amount and
+    <p class="paragraph"> Disclaimer: This EMI Calculator gives approximate amount of EMI (Equated Monthly Installment), loan amount and
       interest which you will pay. Actual values may change based on your loan application and our company’s policies.
       Above EMI calculation results are just for your idea and by no means can replace the results and advice of our
       professional team. T&C Apply. </p>
@@ -521,10 +522,10 @@ $conn->close();
   <div class="container mt-5">
     <div class="row">
       <h4>What is an EMI?</h4>
-      <p>EMI is Equated Monthly Installments that you are going to pay monthly till the duration of your loan. The
+      <p class="paragraph">EMI is Equated Monthly Installments that you are going to pay monthly till the duration of your loan. The
         amount includes the principal and the interest that you are going to pay on the value of the loan. </p>
       <h4>What is EMI Calculator and its benefits?</h4>
-      <p>EMI Calculator is used to calculate the approximate amount you have to pay each month based on the loan amount,
+      <p class="paragraph">EMI Calculator is used to calculate the approximate amount you have to pay each month based on the loan amount,
         tenure and interest rate. Benefits of using Tiffany Finance Property Loan EMI Calculator:</p>
       <ul>
         <li>This calculator is transparent, simple and easy to understand. There is no hidden fees or charges, this is a
@@ -539,7 +540,7 @@ $conn->close();
     <div class="row mt-5">
       <div class="col-md-8">
         <h4>How to use EMI Calculator?</h4>
-        <p>You can calculate the amount very easily. Just enter the three things:</p>
+        <p class="paragraph">You can calculate the amount very easily. Just enter the three things:</p>
         <ol>
           <li>Loan Amount: The amount which you want to borrow. Example: 10 Lakhs, you can enter the value up to Rs. 50
             lakhs. </li>
@@ -547,13 +548,13 @@ $conn->close();
             can be up to 15 years. </li>
           <li>Rate of Interest: The rate you can enter is between 14% to 26%. Example: 18%</li>
         </ol>
-        <p>So, as per the above example your calculated EMI comes to: Rs.25,393 per month</p>
-        <p>You can hit and try different values in the EMI calculator and can play with it to get the best option
+        <p class="paragraph">So, as per the above example your calculated EMI comes to: Rs.25,393 per month</p>
+        <p class="paragraph">You can hit and try different values in the EMI calculator and can play with it to get the best option
           available as per your profile. With this calculator you will get your EMI amount calculated within no time.
         </p>
-        <p>This gives you the facility to adjust your EMI amount on higher or lower side by just changing the tenure and
+        <p class="paragraph">This gives you the facility to adjust your EMI amount on higher or lower side by just changing the tenure and
           loan amount. You can also plan your finance goals in a better way with this calculator.</p>
-        <p>EMI and amount of loan offered will also depend on factors like your current obligations, your source of
+        <p class="paragraph">EMI and amount of loan offered will also depend on factors like your current obligations, your source of
           income, etc.</p>
         <span>
           <i>For any queries, contact support team of Tiffany Finance via mail, phone or chat or visit our nearest
@@ -570,7 +571,7 @@ $conn->close();
       </div>
       <div class="col-md-8">
         <h4>How To Apply for LAP</h4>
-        <p>Process of applying for loan against property is easy and fast with us. Some of the ways you can apply for
+        <p class="paragraph">Process of applying for loan against property is easy and fast with us. Some of the ways you can apply for
           loan are:</p>
         <span>
           <b>Steps to apply for Property Loan through our website: </b>

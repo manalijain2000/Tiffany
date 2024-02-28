@@ -122,17 +122,17 @@ $conn->close();
                <?php foreach ($products as $product_key => $product) { ?>
                   <?php if ($product_key == 0 || $product_key == 2 || $product_key == 4) { ?>
                      <div class="col-md-4">
-                        <div class="box-item">
+                        <div class="box-item ">
                            <div class="flip-box flip-box-top">
                               <div class="flip-box-front flip-box-front-top text-center">
                                  <div class="inner ">
-                                    <div class="img-box">
+                                    <div class="img-box ">
                                        <img src="img/loans.png" alt="" class="product-image">
                                     </div><br>
-                                    <h3 class="flip-box-header">
+                                    <h3 class="flip-box-header product-detail">
                                        <?= $product['product_title'] ?>
                                     </h3>
-                                    <p>
+                                    <p class="product-detail">
                                        <?= $product['product_description'] ?>
                                     </p>
                                  </div>
@@ -160,10 +160,10 @@ $conn->close();
                                     <div class="img-box">
                                        <img src="img/house.png" alt="" class="product-image">
                                     </div><br>
-                                    <h3 class="flip-box-header">
+                                    <h3 class="flip-box-header product-detail">
                                        <?= $product['product_title'] ?>
                                     </h3>
-                                    <p>
+                                    <p class="product-detail">
                                        <?= $product['product_description'] ?>
                                     </p>
                                     <!-- <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img"> -->
@@ -193,7 +193,7 @@ $conn->close();
    <div class="container-fluid mt-5 why-us-box  ">
       <div class="container   py-5">
          <h3 class="text-center heading mb-3 long-heading">Why People love Tiffany Finance?</h3>
-         <p> Because we are the first priority for our customers since 2017. Our customers trust on us and are
+         <p class="product-detail"> Because we are the first priority for our customers since 2017. Our customers trust on us and are
             happy with the services we are delivering. We help you achieve your milestones at different stages of life
             and be with you in all your aspirations and dreams. We believe that our team of experienced professionals
             listen to you and suggest the best possible solution to all your financial needs.
@@ -402,64 +402,9 @@ $conn->close();
    </div>
 
    <!-- Loader -->
+   <?php include 'footer.php';?>
 
-   <footer class="footer">
-      <div class="container">
-         <div class="row">
-            <div class="footer-col">
-               <h4>Quick Links</h4>
-               <ul>
-                  <li><a href="#" class="links">About Us</a></li>
-                  <li><a href="#">Vision & Mission</a></li>
-                  <li><a href="#">Core Values</a></li>
-                  <li><a href="#">Our Team</a></li>
-                  <li><a href="#">Life at Tiffany Finance</a></li>
-                  <li><a href="#">FAQs </a></li>
-
-               </ul>
-            </div>
-            <div class="footer-col second-line">
-               <h4>Loan Products</h4>
-               <ul>
-                  <li><a href="#">Loan Against Property</a></li>
-                  <li><a href="#">Home Construction Loan</a></li>
-                  <li><a href="#">Two Wheeler Loan</a></li>
-                  <li><a href="#">Commercial Vehicle Loan</a></li>
-                  <li><a href="#">Personal Loan</a></li>
-                  <li><a href="#">Business Loan</a></li>
-               </ul>
-            </div>
-            <div class="footer-col  ">
-               <h4 class="third">Useful Links</h4>
-               <ul class="third">
-                  <li><a href="#">Fair Pratice Code</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Terms & Conditions</a></li>
-                  <li><a href="#">Disclaimer</a></li>
-               </ul>
-            </div>
-            <div class="footer-col ">
-               <h4>Follow Us On</h4>
-               <div class="social-links">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a><br>
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                  <a href="#"><i class="fab fa-youtube"></i></a>
-                  <a href="#"><i class="fab fa-whatsapp"></i></a>
-                  <br><br>
-                  <p class="address">Tiffany Finance Private Limited</p>
-                  <p>CIN - U67190RJ2017PTC057988<br>
-                     Head Office Address - 1<sup>st</sup> Floor, Tiffany Tower, Bhilwara-311001, Rajasthan </p><br>
-                  <a href="#" class="phone-icon"><i class="fa fa-phone"></i></a><span>1800-890-6544</span><br>
-                  <a href="#"><i class="fas fa-envelope"></i></a><span>info@tiffanyfinance.com</span>
-               </div>
-            </div>
-
-         </div>
-         <hr>
-      </div>
-   </footer>
+   
 
    <!-- End of .container -->
 </body>

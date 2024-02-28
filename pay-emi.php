@@ -7,6 +7,7 @@
   <title>Pay Emi</title>
    <link rel="shortcut icon" href="img/dark-logo-sm.png">
  <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="footer.css">
   <!-- <link rel="stylesheet" href="bootstrap/font-awesome-min.css"> -->
   <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css" />
   <link rel="stylesheet" type="text/css" href="custom-bootstrap/bootstrap.css" />

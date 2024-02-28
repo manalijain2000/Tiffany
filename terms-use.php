@@ -7,6 +7,7 @@
     <title>Term of use - Tiffany Finance Private Limited</title>
      <link rel="shortcut icon" href="img/dark-logo-sm.png">
  <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="footer.css">
     <!-- <link rel="stylesheet" href="bootstrap/font-awesome-min.css"> -->
     <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css" />
     <link rel="stylesheet" type="text/css" href="custom-bootstrap/bootstrap.css" />
@@ -25,7 +26,7 @@
     </div>
     <div class="container terms-box mt-5">
         <div>
-          <p>Welcome to Tiffany Finance Private Limited website. By accessing this website, you agree to comply with and be bound by the following terms and conditions of use. If you disagree with any part of these terms and conditions, please do not use our website. </p>
+          <p class="paragraph">Welcome to Tiffany Finance Private Limited website. By accessing this website, you agree to comply with and be bound by the following terms and conditions of use. If you disagree with any part of these terms and conditions, please do not use our website. </p>
             <ol>
                 <li>The information and opinions available on the Platforms in relation to the Services are mere
                     guidelines for the purposes of providing general information on the subject and the exchange of
@@ -78,13 +79,13 @@
         </div>
         <div>
             <h4>No Liability: </h4>
-            <p>TFPL expressly disclaims all liability and shall not be held liable; under this Agreement for any reason
+            <p class="paragraph">TFPL expressly disclaims all liability and shall not be held liable; under this Agreement for any reason
                 whatsoever and/or with regard to anything which TFPL has done or omitted to do in relation to this
                 Agreement.</p>
         </div>
         <div>
             <h4>Indemnity: </h4>
-            <p> TFPL and its officers, directors, employees and agents collectively at all times shall be held
+            <p class="paragraph"> TFPL and its officers, directors, employees and agents collectively at all times shall be held
                 indemnified against any losses, costs, expenses and/or damages (including reasonable attorney fees)
                 incurred and/or suffered by TFPL, whether direct or indirect, resulting from, an act or a failure to
                 act, of any other User, person or Third-Party Service Provider for any reason whatsoever and against any
@@ -101,7 +102,7 @@
         </div>
         <div>
             <h4>Inconsistency: </h4>
-            <p>The terms of this Agreement shall be read together with the terms of any agreement TFPL may enter into
+            <p class="paragraph">The terms of this Agreement shall be read together with the terms of any agreement TFPL may enter into
                 with any User in respect of the Services or any other services provided by TFPL and in the event of any
                 conflict or inconsistency between (i) any of the provisions of this Agreement, and (ii) the terms
                 contained in any such agreement entered into between the User and TFPL, the terms of such bipartite
@@ -110,7 +111,7 @@
         </div>
         <div>
             <h4>User Grievance: </h4>
-            <p>Any User grievance relating to the discrepancies or misuse of information so provided to TFPL shall be
+            <p class="paragraph">Any User grievance relating to the discrepancies or misuse of information so provided to TFPL shall be
                 addressed to the grievance officer appointed by TFPL for the purpose. The grievance officer shall
                 address the grievance within one month of the date of receipt of such grievance from the User. The User
                 may e-mail the grievance to support@TFPL.com</p>
@@ -129,7 +130,7 @@
         </div>
         <div>
             <h4>Amendment: </h4>
-            <p>TFPL shall change, update or modify this Agreement, in whole or in part, without prior notice to the
+            <p class="paragraph">TFPL shall change, update or modify this Agreement, in whole or in part, without prior notice to the
                 User, provided, however, that, a notification of such change, updation or modification will be made
                 available on the Services platform.</p>
             <ol>
@@ -139,7 +140,7 @@
         </div>
         <div>
             <h4>Governing Law and Jurisdiction: </h4>
-            <p>Any action, claim, dispute or difference arising out of or in connection with this Agreement, including
+            <p class="paragraph">Any action, claim, dispute or difference arising out of or in connection with this Agreement, including
                 any question regarding its existence, validity or termination (Dispute) shall be governed by and
                 construed in accordance with the laws of India and the courts in Bhilwara shall have exclusive
                 jurisdiction over Disputes arising out of this Agreement. Notwithstanding anything contained herein,
@@ -148,9 +149,9 @@
         </div>
         <div>
             <h4>Disclaimer</h4>
-            <p>The information provided on this website is for general informational purposes only. It does not constitute financial, legal, or professional advice. While we strive to keep the information up to date and accurate, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk.</p>
-                <p>In no event will Tiffany Finance Pvt. Ltd. be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits resulting out of, or in connection with, the use of this website.</p>
-                <p>Through this website, you can link to other websites that are not under the control of Tiffany Finance
+            <p class="paragraph">The information provided on this website is for general informational purposes only. It does not constitute financial, legal, or professional advice. While we strive to keep the information up to date and accurate, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk.</p>
+                <p class="paragraph">In no event will Tiffany Finance Pvt. Ltd. be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits resulting out of, or in connection with, the use of this website.</p>
+                <p class="paragraph">Through this website, you can link to other websites that are not under the control of Tiffany Finance
                     Pvt. Ltd. We have no control over the nature, content, and availability of those sites. The inclusion 
                     of any links does not necessarily imply a recommendation or endorsement of the views expressed within them.
                 <br>Every effort is made to keep the website up and running smoothly. However, Tiffany Finance Pvt. Ltd. takes 

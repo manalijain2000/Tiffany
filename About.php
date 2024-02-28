@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About - Tiffany Finance Private Limited</title>
   <link rel="shortcut icon" href="img/dark-logo-sm.png">
+  <link rel="stylesheet" href="footer.css">
   <link rel="stylesheet" href="style.css">
+ 
   <!-- <link rel="stylesheet" href="bootstrap/font-awesome-min.css"> -->
   <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css" />
   <link rel="stylesheet" type="text/css" href="custom-bootstrap/bootstrap.css" />
@@ -30,7 +32,7 @@ $conn->close();
   <?php include('header.php') ?>
   <div class="container-fluid p-0 banner-header">
     <div class=" header-slider">
-      <img src="img/loan-header.jpg" class="d-block w-100 loan-header" alt="...">
+      <img src="img/about.jpg" class="d-block w-100 loan-header" alt="...">
 
       <div class="top-left">Your Trusted Financial Preferred Lender</div>
     </div>
@@ -39,15 +41,15 @@ $conn->close();
     <div class="row">
 
       <h5 class="heading mb-4"> Who We Are?</h5>
-      <p> Incorporated in 2017, Tiffany Finance is a fast-growing NBFC (Non-Banking Finance Company) based out of
+      <p class="paragraph"> Incorporated in 2017, Tiffany Finance is a fast-growing NBFC (Non-Banking Finance Company) based out of
         Bhilwara, Rajasthan with a niche leadership in retail financing. </p>
-      <p>We are a Non-Banking Financial Company - Non-Systemically Important Non-Deposit taking Company (NBFC-ND),
+      <p class="paragraph" >We are a Non-Banking Financial Company - Non-Systemically Important Non-Deposit taking Company (NBFC-ND),
         registered with Reserve Bank of India (“RBI”) under section 45- IA of the Reserve Bank of India Act, 1934.
       </p>
-      <p>The company is managed by two dynamic entrepreneurs Mr. Virendra Prakash Ranka and Mr. Ronak Jain with a
+      <p class="paragraph">The company is managed by two dynamic entrepreneurs Mr. Virendra Prakash Ranka and Mr. Ronak Jain with a
         primary focus to reach and lend to the unorganized market and micro small and medium businesses (MSMEs)
         especially catering to semi-urban and rural areas.</p>
-      <p>Main services of the company include Loan Against Property, Two-Wheeler Loan and Three- Wheeler Loan. </br>
+      <p class="paragraph">Main services of the company include Loan Against Property, Two-Wheeler Loan and Three- Wheeler Loan. </br>
         </br> We are known for dedicated customer service and safe and fair business practices. Our services are
         efficient and trusted by diverse range of customers. The process of applying for loans is fast and easy with a
         quick disbursement of funds within 5-7 days. </p>
@@ -55,31 +57,24 @@ $conn->close();
 
     </div>
   </div>
-  <div class="container-fluid  bg-light" id = "vision-n-mission">
-
-    <div class="container">
-      <div class="row justify-content-center mt-5 py-5 ">
-        <h4 class="heading  text-center mb-4"> Our Vision & Mission</h4>
-        <div class="col-md-5 p-4 bg-theme">
-          <img src="img/values/vision.png" class="vision-img">
-          <span class="fs-1">Vision</span><br><br>
-          <p>Vision Statement: To offer financial services to the underserved and under resourced market and transform
-            into a most trusted financier in India serving a large number of customers.</p>
+  <div class="container-fluid" id="vision-n-mission">
+    <div class="container-fluid">
+        <div class="row justify-content-center  mt-5 py-5">
+            <h4 class="heading text-center mb-4">Our Vision & Mission</h4>
+            <div class="col-md-12 col-lg-6 p-4 bg-theme vission-mission"> <!-- Changed col-md-5 to col-md-12 and added col-lg-6 -->
+                <img src="img/values/vision.png" class="vision-img">
+                <span class="fs-1 ">Vision</span><br><br>
+                <p>Vision Statement: To offer financial services to the underserved and under resourced market and transform into a most trusted financier in India serving a large number of customers.</p>
+            </div>
+            <div class="col-md-12 col-lg-6 p-4 bg-theme-sec"> <!-- Changed col-md-5 to col-md-12 and added col-lg-6 -->
+                <img src="img/values/mission.png" class="vision-img2">
+                <span class="fs-1">Mission</span><br><br>
+                <p>Mission Statement: To provide sustainable financing and reach the maximum number of underserved micro, small, and medium enterprises by providing them easy and quick loans at the best interest rate possible, hence creating a positive impact on economic growth and contributing to financial inclusion.</p>
+            </div>
         </div>
-        <div class="col-md-5 p-4 bg-theme-sec">
-          <img src="img/values/mission.png" class="vision-img2">
-          <span class="fs-1">Mission</span><br><br>
-          <p>Mission Statement: To provide sustainable financing and reach maximum number of underserved micro, small
-            and
-            medium enterprises by providing them easy and quick loans at the best interest rate possible, hence creating
-            a
-            positive impact to the economic growth and contributing to financial inclusion. </p>
-        </div>
-
-      </div>
     </div>
+</div>
 
-  </div>
   <div class="container" id = "our-values">
     <div class="row mt-5 values-box">
       <h5 class="heading text-center mb-4">Our Core Values</h5>

@@ -7,6 +7,7 @@
   <title>Commercial Vehicle Loan- Tiffany Finance Private Limited</title>
    <link rel="shortcut icon" href="img/dark-logo-sm.png">
  <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="footer.css">
   <!-- <link rel="stylesheet" href="bootstrap/font-awesome-min.css"> -->
   <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css" />
   <link rel="stylesheet" type="text/css" href="custom-bootstrap/bootstrap.css" />
@@ -38,13 +39,13 @@ $conn->close();
     <div class="row justify-content-between">
       <div class="col-md-7">
 
-        <p>Self-Start your journey with your own commercial vehicle and grab opportunity now to earn your
+        <p class="paragraph">Self-Start your journey with your own commercial vehicle and grab opportunity now to earn your
           independent income. You don’t have to be dependent on anyone to make your living, freedom and
           flexibility is what you can get with your own commercial vehicle.</p>
-        <p>If you are self-employed and have your own transport business or are planning to start something of
+        <p class="paragraph">If you are self-employed and have your own transport business or are planning to start something of
           your own, Tiffany Finance’s commercial vehicle loan is best for you as we offer loan for various types of
           commercial vehicles from light to heavy like Autos, Mini Trucks and Tractors.</p>
-        <p>
+        <p class="paragraph">
           Self-Employes individuals can apply this loan to buy a new vehicle, to buy a used vehicle and to
           refinance of commercial vehicle.
         </p>
@@ -60,7 +61,7 @@ $conn->close();
   <div class="container mt-5">
     <div class="row">
       <h4 class="heading mb-3 text-center">Features & Benefits</h4>
-      <p>Tiffany Finance provides loan for all types of commercial vehicles from light to heavy, new and used
+      <p class="paragraph">Tiffany Finance provides loan for all types of commercial vehicles from light to heavy, new and used
         through variety of customized schemes as per individual and business needs. Loan is offered to first
         time buyers, travel agents, tour operators, intra and intercity operators and many other businesses.</p>
       <!-- <img src="img/Featuresvehicle-loan-des.webp" class="w-100 my-4 d-none d-md-block" alt="" >

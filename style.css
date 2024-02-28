@@ -471,14 +471,14 @@ body {
 }
 
 .page-header .navbar-nav .nav-link {
-  color: #2d2f54 !important;
+  color: #00AEEE !important;
   font-weight: bold;
   font-size: 19px;
   
 }
 
 .page-header .navbar-nav .nav-link:hover {
-  color: #00AEEE !important;
+  color:#ffcc29 !important;
 }
 
 .nav-link.active {
@@ -486,7 +486,7 @@ body {
 }
 
 .page-header .navbar-nav .nav-link.active {
-  color:#2d2f54 !important;
+  color:#00AEEE !important;
   border-bottom: 1px solid;
 }
 
@@ -2939,6 +2939,7 @@ right: 0;
 .product-image{
   width:90px;
   height:80px;
+  margin-left: -70%;
 }
 .vechile-loan{
   font-size: 20px;
@@ -2946,6 +2947,8 @@ right: 0;
 .ready{
   width:1500px;
   background-color: #2c2e53;
+  height:250px;
+  padding-top: 3%;
 }
 .bank-partners{
   width:300px;
@@ -3018,4 +3021,14 @@ right: 0;
 .executive{
   font-size: 19px;
   
+}
+.product-detail{
+  color:#2c2e53;
+}
+.paragraph{
+color:black;
+}
+.vission-mission{
+  height:350px;
+ 
 }

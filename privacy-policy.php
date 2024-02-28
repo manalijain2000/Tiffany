@@ -7,6 +7,7 @@
    <title>Privacy Policy - Tiffany Finance Private Limited</title>
     <link rel="shortcut icon" href="img/dark-logo-sm.png">
  <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="footer.css">
    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css" />
    <link rel="stylesheet" type="text/css" href="custom-bootstrap/bootstrap.css" />
    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
@@ -32,75 +33,75 @@
   <div class="row">
     <div>
       <h4>Definitions:</h4>
-      <p> Unless otherwise specified, the capitalized terms shall have the meanings set out below </p>
+      <p class="paragraph"> Unless otherwise specified, the capitalized terms shall have the meanings set out below </p>
     </div>
     <div>
       <h4>Agreement:</h4>
-      <p>Means and includes the Privacy Policy and any other such terms and conditions that may be mutually agreed upon between TFPL and the User in relation to the Services, deemed to have been executed at Bhilwara, (Raj.) India.</p>
+      <p class="paragraph">Means and includes the Privacy Policy and any other such terms and conditions that may be mutually agreed upon between TFPL and the User in relation to the Services, deemed to have been executed at Bhilwara, (Raj.) India.</p>
     </div>
     <div>
       <h4>Applicable Law:</h4>
-      <p>Means and includes any statute, law, regulation, sub-ordinate legislation, ordinance, rule, judgment, rule of law, order (interim or final), writ, decree, clearance, Authorizations, approval, directive, circular guideline, policy, requirement, code of practice or guidance note, or other governmental, regulatory, statutory, administrative restriction or any similar form of decision, or determination by, or any interpretation or administration of any of the foregoing by, any statutory or regulatory authority or government agency or any other authority, in each case having jurisdiction over the subject matter of this Agreement.</p>
+      <p class="paragraph">Means and includes any statute, law, regulation, sub-ordinate legislation, ordinance, rule, judgment, rule of law, order (interim or final), writ, decree, clearance, Authorizations, approval, directive, circular guideline, policy, requirement, code of practice or guidance note, or other governmental, regulatory, statutory, administrative restriction or any similar form of decision, or determination by, or any interpretation or administration of any of the foregoing by, any statutory or regulatory authority or government agency or any other authority, in each case having jurisdiction over the subject matter of this Agreement.</p>
     </div>
     <div>
       <h4>Computer Virus:</h4>
-      <p>Means and includes any computer instruction, information, data or programme that destroys, damages, degrades or adversely affects the performance of a computer resource or attaches itself to another computer resource and operates when a programme, data or instruction is executed or some other event takes place in that computer resource.</p>
+      <p class="paragraph">Means and includes any computer instruction, information, data or programme that destroys, damages, degrades or adversely affects the performance of a computer resource or attaches itself to another computer resource and operates when a programme, data or instruction is executed or some other event takes place in that computer resource.</p>
     </div>
     <div>
       <h4>Confidential Information:</h4>
-      <p>Means and includes all information that is not in the public domain, in spoken, printed, electronic or any other form or medium, relating directly or indirectly to, the assets, business processes, practices, methods, policies, subscription plans, publications, documents, research, operations, services, strategies, techniques, agreements, contracts, terms of agreements, transactions, potential transactions, negotiations, pending negotiations, know-how, trade secrets, computer programs, computer software, applications, operating systems, software design, web design, work-in-process, databases, manuals, records and reports, articles, systems, material, sources of material, supplier identity and information, vendor identity and information, User identity and information, financial information, results, accounting information, accounting records, legal information, marketing information, advertising information, pricing information, credit information, developments, internal controls, security procedures, graphics, drawings, sketches, sales information, costs, formulae, product plans, designs, ideas, inventions, original works of authorship, discoveries and specifications, of TFPL and/or affiliates or their respective businesses, or any existing or prospective customer, supplier, investor or other associated third party, or of any other person or entity that has entrusted information to TFPL in confidence.</p>
+      <p class="paragraph">Means and includes all information that is not in the public domain, in spoken, printed, electronic or any other form or medium, relating directly or indirectly to, the assets, business processes, practices, methods, policies, subscription plans, publications, documents, research, operations, services, strategies, techniques, agreements, contracts, terms of agreements, transactions, potential transactions, negotiations, pending negotiations, know-how, trade secrets, computer programs, computer software, applications, operating systems, software design, web design, work-in-process, databases, manuals, records and reports, articles, systems, material, sources of material, supplier identity and information, vendor identity and information, User identity and information, financial information, results, accounting information, accounting records, legal information, marketing information, advertising information, pricing information, credit information, developments, internal controls, security procedures, graphics, drawings, sketches, sales information, costs, formulae, product plans, designs, ideas, inventions, original works of authorship, discoveries and specifications, of TFPL and/or affiliates or their respective businesses, or any existing or prospective customer, supplier, investor or other associated third party, or of any other person or entity that has entrusted information to TFPL in confidence.</p>
     </div>
     <div>
       <h4>Content </h4>
-      <p>Means and includes any information all data and information on the Platforms. </p>
+      <p class="paragraph">Means and includes any information all data and information on the Platforms. </p>
     </div>
     <div>
       <h4>Government Authority</h4>
-      <p>Means and includes any government, any Central, State or other Statutory Sub-division thereof, any entity exercising executive, legislative, judicial, regulatory or administrative functions of or pertaining to government, or any other government authority, agency, department, board, commission or instrumentality or any political subdivision thereof, and any court, tribunal or arbitrator(s) of competent jurisdiction, and, any Government or non-Government self-regulatory organization, agency or authority; having jurisdiction over the Agreement and the Services contemplated under the Agreement.</p>
+      <p class="paragraph">Means and includes any government, any Central, State or other Statutory Sub-division thereof, any entity exercising executive, legislative, judicial, regulatory or administrative functions of or pertaining to government, or any other government authority, agency, department, board, commission or instrumentality or any political subdivision thereof, and any court, tribunal or arbitrator(s) of competent jurisdiction, and, any Government or non-Government self-regulatory organization, agency or authority; having jurisdiction over the Agreement and the Services contemplated under the Agreement.</p>
     </div>
     <div>
       <h4>Intellectual Property:</h4>
-      <p>Means and includes patents, inventions, know how, trade secrets, trademarks, service marks, designs, tools, devices, models, methods, procedures, processes, systems, principles, algorithms, works of authorship, flowcharts, drawings, and other confidential and proprietary information, data, documents, instruction manuals, records, memoranda, notes, user guides, ideas, concepts, information, materials, discoveries, developments, and other copyrightable works, and techniques in either printed or machinereadable form, whether or not copyrightable or patentable, each of which is not in the public domain or would by its very nature fall within public domain.</p>
+      <p class="paragraph">Means and includes patents, inventions, know how, trade secrets, trademarks, service marks, designs, tools, devices, models, methods, procedures, processes, systems, principles, algorithms, works of authorship, flowcharts, drawings, and other confidential and proprietary information, data, documents, instruction manuals, records, memoranda, notes, user guides, ideas, concepts, information, materials, discoveries, developments, and other copyrightable works, and techniques in either printed or machinereadable form, whether or not copyrightable or patentable, each of which is not in the public domain or would by its very nature fall within public domain.</p>
     </div>
     <div>
       <h4>Intellectual Property Rights:</h4>
-      <p>Means and include (a) all right, title, and interest under including but not limited to patent, trademark, copyright under the Patents Act, 1970, Trademarks Act, 1999 and Copyright Act, 1957 respectively; any statute or under common law including patent rights; copyrights including moral rights; and any similar rights in respect of Intellectual Property, anywhere in the world, whether negotiable or not; (b) any licenses, permissions and grants in connection therewith; (c) applications for any of the foregoing and the right to apply for them in any part of the world; (d) right to obtain and hold appropriate registrations in Intellectual Property; (e) all extensions and renewals thereof; (f) causes of action in the past, present or future, related thereto including the rights to damages and profits, due or accrued, arising out of past, present or future infringements or violations thereof and the right to sue for and recover the same; (g) any Confidential Information.</p>
+      <p class="paragraph">Means and include (a) all right, title, and interest under including but not limited to patent, trademark, copyright under the Patents Act, 1970, Trademarks Act, 1999 and Copyright Act, 1957 respectively; any statute or under common law including patent rights; copyrights including moral rights; and any similar rights in respect of Intellectual Property, anywhere in the world, whether negotiable or not; (b) any licenses, permissions and grants in connection therewith; (c) applications for any of the foregoing and the right to apply for them in any part of the world; (d) right to obtain and hold appropriate registrations in Intellectual Property; (e) all extensions and renewals thereof; (f) causes of action in the past, present or future, related thereto including the rights to damages and profits, due or accrued, arising out of past, present or future infringements or violations thereof and the right to sue for and recover the same; (g) any Confidential Information.</p>
     </div>
     <div>
       <h4>TFPL:</h4>
-      <p>Means and includes Tiffany Finance Pvt. Ltd. a company incorporated under the Companies Act, 2013 having its registered office at First Floor, Tiffany Tower, Bhilwara (Raj.), 311001 including its officers, directors, employees and representatives along with its Platforms.</p>
+      <p class="paragraph">Means and includes Tiffany Finance Pvt. Ltd. a company incorporated under the Companies Act, 2013 having its registered office at First Floor, Tiffany Tower, Bhilwara (Raj.), 311001 including its officers, directors, employees and representatives along with its Platforms.</p>
     </div>
     <div>
       <h4>Platforms:</h4>
-      <p>Means and includes the website and the mobile application on/ through which the Services can be availed.</p>
+      <p class="paragraph">Means and includes the website and the mobile application on/ through which the Services can be availed.</p>
     </div>
     <div>
       <h4>Privacy Policy </h4>
-      <p>Means and includes the privacy policy of TFPL more particularly described in Clause 4. </p>
+      <p class="paragraph">Means and includes the privacy policy of TFPL more particularly described in Clause 4. </p>
     </div>
     <div>
       <h4>Prohibited Conduct: </h4>
-      <p>Means and includes the User’s use of the Service in contravention of the Agreement and Applicable Law; violation of or the abetment of violation of third party rights; infringement or misappropriation of TFPL’s or any persons Intellectual Property Right; attempt to gain or assist another person/ User to gain unauthorized access to the Platforms and/or Services or its related systems or networks; create internet links to the Platforms or “frame” or “mirror” any content on any other server or wireless or Internet-based device; act of sending spam, duplicated or unsolicited messages; usage or storage of obscene, threatening, libellous, or otherwise unlawful or tortuous material, including material harmful to children or in violation of third party privacy rights leading to harassment, annoyance, anxiety or inconvenience to any person; modify or make derivative works based upon the Service and/or impersonation in relation to any person or entity, claiming a false affiliation, accessing without permission, or falsely representing User Information.</p>
+      <p class="paragraph">Means and includes the User’s use of the Service in contravention of the Agreement and Applicable Law; violation of or the abetment of violation of third party rights; infringement or misappropriation of TFPL’s or any persons Intellectual Property Right; attempt to gain or assist another person/ User to gain unauthorized access to the Platforms and/or Services or its related systems or networks; create internet links to the Platforms or “frame” or “mirror” any content on any other server or wireless or Internet-based device; act of sending spam, duplicated or unsolicited messages; usage or storage of obscene, threatening, libellous, or otherwise unlawful or tortuous material, including material harmful to children or in violation of third party privacy rights leading to harassment, annoyance, anxiety or inconvenience to any person; modify or make derivative works based upon the Service and/or impersonation in relation to any person or entity, claiming a false affiliation, accessing without permission, or falsely representing User Information.</p>
     </div>
     <div>
       <h4>Personal Information: </h4>
-      <p>Means and includes details such as e-mail address, first and last name, phone number, address, Aadhaar Card, PAN Card, biometric information, financial information such as credit history, financial statements, bank account, bank resolutions, details of the authorized representative of a User and such other sensitive information, of the User, and/or concerned person which personally identifies such User and/or person. </p>
+      <p class="paragraph">Means and includes details such as e-mail address, first and last name, phone number, address, Aadhaar Card, PAN Card, biometric information, financial information such as credit history, financial statements, bank account, bank resolutions, details of the authorized representative of a User and such other sensitive information, of the User, and/or concerned person which personally identifies such User and/or person. </p>
     </div>
     <div>
       <h4> Services: </h4>
-      <p>Means and includes the services provided by TFPL within the territory of India to the User of the Platforms and shall include the provision of access to the website owned, operated and managed by <b>Tiffany Finance Pvt. Ltd.</b> at the URL <a href="www.tiffanyfinance.com">www.tiffanyfinance.com</a> and the TFPL mobile application. </p>
+      <p class="paragraph">Means and includes the services provided by TFPL within the territory of India to the User of the Platforms and shall include the provision of access to the website owned, operated and managed by <b>Tiffany Finance Pvt. Ltd.</b> at the URL <a href="www.tiffanyfinance.com">www.tiffanyfinance.com</a> and the TFPL mobile application. </p>
     </div>
     <div>
       <h4>User: </h4>
-      <p>Means and includes any person who avails the Services.</p>
+      <p class="paragraph">Means and includes any person who avails the Services.</p>
     </div>
     <div>
       <h4>User Information: </h4>
-      <p>Means and includes information the User’s browser sends each time when the User avails the Services, User’s computer/s,/ mobile device/s, Internet Protocol address, mobile device unique ID, browser/ mobile device type, browser version, operating system, the pages of Platforms, time and date of each visit, time spent on the Services, Personal Information and any other data, diagnostic information, details or information collected through unique device identifiers in relation the User, provided by the User to TFPL in relation to the Services, whether through e-mail or any other form of communication, agreeable to the User and TFPL.</p>
+      <p class="paragraph">Means and includes information the User’s browser sends each time when the User avails the Services, User’s computer/s,/ mobile device/s, Internet Protocol address, mobile device unique ID, browser/ mobile device type, browser version, operating system, the pages of Platforms, time and date of each visit, time spent on the Services, Personal Information and any other data, diagnostic information, details or information collected through unique device identifiers in relation the User, provided by the User to TFPL in relation to the Services, whether through e-mail or any other form of communication, agreeable to the User and TFPL.</p>
     </div>
     <div>
       <h4>Interpretation: </h4>
-      <p>Unless the context otherwise requires or a contrary indication appears: </p>
+      <p class="paragraph">Unless the context otherwise requires or a contrary indication appears: </p>
       <ul>
         <li>Reference to any legislation or law shall include references to any such legislation or law as it may from time to time be amended, supplemented or re-enacted, and any reference to a statutory provision shall include any subordinate legislation made from time to time under that provision.</li>
         <li>Any reference in this Agreement to a person includes any individual, corporation, partnership, unincorporated organization or governmental agency and shall include their respective successors and permitted assigns and in case of an individual shall include his legal representatives, administrators, executors and heirs and in case of a trust shall include the trustee or the trustees for the time being. </li>
@@ -109,7 +110,7 @@
         <li> The mode and manner of communication for the purposes of this Agreement shall be via e-mail to <b>info@tiffanyfinance.com</b>
         </li>
       </ul>
-      <p>The words ‘other’ or ‘otherwise’ and ‘whatsoever’ will not be construed ejusdem generis or be construed as any limitation upon the generality of any preceding words or matters specifically referred to</p>
+      <p class="paragraph">The words ‘other’ or ‘otherwise’ and ‘whatsoever’ will not be construed ejusdem generis or be construed as any limitation upon the generality of any preceding words or matters specifically referred to</p>
     </div>
     <div>
       <h4>Acceptance Of the Privacy Policy: </h4>
@@ -205,7 +206,7 @@
     </div>
     <div>
       <h4>Content On the Platforms</h4>
-      <p>TFPL shall endeavour to ensure that the Content is monitored to ensure that the same is not in contravention of Applicable Law and this Agreement.</p>
+      <p class="paragraph">TFPL shall endeavour to ensure that the Content is monitored to ensure that the same is not in contravention of Applicable Law and this Agreement.</p>
     </div>
     <div>
       <h4>Intellectual Property: </h4>

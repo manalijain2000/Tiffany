@@ -7,6 +7,7 @@
   <title>Business Loan - Tiffany Finance Private Limited</title>
    <link rel="shortcut icon" href="img/dark-logo-sm.png">
  <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="footer.css">
   <!-- <link rel="stylesheet" href="bootstrap/font-awesome-min.css"> -->
   <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css" />
   <link rel="stylesheet" type="text/css" href="custom-bootstrap/bootstrap.css" />
@@ -36,14 +37,14 @@ $conn->close();
   <div class="container mt-5">
     <div class="row justify-content-between">
       <div class="col-md-7">
-        <p>Tiffany Finance’s business loan provides the capital needed to start or expand your business. Whether you're
+        <p class="paragraph">Tiffany Finance’s business loan provides the capital needed to start or expand your business. Whether you're
           launching a startup or seeking to grow an existing enterprise, our business loan can finance essential assets,
           equipment, or facilities. We provide both secured and unsecured business loan options, allowing your business
           to accessfinancing of up to ₹90 lakhs*.</p>
-        <p>With our business loan, you can also fulfill all your working capital needs to maintain your daily operations
+        <p class="paragraph">With our business loan, you can also fulfill all your working capital needs to maintain your daily operations
           and cover short-term expenses. You can comfortably use it for your inventory management, marketing and
           advertising, hiring and payroll, buying equipment and for expansion and growth. </p>
-        <p>Tiffany Finance offers customized financing, you can choose a loan tailored to your specific needs such as
+        <p class="paragraph">Tiffany Finance offers customized financing, you can choose a loan tailored to your specific needs such as
           term loans, lines of credit, or equipment financing.</p>
       </div>
       <div class="col-md-4 ">
