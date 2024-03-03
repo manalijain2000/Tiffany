@@ -44,7 +44,10 @@
                                 <a class="dropdown-item <?= basename($_SERVER['REQUEST_URI']) == 'home-construction-loan.php' ? 'active' : '' ?>" href="home-construction-loan.php">Home Construction Loan  </a>
                             </li>
                             <li>
-                                <a class="dropdown-item <?= basename($_SERVER['REQUEST_URI']) == 'commercial-vehicle-loan.php' ? 'active' : '' ?>" href="commercial-vehicle-loan.php">Vehicle Loan </a>
+                                <a class="dropdown-item <?= basename($_SERVER['REQUEST_URI']) == 'commercial-vehicle-loan.php' ? 'active' : '' ?>" href="commercial-vehicle-loan.php">Commercial Vehicle Loan</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item <?= basename($_SERVER['REQUEST_URI']) == 'two-vehicle-loan.php' ? 'active' : '' ?>" href="two-vehicle-loan.php">Two Wheeler Loan</a>
                             </li>
                             <li>
                                 <a class="dropdown-item <?= basename($_SERVER['REQUEST_URI']) == 'personal-loan.php' ? 'active' : '' ?>" href="personal-loan.php">Personal Loan </a>
@@ -54,8 +57,27 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link <?= basename($_SERVER['REQUEST_URI']) == 'career.php' ? 'active' : '' ?>" href="career.php">Career</a>
+                    <li class="nav-item dropdown" >
+                        <a class="nav-link dropdown-toggle <?= basename($_SERVER['REQUEST_URI']) == 'career.php' ? 'active' : '' ?>" href="career.php"
+                         id="navbarDropdowncareer" role="button"  data-bs-toggle="dropdown" aria-expanded="false">Career</a>
+                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item ">Life At Tiffany</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item ">Benefits And Perks  </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item ">What Our Employees Feel About Us?</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item ">Apply For Job</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item ">Become Our Partner </a>
+                            </li>
+                           
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link <?= basename($_SERVER['REQUEST_URI']) == 'gallary.php' ? 'active' : '' ?>"  href="gallary.php">Gallery</a>

@@ -247,7 +247,7 @@ $conn->close();
                   Just enter your Email or Phone Number
                </p>
             </div>
-            <div class="col-md-5 ms-5">
+            <div class="col-md-5 ">
                <div class="d-flex flex-wrap justify-content-between bg-white mb-3 p-2 input">
                   <input type="email" class="formInput border-0 " placeholder="Enter Email or Phone Number" value="">
                   <button type="button" class="btn btn-sm btn-theme">Submit</button>

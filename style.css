@@ -2180,7 +2180,7 @@ a {
 .home-slider .header-box::before {
   content: "";
   width: 250px;
-  height: 255px;
+  height: 274px;
   border: 40px solid #2c2e53;
   border-right: 0px;
   position: absolute;
@@ -2199,19 +2199,20 @@ a {
   .flip-main-box .card .side {
     font-size: 18px;
   }
-
+  
 
   .home-slider .carousel-caption {
-    width: 300px !important;
+    width: 360px !important;
     bottom: 10% !important;
     left: 15% !important;
     padding: 20px;
+    
   }
 
   .home-slider .header-box::before {
     content: "";
     width: 250px;
-    height: 218px;
+    height: 214px;
     border: 30px solid #2c2e53;
     left: -59px;
     border-left-width: 40px;
@@ -2374,9 +2375,18 @@ a {
     position: absolute;
     bottom: 3%!important;
     width: 50px!important;
-    left: 10%!important;
+    left: 11%!important;
     height:145px;
-   
+   top: 59%;
+  }
+  .side-calculate .emi-btn{
+    transform: translate(30%, 0px);
+  } 
+} 
+@media only screen and (max-width: 768px){
+  .home-slider .slick-dots {
+    left: 9%!important;
+   top: 50%;
   }
   .side-calculate .emi-btn{
     transform: translate(30%, 0px);
@@ -2386,6 +2396,7 @@ a {
 @media (max-width:600px){
   .home-slider  .slick-dots{
     left: 5%!important;
+    top:51%;
   }
   .lift-at-img img{
     width: 25%!important;
@@ -2398,7 +2409,12 @@ a {
     width: 50%!important;
     height: auto!important;
   }
- 
+  .header-box .dropdown-menu.show {
+    display: block!important;
+    width: auto!important;
+    text-align: center;
+  }
+
 }
 @media (max-width:300px){
   .whatsapp img{
@@ -2875,9 +2891,9 @@ table.dataTable thead th, table.dataTable thead td {
     min-height: 400px;
   }
 
-  /* .header-slider img {
+  .header-slider img {
     min-height: 400px;
-  } */
+  }
 
   /* .header-slider .carousel-caption .inner-text {
     font-size: 18px;
@@ -2913,18 +2929,24 @@ right: 0;
 }
 
 @media (max-width:600px) {
+  .header-box .dropdown-menu.show {
+    display: block;
+  }
   #gallery {
     -webkit-column-count: 1;
     -moz-column-count: 1;
     column-count: 1;
   }
-  .home-slider .carousel-caption{
+  /* .home-slider .carousel-caption{
     width: 215px!important;
-  }
+  } */
   .home-slider .header-box::before{
-    height: 240px;
+    height: 222px;
   }
+  .home-slider .carousel-caption {
   
+    height: 163px;
+  }
 }
 
 /* changes */
@@ -2945,10 +2967,13 @@ right: 0;
   font-size: 20px;
 }
 .ready{
-  width:1500px;
+  /* width:1500px; */
   background-color: #2c2e53;
-  height:250px;
-  padding-top: 3%;
+  /* height:250px; */
+  /* padding-top: 3%; */
+}
+.ready .input{
+  width:350px;
 }
 .bank-partners{
   width:300px;
@@ -3012,9 +3037,7 @@ right: 0;
   font-size: 23px;
   font-weight: bold;
 }
-.input{
-  width:450px;
-}
+
 .formInput{
   width:250px;
 }
@@ -3032,3 +3055,28 @@ color:black;
   height:350px;
  
 }
+
+
+
+/* this code start for header sub menu when we need submenu as moneybox.com */
+
+.header-box .dropdown-menu.show {
+  display: flex;
+  flex-wrap: wrap;
+  left: -240%;
+  width: 650px;
+  justify-content: center;
+  background: transparent;
+  border: 0;
+}
+.header-box .dropdown-item{
+  cursor: pointer;
+}
+.header-box .dropdown-item:hover{
+color: #f2c744!important;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+  color: #f2c744;
+  background-color: transparent!important;
+}
+/* this code end for header sub menu when we need submenu as moneybox.com */
