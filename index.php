@@ -127,7 +127,8 @@ $conn->close();
                               <div class="flip-box-front flip-box-front-top text-center">
                                  <div class="inner ">
                                     <div class="img-box ">
-                                       <img src="img/loans.png" alt="" class="product-image">
+                                       <?php $frontImagePath = ($product_key == 0) ? "img/loans.png" : (($product_key == 2) ? "img/two.png" : "img/two.png" ); ?>
+                                       <img src='<?=$frontImagePath ?>' alt="" class="product-image">
                                     </div><br>
                                     <h3 class="flip-box-header product-detail">
                                        <?= $product['product_title'] ?>
@@ -142,9 +143,9 @@ $conn->close();
                                  <div class="inner ">
                                     <div class="d-flex justify-content-center">
                                        <a class=" nav-link btn btn-sm btn-theme-sec me-3 <?= basename($_SERVER['REQUEST_URI']) == 'loan-against-property.php' ? 'active' : '' ?>"
-                                          href="loan-against-property.php">Know More</a>
+                                          href="javascript:void(0)" onclick = "briefDescription('<?= $product['loan_category'] ?>')">Know More</a>
                                        <a class=" nav-link btn btn-sm btn-theme-sec <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
-                                          href="apply-now.php">Apply Now</a>
+                                          href="javascript:void(0)" onclick = "redirectToApplyNowPage('<?= $product['loan_category'] ?>')">Apply Now</a>
                                     </div>
                                  </div>
                               </div>
@@ -158,7 +159,8 @@ $conn->close();
                               <div class="flip-box-front text-center">
                                  <div class="inner ">
                                     <div class="img-box">
-                                       <img src="img/house.png" alt="" class="product-image">
+                                       <?php $frontImagePath = ($product_key == 1) ? "img/house.png" : (($product_key == 3) ? "img/truck.png" : "img/edu.png"); ?>
+                                       <img src='<?=$frontImagePath ?>' alt="" class="product-image">
                                     </div><br>
                                     <h3 class="flip-box-header product-detail">
                                        <?= $product['product_title'] ?>
@@ -174,9 +176,9 @@ $conn->close();
                                  <div class="inner ">
                                     <div class="d-flex justify-content-center">
                                        <a class=" nav-link btn btn-sm btn-theme-sec me-3 <?= basename($_SERVER['REQUEST_URI']) == 'home-construction-loan.php' ? 'active' : '' ?>"
-                                          href="home-construction-loan.php">Know More</a>
+                                          href="javascript:void(0)" onclick = "briefDescription('<?= $product['loan_category'] ?>')">Know More</a>
                                        <a class=" nav-link btn btn-sm btn-theme-sec <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
-                                          href="apply-now.php">Apply Now</a>
+                                          href="javascript:void(0)" onclick = "redirectToApplyNowPage('<?= $product['loan_category'] ?>')">Apply Now</a>
                                     </div>
                                  </div>
                               </div>
