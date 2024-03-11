@@ -33,9 +33,9 @@
                   <li><a href="terms-use.php">Disclaimer</a></li>
                </ul>
             </div>
-            <div class="footer-col ">
-               <h4>Follow Us On</h4>
-               <div class="social-links">
+            <div class="footer-col four">
+               <h4 class="follow">Follow Us On</h4>
+               <div class="social-links follow">
                   <a href="https://www.facebook.com/people/Tiffany-Finance/pfbid02MXV5FuStbKA9bADsnGdSFH5VffKNupuXhsRhCrExsLsPFpPJtdD3BbxiqoJGk9uCl/?mibextid=uzlsIk"><i class="fab fa-facebook-f"></i></a>
                   <a href="#"><i class="fab fa-twitter"></i></a>
                   <a href="https://www.instagram.com/tiffany_finance/?igsh=MTA0eWV6aXhkdjRlaA%3D%3D&utm_source=qr"><i class="fab fa-instagram"></i></a><br>
@@ -44,8 +44,8 @@
                   <a href="https://wa.me/6377965063"><i class="fab fa-whatsapp"></i></a>
                   <br><br>
                   <p class="address">Tiffany Finance Private Limited</p>
-                  <p>CIN - U67190RJ2017PTC057988<br>
-                     Head Office Address - 1<sup>st</sup> Floor, Tiffany Tower, Bhilwara-311001, Rajasthan </p><br>
+                  <p class="cin">CIN - U67190RJ2017PTC057988<br>
+                     H O - 1<sup>st</sup> Floor, Tiffany Tower, Bhilwara-311001, Rajasthan </p>
                   <a href="tel:1800-890-6544" class="phone-icon"><i class="fa fa-phone"></i></a><span>1800-890-6544</span><br>
                   <a href="mailto:info@tiffanyfinance.com"><i class="fas fa-envelope"></i></a><span>info@tiffanyfinance.com</span>
                </div>

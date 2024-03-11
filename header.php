@@ -15,7 +15,7 @@
                         <a class="nav-link <?= basename($_SERVER['REQUEST_URI']) == 'index.php' || basename($_SERVER['REQUEST_URI']) == '' ? 'active' : '' ?>" aria-current="page" href="index.php">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle <?= basename($_SERVER['REQUEST_URI']) == 'About.php' ? 'active' : '' ?>" aria-current="page" href="About.php" id="navbarDropdownabout" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
+                        <a class="nav-link  <?= basename($_SERVER['REQUEST_URI']) == 'About.php' ? 'active' : '' ?>" aria-current="page" href="About.php" id="navbarDropdownabout" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us <i class="ms-1 fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownabout">
                             <li onclick = 'redirectToParticularDiv("About.php", "who-we-are")'>
                                 <a class="dropdown-item">Who We Are?</a>
@@ -33,8 +33,8 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle <?= in_array(basename($_SERVER['REQUEST_URI']), ['loan-against-property.php', 'home-construction-loan.php', 'commercial-vehicle-loan.php', 'personal-loan.php', 'business-loan.php']) ? 'active' : '' ?>" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false"> Products 
+                        <a class="nav-link  <?= in_array(basename($_SERVER['REQUEST_URI']), ['loan-against-property.php', 'home-construction-loan.php', 'commercial-vehicle-loan.php', 'personal-loan.php', 'business-loan.php']) ? 'active' : '' ?>" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"> Products <i class=" ms-1 fa fa-angle-down"></i>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li>
@@ -58,8 +58,8 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown" >
-                        <a class="nav-link dropdown-toggle <?= basename($_SERVER['REQUEST_URI']) == 'career.php' ? 'active' : '' ?>" href="career.php"
-                         id="navbarDropdowncareer" role="button"  data-bs-toggle="dropdown" aria-expanded="false">Career</a>
+                        <a class="nav-link  <?= basename($_SERVER['REQUEST_URI']) == 'career.php' ? 'active' : '' ?>" href="career.php"
+                         id="navbarDropdowncareer" role="button"  data-bs-toggle="dropdown" aria-expanded="false">Career <i class="ms-1 fa fa-angle-down"></i></a>
                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li>
                                 <a class="dropdown-item ">Life At Tiffany</a>
@@ -68,7 +68,7 @@
                                 <a class="dropdown-item ">Benefits And Perks  </a>
                             </li>
                             <li>
-                                <a class="dropdown-item ">What Our Employees Feel About Us?</a>
+                                <a class="dropdown-item ">What Our Employees <br>Feel About Us?</a>
                             </li>
                             <li>
                                 <a class="dropdown-item ">Apply For Job</a>

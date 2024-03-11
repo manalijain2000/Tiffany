@@ -36,14 +36,14 @@ $conn->close();
    <div class="container-fluid p-0 ">
       <div class=" header-slider home-slider  ">
          <div class="carousel-items">
-            <img src="img/slider/umeed.jpeg" class="d-block w-100" alt="...">
+            <img src="img/slider/umeed.jpeg" class="d-block w-100 img-height" alt="...">
             <div class="carousel-caption">
                <div class="header-box">
                   <div class="carusel-text">
-                     <h5 class="inner-text">Kya aapko kabhi umeed se zyada </h5>
+                     <h5 class="inner-text">Kya aapko kabhi <strong>umeed se zyada</strong> </h5>
                   </div>
                   <div class="carusel-text-inside">
-                     <h5 class="inner-text second-line">loan mila hai?</h5>
+                     <h5 class="inner-text mila-hai">loan  mila hai?</h5>
                      <a class=" btn btn-sm btn-theme-sec aapko <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
                         href="apply-now.php">Apply Now</a>
                   </div>
@@ -51,7 +51,7 @@ $conn->close();
             </div>
          </div>
          <div class="carousel-items">
-            <img src="img/slider/loan.png" class="d-block w-100" alt="...">
+            <img src="img/slider/loan.png" class="d-block w-100 img-height" alt="...">
             <div class="carousel-caption  ">
                <div class="header-box">
                   <div class="carusel-text">
@@ -68,7 +68,7 @@ $conn->close();
          </div>
 
          <div class="carousel-items">
-            <img src="img/slider/vechile.png" class="d-block w-100" alt="...">
+            <img src="img/slider/vechile.png" class="d-block w-100 img-height" alt="...">
             <div class="carousel-caption  ">
                <div class="header-box">
                   <div class="carusel-text">
@@ -83,7 +83,7 @@ $conn->close();
             </div>
          </div>
          <div class="carousel-items">
-            <img src="img/slider/personal.png" class="d-block w-100" alt="...">
+            <img src="img/slider/personal.png" class="d-block w-100 img-height" alt="...">
             <div class="carousel-caption  ">
                <div class="header-box">
                   <div class="carusel-text">
@@ -98,7 +98,7 @@ $conn->close();
             </div>
          </div>
          <div class="carousel-items">
-            <img src="img/slider/business.png" class="d-block w-100" alt="...">
+            <img src="img/slider/business.png" class="d-block w-100 img-height" alt="...">
             <div class="carousel-caption  ">
                <div class="header-box">
                   <div class="carusel-text">
@@ -127,7 +127,7 @@ $conn->close();
                               <div class="flip-box-front flip-box-front-top text-center">
                                  <div class="inner ">
                                     <div class="img-box ">
-                                       <?php $frontImagePath = ($product_key == 0) ? "img/loans.png" : (($product_key == 2) ? "img/two.png" : "img/two.png" ); ?>
+                                       <?php $frontImagePath = ($product_key == 0) ? "img/loans.png" : (($product_key == 2) ? "img/two.png" : "img/edu.png" ); ?>
                                        <img src='<?=$frontImagePath ?>' alt="" class="product-image">
                                     </div><br>
                                     <h3 class="flip-box-header product-detail">
@@ -144,7 +144,7 @@ $conn->close();
                                     <div class="d-flex justify-content-center">
                                        <a class=" nav-link btn btn-sm btn-theme-sec me-3 <?= basename($_SERVER['REQUEST_URI']) == 'loan-against-property.php' ? 'active' : '' ?>"
                                           href="javascript:void(0)" onclick = "briefDescription('<?= $product['loan_category'] ?>')">Know More</a>
-                                       <a class=" nav-link btn btn-sm btn-theme-sec <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
+                                          <a class=" nav-link btn btn-sm btn-theme-sec <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
                                           href="javascript:void(0)" onclick = "redirectToApplyNowPage('<?= $product['loan_category'] ?>')">Apply Now</a>
                                     </div>
                                  </div>
@@ -159,7 +159,7 @@ $conn->close();
                               <div class="flip-box-front text-center">
                                  <div class="inner ">
                                     <div class="img-box">
-                                       <?php $frontImagePath = ($product_key == 1) ? "img/house.png" : (($product_key == 3) ? "img/truck.png" : "img/edu.png"); ?>
+                                       <?php $frontImagePath = ($product_key == 1) ? "img/house.png" : (($product_key == 3) ? "img/truck.png" : "img/bl1.png"); ?>
                                        <img src='<?=$frontImagePath ?>' alt="" class="product-image">
                                     </div><br>
                                     <h3 class="flip-box-header product-detail">
@@ -172,7 +172,7 @@ $conn->close();
                                  </div>
                               </div>
                               <div class="flip-box-back text-center"
-                                 style="background-image: url('<?= $product['product_url'] ?>');">
+                                 style="background-image: url('<?= $product['product_url'] ?>'); ">
                                  <div class="inner ">
                                     <div class="d-flex justify-content-center">
                                        <a class=" nav-link btn btn-sm btn-theme-sec me-3 <?= basename($_SERVER['REQUEST_URI']) == 'home-construction-loan.php' ? 'active' : '' ?>"
@@ -194,7 +194,7 @@ $conn->close();
 
    <div class="container-fluid mt-5 why-us-box  ">
       <div class="container   py-5">
-         <h3 class="text-center heading mb-3 long-heading">Why People love Tiffany Finance?</h3>
+         <h3 class="text-center heading mb-5 long-heading">Why People love Tiffany Finance?</h3>
          <p class="product-detail"> Because we are the first priority for our customers since 2017. Our customers trust on us and are
             happy with the services we are delivering. We help you achieve your milestones at different stages of life
             and be with you in all your aspirations and dreams. We believe that our team of experienced professionals
@@ -204,37 +204,37 @@ $conn->close();
          <div class="row mt-5">
             <div class="col-md-2 mb-3 mb-md-0">
                <div class="card-box text-center icon">
-                  <img src="img/Icons/1_Customer Focused.png" alt="">
+                  <img src="img/Icons/1_Customer Focused.png" alt="" width="50" height="50">
                   <h6 class="mt-2">Customer Focused </h6>
                </div>
             </div>
             <div class="col-md-2  mb-3 mb-md-0">
                <div class="card-box text-center icon">
-                  <img src="img/Icons/2._Flexible Approach.png" alt="">
+                  <img src="img/Icons/2._Flexible Approach.png" alt=""width="50" height="50">
                   <h6 class="mt-2">Flexible Approach</h6>
                </div>
             </div>
             <div class="col-md-2  mb-3 mb-md-0">
                <div class="card-box text-center icon">
-                  <img src="img/Icons/3._Transparent.png" alt="">
+                  <img src="img/Icons/3._Transparent.png" alt=""width="50" height="50">
                   <h6 class="mt-2">Transparent</h6>
                </div>
             </div>
             <div class="col-md-2  mb-3 mb-md-0">
                <div class="card-box text-center icon">
-                  <img src="img/Icons/4_Quick.png" alt="">
+                  <img src="img/Icons/4_Quick.png" alt="" width="50" height="50">
                   <h6 class="mt-2">Quick</h6>
                </div>
             </div>
             <div class="col-md-2  mb-3 mb-md-0">
                <div class="card-box text-center icon">
-                  <img src="img/Icons/5_Reasonable.png" alt="">
+                  <img src="img/Icons/5_Reasonable.png" alt="" width="50" height="50">
                   <h6 class="mt-2">Reasonable</h6>
                </div>
             </div>
             <div class="col-md-2  mb-3 mb-md-0">
                <div class="card-box text-center icon">
-                  <img src="img/Icons/6_Solution Oriented.png" alt="">
+                  <img src="img/Icons/6_Solution Oriented.png" alt="" width="50" height="50">
                   <h6 class="mt-2">Solution Oriented</h6>
                </div>
             </div>
@@ -358,7 +358,7 @@ $conn->close();
                      <div class="col-md-5 align-self-center">
                         <div class="img-box">
                            <div>
-                              <img src=<?= $customerReview['customer_image'] ? $customerReview['customer_image'] : '"img/client2.png"' ?> alt="" class=" " style="height:300px;">
+                              <img src=<?= $customerReview['customer_image'] ? $customerReview['customer_image'] : '"img/client2.png"' ?> alt="" class=" " >
                            </div>
                         </div>
                      </div>
@@ -371,18 +371,19 @@ $conn->close();
                         <p class="mb-0 mt-3  text-theme   name">
                            <?= $customerReview['customer_review'] ?>
                         </p>
-                        <span class="d-block text-end">
+                       
+                        <div class="d-flex mb-3 flex-wrap justify-content-between">
+                           <span class="fw-bold d-block text-theme  fs-5 mt-3 ">
+                              <?= $customerReview['customer_name'] ?>
+                           </span>
+                        </div>
+                        <span class="d-block text-end mt-4">
                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 130 78" fill="none"
                               style="transform: rotate(180deg);">
                               <path fill-rule="evenodd" clip-rule="evenodd"
                                  d="M52 0V52H26V78H0V0H52ZM130 0H78V78H104V52H130V0Z" fill="#2c2e53" />
                            </svg>
                         </span>
-                        <div class="d-flex mb-3 flex-wrap justify-content-between">
-                           <span class="fw-bold d-block text-theme  mt-5 fs-5 ">
-                              <?= $customerReview['customer_name'] ?>
-                           </span>
-                        </div>
                      </div>
 
                   </div>
@@ -396,7 +397,7 @@ $conn->close();
       <h5 class="text-center heading">Our Partners</h5>
       <div class="row partner-box mt-5 pt-4 justify-content-center">
          <?php foreach ($bankPartners as $bankPartner) { ?>
-            <div class="img-box">
+            <div class="img-box img-direction">
                <img src="<?= $bankPartner['bank_image'] ?>" alt="" class="bank-partners">
             </div>
          <?php } ?>
@@ -446,6 +447,35 @@ $conn->close();
    $('#caroasal-item-1').on('click', function () {
       console.log('dksnjd')
    })
+
+   $(document).ready(function(){
+    $('.header-slider').carousel();
+    
+    // Set different intervals for each slide
+    $('.carousel-item:nth-child(1)').delay(10000).queue(function(next){
+        $(this).addClass('active');
+        next();
+    });
+    $('.carousel-item:nth-child(2)').delay(7000).queue(function(next){
+        $(this).addClass('active');
+        next();
+    });
+    $('.carousel-item:nth-child(3)').delay(7000).queue(function(next){
+        $(this).addClass('active');
+        next();
+    });
+    $('.carousel-item:nth-child(4)').delay(7000).queue(function(next){
+        $(this).addClass('active');
+        next();
+    });
+    $('.carousel-item:nth-child(5)').delay(7000).queue(function(next){
+        $(this).addClass('active');
+        next();
+    });
+    // Add more slides and adjust the delay for each as needed
+});
+
+
    // jQuery('.slick-slider').on('click', '.slick-slide', function (e) {
    //    e.stopPropagation();
    //    // console.log(e)
