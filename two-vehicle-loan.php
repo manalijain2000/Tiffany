@@ -30,7 +30,7 @@ $conn->close();
   <?php include('header.php') ?>
   <div class="container-fluid p-0 banner-header">
     <div class=" header-slider">
-      <img src="img/about.jpg" class="d-block w-100" alt="Privacy-policy">
+      <img src="img/tifinay1.png" class="d-block w-100" alt="Privacy-policy">
       <h3 class="heading">Two-Wheeler Loan</h3>
     </div>
   </div>
@@ -76,26 +76,23 @@ EMIs so that you can very comfortably repay without any burden.</p>
 
   <div class="container mt-5">
     <div class="row">
-      <h3 class=" mb-3">
-      Eligibility Criteria for Two-Wheeler Loan
-      </h3>
-
+    <h4 class="heading mb-3 text-center">Eligibility Criteria for Two-Wheeler Loan</h4>
       <div class="col-md-12">
-        <div class="card p-2">
+        <div class=" p-2">
          
           <p class="text-dark">
-          At Tiffany Finance, we understand that how much a two-wheeler matters at every household in India,
-hence owning one gives a lot of comfort, convenience and a sense of independence. Looking at eligibility
-criteria is important because if you meet all the criteria, your chances of loan approval are maximized.
-          </p>
+          At Tiffany Finance, we understand that how much a
+           two-wheeler matters at every household in India,
+            hence owning one gives a lot of comfort, convenience and
+             a sense of independence. Looking at eligibility criteria is important because
+           if you meet all the criteria, your chances of loan approval are maximized.   </p>
           <p class="text-dark">Check whether you are eligible for a Two-Wheeler Loan from below checklist:</p>
-          <ul>
-            <li>1 . You must be an Indian resident</li>
-            <li>2 . Your age should be at least 18 years when you apply for loan and maximum 65 years at the time
-your loan matures.</li>
-            <li>3 . Co-applicant is compulsory if your age is between 18-20 years.</li>
+          <ul style="list-style-type:disc;">
+            <li> You must be an Indian resident</li>
+            <li> Your age should be at least 18 years when you apply for loan and maximum 65 years at the timeyour loan matures.</li>
+            <li> Co-applicant is compulsory if your age is between 18-20 years.</li>
 
-            <li>4 . Your CIBIL Score matters a lot, a CIBIL Score above 650 is qualified for the loan.</li>
+            <li> Your CIBIL Score matters a lot, a CIBIL Score above 650 is qualified for the loan.</li>
 
            
           </ul>
@@ -499,7 +496,7 @@ You can hit and try different values in the EMI calculator and can get the best 
                 <div id="collapseOne<?= $faq['faq_id'] ?>" class="accordion-collapse collapse" aria-labelledby="headingOne<?= $faq['faq_id'] ?>"
                     data-bs-parent="#accordionExample<?= $faq['faq_id'] ?>">
                     <div class="accordion-body">
-                        <p> <?= $faq['answer'] ?> </p>
+                        <p class="paragraph"> <?= $faq['answer'] ?> </p>
                     </div>
                 </div>
             </div>

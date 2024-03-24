@@ -20,12 +20,13 @@
     <?php include('header.php') ?>
     <div class="container-fluid p-0 banner-header">
      <div class=" header-slider">
-       <img src="img/about.jpg" class="d-block w-100" alt="Privacy-policy">
-       <h3 class="heading">Terms Of Use</h3>
+       <img src="img/tifinay1.png" class="d-block w-100" alt="Privacy-policy">
+       <h3 class="heading">Fair Pratice Code</h3>
      </div>
    </div>
+   <h3 class="heading mb-5">Fair Pratice Code</h3>
    <div class="container terms-box mt-5">
-     <p class="paragraph"> Tiffany Finance Pvt. Ltd. is committed to upholding the highest standards of fairness, transparency, and integrity in all our dealings with customers. Our Fair Practice Code outlines the principles and practices that guide our interactions with our customers: </ class="paragraph">
+     <p class="paragraph fs-5"> Tiffany Finance Pvt. Ltd. is committed to upholding the highest standards of fairness, transparency, and integrity in all our dealings with customers. Our Fair Practice Code outlines the principles and practices that guide our interactions with our customers: </ class="paragraph">
      <h4> Transparency and Clarity </h4>
      <p class="paragraph">We provide clear, accurate, and comprehensive information about our products, services, terms, and conditions to enable customers to make informed decisions.</p>
      <h4 class="mt-2">Fair Treatment</h4>

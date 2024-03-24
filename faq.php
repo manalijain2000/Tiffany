@@ -36,16 +36,16 @@ $conn->close();
     </div>
     <div class = "container-fluid  mt-0">
         <div class="row align-items-center">
-            <div class="col-md-5">
+            <!-- <div class="col-md-5">
                 <img src="img/faq.jpg" class="img-fluid" alt="">
-            </div>
+            </div> -->
             <div class="col-md-7 mt-3">
                 <div class="faq-box">
                      <?php foreach ($faqs as $faq) { ?>
                             <div class="accordion  mb-2" id="accordionExample<?= $faq['faq_id'] ?>">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne<?= $faq['faq_id'] ?>">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        <button class="accordion-button w-100" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#collapseOne<?= $faq['faq_id'] ?>" aria-expanded="false"
                                             aria-controls="collapseOne<?= $faq['faq_id'] ?>">
                                             <?= $faq['question'] ?>
@@ -55,7 +55,7 @@ $conn->close();
                                         aria-labelledby="headingOne<?= $faq['faq_id'] ?>"
                                         data-bs-parent="#accordionExample<?= $faq['faq_id'] ?>">
                                         <div class="accordion-body">
-                                            <p>
+                                            <p class="paragraph">
                                                 <?= $faq['answer'] ?>
                                             </p>
                                         </div>

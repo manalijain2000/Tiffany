@@ -21,12 +21,12 @@
   <?php include('header.php') ?>
   <div class="container-fluid p-0 banner-header">
     <div class=" header-slider">
-      <img src="img/about.jpg" class="d-block w-100" alt="...">
+      <img src="img/tifinay1.png" class="d-block w-100" alt="...">
       <h3 class="heading">Career</h3>
     </div>
   </div>
   <div class="container mt-5">
-    <h4 class="heading text-center">
+    <h4 class="heading text-center" id="lifeattiffany">
       Life at Tiffany
     </h4>
     <p class="paragraph">At Tiffany Finance, we've created an environment where every day is an opportunity to learn, grow, and
@@ -48,7 +48,7 @@
 
     <div class="row justify-content-around">
       <div class="col-md-1">
-        <img src="img/life/diversity.png" class="w-100" alt="">
+          <img src="img/diversity.png" class="w-100" alt="">
         <h5>Diversity</h5>
       </div>
       <div class="col-md-1">
@@ -81,7 +81,7 @@
   </div>
 
 
-  <div class="container py-5 card-box-main">
+  <div class="container py-5 card-box-main" id="benefitsandperks">
     <div class="row">
       <h4 class="heading text-center mb-4">
         Benefits and Perks
@@ -124,7 +124,7 @@
   </div>
 
 
-  <div class="container mt-0 px-3 ">
+  <div class="container mt-0 px-3 " id="ouremployee">
     <div class="row">
       <h4 class="heading text-center long-heading mb-4 ">What Our Employees Feel About Us?</h4>
       <div class="team-slider">
@@ -222,16 +222,16 @@
     </div>
   </div>
 
-  <div class="container-fluid enquire-box pt-5 mt-4">
+  <div class="container-fluid enquire-box pt-5 mt-4" id="applyforjob">
     <div class="enq-form">
 
 
       <ul class="nav nav-pills mb-0 justify-content-center" id="pills-tab" role="tablist">
-        <li class="nav-item " role="presentation">
+        <li class="nav-item applying " role="presentation">
           <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
             type="button" role="tab" aria-controls="pills-home" aria-selected="true">Apply For Job</button>
         </li>
-        <li class="nav-item" role="presentation">
+        <li class="nav-item applying" role="presentation">
           <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
             type="button" role="tab" aria-controls="pills-profile" aria-selected="false"> Become our partner</button>
         </li>
@@ -312,7 +312,7 @@
       </div>
 
       <!-- investor -->
-      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" id="applyforjob">
         <div class="row justify-content-center">
           <div class="col-md-12  p-4 " id='investor-applicant-form'>
             <!-- <h4 class="heading mb-4 text-center">Become Our partner</h4> -->

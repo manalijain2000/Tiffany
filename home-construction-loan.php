@@ -30,7 +30,7 @@ $conn->close();
   <?php include('header.php') ?>
   <div class="container-fluid p-0 banner-header">
     <div class=" header-slider">
-      <img src="img/about.jpg" class="d-block w-100" alt="Privacy-policy">
+      <img src="img/tifinay1.png" class="d-block w-100" alt="Privacy-policy">
       <h3 class="heading">Home Construction Loan</h3>
     </div>
   </div>
@@ -139,7 +139,7 @@ $conn->close();
 
 
         <h4 class="heading">Eligibility Criteria for Home Construction Loan</h4>
-        <ul>
+        <ul style="list-style-type:disc;">
           <li>Your age should be 21 at the time of loan application and 65 at the time of loan maturity. </li>
           <li>Minimum loan tenure is 2 year and maximum are 12 years. </li>
           <li>For salaried individuals, ₹30,000 salary monthly and a minimum of three-year work experience is required.
@@ -505,7 +505,7 @@ $conn->close();
           <div id="collapseOne<?= $faq['faq_id'] ?>" class="accordion-collapse collapse"
             aria-labelledby="headingOne<?= $faq['faq_id'] ?>" data-bs-parent="#accordionExample<?= $faq['faq_id'] ?>">
             <div class="accordion-body">
-              <p>
+              <p class="paragraph">
                 <?= $faq['answer'] ?>
               </p>
             </div>

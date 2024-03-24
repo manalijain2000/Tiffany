@@ -20,28 +20,28 @@
   <?php include('header.php') ?>
   <div class="container-fluid p-0 banner-header">
     <div class=" header-slider">
-      <img src="img/contact.jpg" class="d-block w-100" alt="Privacy-policy">
+      <img src="img/tifinay1.png" class="d-block w-100" alt="Privacy-policy">
       <h3 class="heading">Contact Us </h3>
     </div>
   </div>
   <div class="container-fluid p-0 py-5  contact-box">
     <ul class="nav nav-pills pt-5 mb-3 justify-content-center" id="pills-tab" role="tablist">
-      <li class="nav-item" role="presentation">
+      <li class="nav-item fs-4" role="presentation">
         <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
           type="button" role="tab" aria-controls="pills-home" aria-selected="true">Reach Us</button>
       </li>
-      <li class="nav-item" role="presentation">
+      <li class="nav-item fs-4" role="presentation">
         <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
           type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Branch Locator</button>
       </li>
-      <li class="nav-item" role="presentation">
+      <li class="nav-item fs-4" role="presentation">
         <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
           type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Suggestions/Feedback</button>
       </li>
-      <li class="nav-item" role="presentation">
+      <!-- <li class="nav-item" role="presentation">
         <button class="nav-link" id="pills-g-tab" data-bs-toggle="pill" data-bs-target="#pills-g" type="button"
           role="tab" aria-controls="pills-g" aria-selected="false">Grievance Redressal/ Complaints</button>
-      </li>
+      </li> -->
     </ul>
     <div class="tab-content px-5" id="pills-tabContent">
       <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
@@ -53,7 +53,7 @@
               <div class="card-body">
                 <div class="d-flex align-items-center">
                   <i class="fas fa-phone-alt"></i>
-                  <p class="mb-0 ms-4">Toll Free <a href="tel:+1800-890-6544"
+                  <p class="mb-0 ms-4 paragraph">Toll Free <a href="tel:+1800-890-6544"
                       class="d-block text-dark">1800-890-6544</a>
                   </p>
                 </div>
@@ -79,7 +79,7 @@
               <div class="card-body">
                 <div class="d-flex align-items-center">
                   <i class="fas fa-map-marker-alt"></i>
-                  <p class="mb-0 ms-4"> 1 st Floor, Tiffany Finance, Tiffany Tower, Bhilwara, Rajasthan, 311001 </p>
+                  <p class="mb-0 ms-4 paragraph"> 1 st Floor, Tiffany Finance, Tiffany Tower, Bhilwara, Rajasthan, 311001 </p>
                 </div>
               </div>
             </div>

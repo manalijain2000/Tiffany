@@ -20,11 +20,12 @@
     <?php include('header.php') ?>
     <div class="container-fluid p-0 banner-header">
         <div class=" header-slider">
-            <img src="img/about.jpg" class="d-block w-100" alt="Privacy-policy">
-            <h3 class="heading">Terms Of Use</h3>
+            <img src="img/tifinay1.png" class="d-block w-100" alt="Privacy-policy">
+            
         </div>
     </div>
     <div class="container terms-box mt-5">
+    <h3 class="heading mb-5">Terms & Conditions</h3>
         <div>
           <p class="paragraph">Welcome to Tiffany Finance Private Limited website. By accessing this website, you agree to comply with and be bound by the following terms and conditions of use. If you disagree with any part of these terms and conditions, please do not use our website. </p>
             <ol>
@@ -147,21 +148,7 @@
                 TFPL shall not be restricted or withheld from instituting proceedings in courts/ tribunals of any
                 jurisdiction other than Bhilwara that it may in its sole discretion deem appropriate and convenient</p>
         </div>
-        <div>
-            <h4>Disclaimer</h4>
-            <p class="paragraph">The information provided on this website is for general informational purposes only. It does not constitute financial, legal, or professional advice. While we strive to keep the information up to date and accurate, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk.</p>
-                <p class="paragraph">In no event will Tiffany Finance Pvt. Ltd. be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits resulting out of, or in connection with, the use of this website.</p>
-                <p class="paragraph">Through this website, you can link to other websites that are not under the control of Tiffany Finance
-                    Pvt. Ltd. We have no control over the nature, content, and availability of those sites. The inclusion 
-                    of any links does not necessarily imply a recommendation or endorsement of the views expressed within them.
-                <br>Every effort is made to keep the website up and running smoothly. However, Tiffany Finance Pvt. Ltd. takes 
-                no responsibility for, and will not be liable for, the website being temporarily unavailable due 
-                to technical issues beyond our control.
-                <br>The use of this website and the information contained herein shall be governed by and construed 
-                in accordance with the laws of India.
-                By using this website, you hereby consent to our disclaimer and agree to its terms.
-                </p>
-        </div>
+       
     </div>
 
     <!-- Remove the container if you want to extend the Footer to full width. -->

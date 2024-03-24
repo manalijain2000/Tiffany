@@ -32,9 +32,9 @@ $conn->close();
   <?php include('header.php') ?>
   <div class="container-fluid p-0 banner-header">
     <div class=" header-slider">
-      <img src="img/about.jpg" class="d-block w-100 loan-header" alt="...">
+      <img src="img/tifinay1.png" class="d-block w-100 loan-header" alt="...">
 
-      <div class="top-left">Your Trusted Financial Preferred Lender</div>
+      <div class="top-left"><h2>Your <span class="tfpl">T</span>rusted <span class="tfpl">F</span>inancial <span class="tfpl">P</span>referred <span class="tfpl">L</span>ender</h2></div>
     </div>
   </div>
   <div class="container mt-5" id = "who-we-are">
@@ -57,9 +57,13 @@ $conn->close();
 
     </div>
   </div>
+  <div class="container text-center" id = "our-values">
+  <h4 class="heading text-center  mt-5 ">Our Values</h4>
+   <img src="img/values.png" class="values">
+  </div>
   <div class="container-fluid" id="vision-n-mission">
     <div class="container-fluid">
-        <div class="row justify-content-center  mt-5 py-5">
+        <div class="row justify-content-center  mt-3 py-5">
             <h4 class="heading text-center mb-4">Our Vision & Mission</h4>
             <div class="col-md-12 col-lg-6 p-4 bg-theme vission-mission"> <!-- Changed col-md-5 to col-md-12 and added col-lg-6 -->
                 <img src="img/values/vision.png" class="vision-img">
@@ -71,71 +75,12 @@ $conn->close();
                 <span class="fs-1">Mission</span><br><br>
                 <p>Mission Statement: To provide sustainable financing and reach the maximum number of underserved micro, small, and medium enterprises by providing them easy and quick loans at the best interest rate possible, hence creating a positive impact on economic growth and contributing to financial inclusion.</p>
             </div>
+            
         </div>
     </div>
 </div>
 
-  <div class="container" id = "our-values">
-    <div class="row mt-5 values-box">
-      <h5 class="heading text-center mb-4">Our Core Values</h5>
-      <div class="row">
-        <div class="col  mb-3">
-          <div class="text-center">
-            <img src="img/values/integrity.png" class="values">
-            <br>
-            <h4 class="value-des">Integrity</h4>
-          </div>
-        </div>
-        <div class="col  mb-3">
-          <div class="text-center ">
-            <img src="img/values/trust.png" class="values">
-            <br>
-            <h4 class="value-des">Trust</h4>
-          </div>
-        </div>
-        <div class="col mb-3">
-          <div class="text-center">
-            <img src="img/values/bulb.png" class="values">
-            <h4 class="value-des">Innovation</h4>
-          </div>
-        </div>
-        <div class="col mb-3">
-          <div class="text-center">
-            <img src="img/values/team work.png" class="values">
-            <h4 class="value-des">Team Work</h4>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col  mb-3">
-          <div class="text-center">
-            <img src="img/values/growth.png" class="values">
-            <h4 class="value-des">Growth</h4>
-          </div>
-        </div>
-        <div class="col  mb-3">
-          <div class="text-center">
-            <img src="img/values/leadership.png" class="values">
-            <h4 class="value-des">Leadership</h4>
-          </div>
-        </div>
-        <div class="col  mb-3">
-          <div class="text-center">
-            <img src="img/values/qs.png" class="values">
-            <h4 class="value-des">Quality Service</h4>
-          </div>
-        </div>
-        <div class="col  mb-3">
-          <div class="text-center">
-            <img src="img/values/respect.png" class="values">
-            <h4 class="value-des">Respect</h4>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </div>
+ 
   <div class="container" id='our-team'>
     <div class="row mt-5 meet-team-box justify-content-between">
       <h4 class="heading text-center mb-4 ">Meet The Team</h4>

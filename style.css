@@ -1016,10 +1016,15 @@ input[type="range"]:focus::-ms-fill-upper {
 
 .top-left {
   position: absolute;
-  top: 70%;
-  left: 6%;
-  font-size: 30px;
+  top: 55%;
+  left: 3%;
+  font-size: 50px;
   font-weight: bold;
+  color:#2d2f54;
+}
+.tfpl{
+  color: #ffcc29;
+  font-size: 50px;
 }
 .values-box .card {
   padding: 10px;
@@ -1360,7 +1365,7 @@ background:linear-gradient(to right, #2196F3, #FF8C00, #FFC107);
 }
 
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 8px;
 }
 .card-feel::-webkit-scrollbar {
   width: 5px;
@@ -2181,7 +2186,7 @@ a {
 
 .home-slider .header-box {
   position: relative;
-  z-index: 1;
+  z-index:1;
 }
 
 .home-slider .header-box::before {
@@ -2196,6 +2201,7 @@ a {
   top: -80px;
   border-right: 0px !important;
   z-index: -2;
+  
 }
 
 .home-slider .header-box .inner-text {
@@ -2310,9 +2316,9 @@ a {
 
 .dropdown-item.active,
 .dropdown-item:active {
-  color: #fff !important;
+  color: black !important;
   text-decoration: none;
-  background-color: #2c2e53 !important;
+  /* background-color: #2c2e53 !important; */
 }
 
 .enq-form {
@@ -2962,11 +2968,11 @@ right: 0;
 /* changes */
 .logo-img{
   margin-left: 15px;
-  margin-top:15px;
+  margin-top:10px;
 }
 .nav-item{
   margin: 15px;
-  margin-top: 60px;
+  margin-top: 40px;
   font-size: 15px;
 }
 .product-image{
@@ -2996,9 +3002,13 @@ right: 0;
 }
 .aapko{
   margin-top: 15px;
-  background-color: #2c2e53;
-  color:white;
+  background-color: #2c2e53!important;
+  color:white !important;
   width:90px;
+}
+.aapko:hover{
+  background-color: #ffcc29!important;
+  color:black !important;
 }
 .values{
   width:80px;
@@ -3162,3 +3172,35 @@ color: #f2c744!important;
   background-color: transparent!important;
 }
 /* this code end for header sub menu when we need submenu as moneybox.com */
+
+
+
+.contactusbtn{
+  width:100px;
+  background-color: #2c2e53;
+  color:white;
+}
+.amountrange{
+  display: flex;
+  justify-content: space-between;
+}
+.applying{
+  margin-top: 6px !important;
+  
+}
+.nav-pills .nav-link:hover{
+  color:#03A9F4;
+}
+.values{
+  width: 40%;
+  height: auto;
+}
+.custom-table-responsive {
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+}
+.table {
+  margin-bottom: 0;
+  max-width: 100%;
+}

@@ -30,7 +30,7 @@ $conn->close();
   <?php include('header.php') ?>
   <div class="container-fluid p-0 banner-header">
     <div class=" header-slider">
-      <img src="img/about.jpg" class="d-block w-100" alt="Privacy-policy">
+      <img src="img/tifinay1.png" class="d-block w-100" alt="Privacy-policy">
       <h3 class="heading">Personal Loan </h3>
     </div>
   </div>
@@ -63,10 +63,10 @@ $conn->close();
   </div>
   <div class="container mt-5">
     <div class="row">
-      <div class="col-md-6">
-        <div class="card p-2 h-100">
-          <h5>Eligibility Criteria for Personal Loan </h5>
-          <ul>
+      <div class="">
+        <div class=" p-2 h-100">
+        <h4 class="heading mb-3 text-center">Eligibility Criteria for Personal Loan</h4>
+          <ul style="list-style-type:disc;">
             <li>Indian residency is a mandatory requirement.</li>
             <li>To apply for a personal loan, you need to be between 21 years at the time of loan application and 60
               years at the time of loan maturity. </li>
@@ -78,8 +78,8 @@ $conn->close();
           </ul>
         </div>
       </div>
-      <div class="col-md-6">
-        <div class="card p-2 h-100">
+      <div class="">
+        <div class=" p-2 h-100">
           <h5>Documents Required for Personal Loan</h5>
           <ul>
             <li>Tiffany Finance Loan Application Form filled and signed by the borrower</li>
@@ -397,7 +397,7 @@ $conn->close();
           <div id="collapseOne<?= $faq['faq_id'] ?>" class="accordion-collapse collapse"
             aria-labelledby="headingOne<?= $faq['faq_id'] ?>" data-bs-parent="#accordionExample<?= $faq['faq_id'] ?>">
             <div class="accordion-body">
-              <p>
+              <p class="paragraph">
                 <?= $faq['answer'] ?>
               </p>
             </div>

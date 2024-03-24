@@ -30,7 +30,7 @@ $conn->close();
   <?php include('header.php') ?>
   <div class="container-fluid p-0 banner-header">
     <div class=" header-slider">
-      <img src="img/about.jpg" class="d-block w-100" alt="Privacy-policy">
+      <img src="img/tifinay1.png" class="d-block w-100" alt="Privacy-policy">
       <h3 class="heading">Loan Against Property</h3>
     </div>
   </div>
@@ -140,68 +140,73 @@ $conn->close();
   <div class="container mt-5">
     <div class="row">
       <h4 class="heading">Eligibility Criteria For LAP</h4>
-      <p class="paragraph">Tiffany Finance provides Loan Against Property to all the salaried, self-employed individuals and SMEs and
-        there is a customized loan for each category you belong to. There is a product based on your needs and
-        requirements. How much loan amount you can avail, depends upon the valuation of your property. Like, if you are
-        mortgaging your residential property, you can get loan amount of 60% of the property’s value and if you are
-        mortgaging commercial property, you can get loan amount of 70% of the property’s value. Apart from this, loan
-        amount will depend on certain factors like your age, income, nature of work, the documents you can provide,
-        CIBIL score, your repayment history and other obligations. </p>
-      <div class="card">
-      <h6 class="text-secondary mb-0">Understand the below table to know in detail about eligibility criteria for
-            LAP</h6>
-        <div class="card-body p-0 pt-2 table-responsive">
-          
-          <table class="table table-striped table-hover mt-3 table-primary">
-            <thead>
-              <tr>
-                <th>Criteria</th>
-                <th>Salaried</th>
-                <th>Self-Employed</th>
-                <th>SMEs</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Ownership of Property</td>
-                <td>Must be Self-Occupied </td>
-                <td>Must be Self-Occupied</td>
-                <td>Must be Self-Occupied</td>
-              </tr>
-              <tr>
-                <td> Age </td>
-                <td>Minimum 21 years - 65 years at the time of loan maturity</td>
-                <td>Minimum 25 years - 65 years at the time of loan maturity</td>
-                <td>2 Years Old</td>
-              </tr>
-              <tr>
-                <td>CIBIL Score</td>
-                <td>650+</td>
-                <td>650+</td>
-                <td>Over the last 2 years, financials of the firm should reflect a steady source of profits and the
-                  statements must be audited and authorised by a Chartered Accountant.</td>
-              </tr>
-              <tr>
-                <td> Nationality </td>
-                <td>Indian and must be a resident of India</td>
-                <td>Indian and must be a resident of India </td>
-                <td>Registered as Indian SME and must have operations in India.</td>
-              </tr>
-              <tr>
-                <td>Documents Required</td>
-                <td>KYC Documents Bank statement of last 6 months and salary slips of last 3 months Form 16 Property
-                  Related Documents ITR (Income Tax Returns) of Last 3 years</td>
-                <td> KYC Documents Bank statement of last 6 months Form 16 Property Related Documents ITR (Income Tax
-                  Returns) of Last 3 years Latest Audited Financial Statements Business Registration Proof Latest GST
-                  Returns </td>
-                <td> KYC Documents Bank statement of last 6 months Form 16 Property Related Documents ITR (Income Tax
-                  Returns) of Last 3 years Latest Audited Financial Statements Business Registration Proof Latest GST
-                  Returns </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+      <p class="paragraph">We provide Loan Against Property to all the salaried, 
+        self-employed individuals and SMEs and there is a customized loan for each 
+        category you belong to. There is a product based on your needs and requirements.
+         How much loan amount you can avail, depends upon the valuation of your property.
+          Like, if you are mortgaging your residential property, you can get loan amount 
+          of 60% of the property’s value and if you are mortgaging commercial property,
+           you can get loan amount of 70% of the property’s value. Apart from this, loan 
+           amount will depend on certain factors like your age, income, nature of work,
+            the documents 
+        you can provide, CIBIL score, your repayment history and other obligations. </p>
+        <div class="container mt-3 ">
+        <div class="table-responsive-sm">
+    <table class="table table-bordered mb-0">
+  <thead>
+    <tr>
+      <th style="background-color: #2c2e53; color :white;">Criteria </th>
+      <th style="background-color: #2c2e53; color :white;">Salaried</th>
+      <th style="background-color: #2c2e53; color :white;">Self-Employed </th>
+      <th style="background-color: #2c2e53; color :white;">SMEs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th style="background-color: #2c2e53; color :white;">Ownership of Property</th>
+      <td>Must be Self-Occupied</td>
+      <td>Must be Self-Occupied </td>
+      <td>Must be Self-Occupied</td>
+    </tr>
+    <tr>
+      <th style="background-color: #2c2e53; color :white;">Age</th>
+      <td>Minimum 21 years - 65<br>
+        years at the time of loan
+        maturity</td>
+      <td>Minimum 25 years - 65<br>
+        years at the time of loan
+        maturity</td>
+      <td>2 Years Old</td>
+    </tr>
+    <tr>
+      <th style="background-color: #2c2e53; color :white;">CIBIL Score</th>
+      <td>650+ </td>
+      <td>650+</td>
+      <td>Over the last 2 years,
+        financials <br>of the firm
+        should reflect a steady
+        source of profits<br> and the
+        statements must be
+        audited and authorised<br>
+        by a Chartered
+        Accountant.</td>
+    </tr>
+    <tr>
+      <th style="background-color: #2c2e53; color :white;">Nationality</th>
+      <td>Indian and must be a
+        resident of India</td>
+      <td>Indian and must be a
+        resident of India</td>
+      <td>Registered as Indian SME<br>
+        and must have
+        operations in India.</td>
+
+    </tr>
+    
+  </tbody>
+</table>
+</div>
+</div>
     </div>
   </div>
 
@@ -609,7 +614,7 @@ $conn->close();
           <div id="collapseOne<?= $faq['faq_id'] ?>" class="accordion-collapse collapse"
             aria-labelledby="headingOne<?= $faq['faq_id'] ?>" data-bs-parent="#accordionExample<?= $faq['faq_id'] ?>">
             <div class="accordion-body">
-              <p>
+              <p class="paragraph">
                 <?= $faq['answer'] ?>
               </p>
             </div>

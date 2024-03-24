@@ -20,8 +20,8 @@
 <?php include('header.php') ?>
   
 <div class="container-fluid bg-light mt-5 pt-5">
-    <div class=" card p-4 container ">
-    <div class="row">
+    <div class=" card p-4 container  ">
+    <div class="row mt-5">
         <div class="col-md-6 mb-3">
         <label class="text-muted  white-space-no-wrap fw-bold me-3 mb-2">Name</label>
             <input type="text" onfocusout="qrCodeClassRemoveAdd()" id="customer_name"

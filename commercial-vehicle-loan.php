@@ -30,7 +30,7 @@ $conn->close();
   <?php include('header.php') ?>
   <div class="container-fluid p-0 banner-header">
     <div class=" header-slider">
-      <img src="img/about.jpg" class="d-block w-100" alt="Privacy-policy">
+      <img src="img/tifinay1.png" class="d-block w-100" alt="Privacy-policy">
       <h3 class="heading">Commercial Vehicle Loan</h3>
     </div>
   </div>
@@ -76,50 +76,33 @@ $conn->close();
 
   <div class="container mt-5">
     <div class="row">
-      <h3 class=" mb-3">
-        Eligibility Criteria for Commercial Vehicle Loan
-      </h3>
+    <h4 class="heading mb-3 text-center">Eligibility Criteria for Commercial Vehicle Loan</h4>
 
-      <div class="col-md-7">
-        <div class="card p-2">
-          <h5>Eligibility for New Commercial Vehicle Loan:
-          </h5>
-          <ul>
-            <li>For salaried individuals – 2 years of employment and for self-employed – at least 2-year
-              experience in their business.</li>
-            <li>Salaried individuals must be working in – Private/Limited companies, Partnership companies,
-              trusts, associations and societies and these companies must be in operations for minimum two
-              years. </li>
-            <li>Private/Limited companies, Partnership companies, trusts, associations and societies should
-              have at least 2 year audited financial statements as a proof</li>
-
-            <li>We may require guarantors – internal/external in few cases. Guarantors may be neglected if the
-              candidate has a good CIBIL Score with a good track of repayments. </li>
-
-            <li>Anyone who is applying for commercial vehicle loan must be residing at his/her present address
-              for at least 2 years.</li>
-
-            <li>First time purchasers must have minimum three years of driving experience.</li>
-            <li>For light commercial vehicles, multi utility vehicles and tractor loan, own house is required to go
-              ahead for the loan. </li>
+      <div class="">
+        <div class=" p-2">
+          <h5>Eligibility for New Commercial Vehicle Loan: </h5>
+          <ul style="list-style-type:disc;">
+          <li>For salaried individuals – 2 years of employment and for self-employed – at least 2-year experience in their business. </li>
+          <li>Salaried individuals must be working in – Private/Limited companies, Partnership companies, trusts, associations and societies and these companies must be in operations for minimum two years.  </li>
+          <li>Private/Limited companies, Partnership companies, trusts, associations and societies should have at least 2 year audited financial statements as a proof.</li>
+          <li>We may require guarantors – internal/external in few cases. Guarantors may be neglected if the candidate has a good CIBIL Score with a good track of repayments. </li>
+          <li>Anyone who is applying for commercial vehicle loan must be residing at his/her present address for at least 2 years. </li>
+          <li>First time purchasers must have minimum three years of driving experience.</li>
+          <li>For light commercial vehicles, multi utility vehicles and tractor loan, own house is required to go ahead for the loan. </li>
+          </ul>
+          <br>
+          <h5>Eligibility for Used Commercial Vehicle Loan: </h5>
+          <ul style="list-style-type:disc;">
+          <li>Applicants must have prior experience of 3-5 years in running commercial vehicles.</li>
+          <li>They should have a good credit history in the past and a satisfactory track record of repayments. </li>
+          <li>Their stability at a place where they are living whether in city, village or town matters. </li>
+          <li>Applicants must fulfill Tiffany Finance credit policies to get Used Commercial Vehicle Loan.</li>
+          <li>Applicants must own minimum 2 vehicles for at least one year. </li>
           </ul>
         </div>
       </div>
 
-      <div class="col-md-5">
-        <div class="card p-2">
-          <h5>Eligibility for Used Commercial Vehicle Loan:</h5>
-          <ul>
-            <li>Applicants must have prior experience of 3-5 years in running commercial vehicles</li>
-            <li>They should have a good credit history in the past and a satisfactory track record of repayments.
 
-            </li>
-            <li>Their stability at a place where they are living whether in city, village or town matters</li>
-            <li>Applicants must fulfill Tiffany Finance credit policies to get Used Commercial Vehicle Loan.</li>
-            <li>Applicants must own minimum 2 vehicles for at least one year.</li>
-          </ul>
-        </div>
-      </div>
     </div>
     <div class="row mt-5">
       <div class="col-md-8">
@@ -521,7 +504,7 @@ $conn->close();
                 <div id="collapseOne<?= $faq['faq_id'] ?>" class="accordion-collapse collapse" aria-labelledby="headingOne<?= $faq['faq_id'] ?>"
                     data-bs-parent="#accordionExample<?= $faq['faq_id'] ?>">
                     <div class="accordion-body">
-                        <p> <?= $faq['answer'] ?> </p>
+                        <p class="paragraph"> <?= $faq['answer'] ?> </p>
                     </div>
                 </div>
             </div>

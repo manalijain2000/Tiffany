@@ -44,7 +44,7 @@ $conn->close();
                   </div>
                   <div class="carusel-text-inside">
                      <h5 class="inner-text mila-hai">loan  mila hai?</h5>
-                     <a class=" btn btn-sm btn-theme-sec aapko <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
+                     <a class="  btn btn-sm btn-theme-sec aapko <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
                         href="apply-now.php">Apply Now</a>
                   </div>
                </div>
@@ -456,19 +456,19 @@ $conn->close();
         $(this).addClass('active');
         next();
     });
-    $('.carousel-item:nth-child(2)').delay(7000).queue(function(next){
+    $('.carousel-item:nth-child(2)').delay(10000).queue(function(next){
         $(this).addClass('active');
         next();
     });
-    $('.carousel-item:nth-child(3)').delay(7000).queue(function(next){
+    $('.carousel-item:nth-child(3)').delay(10000).queue(function(next){
         $(this).addClass('active');
         next();
     });
-    $('.carousel-item:nth-child(4)').delay(7000).queue(function(next){
+    $('.carousel-item:nth-child(4)').delay(10000).queue(function(next){
         $(this).addClass('active');
         next();
     });
-    $('.carousel-item:nth-child(5)').delay(7000).queue(function(next){
+    $('.carousel-item:nth-child(5)').delay(10000).queue(function(next){
         $(this).addClass('active');
         next();
     });
