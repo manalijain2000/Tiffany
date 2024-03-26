@@ -7,6 +7,7 @@
   <title>Career - Tiffany Finance Private Limited</title>
    <link rel="shortcut icon" href="img/dark-logo-sm.png">
  <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="footer.css">
   <!-- <link rel="stylesheet" href="bootstrap/font-awesome-min.css"> -->
   <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css" />
   <link rel="stylesheet" type="text/css" href="custom-bootstrap/bootstrap.css" />
@@ -20,20 +21,20 @@
   <?php include('header.php') ?>
   <div class="container-fluid p-0 banner-header">
     <div class=" header-slider">
-      <img src="img/about.jpg" class="d-block w-100" alt="...">
+      <img src="img/tifinay1.png" class="d-block w-100" alt="...">
       <h3 class="heading">Career</h3>
     </div>
   </div>
   <div class="container mt-5">
-    <h4 class="heading text-center">
+    <h4 class="heading text-center" id="lifeattiffany">
       Life at Tiffany
     </h4>
-    <p>At Tiffany Finance, we've created an environment where every day is an opportunity to learn, grow, and
+    <p class="paragraph">At Tiffany Finance, we've created an environment where every day is an opportunity to learn, grow, and
       make a difference. You'll find a fulfilling and rewarding journey where you can pursue your passion,
       challenge yourself, and create a meaningful career. Welcome to a place where you can thrive both
       professionally and personally.</p>
 
-    <p>Working with us will elevate your professional journey with a lot of new opportunities and learning.
+    <p class="paragraph">Working with us will elevate your professional journey with a lot of new opportunities and learning.
       Promoting a leadership style that empowers employees, giving them autonomy and responsibility, and
       encouraging their growth and development is what our organization practices at all levels. Teamwork is
       at our core; hence we encourage leaders to build cohesive and high-performing teams by fostering
@@ -47,7 +48,7 @@
 
     <div class="row justify-content-around">
       <div class="col-md-1">
-        <img src="img/life/diversity.png" class="w-100" alt="">
+          <img src="img/diversity.png" class="w-100" alt="">
         <h5>Diversity</h5>
       </div>
       <div class="col-md-1">
@@ -80,14 +81,14 @@
   </div>
 
 
-  <div class="container py-5 card-box-main">
+  <div class="container py-5 card-box-main" id="benefitsandperks">
     <div class="row">
       <h4 class="heading text-center mb-4">
         Benefits and Perks
       </h4>
       <div class="col-md-6  mb-4 ">
         <h5>Diversity and Inclusivity Are at The Core of Our Values</h5>
-        <p>We provide an environment where
+        <p class="paragraph">We provide an environment where
           every employee's voice is heard and respected.</p>
 
 
@@ -95,26 +96,26 @@
       <div class="col-md-6 mb-4 ">
         <h5>Your Hard Work Doesn't Go Unnoticed</h5>
 
-        <p> We have recognition programs in place to acknowledge
+        <p class="paragraph"> We have recognition programs in place to acknowledge
           and celebrate your contributions.</p>
 
       </div>
 
       <div class="col-md-6  mb-4 ">
         <h5>Your Growth is our Priority</h5>
-        <p> Our company is committed to your professional development. We
+        <p class="paragraph"> Our company is committed to your professional development. We
           provide opportunities for growth and advancement within the organization</p>
 
       </div>
       <div class="col-md-6  mb-4 ">
         <h5>Continue Your Learning</h5>
-        <p>We encourage continuous learning and offer access to training,
+        <p class="paragraph">We encourage continuous learning and offer access to training,
           workshops, and resources to enhance your skills and knowledge.</p>
 
       </div>
       <div class="col-md-4 mb-4 ">
         <h5>Competitive Compensation</h5>
-        <p>We offer competitive salaries and performance-based bonuses to
+        <p class="paragraph">We offer competitive salaries and performance-based bonuses to
           ensure that your hard work is duly rewarded.
         </p>
 
@@ -123,7 +124,7 @@
   </div>
 
 
-  <div class="container mt-0 px-3 ">
+  <div class="container mt-0 px-3 " id="ouremployee">
     <div class="row">
       <h4 class="heading text-center long-heading mb-4 ">What Our Employees Feel About Us?</h4>
       <div class="team-slider">
@@ -131,14 +132,14 @@
         <div>
           <div class="card-feel">
             <div class="content">
-              <p>“I have been part of this amazing company for 4 years now. At Tiffany Finance, I've found not just a
+              <p class="paragraph">“I have been part of this amazing company for 4 years now. At Tiffany Finance, I've found not just a
                 workplace, but a second home. The environment here is incredibly supportive and encourages personal
                 and professional growth. I've had the opportunity to work on challenging projects and collaborate with a
                 talented team. What sets Tiffany Finance apart is its commitment to innovation, continuous learning,
                 and a culture that values every employee's contribution. I'm proud to be a part of this remarkable
                 team.”</p>
 
-              <h5 class="text-dark">Neeraj Shah <span class=""> Credit Risk Manager</span></h5>
+              <h5 class="text-dark">Neeraj Shah <span class="paragraph" > Credit Risk Manager</span></h5>
             </div>
 
           </div>
@@ -146,14 +147,14 @@
         <div>
           <div class="card-feel">
             <div class="content">
-              <p>“Tiffany Finance has provided me with a platform to excel in my career. The work culture here values
+              <p class="paragraph">“Tiffany Finance has provided me with a platform to excel in my career. The work culture here values
                 accuracy, attention to detail, and collaboration. We're not just balancing books; we're shaping
                 financial
                 strategies that drive success. What I appreciate most is the emphasis on work-life balance and the
                 numerous opportunities for professional development. It's an amazing feeling to be a part of a company
                 that not only cares about its employees but also makes a real impact in the industry.”</p>
 
-              <h5 class="text-dark">Shruti Jain<span class=""> Chartered Accountant</span></h5>
+              <h5 class="text-dark">Shruti Jain<span class="paragraph"> Chartered Accountant</span></h5>
             </div>
 
           </div>
@@ -161,7 +162,7 @@
         <div>
           <div class="card-feel">
             <div class="content">
-              <p>“Working at Tiffany Finance has been a rewarding experience. As a Recovery Manager at Tiffany
+              <p class="paragraph">“Working at Tiffany Finance has been a rewarding experience. As a Recovery Manager at Tiffany
                 Finance, my journey has been a testament to the company's dedication to financial recovery and
                 professional excellence. Tiffany Finance has provided me with an opportunity to lead a dynamic team
                 that's making a significant impact in the realm of Non-Banking Financial Companies. We're not just
@@ -171,7 +172,7 @@
                 but also fosters an environment where everyone can thrive and contribute to our collective success.”
               </p>
 
-              <h5 class="text-dark">Preetam Joshi<span class="">General Manager – Recovery
+              <h5 class="text-dark">Preetam Joshi<span class="paragraph">General Manager – Recovery
                 </span></h5>
             </div>
 
@@ -180,7 +181,7 @@
         <div>
           <div class="card-feel">
             <div class="content">
-              <p>“I found my professional home at Tiffany Finance. The company's culture, inspiring projects, and
+              <p class="paragraph">“I found my professional home at Tiffany Finance. The company's culture, inspiring projects, and
                 incredible team make every day exciting and fulfilling. I've found a family of colleagues who inspire
                 and
                 motivate me every day. The company's work environment is built on the principles of respect, trust, and
@@ -189,7 +190,7 @@
 
               </p>
 
-              <h5 class="text-dark">Harshita Chouhan<span class="">– Operations Executive
+              <h5 class="text-dark">Harshita Chouhan<span class="paragraph">– Operations Executive
                 </span></h5>
             </div>
 
@@ -199,7 +200,7 @@
         <div>
           <div class="card-feel">
             <div class="content">
-              <p>“I've had the privilege of being the IT Manager at Tiffany Finance and it's been an extraordinary
+              <p class="paragraph">“I've had the privilege of being the IT Manager at Tiffany Finance and it's been an extraordinary
                 journey.
                 The company's commitment to innovation and cutting-edge technology is truly impressive. We're not
                 just adapting to change; we're driving it. The work culture here is built on trust, empowerment, and a
@@ -211,7 +212,7 @@
 
               </p>
 
-              <h5 class="text-dark">Nepal Singh Ranawat<span class=""> IT Manager
+              <h5 class="text-dark">Nepal Singh Ranawat<span class="paragraph"> IT Manager
                 </span></h5>
             </div>
 
@@ -221,16 +222,16 @@
     </div>
   </div>
 
-  <div class="container-fluid enquire-box pt-5 mt-4">
+  <div class="container-fluid enquire-box pt-5 mt-4" id="applyforjob">
     <div class="enq-form">
 
 
       <ul class="nav nav-pills mb-0 justify-content-center" id="pills-tab" role="tablist">
-        <li class="nav-item " role="presentation">
+        <li class="nav-item applying " role="presentation">
           <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
             type="button" role="tab" aria-controls="pills-home" aria-selected="true">Apply For Job</button>
         </li>
-        <li class="nav-item" role="presentation">
+        <li class="nav-item applying" role="presentation">
           <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
             type="button" role="tab" aria-controls="pills-profile" aria-selected="false"> Become our partner</button>
         </li>
@@ -311,7 +312,7 @@
       </div>
 
       <!-- investor -->
-      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" id="applyforjob">
         <div class="row justify-content-center">
           <div class="col-md-12  p-4 " id='investor-applicant-form'>
             <!-- <h4 class="heading mb-4 text-center">Become Our partner</h4> -->

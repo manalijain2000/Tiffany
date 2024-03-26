@@ -7,6 +7,7 @@
   <title>Pay Emi</title>
    <link rel="shortcut icon" href="img/dark-logo-sm.png">
  <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="footer.css">
   <!-- <link rel="stylesheet" href="bootstrap/font-awesome-min.css"> -->
   <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css" />
   <link rel="stylesheet" type="text/css" href="custom-bootstrap/bootstrap.css" />
@@ -19,8 +20,8 @@
 <?php include('header.php') ?>
   
 <div class="container-fluid bg-light mt-5 pt-5">
-    <div class=" card p-4 container ">
-    <div class="row">
+    <div class=" card p-4 container  ">
+    <div class="row mt-5">
         <div class="col-md-6 mb-3">
         <label class="text-muted  white-space-no-wrap fw-bold me-3 mb-2">Name</label>
             <input type="text" onfocusout="qrCodeClassRemoveAdd()" id="customer_name"

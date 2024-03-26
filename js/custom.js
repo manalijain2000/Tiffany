@@ -3,8 +3,8 @@
    const toggleClass = "is-sticky";
 
    window.addEventListener("scroll", () => {
-      const currentScroll = window.pageYOffset;
-      if (currentScroll > 150) {
+      const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+      if (currentScroll > 50) {
          header.classList.add(toggleClass);
       } else {
          header.classList.remove(toggleClass);

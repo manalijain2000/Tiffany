@@ -7,6 +7,7 @@
   <title>Business Loan - Tiffany Finance Private Limited</title>
    <link rel="shortcut icon" href="img/dark-logo-sm.png">
  <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="footer.css">
   <!-- <link rel="stylesheet" href="bootstrap/font-awesome-min.css"> -->
   <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css" />
   <link rel="stylesheet" type="text/css" href="custom-bootstrap/bootstrap.css" />
@@ -29,21 +30,21 @@ $conn->close();
   <?php include('header.php') ?>
   <div class="container-fluid p-0 banner-header">
     <div class=" header-slider">
-      <img src="img/about.jpg" class="d-block w-100" alt="Privacy-policy">
+      <img src="img/tifinay1.png" class="d-block w-100" alt="Privacy-policy">
       <h3 class="heading">Business Loan </h3>
     </div>
   </div>
   <div class="container mt-5">
     <div class="row justify-content-between">
       <div class="col-md-7">
-        <p>Tiffany Finance’s business loan provides the capital needed to start or expand your business. Whether you're
+        <p class="paragraph">Tiffany Finance’s business loan provides the capital needed to start or expand your business. Whether you're
           launching a startup or seeking to grow an existing enterprise, our business loan can finance essential assets,
           equipment, or facilities. We provide both secured and unsecured business loan options, allowing your business
           to accessfinancing of up to ₹90 lakhs*.</p>
-        <p>With our business loan, you can also fulfill all your working capital needs to maintain your daily operations
+        <p class="paragraph">With our business loan, you can also fulfill all your working capital needs to maintain your daily operations
           and cover short-term expenses. You can comfortably use it for your inventory management, marketing and
           advertising, hiring and payroll, buying equipment and for expansion and growth. </p>
-        <p>Tiffany Finance offers customized financing, you can choose a loan tailored to your specific needs such as
+        <p class="paragraph">Tiffany Finance offers customized financing, you can choose a loan tailored to your specific needs such as
           term loans, lines of credit, or equipment financing.</p>
       </div>
       <div class="col-md-4 ">
@@ -62,10 +63,10 @@ $conn->close();
   </div>
   <div class="container mt-5">
     <div class="row">
-      <div class="col-md-6">
-        <div class="card p-2 h-100">
-          <h5> Eligibility Criteria for Business Loan </h5>
-          <ul>
+      <div class="">
+        <div class=" p-2 h-100">
+        <h4 class="heading mb-3 text-center">Eligibility Criteria for Business Loan</h4>
+          <ul style="list-style-type:disc;">
             <li>
               <b> Nationality and Age Eligibility</b>: You must be an Indian resident with minimum 21 years old when
               applying for the loan and no older than 65 at the time the loan matures.
@@ -100,8 +101,8 @@ $conn->close();
           </ul>
         </div>
       </div>
-      <div class="col-md-6">
-        <div class="card p-2 h-100">
+      <div class="">
+        <div class=" p-2 h-100">
           <h5>Documents Required for Business Loan</h5>
           <ul>
             <li>Tiffany Finance Loan Application Form filled and signed by the borrower</li>
@@ -328,7 +329,7 @@ $conn->close();
                 <div id="collapseOne<?= $faq['faq_id'] ?>" class="accordion-collapse collapse" aria-labelledby="headingOne<?= $faq['faq_id'] ?>"
                     data-bs-parent="#accordionExample<?= $faq['faq_id'] ?>">
                     <div class="accordion-body">
-                        <p> <?= $faq['answer'] ?> </p>
+                        <p class="paragraph"> <?= $faq['answer'] ?> </p>
                     </div>
                 </div>
             </div>

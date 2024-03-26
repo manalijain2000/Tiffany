@@ -12,10 +12,10 @@
       <img src="img/values/pay.png" class="side-icon">
       <span>Pay EMI</span>
     </button>
-    <button type="button" class="btn  emi-btn" onclick='redirectToContactUsPage()'>
+     <button type="button" class="btn emi-btn" onclick="window.location.href = 'tel:1800-890-6544'">
     <img src="img/values/phone.png" class="side-icon1">
-      <span>Contact Us</span>
-    </button>
+    <span>Contact Us</span>
+</button>
 
 
   </div>
@@ -24,24 +24,24 @@
     <div class="modal-dialog modal-xl modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h4>EMI Calculator</h4>
+          <h4>Calculate EMI</h4>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body  text-center">
-          <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
               <button class="nav-link active" id="BusinessLoan-tab" data-bs-toggle="tab" data-bs-target="#BusinessLoan"
                 type="button" role="tab" aria-controls="BusinessLoan" aria-selected="true">Loan Against
                 Property</button>
             </li>
-          </ul>
+          </ul> -->
           <div class="tab-pane fade show active" id="BusinessLoan" role="tabpanel" aria-labelledby="BusinessLoan-tab">
-            <div class="container mt-3">
+            <div class="container mt-1">
               <div class="row">
                 <div class="col-md-5">
                   <div class="wrapper mb-2 ">
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                      <p class="mb-0">Amount</p>
+                      <p class="mb-0 paragraph">Loan Amount</p>
                       <div class="input-group w-fit-200">
                         <input onfocusout="setInputUsFormat()" onfocusin="setInputNormalForm()" type="text"
                           value="10,00,000" id='set-amount-loan-against-property' class="form-control form-control-sm">
@@ -57,7 +57,7 @@
                   </div>
                   <div class="wrapper mb-2 ">
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                      <p class="mb-0">Tenure</p>
+                      <p class="mb-0 paragraph">Tenure</p>
                       <div class="input-group w-fit-200">
                         <input type="text" onfocusout='setInputRangeVal(this)' value="60"
                           id='set-tenur-loan-against-propertye' class="form-control form-control-sm">
@@ -74,7 +74,7 @@
                   </div>
                   <div class="wrapper mb-2 ">
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                      <p class="mb-0">Interest</p>
+                      <p class="mb-0 paragraph">Interest</p>
                       <div class="input-group w-fit-200">
                         <input type="text" onfocusout='setInputRangeVal(this)' value="18"
                           id='set-interest-loan-against-property' class="form-control form-control-sm">
@@ -91,22 +91,22 @@
                 <div class="col-md-4">
                   <div class="h-100 rounded py-3 px-4 pt-4 bg-lights">
                     <div class='chart-details mb-3 d-flex align-items-center  text-start '>
-                      <p class="fs-6 calculator-label me-3  mb-0">Principal</p>
-                      <p id="principal-amt-id" class="fw-bold mb-0">2342</p>
+                      <p class="fs-6 calculator-label me-3  mb-0 paragraph">Principal</p>
+                      <p id="principal-amt-id" class="fw-bold mb-0 paragraph">2342</p>
                     </div>
                     <div class='chart-details mb-3 d-flex align-items-center  text-start '>
-                      <p class="fs-6  calculator-label  me-3  mb-0">Interest</p>
-                      <p id="interest-amt-id" class="fw-bold mb-0 ">2%</p>
+                      <p class="fs-6  calculator-label  me-3  mb-0 paragraph">Interest</p>
+                      <p id="interest-amt-id" class="fw-bold mb-0 paragraph ">2%</p>
                     </div>
                     <div class='chart-details mb-3 d-flex align-items-center  text-start '>
-                      <p class="fs-6  calculator-label me-3  mb-0">Total Payable</p>
-                      <p id="total-payble-amt-id" class="fw-bold mb-0">343420</p>
+                      <p class="fs-6  calculator-label me-3  mb-0 paragraph">Total Payable</p>
+                      <p id="total-payble-amt-id" class="fw-bold mb-0 paragraph">343420</p>
                     </div>
                     <div class='chart-details mb-3 d-flex align-items-center  text-start '>
-                      <p class="fs-6 calculator-label  me-3  mb-0">
+                      <p class="fs-6 calculator-label  me-3  mb-0 paragraph">
                         Monthly Payable
                       </p>
-                      <p id="monthly-payble-amt-id" class="fw-bold mb-0">343420</p>
+                      <p id="monthly-payble-amt-id" class="fw-bold mb-0 paragraph">343420</p>
                     </div>
                   </div>
                 </div>
