@@ -40,7 +40,7 @@ $conn->close();
             <div class="carousel-caption">
                <div class="header-box">
                   <div class="carusel-text">
-                     <h5 class="inner-text">Kya aapko kabhi <strong>umeed se zyada</strong> </h5>
+                     <h5 class="inner-text">Kya aapko kabhi <strong>ummeed se zyada</strong> </h5>
                   </div>
                   <div class="carusel-text-inside">
                      <h5 class="inner-text mila-hai">loan  mila hai?</h5>

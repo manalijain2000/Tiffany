@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Two-Wheeler Loan- Tiffany Finance Private Limited</title>
-   <link rel="shortcut icon" href="img/dark-logo-sm.png">
- <link rel="stylesheet" href="style.css">
- <link rel="stylesheet" href="footer.css">
+  <link rel="shortcut icon" href="img/dark-logo-sm.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="footer.css">
   <!-- <link rel="stylesheet" href="bootstrap/font-awesome-min.css"> -->
   <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css" />
   <link rel="stylesheet" type="text/css" href="custom-bootstrap/bootstrap.css" />
@@ -18,7 +18,7 @@
 
 <?php
 // Include the database connection file
-include("db_connection.php");
+include ("db_connection.php");
 // SQL query to select all products from the 'products' table
 $faqsSql = "SELECT * FROM faq_section where category = 'commercial-vehicle-loan'";
 $faqs = $conn->query($faqsSql);
@@ -27,30 +27,37 @@ $conn->close();
 ?>
 
 <body>
-  <?php include('header.php') ?>
+  <?php include ('header.php') ?>
   <div class="container-fluid p-0 banner-header">
     <div class=" header-slider">
       <img src="img/tifinay1.png" class="d-block w-100" alt="Privacy-policy">
       <h3 class="heading">Two-Wheeler Loan</h3>
     </div>
   </div>
+  <!-- <div class="container">
+    <div class="menu fs-5 fw-bolder">
+      <div class="menu-item"><a href="#overview">Overview</a></div>
+      <div class="menu-item"><a href="#eligibility">Eligibility</a></div>
+      <div class="menu-item"><a href="#document">Documents</a></div>
+      <div class="menu-item"><a href="#howtoapply">How To Apply</a></div>
 
-  <div class="container mt-5">
-    <div class="row justify-content-between">
-      <div class="col-md-7">
-
-        <p class="paragraph">Want To Buy your Dream New Bike or Scooter? Tiffany Finance offers a quick two-wheeler loan at
-attractive interest rates to make your commute comfortable and faster. Now, no need to wait for public
-transports to commute, ride and travel at your own convenience whenever and wherever you want.</p>
-        <p class="paragraph">You can explore a bike or scooter of your choice and use our Two-Wheeler EMI Calculator to plan your
-budget accordingly. We provide a flexible tenure from 12 months to 60 months for repayment of your
-EMIs so that you can very comfortably repay without any burden.</p>
-        <p class="paragraph">
-        Be the owner of your dream bike and apply today at Tiffany Finance for your two-wheeler loan.
+      
+    </div>
+  </div> -->
+  <div class="container mt-5" id="document">
+    <div class="row">
+      <div class="col-md-7 ">
+        
+        <p class="text-dark">Want To Buy your Dream New Bike or Scooter? We offer a quick two-wheeler loan at attractive interest rates to make your commute comfortable and faster. Now, no need to wait for public transports to commute, ride and travel at your own convenience whenever and wherever you want. 
         </p>
+        <p class="text-dark">You can explore a bike or scooter of your choice and use our Two-Wheeler EMI Calculator to plan your budget accordingly. We provide a flexible tenure from 12 months to 60 months for repayment of your EMIs so that you can very comfortably repay without any burden.
+        </p>
+        <p class="text-dark">Be the owner of your dream bike and apply today at Tiffany Finance for your two-wheeler loan. </p>
       </div>
-      <div class="col-md-4 text-end">
-        <img src="img/two-vehicle.jpg" class="w-70" alt="">
+      <div class="col-md-5 text-end mt-4 ">
+        <div class="image-container ms-5">
+          <img src="img/otvl.jpg" class="img-fluid">
+        </div>
       </div>
     </div>
   </div>
@@ -59,453 +66,243 @@ EMIs so that you can very comfortably repay without any burden.</p>
 
   <div class="container mt-5">
     <div class="row">
-      <h4 class="heading mb-3 text-center">Features & Benefits</h4>
-      <ul>
-        <li>Flexible Loan Tenure from 12 months to 60 months</li>
-        <li>Attractive Interest Rates ranging from 12% to 22%</li>
-        <li>Fast Processing</li>
-        <li>Quick Loan Approval</li>
-        <li>Loan amount starting from ₹50,000* onwards up to ₹2 lakhs</li>
-      </ul>
+      <h4 class="heading mb-3 text-center">Features & Benefits for Two Wheeler Loan</h4>
+      <div class="featuresandbenefits">
+        <div class="text-center ">
+          <img src="img/fbtwl.jpg" class="img-fluid me-5 mt-5 ">
+        </div>
+        <div class="mt-5">
+          <p class="text-dark fs-6">
+            <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">Flexible Loan Tenure from 12 months to 60
+            months
+          </p>
+          <p class="text-dark fs-6">
+            <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">Attractive Interest Rates ranging from 12% to
+            22%
+          </p>
 
-      <p class="text-danger">
-        <i>*Terms & Conditions Apply</i>
-      </p>
+          <p class="text-dark">
+            <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">Fast Processing
+          </p>
+          <p class="text-dark">
+            <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">Quick Loan Approval
+          </p>
+          <p class="text-dark">
+            <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">Loan amount starting from ₹50,000* onwards up
+            to ₹2 lakhs
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="container mt-5">
-    <div class="row">
-    <h4 class="heading mb-3 text-center">Eligibility Criteria for Two-Wheeler Loan</h4>
+  <div class="container mt-5" id="eligibility">
+    <div class="row feature">
+
+      <h4 class="fw-bolder bottom-line  mb-3 text-center">Eligibility Criteria for Two-Wheeler Loan</h4>
       <div class="col-md-12">
         <div class=" p-2">
-         
+
           <p class="text-dark">
-          At Tiffany Finance, we understand that how much a
-           two-wheeler matters at every household in India,
+            At Tiffany Finance, we understand that how much a
+            two-wheeler matters at every household in India,
             hence owning one gives a lot of comfort, convenience and
-             a sense of independence. Looking at eligibility criteria is important because
-           if you meet all the criteria, your chances of loan approval are maximized.   </p>
+            a sense of independence. Looking at eligibility criteria is important because
+            if you meet all the criteria, your chances of loan approval are maximized. </p>
           <p class="text-dark">Check whether you are eligible for a Two-Wheeler Loan from below checklist:</p>
           <ul style="list-style-type:disc;">
             <li> You must be an Indian resident</li>
-            <li> Your age should be at least 18 years when you apply for loan and maximum 65 years at the timeyour loan matures.</li>
+            <li> Your age should be at least 18 years when you apply for loan and maximum 65 years at the timeyour loan
+              matures.</li>
             <li> Co-applicant is compulsory if your age is between 18-20 years.</li>
 
             <li> Your CIBIL Score matters a lot, a CIBIL Score above 650 is qualified for the loan.</li>
 
-           
+
           </ul>
         </div>
       </div>
 
-     
-    </div>
-    <div class="row mt-5">
-      <div class="col-md-8">
-        <h3 class="">Documents Required for Commercial Vehicle Loan</h3>
 
-        <ul class="mb-4">
-          <li>Passport size photographs</li>
-          <li>Tiffany Finance Loan Application Form filled and signed by the borrower</li>
-          <li>KYC Documents to verify identity and address:
-            <ol>
-              <li>Identity Proof: PAN Card, Passport, Driving License, Voter Id, Aadhar Card</li>
-              <li>Address Proof: Rent Agreement, Utility Bills, Passport</li>
-            </ol>
-          </li>
-          <li>Bank Passbook Photo and Security Cheques</li>
-          <li>Guarantor Proof – Identity and Address</li>
-          <li>Business Proof with any relevant document like partnership deed, MOA, etc. </li>
-          <li>Last 6 months bank statement. </li>
-          <li>Last 2 years audited financial statements and Income tax returns for self-employed. </li>
-        </ul>
-        <h5>Other Documents related to vehicle:</h5>
-        <ul>
-          <li>Vehicle details
-          </li>
-          <li>Insurance Proof and RC</li>
-          <li>Valuation report</li>
-          <li>Current vehicle ownership proof</li>
-          <li>Fleet details, trade proof for fleet operators and first-time buyers
-          </li>
-          <li>Property Ownership Documents for loan of tractor, LCVs and MUVs</li>
-        </ul>
-        <p class="text-danger">
+    </div>
+    <div class="row mt-5 feature" id="document">
+      <div class="col">
+        <h4 class="fw-bolder bottom-line  mb-3 text-center">Documents Required for Two Wheeler Loan</h4>
+        <br>
+        <div class="accordion mt-3" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Photo Identity Proof <sup class="ms-2 fs-4 mt-3">*</sup>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul style="list-style-type:disc;">
+                  <li>Passport</li>
+                  <li>Pan Card</li>
+                  <li>Voter Identity Card</li>
+                  <li>Driving License</li>
+                  <li>Aadhar Card </li>
+                </ul>
+                <span class="text-dark mt-3">( <sup>*</sup> Any 2)</span>
+
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Address Proof <sup class="ms-2 fs-4 mt-3">*</sup>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul style="list-style-type:disc;">
+                  <li>Passport</li>
+                  <li>Electricity Bill</li>
+                  <li>Bank Account Statement</li>
+                  <li>Telephne Bill</li>
+                  <li>Ration Card</li>
+                  <li>Aadhaar Card</li>
+                  <li>Sale Deed/Property Purchase Agreement (for owned properties)</li>
+                  <li>Driving License</li>
+                  <br>
+                  <span class="text-dark mt-3">( <sup>*</sup> Any 2)</span>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Income Proof
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul style="list-style-type:disc;">
+                  <li>Bank Statement</li>
+                  <br>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Business Proof
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+
+
+                <ul style="list-style-type:disc;">
+                  <li>Qualification Certificate/Certificate of Practice (COP)</li>
+                  <li>Shop Act License/ MOA & AOA/ Sales Tax/ Vat registration/ Partnership Deed</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+ <p class="text-danger mt-3">
           <i>*Terms & Conditions Apply</i>
         </p>
-        <span>
-          <b>Note:</b> This is just an indicative list. Additional criteria and documents may be required at the time of
+        <span class="text-dark">
+          <b>Note:</b> This is just an indicative list additional criteria and documents may be required at the time of
           loan
-          application.
+          application.Self-attested copy of relevant documents <sup class="">*</sup>
 
         </span>
+        
+      </div>
 
-      </div>
-      <div class="col-md-4">
-        <img src="img/Documents-Required.webp" class="w-100 rounded-3" alt="">
-      </div>
     </div>
   </div>
-  <div class="container mt-5">
-    <div class="row">
-      <h4 class="heading">Two-Wheeler Loan Fees & Charges</h4>
-      <div class="card">
-        <div class="card-body p-0 pt-2 table-responsive">
-          <table class="table table-striped table-hover mt-3 table-primary">
-            <thead>
-              <tr>
+  <div class="container mt-5" id="howtoapply">
+    <div class="row feature ">
+      <h4 class="fw-bolder bottom-line mb-3 text-center">How To Apply</h4>
+      <p class="text-dark mt-3 mb-5">Process of applying for loan against property is easy and fast with us. Some of the
+        ways
+        you can apply for loan are :</p>
+      <br>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="how-to-apply-box text-center">
+          <img src="img/website.png" class="mt-3" width="50px" height="50px">
+          <br>
 
-                <th> Types Of Charges </th>
-                <th>Amount</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Interest Type</td>
-                <td>
-                  Fix / Variable
-                </td>
-              </tr>
-              <tr>
-                <td>ROI</td>
-                <td>12% -22%
-                </td>
-              </tr>
-
-              <tr>
-                <td>Admin Fees</td>
-                <td>Up to ₹1000 + GST</td>
-              </tr>
-              <tr>
-                <td>Fees</td>
-                <td>Up to 3.50% + GST</td>
-              </tr>
-              <tr>
-                <td>NACH/EMI Return Charges </td>
-                <td>Up to ₹1000 + GST</td>
-              </tr>
-              <tr>
-                <td>Stamp Duty</td>
-                <td>As per actuals (State Law
-                  Applicable)</td>
-              </tr>
-
-              <tr>
-                <td>Loan Tenure</td>
-                <td>Up to 36 months</td>
-              </tr>
-              <tr>
-                <td>Loan Repayment Schedule</td>
-                <td>₹500 + GST</td>
-              </tr>
-              <tr>
-                <td>Loan Statement of Account</td>
-                <td>₹500 + GST</td>
-              </tr>
-              <tr>
-                <td>Loan Insurance </td>
-                <td>As per actuals
-                </td>
-              </tr>
-
-              <tr>
-                <td>Cheque Swap Charge</td>
-                <td>₹500 + GST</td>
-              </tr>
-              <tr>
-                <td>Document Retrieval Charges </td>
-                <td>₹500 + GST</td>
-              </tr>
-              <tr>
-                <td>Duplicate NOC Issuance</td>
-                <td>₹500 + GST</td>
-              </tr>
-              <tr>
-                <td>EMI Bounce Charges</td>
-                <td>₹1000 + GST</td>
-              </tr>
-              <tr>
-                <td> EMI Collection Visit</td>
-                <td>₹500 + GST</td>
-              </tr>
-              <tr>
-                <td>Cancellation Charges</td>
-                <td>If case is booked ₹1000 + GST and
-                  additional interest charges if more
-                  than 30 days post disbursement</td>
-              </tr>
-
-              <tr>
-                <td>Late payment/Penal charges/ Default
-                  interest/Overdue (per month)</td>
-                <td>3% p.m.</td>
-              </tr>
-              <tr>
-                <td>Legal/Collections/ Repossession &
-                  Incidental Charges</td>
-                <td>As per actuals
-                </td>
-              </tr>
-
-              <tr>
-                <td>Paper advertisement charges</td>
-                <td>As per actuals</td>
-              </tr>
-              <tr>
-                <td>Pick-up charges</td>
-                <td>₹500+ GST (For all retail products)
-                </td>
-              </tr>
-              <tr>
-                <td>Professional charges</td>
-                <td>As per actuals</td>
-              </tr>
-              <tr>
-                <td>Repossession charges</td>
-                <td>As per actuals</td>
-              </tr>
-
-
-              <tr>
-                <td>Security guard charges</td>
-                <td>As per actual (For Immovable
-                  assets)
-                </td>
-              </tr>
-
-              <tr>
-                <td>Yard charges</td>
-                <td>As per actuals</td>
-              </tr>
-            </tbody>
-          </table>
+          <p class="text-dark mt-2 ">Through website</p>
+          <a class="loan-apply-btn <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
+            href="apply-now.php">Apply Now</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="how-to-apply-box text-center">
+          <img src="img/call.png" class="mt-3 mb-2" width="40px" height="40px">
+          <br>
+          <br>
+          <a href="tel:1800-890-6544">You can call us on our customer care number @ 1800-890-6544</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="how-to-apply-box text-center">
+          <img src="img/email.png" class="mt-3 " width="50px" height="40px">
+          <br>
+          <br>
+          <a href="mailto:support@tiffanyfinance.com">Email us on support@tiffanyfinance.com and we will get in touch
+            with
+            you.</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="how-to-apply-box text-center">
+          <img src="img/whatsappp.png" class="mt-3" width="50px" height="50px">
+          <br>
+          <br>
+          <a href="https://wa.me/6377965063">Through Whatsapp </a>
         </div>
       </div>
     </div>
   </div>
 
-
-
-  <div class="container mt-5">
-    <h4 class="heading">
-      EMI Calculator
-
-    </h4>
-    <p class="text-dark">Tiffany Finance offers Two-Wheeler Loan at an attractive interest rate ranging from 12% to 22%. Get
-estimate of your monthly EMIs and plan your finances accordingly with our Two-Wheeler Loan Calculator.
-You can hit and try different values in the EMI calculator and can get the best option available as per your profile. </p>
-  
-    <div class="modal-content pb-3 mb-4">
-      <div class="modal-header">
-        <!-- <h5 class="bg-danger text-white">Insert these values in calculator - ₹50,000 to ₹5 lakhs, 12 to 60 months,
-          12-22%</h5> -->
-
-        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
-      </div>
-      <div class="text-center">
-        <!-- <div class="container">
-          <div class="container mt-3">
-            <div class="row">
-              <div class="col-md-7">
-                <div class="wrapper mb-2 ">
-                  <div class="d-flex justify-content-between align-items-center mb-3">
-                    <p class="mb-0">Amount</p>
-                    <div class="input-group w-fit-200">
-                      <input disabled=true onfocusout="setInputRangeLoanAgainstProperty()" type="text" value="1000000"
-                        id='set-amount-loan-against-property' class="form-control form-control-sm">
-                      <div class="input-group-append  d-flex">
-                        <span class="input-group-text">RS </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="range">
-                    <input type="range" />
-                  </div>
-                </div>
-                <div class="wrapper mb-2 ">
-                  <div class="d-flex justify-content-between align-items-center mb-3">
-                    <p class="mb-0">Tenure</p>
-                    <div class="input-group w-fit-200">
-                      <input disabled=true type="text" value="60" id='set-tenur-loan-against-propertye'
-                        class="form-control form-control-sm">
-                      <div class="input-group-append d-flex">
-                        <span class="input-group-text">Mo </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="range">
-                    <input type="range" />
-                  </div>
-                </div>
-                <div class="wrapper mb-2 ">
-                  <div class="d-flex justify-content-between align-items-center mb-3">
-                    <p class="mb-0">Interest</p>
-                    <div class="input-group w-fit-200">
-
-                      <input disabled=true type="text" value="18" id='set-interest-loan-against-property'
-                        class="form-control form-control-sm">
-                      <div class="input-group-append d-flex">
-                        <span class="input-group-text ">% </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="range">
-                    <input type="range" />
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-5">
-                <div class="card p-4 bg-theme">
-                  <div class='chart-details d-flex align-items-center mb-2 text-start border-bottom'>
-                    <p class="fs-6 w-150px mb-0">Principal</p>
-                    <p id="principal-amt-id" class="fw-bold mb-1 pb-1">2342</p>
-                  </div>
-                  <div class='chart-details d-flex align-items-center mb-2 text-start border-bottom'>
-                    <p class="fs-6 w-150px mb-0">Interest</p>
-                    <p id="interest-amt-id" class="fw-bold mb-1 pb-1 ">2%</p>
-                  </div>
-                  <div class='chart-details d-flex align-items-center mb-2 text-start border-bottom'>
-                    <p class="fs-6 w-150px mb-0">Total Payable</p>
-                    <p id="total-payble-amt-id" class="fw-bold mb-1 pb-1">343420</p>
-                  </div>
-                  <div class='chart-details d-flex align-items-center mb-0 text-start'>
-                    <p class="fs-6 w-150px mb-0">
-                      Monthly Payable
-                    </p>
-                    <p id="monthly-payble-amt-id" class="fw-bold mb-1 pb-1">343420</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="loan-details  d-flex flex-wrap flex-row w-100  mt-5 ">
-              </div>
-            </div>
-          </div>
-          <div>
-          </div>
-        </div>
-        <div>
-        </div> -->
-        <div class="container mt-3">
-          <div class="row">
-            <div class="col-md-5">
-              <div class="wrapper mb-2 ">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <p class="mb-0">Amount</p>
-                  <div class="input-group w-fit-200">
-                    <input onfocusout="LAPsetInputUsFormat()" onfocusin="LAPsetInputNormalForm()" type="text"
-                      value="1,00,000" id='lap-set-amount-loan-against-property' class="form-control form-control-sm">
-                    <div class="input-group-append  d-flex">
-                      <span class="input-group-text">RS </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="range">
-                  <input onchange='LAPsetInputValue(this)' id="lap-amount-id" type="range" min="50000" max="500000"
-                    value='100000' />
-                </div>
-              </div>
-              <div class="wrapper mb-2 ">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <p class="mb-0">Tenure</p>
-                  <div class="input-group w-fit-200">
-                    <input type="text" onfocusout='LAPsetInputRangeVal(this)' value="36"
-                      id='lap-set-tenur-loan-against-propertye' class="form-control form-control-sm">
-                    <div class="input-group-append d-flex">
-                      <span onclick='LAPconvertMonthToYear(this)' id="lap-month-id"
-                        class="input-group-text text-white bg-dark">Mo</span>
-                      <span onclick='LAPconvertMonthToYear(this)' id="lap-year-id" class="input-group-text">Yr</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="range">
-                  <input onchange='LAPsetInputValue(this)' id="lap-tenure-id" type="range" min="12" max="60" value='36' />
-                </div>
-              </div>
-              <div class="wrapper mb-2 ">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <p class="mb-0">Interest</p>
-                  <div class="input-group w-fit-200">
-                    <input type="text" onfocusout='LAPsetInputRangeVal(this)' value="18"
-                      id='lap-set-interest-loan-against-property' class="form-control form-control-sm">
-                    <div class="input-group-append d-flex">
-                      <span class="input-group-text ">% </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="range">
-                  <input onchange='LAPsetInputValue(this)' id="lap-interest-id" type="range" min="12" max="22" value="18" />
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="h-100 rounded py-3 px-4 pt-4 bg-lights">
-                <div class='chart-details mb-3 d-flex align-items-center  text-start '>
-                  <p class="fs-6 calculator-label me-3  mb-0">Principal</p>
-                  <p id="lap-principal-amt-id" class="fw-bold mb-0">2342</p>
-                </div>
-                <div class='chart-details mb-3 d-flex align-items-center  text-start '>
-                  <p class="fs-6  calculator-label  me-3  mb-0">Interest</p>
-                  <p id="lap-interest-amt-id" class="fw-bold mb-0 ">2%</p>
-                </div>
-                <div class='chart-details mb-3 d-flex align-items-center  text-start '>
-                  <p class="fs-6  calculator-label me-3  mb-0">Total Payable</p>
-                  <p id="lap-total-payble-amt-id" class="fw-bold mb-0">343420</p>
-                </div>
-                <div class='chart-details mb-3 d-flex align-items-center  text-start '>
-                  <p class="fs-6 calculator-label  me-3  mb-0">
-                    Monthly Payable
-                  </p>
-                  <p id="lap-monthly-payble-amt-id" class="fw-bold mb-0">343420</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div>
-                <canvas id="LAPdoughnutChart" width="200" height="200"></canvas>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="loan-details  d-flex flex-wrap flex-row w-100  mt-5 ">
-            </div>
-          </div>
-        </div>
-        <button type="button" class="btn btn-theme btn-sm mt-4"
-          onclick="redirectToApplyNowPage('home-construction-loan')"><a herf="javascript:void(0)">Apply
-            Now</a></button>
-      </div>
-    </div>
-    <p> Disclaimer: This EMI Calculator gives approximate amount of EMI (Equated Monthly Installment), loan amount and
-      interest which you will pay. Actual values may change based on your loan application and our company’s policies.
-      Above EMI calculation results are just for your idea and by no means can replace the results and advice of our
-      professional team. T&C Apply. </p>
-  </div>
 
   <div class="container mt-5">
     <h4 class="heading"> FAQs </h4>
     <?php foreach ($faqs as $faq) { ?>
-        <div class="accordion mb-2" id="accordionExample<?= $faq['faq_id'] ?>">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne<?= $faq['faq_id'] ?>">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne<?= $faq['faq_id'] ?>"
-                        aria-expanded="false" aria-controls="collapseOne<?= $faq['faq_id'] ?>"> <?= $faq['question'] ?> </button>
-                </h2>
-                <div id="collapseOne<?= $faq['faq_id'] ?>" class="accordion-collapse collapse" aria-labelledby="headingOne<?= $faq['faq_id'] ?>"
-                    data-bs-parent="#accordionExample<?= $faq['faq_id'] ?>">
-                    <div class="accordion-body">
-                        <p class="paragraph"> <?= $faq['answer'] ?> </p>
-                    </div>
-                </div>
+      <div class="accordion mb-2" id="accordionExample<?= $faq['faq_id'] ?>">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne<?= $faq['faq_id'] ?>">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne<?= $faq['faq_id'] ?>" aria-expanded="false"
+              aria-controls="collapseOne<?= $faq['faq_id'] ?>">
+              <?= $faq['question'] ?>
+            </button>
+          </h2>
+          <div id="collapseOne<?= $faq['faq_id'] ?>" class="accordion-collapse collapse"
+            aria-labelledby="headingOne<?= $faq['faq_id'] ?>" data-bs-parent="#accordionExample<?= $faq['faq_id'] ?>">
+            <div class="accordion-body">
+              <p class="paragraph">
+                <?= $faq['answer'] ?>
+              </p>
             </div>
+          </div>
         </div>
+      </div>
     <?php } ?>
   </div>
 
   <!-- Remove the container if you want to extend the Footer to full width. -->
-  <?php include('footer.php') ?>
+  <?php include ('footer.php') ?>
 </body>
 
 </html>
@@ -515,7 +312,7 @@ You can hit and try different values in the EMI calculator and can get the best 
 <script type="text/javascript" src="js/custom.js"></script>
 <script type="text/javascript" src="js/commonEmi.js"></script>
 <script>
-  $(document).ready(function() {
+  $(document).ready(function () {
     LAPemiCalculator()
     emiCalculator()
   });

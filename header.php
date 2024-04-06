@@ -15,7 +15,7 @@
                         <a class="nav-link <?= basename($_SERVER['REQUEST_URI']) == 'index.php' || basename($_SERVER['REQUEST_URI']) == '' ? 'active' : '' ?>" aria-current="page" href="index.php">Home</a>
                     </li>
                     <li class="nav-item dropdown dropdown-hover">
-                        <a class="nav-link  <?= basename($_SERVER['REQUEST_URI']) == 'About.php' ? 'active' : '' ?>" aria-current="page" href="About.php" id="navbarDropdownabout" role="button" data-bs-toggle="dropdown" aria-expanded="false">About </a>
+                    <a class="nav-link <?= basename($_SERVER['REQUEST_URI']) == 'About.php' ? 'active' : '' ?>" aria-current="page" href="About.php">About</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownabout">
                             <li onclick = 'redirectToParticularDiv("About.php", "who-we-are")'>
                                 <a class="dropdown-item">Who We Are?</a>
@@ -32,7 +32,7 @@
                            
                         </ul>
                     </li>
-                    <li class="nav-item dropdown dropdown-hover">
+                     <li class="nav-item dropdown dropdown-hover">
                         <a class="nav-link  <?= in_array(basename($_SERVER['REQUEST_URI']), ['loan-against-property.php', 'home-construction-loan.php', 'commercial-vehicle-loan.php', 'personal-loan.php', 'business-loan.php']) ? 'active' : '' ?>" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false"> Products 
                         </a>
@@ -44,22 +44,21 @@
                                 <a class="dropdown-item <?= basename($_SERVER['REQUEST_URI']) == 'home-construction-loan.php' ? 'active' : '' ?>" href="home-construction-loan.php">Home Construction Loan  </a>
                             </li>
                             <li>
-                                <a class="dropdown-item <?= basename($_SERVER['REQUEST_URI']) == 'commercial-vehicle-loan.php' ? 'active' : '' ?>" href="commercial-vehicle-loan.php">Commercial Vehicle Loan</a>
+                                <a class="dropdown-item <?= basename($_SERVER['REQUEST_URI']) == 'commercial-vehicle-loan.php' ? 'active' : '' ?>" href="commercial-vehicle-loan.php">Commerical Vehicle Loan </a>
                             </li>
                             <li>
-                                <a class="dropdown-item <?= basename($_SERVER['REQUEST_URI']) == 'two-vehicle-loan.php' ? 'active' : '' ?>" href="two-vehicle-loan.php">Two Wheeler Loan</a>
+                                <a class="dropdown-item <?= basename($_SERVER['REQUEST_URI']) == 'two-vehicle-loan.php' ? 'active' : '' ?>" href="two-vehicle-loan.php">Two Vehicle Loan </a>
                             </li>
                             <li>
                                 <a class="dropdown-item <?= basename($_SERVER['REQUEST_URI']) == 'personal-loan.php' ? 'active' : '' ?>" href="personal-loan.php">Personal Loan </a>
                             </li>
                             <li>
-                                <a style="margin-bottom:-5px;" class="dropdown-item border-bottom-0 <?= basename($_SERVER['REQUEST_URI']) == 'business-loan.php' ? 'active' : '' ?>" href="business-loan.php">Business Loan </a>
+                                <a class="dropdown-item border-bottom-0 <?= basename($_SERVER['REQUEST_URI']) == 'business-loan.php' ? 'active' : '' ?>" href="business-loan.php">Business Loan </a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown dropdown-hover" >
-                        <a class="nav-link  <?= basename($_SERVER['REQUEST_URI']) == 'career.php' ? 'active' : '' ?>" href="career.php"
-                         id="navbarDropdowncareer" role="button"  data-bs-toggle="dropdown" aria-expanded="false">Careers </a>
+                    <a class="nav-link <?= basename($_SERVER['REQUEST_URI']) == 'career.php' ? 'active' : '' ?>" aria-current="page" href="career.php">Careers</a>
                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li onclick = 'redirectToParticularDiv("career.php", "lifeattiffany")'>
                                 <a class="dropdown-item ">Life At Tiffany</a>

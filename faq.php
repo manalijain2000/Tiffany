@@ -34,8 +34,8 @@ $conn->close();
             <h3 class="heading">FAQs</h3>
         </div>
     </div>
-    <div class = "container-fluid  mt-0">
-        <div class="row align-items-center">
+    <div class = "container-fluid  mt-0 ">
+        <div class="row align-items-center ">
             <!-- <div class="col-md-5">
                 <img src="img/faq.jpg" class="img-fluid" alt="">
             </div> -->

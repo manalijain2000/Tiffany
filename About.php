@@ -8,7 +8,7 @@
   <link rel="shortcut icon" href="img/dark-logo-sm.png">
   <link rel="stylesheet" href="footer.css">
   <link rel="stylesheet" href="style.css">
- 
+
   <!-- <link rel="stylesheet" href="bootstrap/font-awesome-min.css"> -->
   <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css" />
   <link rel="stylesheet" type="text/css" href="custom-bootstrap/bootstrap.css" />
@@ -20,7 +20,7 @@
 
 <?php
 // Include the database connection file
-include("db_connection.php");
+include ("db_connection.php");
 // SQL query to select all products from the 'products' table
 $teamMembersSql = "SELECT * FROM members";
 $teamMembers = $conn->query($teamMembersSql);
@@ -29,58 +29,136 @@ $conn->close();
 ?>
 
 <body>
-  <?php include('header.php') ?>
-  <div class="container-fluid p-0 banner-header">
-    <div class=" header-slider">
-      <img src="img/tifinay1.png" class="d-block w-100 loan-header" alt="...">
+  <?php include ('header.php') ?>
+  <div class="container-fluid p-0 banner-header mt-0">
+    <div class=" header-slider ">
+      <img src="img/tifinay1.png" class="d-block w-100 loan-header " alt="...">
 
-      <div class="top-left"><h2>Your <span class="tfpl">T</span>rusted <span class="tfpl">F</span>inancial <span class="tfpl">P</span>referred <span class="tfpl">L</span>ender</h2></div>
+      <div class="top-left">
+        <h2>Your <span class="tfpl">T</span>rusted <span class="tfpl">F</span>inancial <span
+            class="tfpl">P</span>referred <span class="tfpl">L</span>ender</h2>
+      </div>
     </div>
   </div>
-  <div class="container mt-5" id = "who-we-are">
+  <div class="container-fluid">
     <div class="row">
+      <div class="col-md-6 me-0 pe-0 ">
+        <div class="who-we-are-content  pb-0">
+          <h4 class="mb-4 fw-bolder fs-2 text-dark mt-5 ps-5"><img src="img/TIF.jpg" width="30px" height="30px"
+              class="me-2">Who We Are</h4>
+          <div id="carouselExampleControls" class="carousel slide pe-0 pb-1" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <p class="text-dark p-5">Incorporated in 2017, Tiffany Finance is a fast-growing NBFC (Non-Banking Finance
+                  Company) based out of Bhilwara, Rajasthan with a niche leadership in retail financing.
+                  We are a Non-Banking Financial Company – Non-Systemically Important Non-Deposit taking Company
+                  (NBFC-ND), registered with Reserve Bank of India (“RBI”) under section 45- IA of the Reserve Bank of
+                  India Act, 1934.
 
-      <h5 class="heading mb-4"> Who We Are?</h5>
-      <p class="paragraph"> Incorporated in 2017, Tiffany Finance is a fast-growing NBFC (Non-Banking Finance Company) based out of
-        Bhilwara, Rajasthan with a niche leadership in retail financing. </p>
-      <p class="paragraph" >We are a Non-Banking Financial Company - Non-Systemically Important Non-Deposit taking Company (NBFC-ND),
-        registered with Reserve Bank of India (“RBI”) under section 45- IA of the Reserve Bank of India Act, 1934.
-      </p>
-      <p class="paragraph">The company is managed by two dynamic entrepreneurs Mr. Virendra Prakash Ranka and Mr. Ronak Jain with a
-        primary focus to reach and lend to the unorganized market and micro small and medium businesses (MSMEs)
-        especially catering to semi-urban and rural areas.</p>
-      <p class="paragraph">Main services of the company include Loan Against Property, Two-Wheeler Loan and Three- Wheeler Loan. </br>
-        </br> We are known for dedicated customer service and safe and fair business practices. Our services are
-        efficient and trusted by diverse range of customers. The process of applying for loans is fast and easy with a
-        quick disbursement of funds within 5-7 days. </p>
+                  The company is managed by two dynamic entrepreneurs Mr. Virendra Prakash Ranka and Mr. Ronak Jain
+                  with a
+                  primary focus to reach and lend to the unorganized market. </p>
 
-
+              </div>
+              <div class="carousel-item">
+                <p class="text-dark p-5 ">
+                  Micro small and medium businesses (MSMEs) especially catering to semi-urban and rural areas.Our Core
+                  Offerings include Loan Against Property, Home Construction Loan, Vehicle Loan, Personal Loan and
+                  Business Loan.<br>
+                  <br>
+                  We are known for dedicated customer service and safe and fair business practices. Our services are
+                  efficient and trusted by diverse range of customers. The process of applying for loans is fast and
+                  easy
+                  with a quick disbursement of funds within 5-7 days.
+                </p>
+              </div>
+            </div>
+            <!-- Custom Carousel Dots -->
+            <div class="carousel-dots-who mb-2">
+              <span class="dot-who active" onclick="goToSlide(0)"></span>
+              <span class="dot-who" onclick="goToSlide(1)"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 ms-0 ps-0">
+        <div class="who-we-are-content-image">
+          <img src="img/who-we-are-image.jpg" alt="Who We Are Image">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="our-story-image">
+          <img src="img/arrow-img.jpg" alt="our story">
+        </div>
+      </div>
+      <div class="col-md-6 p-5">
+        <h4 class="mb-4 fw-bolder fs-2 text-dark mt-3"><img src="img/TIF.jpg" width="30px" height="30px"
+            class="me-2">Our Logo Story</h4>
+        <p Class="text-dark">Our logo features a sleek, upward-pointing arrow, poised to ascend towards the sky. The
+          arrow represents the journey of growth and advancement that our customers embark upon with our support. Its
+          sharp lines convey precision and determination, reflecting our commitment to helping our customers overcome
+          obstacles and soar to new heights. As they navigate their path to success, we stand by them as a trusted
+          partner, providing the support and resources they need to thrive.</p>
+        <p class="text-dark">Our logo is more than just a visual representation; it is a symbol of our values, our
+          mission, and our unwavering dedication to supporting our customers on their journey towards success.</p>
+      </div>
     </div>
   </div>
-  <div class="container text-center" id = "our-values">
-  <h4 class="heading text-center  mt-5 ">Our Values</h4>
-   <img src="img/values.png" class="values">
+  </div>
+  <div class="container text-center" id="our-values">
+    <h4 class="heading text-center  mt-5 ">Our Values</h4>
+    <div class="row">
+      <div class="col-md-6  ">
+        <p class="text-dark p-5 d-flex justify-content-center align-items-center mt-5">At Tiffany Finance, our core values are the guiding principles that underpin our
+          commitment to excellence. Rooted in our vision to lead the financial industry through innovation and uphold
+          unwavering integrity, our mission drives us to serve the underserved while aspiring to be India's most trusted
+          financier. These values shape our identity and dictate every aspect of our operations, ensuring transparency,
+          trust, and customer-centricity in all our endeavors.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="img/values.png" class="values">
+      </div>
+    </div>
   </div>
   <div class="container-fluid" id="vision-n-mission">
     <div class="container-fluid">
-        <div class="row justify-content-center  mt-3 py-5">
-            <h4 class="heading text-center mb-4">Our Vision & Mission</h4>
-            <div class="col-md-12 col-lg-6 p-4 bg-theme vission-mission"> <!-- Changed col-md-5 to col-md-12 and added col-lg-6 -->
-                <img src="img/values/vision.png" class="vision-img">
-                <span class="fs-1 ">Vision</span><br><br>
-                <p>Vision Statement: To offer financial services to the underserved and under resourced market and transform into a most trusted financier in India serving a large number of customers.</p>
-            </div>
-            <div class="col-md-12 col-lg-6 p-4 bg-theme-sec"> <!-- Changed col-md-5 to col-md-12 and added col-lg-6 -->
-                <img src="img/values/mission.png" class="vision-img2">
-                <span class="fs-1">Mission</span><br><br>
-                <p>Mission Statement: To provide sustainable financing and reach the maximum number of underserved micro, small, and medium enterprises by providing them easy and quick loans at the best interest rate possible, hence creating a positive impact on economic growth and contributing to financial inclusion.</p>
-            </div>
-            
-        </div>
-    </div>
-</div>
+      <div class="row justify-content-center  mt-3 py-5">
+        <h4 class="heading text-center mb-5">Our Vision & Mission</h4>
+        <div class="col-md-12 col-lg-6 p-4 bg-theme vission-mission d-flex justify-content-center align-items-center">
+          <!-- Changed col-md-5 to col-md-12 and added col-lg-6 -->
+          <img src="img/values/vission.jpg" class="vision-img  ">
 
- 
+        </div>
+        <div class="col-md-12 col-lg-6 p-5 vission-content "> <!-- Changed col-md-5 to col-md-12 and added col-lg-6 -->
+          <h4 class="mb-4 fw-bolder fs-2 text-dark mt-5"><img src="img/headpoint.png" width="30px" height="30px"
+              class="me-2">Vision</h4>
+          <p class="d-flex justify-content-center align-items-center ps-2  text-dark ">To be at the forefront of
+            financial
+            innovation, adopting new technologies and approaches to better serve customers and to uphold the highest
+            standards of ethics and integrity in all financial dealings, ensuring trust and transparency with customers,
+            regulators, and stakeholders.</p>
+        </div>
+        <div class="col-md-12 col-lg-6 p-5 vission-content "> <!-- Changed col-md-5 to col-md-12 and added col-lg-6 -->
+          <h4 class="mb-4 fw-bolder fs-2 text-dark mt-5"><img src="img/headpoint.png" width="30px" height="30px"
+              class="me-2">Mission</h4>
+          <p class="d-flex justify-content-center align-items-center  text-dark ">To offer financial services to the
+            underserved and under resourced market and transform into a most trusted financier in India serving a large
+            number of customers.</p>
+        </div>
+        <div class="col-md-12 col-lg-6 p-3 bg-theme vission-mission d-flex justify-content-center align-items-center">
+          <!-- Changed col-md-5 to col-md-12 and added col-lg-6 -->
+          <img src="img/values/mission.jpg" class="mission-img ps-5 mt-4 ">
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
   <div class="container" id='our-team'>
     <div class="row mt-5 meet-team-box justify-content-between">
       <h4 class="heading text-center mb-4 ">Meet The Team</h4>
@@ -133,7 +211,7 @@ $conn->close();
     </div>
   </div>
   <!-- Remove the container if you want to extend the Footer to full width. -->
-  <?php include('footer.php') ?>
+  <?php include ('footer.php') ?>
 </body>
 
 </html>
@@ -168,5 +246,13 @@ $conn->close();
 
   });
 
+  function goToSlide(slideIndex) {
+    // Get the carousel instance
+    var carousel = document.getElementById('carouselExampleControls');
+    var carouselInstance = bootstrap.Carousel.getInstance(carousel);
+
+    // Set the active slide based on the slide index
+    carouselInstance.to(slideIndex);
+  }
 
 </script>

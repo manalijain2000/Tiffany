@@ -172,10 +172,10 @@
 
     var totalAmountPaid = totalPayable;
 
-    $('#principal-amt-id').text(amount.toLocaleString('en-IN') + ' ' + 'Rs.')
-    $('#interest-amt-id').text(totalInterestPaid.toLocaleString('en-IN') + ' ' + 'Rs.')
-    $('#total-payble-amt-id').text(totalAmountPaid.toLocaleString('en-IN') + ' ' + 'Rs.')
-    $('#monthly-payble-amt-id').text(emi.toLocaleString('en-IN') + ' ' + 'Rs.')
+    $('#principal-amt-id').text(amount.toLocaleString('en-IN') + ' ' + '')
+    $('#interest-amt-id').text(totalInterestPaid.toLocaleString('en-IN') + ' ' + '')
+    $('#total-payble-amt-id').text(totalAmountPaid.toLocaleString('en-IN') + ' ' + '')
+    $('#monthly-payble-amt-id').text(emi.toLocaleString('en-IN') + ' ' + '')
 
     // var amountPaid = 5000;
     // var interestPaid = 1000;

@@ -48,7 +48,7 @@
                   <p class="cin">CIN - U67190RJ2017PTC057988<br>
                   <span class="me-1">HO</span> - 1<sup>st</sup> Floor, Tiffany Tower, Bhilwara-311001, Rajasthan </p>
                   <a href="tel:1800-890-6544" class="phone-icon"><i class="fa fa-phone"></i></a><span>1800-890-6544</span><br>
-                  <a href="mailto:info@tiffanyfinance.com"><i class="fas fa-envelope"></i></a><span>info@tiffanyfinance.com</span>
+                  <a href="mailto:support@tiffanyfinance.com"><i class="fas fa-envelope"></i></a><span>support@tiffanyfinance.com</span>
                </div>
             </div>
 
