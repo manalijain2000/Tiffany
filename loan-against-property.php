@@ -41,7 +41,7 @@ $conn->close();
       <div class="row">
         <div class="col-md-6 p-5 ">
           <h4 class="fs-2 fw-bolder products-header-h4">Loan Aganist Property</h4>
-          <p class="text-dark fs-5">Turn Your Property into Cash with Ease with our Loan Against Property </p>
+          <p class="text-dark fs-6">Turn Your Property into Cash with Ease with our Loan Against Property </p>
           <a class="product-apply-now <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
             href="apply-now.php">Apply Now</a>
         </div>
@@ -96,24 +96,25 @@ $conn->close();
                 </div>
                 <br>
                 <div class="wrapper mb-2 ">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <p class="mb-0 paragraph me-5">Interest</p>
-                  <div class="input-group w-fit-200">
-                    <input type="text" onfocusout='LAPsetInputRangeVal(this)' value="18"
-                      id='lap-set-interest-loan-against-property' class="form-control form-control-sm">
-                    <div class="input-group-append d-flex">
-                      <span class="input-group-text ">% </span>
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <p class="mb-0 paragraph me-5">Interest</p>
+                    <div class="input-group w-fit-200">
+                      <input type="text" onfocusout='LAPsetInputRangeVal(this)' value="18"
+                        id='lap-set-interest-loan-against-property' class="form-control form-control-sm">
+                      <div class="input-group-append d-flex">
+                        <span class="input-group-text ">% </span>
+                      </div>
                     </div>
                   </div>
+                  <div class="range">
+                    <input onchange='LAPsetInputValue(this)' id="lap-interest-id" type="range" min="9" max="24"
+                      value="18" />
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <div>9%</div>
+                    <div>24%</div>
+                  </div>
                 </div>
-                <div class="range">
-                  <input onchange='LAPsetInputValue(this)' id="lap-interest-id" type="range" min="9" max="24" value="18" />
-                </div>
-                <div class="d-flex justify-content-between">
-                      <div>9%</div>
-                      <div>24%</div>
-                    </div>
-              </div>
               </div>
               <div class=" col-lg-6 p-4">
                 <img src="img/calculator.png" class="product-emi-box-image">
@@ -121,20 +122,28 @@ $conn->close();
                 <br>
                 <h3 class="mt-4 fs-4 ms-1">Your EMI (Monthly)</h3>
                 <br>
-               <div class="d-flex justify-content-start">
-               <img src="img/rupee.jpg" width="40px" height="40px">
-                <p id="lap-total-payble-amt-id" class="fw-bold mb-0 paragraph fs-4 mt-1">343420</p>
-               </div>
+                <div class="d-flex justify-content-start">
+                  <img src="img/rupee.jpg" width="40px" height="40px">
+                  <p id="lap-total-payble-amt-id" class="fw-bold mb-0 paragraph fs-4 mt-1">343420</p>
+                </div>
               </div>
             </div>
           </div>
-
         </div>
-
       </div>
     </div>
   </div>
-  <div class="container mt-5">
+  <div class="container-fluid mt-4">
+    <div class="menu">
+      <div class="menu-item"><a href="#overview" class="fw-bolder fs-4 ms-3">Overview</a></div>
+      <div class="menu-item"><a href="#eligibilty" class="fw-bolder fs-4">Eligibility</a></div>
+      <div class="menu-item"><a href="#document" class="fw-bolder fs-4">Document</a></div>
+      <div class="menu-item"><a href="#howtoapply" class="fw-bolder fs-4">How To Apply</a></div>
+
+      <!-- Add more items here -->
+    </div>
+  </div>
+  <div class="container mt-5" id="overview">
     <div class="row">
       <div class="col-md-7">
         <p class="text-dark">Unlock the potential of your property with Tiffany Finance Property Loans, serving both
@@ -161,7 +170,6 @@ $conn->close();
   <div class="container mt-5">
     <div class="row feature ">
       <h4 class=" mb-4 fw-bolder text-center bottom-line">Features & Benefits for Loan Aganist Property</h4>
-
       <div class="featuresandbenefits">
         <div class="text-center mt-5 mb-5">
           <img src="img/fblap.jpg" class="img-fluid me-5  ">
@@ -172,18 +180,10 @@ $conn->close();
             <div><strong> High LTV:</strong>Get up to 60% loan for residential and 70% for commercial properties.
             </div>
           </div>
-
-          <!-- <div class="d-flex align-items-start">
-            <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
-            <div><strong>Interest-Only Payments :</strong>During construction, pay interest only on the disbursed
-              amount, aiding in managing initial expenses.
-            </div>
-          </div> -->
           <BR>
           <div class="d-flex align-items-start">
             <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
             <div><strong>12-Year* Loan Tenure :</strong>Enjoy a flexible repayment period spanning up to 12 years*.
-
             </div>
           </div>
           <BR>
@@ -200,8 +200,7 @@ $conn->close();
             </div>
           </div>
           <BR>
-
-          <div class="d-flex align-items-start">
+<div class="d-flex align-items-start">
             <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
             <div><strong>Transparent Process :</strong>No hidden fees or charges throughout the loan procedure.
             </div>
@@ -214,20 +213,14 @@ $conn->close();
           </div>
         </div>
       </div>
-
-
-
-
-
-      <p class="text-danger">
+<p class="text-danger">
         <i>*Terms & Conditions Apply</i>
       </p>
     </div>
   </div>
-
-  <div class="container mt-5">
+  <div class="container mt-5" id="eligibilty">
     <div class="row feature ">
-      <h4 class="fw-bolder bottom-line  mb-3 text-center">Eligibility Criteria for Loan Against Property</h4>
+      <h4 class="fw-bolder bottom-line  mb-5 text-center">Eligibility Criteria for Loan Against Property</h4>
       <p class="paragraph">We provide Loan Against Property to all the salaried,
         self-employed individuals and SMEs and there is a customized loan for each
         category you belong to. There is a product based on your needs and requirements.
@@ -301,10 +294,10 @@ $conn->close();
   </div>
   </div>
 
-  <div class="container mt-5">
+  <div class="container mt-5" iid="document">
     <div class="row">
       <div class="col">
-        <h4 class="heading">Documents Required For LAP</h4>
+        <h4 class="heading mb-5">Documents Required For LAP</h4>
         <div class="row">
 
           <div class="accordion" id="accordionExample">
@@ -445,7 +438,7 @@ $conn->close();
 
   <div class="container mt-5" id="howtoapply">
     <div class="row feature ">
-      <h4 class="fw-bolder bottom-line mb-3 text-center">How To Apply</h4>
+      <h4 class="fw-bolder bottom-line mb-4 text-center">How To Apply</h4>
       <p class="text-dark mt-3 mb-5">Process of applying for loan against property is easy and fast with us. Some of the
         ways
         you can apply for loan are :</p>
@@ -490,7 +483,7 @@ $conn->close();
   </div>
 
   <div class="container mt-5">
-    <h4 class="heading"> FAQs </h4>
+    <h4 class="heading mb-5"> FAQs </h4>
     <?php foreach ($faqs as $faq) { ?>
       <div class="accordion mb-2" id="accordionExample<?= $faq['faq_id'] ?>">
         <div class="accordion-item">

@@ -16,12 +16,10 @@
     <img src="img/values/phone.png" class="side-icon1">
     <span>Contact Us</span>
 </button>
-
-
   </div>
   <!-- Modal -->
   <div class="modal fade" id="CalculateEMI" tabindex="-1" aria-labelledby="CalculateEMILabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-dialog modal-xl modal-dialog-centered custom-modal-size">
       <div class="modal-content">
         <div class="modal-header">
           <h4>Calculate EMI</h4>
@@ -38,10 +36,10 @@
           <div class="tab-pane fade show active" id="BusinessLoan" role="tabpanel" aria-labelledby="BusinessLoan-tab">
             <div class="container mt-1">
               <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-6 p-4">
                   <div class="wrapper mb-2 ">
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                      <p class="mb-0 paragraph">Loan Amount</p>
+                      <p class="mb-0 paragraph fs-5">Loan Amount</p>
                       <div class="input-group w-fit-200">
                         <input onfocusout="setInputUsFormat()" onfocusin="setInputNormalForm()" type="text"
                           value="10,00,000" id='set-amount-loan-against-property' class="form-control form-control-sm">
@@ -51,30 +49,39 @@
                       </div>
                     </div>
                     <div class="range">
-                      <input onchange='setInputValue(this)' id="amount-id" type="range" min="0" max="3000000"
-                        value='1000000' />
+                      <input onchange='setInputValue(this)' id="amount-id" type="range" min="500000"
+                      max="50000000" value='1000000' />
                     </div>
+                    <div class="d-flex justify-content-between">
+                    <div>500000</div>
+                    <div>50000000</div>
                   </div>
+                  </div>
+                  <br>
                   <div class="wrapper mb-2 ">
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                      <p class="mb-0 paragraph">Tenure</p>
+                      <p class="mb-0 paragraph fs-5">Tenure</p>
                       <div class="input-group w-fit-200">
                         <input type="text" onfocusout='setInputRangeVal(this)' value="60"
                           id='set-tenur-loan-against-propertye' class="form-control form-control-sm">
                         <div class="input-group-append d-flex">
                           <span onclick='convertMonthToYear(this)' id="month-id"
                             class="input-group-text text-white bg-dark">Mo</span>
-                          <span onclick='convertMonthToYear(this)' id="year-id" class="input-group-text">Yr</span>
                         </div>
                       </div>
                     </div>
                     <div class="range">
-                      <input onchange='setInputValue(this)' id="tenure-id" type="range" min="0" max="144" value='60' />
+                      <input onchange='setInputValue(this)' id="tenure-id" type="range" min="12" max="120 " value='60' />
                     </div>
+                    <div class="d-flex justify-content-between">
+                    <div>12 Months</div>
+                    <div>120 Months</div>
                   </div>
+                  </div>
+                  <br>
                   <div class="wrapper mb-2 ">
                     <div class="d-flex justify-content-between align-items-center mb-3">
-                      <p class="mb-0 paragraph">Interest</p>
+                      <p class="mb-0 paragraph fs-5">Interest</p>
                       <div class="input-group w-fit-200">
                         <input type="text" onfocusout='setInputRangeVal(this)' value="18"
                           id='set-interest-loan-against-property' class="form-control form-control-sm">
@@ -84,11 +91,15 @@
                       </div>
                     </div>
                     <div class="range">
-                      <input onchange='setInputValue(this)' id="interest-id" type="range" min="0" max="30" value="20" />
+                      <input onchange='setInputValue(this)' id="interest-id" type="range" min="11.99" max="36" value="18" />
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div>11.99%</div>
+                      <div>36%</div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4">
+                <!-- <div class="col-md-4">
                   <div class="h-100 rounded py-3 px-4 pt-4 bg-lights">
                     <div class='chart-details mb-3 d-flex align-items-center  text-start '>
                       <p class="fs-6 calculator-label me-3  mb-0 paragraph">Principal</p>
@@ -109,11 +120,19 @@
                       <p id="monthly-payble-amt-id" class="fw-bold mb-0 paragraph">343420</p>
                     </div>
                   </div>
+                </div> -->
+                <div class="col-md-6">
+                <img src="img/calculator.png" class="product-emi-box-image-sideemi">
+                <br>
+               
+                <h3 class="mt-4 fs-4 ms-1">Your EMI (Monthly)</h3>
+                
+                <div class="d-flex justify-content-start emi-box-ruppes">
+                  <img src="img/rupee.jpg" width="40px" height="40px">
+                  <p id="total-payble-amt-id" class="fw-bold mb-0 paragraph fs-4 mt-1">343420</p>
                 </div>
-                <div class="col-md-3">
-                  <div>
-                    <canvas id="doughnutChart" width="200" height="200"></canvas>
-                  </div>
+                <br>
+                <a class="product-apply-now emi-box-main <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>" href="apply-now.php">Apply Now</a>
                 </div>
               </div>
               <div>
@@ -174,7 +193,7 @@
 
     $('#principal-amt-id').text(amount.toLocaleString('en-IN') + ' ' + '')
     $('#interest-amt-id').text(totalInterestPaid.toLocaleString('en-IN') + ' ' + '')
-    $('#total-payble-amt-id').text(totalAmountPaid.toLocaleString('en-IN') + ' ' + '')
+    $('#total-payble-amt-id').text(totalAmountPaid.toFixed(2).toLocaleString('en-IN') + ' ' + '')
     $('#monthly-payble-amt-id').text(emi.toLocaleString('en-IN') + ' ' + '')
 
     // var amountPaid = 5000;

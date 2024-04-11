@@ -27,14 +27,14 @@
   </div>
 
   <div class="container mt-5">
-    <h4 class="heading text-center" id="lifeattiffany">
+    <h4 class="heading text-center mb-5" id="lifeattiffany">
       Life at Tiffany
     </h4>
     <div class="container-fluid mt-5" id="overview">
       <div class="row">
         <div class="col-md-6 pt-5">
 
-          <p class="text-dark me-3 ">At Tiffany Finance, we've created an environment where every day is an
+          <p class="text-dark me-3 mt-5">At Tiffany Finance, we've created an environment where every day is an
             opportunity
             to learn, grow, and make a difference. You'll find a fulfilling and rewarding journey where you can
             pursue
@@ -46,12 +46,13 @@
             <a class="loan-apply-btn " href="#applyforjob">Join Our Team</a>
             <br>
           </p>
+         
 
 
         </div>
         <div class="col-md-6 text-end mt-3 ">
           <div class="image-container ">
-            <img src="img/ohcl.jpg" class="img-fluid carrer-tiffany">
+            <img src="img/lifeattiffany.png" class="img-fluid carrer-tiffany">
           </div>
         </div>
       </div>
@@ -60,7 +61,7 @@
 
 
   <div class="container mt-5 mb-5">
-    <h4 class="heading text-center">
+    <h4 class="heading text-center ">
       Employee Desk
     </h4>
     <div class="container mt-5">
@@ -91,7 +92,7 @@
 
 
   <div class="container-fluid  pt-5 mt-4" id="applyforjob">
-    <h4 class="heading text-center">
+    <h4 class="heading text-center mb-5">
       Apply For Job
     </h4>
     <!-- <div class="enq-form">
@@ -294,7 +295,7 @@
   </div>
 
   <div class="container mt-4">
-    <h4 class="heading text-center">
+    <h4 class="heading text-center mb-5">
       Explore Our Gallery
     </h4>
     <p class="text-dark ">At Tiffany Finance, we thrive on celebrating every occasion, crafting cherished memories to

@@ -108,7 +108,7 @@ $conn->close();
   </div>
   </div>
   <div class="container text-center" id="our-values">
-    <h4 class="heading text-center  mt-5 ">Our Values</h4>
+    <h4 class="heading text-center  mt-5 mb-5 ">Our Values</h4>
     <div class="row">
       <div class="col-md-6  ">
         <p class="text-dark p-5 d-flex justify-content-center align-items-center mt-5">At Tiffany Finance, our core values are the guiding principles that underpin our
@@ -161,7 +161,7 @@ $conn->close();
 
   <div class="container" id='our-team'>
     <div class="row mt-5 meet-team-box justify-content-between">
-      <h4 class="heading text-center mb-4 ">Meet The Team</h4>
+      <h4 class="heading text-center mb-5 ">Meet The Team</h4>
       <?php foreach ($teamMembers as $teamMember) { ?>
         <div class="col-md-3 p-3 img-team-box">
           <div class="team-img"
