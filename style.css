@@ -3267,6 +3267,11 @@ right: 0;
   padding: 24px;
 }
 
+.google-map-location {
+  
+  /* fix height and widht as needed */
+}
+
 .who-we-are-content p {
   margin: 0;
   /* Remove default margin */

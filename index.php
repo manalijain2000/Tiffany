@@ -241,26 +241,11 @@ $conn->close();
          </div>
       </div>
    </div>
-   <div class="container-fluid ready">
-      <div class="p-2 p-md-5  ms-md-5">
-         <div class="row">
-            <div class="col-md-6 me-md-5">
-               <p class="text-white fs-30px me-5">Ready to fulfill your dreams? <br>
-                  Just enter your Email or Phone Number
-               </p>
-            </div>
-            <div class="col-md-5 ">
-               <div class="d-flex flex-wrap justify-content-between bg-white mb-3 p-2 input">
-                  <input type="email" class="formInput border-0 " placeholder="Enter Email or Phone Number" value="">
-                  <button type="button" class="btn btn-sm btn-theme">Submit</button>
-               </div>
-               <p class="text-white executive pb-0"> Our Executive will get in touch with you shortly. </p>
-            </div>
-         </div>
 
+   <!-- Dynamic ready to fullfill dreams -->
+   <?php include('enquiry.php') ?>
+   <!-- end -->
 
-      </div>
-   </div>
    <div class="bg-lights mb-0 mt-5 py-3 d-none ">
       <h5 class="mt-4 text-center heading mt-5">People love us because we are- </h5>
    </div>

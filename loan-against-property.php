@@ -133,6 +133,11 @@ $conn->close();
       </div>
     </div>
   </div>
+
+  <!-- Dynamic ready to fullfill dreams -->
+  <?php include('enquiry.php') ?>
+   <!-- end -->
+   
   <div class="container-fluid mt-4">
     <div class="menu">
       <div class="menu-item"><a href="#overview" class="fw-bolder fs-4 ms-3">Overview</a></div>

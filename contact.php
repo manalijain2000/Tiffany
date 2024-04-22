@@ -37,7 +37,7 @@
       </li>
       <li class="nav-item fs-4" role="presentation">
         <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-          type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Branch Locator</button>
+          type="button" role="tab" onclick="setMapIframe('')" aria-controls="pills-profile" aria-selected="false">Branch Locator</button>
       </li>
       <li class="nav-item fs-4" role="presentation">
         <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
@@ -96,12 +96,10 @@
         <h5 class="text-center mb-4 ms-2">Select Nearest Tiffany Branch</h5>
         <div class="branch-selection">
           <select class="form-select me-3 h-40px select-branch-contact" aria-label="Default select example">
-            <option selected>Select State</option>
             <option value="1">Rajasthan</option>
 
           </select>
-          <select class="form-select me-3 h-40px select-branch-contact" aria-label="Default select example">
-            <option selected>Select Branch</option>
+          <select class="form-select me-3 h-40px select-branch-contact" onchange = "setMapIframe(this)" aria-label="Default select example">
             <option value="1">Bhilwara</option>
             <option value="2">Gangapur</option>
 
@@ -112,6 +110,9 @@
               <input type="text" class="form-control border-0 form-control-sm " aria-label="Text input with checkbox">
             </div>
           </div>
+        </div>
+        <div class = 'google-map-location justify-content-center'>
+          <div id = 'tiffany-finance-google-map-location'></div>
         </div>
       </div>
       <!-- feedback form -->
@@ -252,6 +253,21 @@
 <script src="js/sweat-alert.js"></script>
 
 <script>
+
+  function setMapIframe(el) {
+    $('#tiffany-finance-google-map-location').empty() 
+    if(el == '') {
+      if(el.value == 1) {
+        var location = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.5714207768588!2d74.63343939999996!3d25.35215870000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3968c24a7e6b0a01%3A0x694af048c56bacb2!2sTiffany%20Finance%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1713809049633!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+      } else {
+        var location = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.5714207768588!2d74.63343939999996!3d25.35215870000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3968c24a7e6b0a01%3A0x694af048c56bacb2!2sTiffany%20Finance%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1713809049633!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+      }
+    } else {
+      var location = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.5714207768588!2d74.63343939999996!3d25.35215870000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3968c24a7e6b0a01%3A0x694af048c56bacb2!2sTiffany%20Finance%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1713809049633!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+    }
+    $('#tiffany-finance-google-map-location').append(location);
+  }
+
   function saveCompaintData() {
     var name = $("#name").val();
     var email = $("#email").val();
