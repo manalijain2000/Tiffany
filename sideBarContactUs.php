@@ -7,6 +7,7 @@
     <title>Pay Emi</title>
      <link rel="shortcut icon" href="img/dark-logo-sm.png">
  <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css" />
     <link rel="stylesheet" type="text/css" href="custom-bootstrap/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
@@ -17,10 +18,10 @@
     <?php include('header.php') ?>
 
     <div class="container-fluid bg-light mt-5 pt-5">
-        <div class="card p-4 container " id = 'contact-us-main-form'>
+        <div class="card p-4 container mt-5" id = 'contact-us-main-form'>
             <div class="row">
-                <div>
-                    <div class="row ">
+                <div class="row mt-5">
+                    <div class="row">
                         <input class='input-clear-cls' type="hidden" id='contact_id'>
                         <div class="mb-3 col-md-6">
                             <label class="form-label">Name</label>
@@ -74,7 +75,7 @@
                             <textarea class="form-control input-clear-cls" id="contact-message" rows="3"></textarea>
                         </div>
                     </div>
-                    <button class="btn btn-theme btn-sm mt-2" onclick="saveContactData()"> Submit </button>
+                    <button class="btn btn-theme btn-sm mt-2 contactus" onclick="saveContactData()"> Submit </button>
                 </div>
             </div>
         </div>

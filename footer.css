@@ -11,6 +11,7 @@ body{
 .container{
 	max-width: 1170px;
 	margin:auto;
+	
 }
 .row{
 	display: flex;
@@ -22,6 +23,7 @@ ul{
 .footer{
 	background-color: hsl(237, 31%, 25%);
     padding: 70px 0;
+	margin-bottom: -16%;
 }
 .footer-col{
    width: 25%;
@@ -52,7 +54,7 @@ ul{
 }
 .footer-col ul li{
     color:white;
-    margin-left: -40px;
+    margin-left: -14%;
 }
 .footer-col ul li a{
 	font-size: 16px;
@@ -87,11 +89,14 @@ ul{
 .links{
     color:white;
 }
+
 span,p{
 color:white;
 }
 .address{
 	font-weight: bold;
+	font-size: 17px;
+	margin-bottom: -2px;
 }
 /*responsive*/
 
@@ -111,6 +116,7 @@ color:white;
 }
 .phone-icon {
     transform: scaleX(-1); /* Flips the phone icon horizontally */
+	margin-top: -5px;
 }
 .third{
 	margin-left: 35px;
@@ -122,10 +128,32 @@ color:white;
 }
 
 @media (max-width: 574px) {
-    .footer-col {
-        width: 100%; /* One item per row on even smaller screens */
+	.footer-col {
+        width: 100%; /* Set width to 100% for mobile view */
+        padding: 0 10px; /* Optional: Adjust padding for better spacing */
     }
 }
+.text-white{
+	margin-bottom: -6%;
+}
 
-
+@media only screen and (min-width: 360px) and (max-width: 1024px){
+	.third{
+		margin-left: 3px;
+		
+	}
+	.follow{
+		margin-left: 14%;
+	}
+	
+}
+@media only screen and (min-width: 412px) and (max-width: 430px){
+	.follow{
+		margin-left: 2%;
+	}
+	
+}
+.cin{
+	font-size: 15px;
+}
 

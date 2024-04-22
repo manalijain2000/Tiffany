@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact us</title>
-   <link rel="shortcut icon" href="img/dark-logo-sm.png">
- <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/dark-logo-sm.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="footer.css">
   <!-- <link rel="stylesheet" href="bootstrap/font-awesome-min.css"> -->
   <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css" />
   <link rel="stylesheet" type="text/css" href="custom-bootstrap/bootstrap.css" />
@@ -16,31 +17,36 @@
 </head>
 
 <body>
-  <?php include('header.php') ?>
+  <?php include ('header.php') ?>
   <div class="container-fluid p-0 banner-header">
     <div class=" header-slider">
-      <img src="img/contact.jpg" class="d-block w-100" alt="Privacy-policy">
+      <img src="img/tifinay1.png" class="d-block w-100" alt="Privacy-policy">
       <h3 class="heading">Contact Us </h3>
     </div>
   </div>
-  <div class="container-fluid p-0 py-5  contact-box">
-    <ul class="nav nav-pills pt-5 mb-3 justify-content-center" id="pills-tab" role="tablist">
-      <li class="nav-item" role="presentation">
+  <div class="container-fluid contact-us-content">
+    <img src="img/contacttiffany.jpg" class="image-fluid contact-tiffany-image">
+    <h4 class="fs-1 fw-bolder">Contact Us</h4>
+    <p class="text-dark fs-4">We're Here To Assist You</p>
+  </div>
+  <div class="container-fluid p-0 py-3  contact-box">
+    <ul class="nav nav-pills pt-3 mb-3 justify-content-center " id="pills-tab" role="tablist">
+      <li class="nav-item fs-4 tabs-reach-us" role="presentation">
         <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
           type="button" role="tab" aria-controls="pills-home" aria-selected="true">Reach Us</button>
       </li>
-      <li class="nav-item" role="presentation">
+      <li class="nav-item fs-4" role="presentation">
         <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-          type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Branch Locator</button>
+          type="button" role="tab" onclick="setMapIframe('')" aria-controls="pills-profile" aria-selected="false">Branch Locator</button>
       </li>
-      <li class="nav-item" role="presentation">
+      <li class="nav-item fs-4" role="presentation">
         <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
           type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Suggestions/Feedback</button>
       </li>
-      <li class="nav-item" role="presentation">
+      <!-- <li class="nav-item" role="presentation">
         <button class="nav-link" id="pills-g-tab" data-bs-toggle="pill" data-bs-target="#pills-g" type="button"
           role="tab" aria-controls="pills-g" aria-selected="false">Grievance Redressal/ Complaints</button>
-      </li>
+      </li> -->
     </ul>
     <div class="tab-content px-5" id="pills-tabContent">
       <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
@@ -52,7 +58,7 @@
               <div class="card-body">
                 <div class="d-flex align-items-center">
                   <i class="fas fa-phone-alt"></i>
-                  <p class="mb-0 ms-4">Toll Free <a href="tel:+1800-890-6544"
+                  <p class="mb-0 ms-4 paragraph">Toll Free <a href="tel:+1800-890-6544"
                       class="d-block text-dark">1800-890-6544</a>
                   </p>
                 </div>
@@ -78,107 +84,86 @@
               <div class="card-body">
                 <div class="d-flex align-items-center">
                   <i class="fas fa-map-marker-alt"></i>
-                  <p class="mb-0 ms-4"> 1 st Floor, Tiffany Finance, Tiffany Tower, Bhilwara, Rajasthan, 311001 </p>
+                  <p class="mb-0 ms-4 paragraph"> 1 st Floor, Tiffany Finance, Tiffany Tower, Bhilwara, Rajasthan,
+                    311001 </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-        <h5 class="text-center mb-4">Select Nearest Tiffany Branch</h5>
-        <div class="d-flex align-items-center">
-          <select class="form-select me-3 h-40px" aria-label="Default select example">
-            <option selected>Select State</option>
+      <div class="tab-pane fade " id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <h5 class="text-center mb-4 ms-2">Select Nearest Tiffany Branch</h5>
+        <div class="branch-selection">
+          <select class="form-select me-3 h-40px select-branch-contact" aria-label="Default select example">
             <option value="1">Rajasthan</option>
-            <option value="2">MP</option>
-            <option value="3">UP</option>
+
           </select>
-          <select class="form-select me-3 h-40px" aria-label="Default select example">
-            <option selected>Select Branch</option>
-            <option value="1">Rajasthan</option>
-            <option value="2">MP</option>
-            <option value="3">UP</option>
+          <select class="form-select me-3 h-40px select-branch-contact" onchange = "setMapIframe(this)" aria-label="Default select example">
+            <option value="1">Bhilwara</option>
+            <option value="2">Gangapur</option>
+
           </select>
-          <div class="input-group me-3 h-40px">
-            <div class="input-group-text bg-white py-0">
+          <div class="input-group me-3 h-40px select-branch-contact ">
+            <div class="input-group-text bg-white py-0 search-input-filed">
               <i class="fas fa-search"></i>
-              <input type="text" class="form-control border-0 form-control-sm" aria-label="Text input with checkbox">
+              <input type="text" class="form-control border-0 form-control-sm " aria-label="Text input with checkbox">
             </div>
           </div>
+        </div>
+        <div class = 'google-map-location justify-content-center'>
+          <div id = 'tiffany-finance-google-map-location'></div>
         </div>
       </div>
       <!-- feedback form -->
+
+
       <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-        <h5 class="mb-4 text-center">Suggestions/Feedback</h5>
-        <div>
-          <div class="row justify-content-center">
-            <div class="mb-3 col-md-6">
-              <label class="form-label">Name</label>
-              <div class="input-group mb-1">
-                <input type="text" class="form-control input-clear-cls" id="feedback-name"
-                  placeholder="Enter Your Name">
-                <span class="input-icon"><i class=" fas fa-solid fa-user"></i></span>
-              </div>
-            </div>
-            <div class="mb-3  col-md-6">
-              <label class="form-label">Email ID</label>
-              <div class="input-group mb-1">
-                <span class="input-icon"><i class="fas fa-envelope"></i></span>
-                <input type="email" class="form-control input-clear-cls" id="feedback-email"
-                  placeholder="example@email.com">
-              </div>
-            </div>
-            <div class="mb-3  col-md-6">
-              <label class="form-label">Contact No</label>
-              <div class="input-group mb-1">
-                <span class="input-icon"><i class="fas fa-id-badge"></i></span>
-                <input type="number" class="form-control input-clear-cls" id="feedback-phone_number"
-                  placeholder="Enter Your Contact Number">
-              </div>
-            </div>
-            <div class="mb-3  col-md-6">
-              <label class="form-label">Loan Account No</label>
-              <div class="input-group mb-1">
-                <span class="input-icon">
-                  <i class="fas fa-sort-numeric-up-alt"></i></span>
-                <input type="number" class="form-control input-clear-cls" id="feedback-loan_acc_number"
-                  placeholder="Enter Your Loan Account Number">
-              </div>
-            </div>
-            <div class="mb-3  col-md-6">
-              <label class="form-label">State <span class='text-danger'>*</span></label>
-              <select id="feedback-state" class="form-select">
-                <option value="Rajasthan">Rajasthan</option>
-                <option value="others">Other</option>
-              </select>
-            </div>
-            <div class="mb-3  col-md-6">
-              <label class="form-label">City</label>
-              <div class="input-group mb-1">
-                <span class="input-icon">
-                  <i class="fas fa-map-marker"></i></span>
-                <input type="text" class="form-control input-clear-cls" id="feedback-city"
-                  placeholder="Enter Your City">
-              </div>
-            </div>
+        <!-- <h5 class="mb-4 text-center">Suggestions/Feedback</h5> -->
+        <div class="mx-auto custom-form-wrapper">
+          <div class="mb-3">
+
+            <input type="text" class="form-control input-clear-cls" id="feedback-name" placeholder="Enter Your Name">
           </div>
           <div class="mb-3">
-            <label class="form-label">Message</label>
-            <div class="input-group mb-1">
-              <span class="input-icon">
-                <i class="fas fa-comment-alt"></i></span>
-              <textarea class="form-control input-clear-cls" id="feedback-message" rows="3"></textarea>
-            </div>
-          </div>
-          <div class="w-100 ">
-            <button class="btn btn-theme btn-sm mt-2" onclick="saveFeedBackData()"> Submit </button>
-          </div>
 
+            <input type="number" class="form-control input-clear-cls" id="feedback-phone_number"
+              placeholder="Enter Your Contact Number">
+          </div>
+          <div class="mb-3">
+
+            <input type="number" class="form-control input-clear-cls" id="feedback-loan_acc_number"
+              placeholder="Enter Your Loan Account Number">
+          </div>
+          <div class="mb-3">
+
+            <input type="email" class="form-control input-clear-cls" id="feedback-email"
+              placeholder="example@email.com">
+          </div>
+          <div class="mb-3">
+
+            <select id="feedback-state" class="form-select select-form ">
+              <option value="" disabled selected>Select State</option>
+              <option value="Rajasthan">Rajasthan</option>
+              <option value="others">Other</option>
+            </select>
+          </div>
+          <div class="mb-3">
+
+            <input type="text" class="form-control input-clear-cls" id="feedback-city" placeholder="Enter Your City">
+          </div>
+          <div class="mb-3">
+
+            <textarea class="form-control input-clear-cls" id="feedback-message" rows="3"></textarea>
+          </div>
+          <div class="w-100 text-center">
+            <button class="btn btn-theme btn-sm mt-2" onclick="saveFeedBackData()">Submit</button>
+          </div>
         </div>
       </div>
+
       <!-- Complaints -->
-      <div class="tab-pane fade" id="pills-g" role="tabpanel" aria-labelledby="pills-g-tab">
+      <!-- <div class="tab-pane fade" id="pills-g" role="tabpanel" aria-labelledby="pills-g-tab">
         <h5 class="text-center mb-4"> Grievance Redressal/ Complaints </h5>
         <div>
           <div class="row justify-content-center">
@@ -251,12 +236,12 @@
           <a href="tel:+9184325-63335" class="text-primary "> 9184325-63335</a>
           .
         </p>
-      </div>
+      </div> -->
     </div>
   </div>
 
   <!-- Remove the container if you want to extend the Footer to full width. -->
-  <?php include('footer.php') ?>
+  <?php include ('footer.php') ?>
 </body>
 
 </html>
@@ -268,6 +253,21 @@
 <script src="js/sweat-alert.js"></script>
 
 <script>
+
+  function setMapIframe(el) {
+    $('#tiffany-finance-google-map-location').empty() 
+    if(el == '') {
+      if(el.value == 1) {
+        var location = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.5714207768588!2d74.63343939999996!3d25.35215870000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3968c24a7e6b0a01%3A0x694af048c56bacb2!2sTiffany%20Finance%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1713809049633!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+      } else {
+        var location = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.5714207768588!2d74.63343939999996!3d25.35215870000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3968c24a7e6b0a01%3A0x694af048c56bacb2!2sTiffany%20Finance%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1713809049633!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+      }
+    } else {
+      var location = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.5714207768588!2d74.63343939999996!3d25.35215870000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3968c24a7e6b0a01%3A0x694af048c56bacb2!2sTiffany%20Finance%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1713809049633!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+    }
+    $('#tiffany-finance-google-map-location').append(location);
+  }
+
   function saveCompaintData() {
     var name = $("#name").val();
     var email = $("#email").val();
@@ -377,6 +377,6 @@
   }
 
   $(document).ready(function () {
-    emiCalculator()     
+    emiCalculator()
   });
 </script>

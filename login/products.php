@@ -98,13 +98,18 @@
             "type": "POST",
             "data": function(d) {
             d.draw = d.draw || 1; // Set a default value if not provided
-            // You can add other custom parameters here
+            // You can add other custom parameters here text-hidden
             }
         },
         "columns": [{
             "data": "product_title"
-        }, {
-            "data": "product_description"
+        }, 
+        {
+            "data": "product_description",
+            "render": function(data, type, row) {
+                    // Concatenate first_name, middle_name, and last_name
+                    return `<div class='text-hidden' title = '${row.product_description}'> ${row.product_description} </div>`;
+                },
         },
         {
             "data": "loan_category"

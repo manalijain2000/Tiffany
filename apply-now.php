@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apply Now</title>
-   <link rel="shortcut icon" href="img/dark-logo-sm.png">
- <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/dark-logo-sm.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="footer.css">
   <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css" />
   <link rel="stylesheet" type="text/css" href="custom-bootstrap/bootstrap.css" />
   <link rel="stylesheet" type="text/css" href="slick/slick.css" />
@@ -15,31 +16,37 @@
 </head>
 
 <body>
-  <?php include('header.php') ?>
-
-  <div class="container-fluid bg-light mt-5 pt-5">
-    <div class=" container pt-5">
+  <?php include ('header.php') ?>
+  <div class="container-fluid p-0 banner-header">
+    <div class=" header-slider">
+      <img src="img/tifinay1.png" class="d-block w-100" alt="Privacy-policy">
+      <h3 class="heading">Business Loan </h3>
+    </div>
+  </div>
+  <h4 class="fs-4 fw-bolder ms-4 mt-5">Let’s start!</h4>
+  <div class="container-fluid  pt-5 mb-5">
+    <div class=" container ">
       <div id='before-loan-message'>
         <div class="card p-4  ">
           <div class="row">
 
             <input type="hidden" class="form-control input-clear-cls" id="loan_applicant_id"
               placeholder="Loan Applicant ID">
-            <div class="mb-3  col-md-3">
-              <label class="form-label">First Name <span class="text-danger">*</span></label>
+            <div class="mb-3  col-md-6">
+              <label class="form-label"> Name <span class="text-danger">*</span></label>
               <div class="input-group mb-3">
                 <span class="input-icon"><i class=" fas fa-solid fa-user"></i></span>
-                <input type="text" class="form-control input-clear-cls" id="first_name" placeholder="First Name">
+                <input type="text" class="form-control input-clear-cls" id="first_name" placeholder=" Name">
               </div>
             </div>
-            <div class="mb-3  col-md-3">
+            <!-- <div class="mb-3  col-md-3">
               <label class="form-label">Last Name</label>
               <div class="input-group mb-3">
                 <span class="input-icon"><i class=" fas fa-solid fa-user"></i></span>
                 <input type="text" class="form-control input-clear-cls" id="last_name" placeholder="Last Name">
               </div>
-            </div>
-            <div class="mb-3  col-md-3">
+            </div> -->
+            <div class="mb-3  col-md-6">
               <label class="form-label">Phone <span class="text-danger">*</span></label>
               <div class="input-group mb-3">
                 <span class="input-icon"><i class="fas fa-phone-alt"></i></span>
@@ -47,7 +54,7 @@
                 <input type="number" class="form-control input-clear-cls" id="phone" placeholder="Phone">
               </div>
             </div>
-            <div class="mb-3  col-md-3">
+            <div class="mb-3  col-md-6">
               <label class="form-label">Email <span class="text-danger">*</span></label>
               <div class="input-group mb-3">
                 <span class="input-icon"><i class="fas fa-envelope"></i></span>
@@ -55,59 +62,58 @@
               </div>
             </div>
 
-            <div class="mb-3  col-md-3">
+            <div class="mb-3  col-md-6">
               <label class="form-label">City </label>
               <div class="input-group mb-3">
                 <span class="input-icon"><i class="fas fa-map-marker"></i></span>
                 <input type="email" class="form-control input-clear-cls" id="apply-now-city" placeholder="City">
               </div>
             </div>
-            <div class="mb-3  col-md-3">
+            <!-- <div class="mb-3  col-md-3">
               <label class="form-label">District </label>
               <div class="input-group mb-3">
                 <span class="input-icon"><i class="fas fa-map-marker"></i></span>
                 <input type="apply-now-city" class="form-control input-clear-cls" id="apply-now-district"
                   placeholder="District">
               </div>
-            </div>
-            <div class="mb-3  col-md-3">
+            </div> -->
+            <div class="mb-3  col-md-6">
               <label class="form-label">State </label>
               <div class="input-group mb-3">
                 <span class="input-icon"><i class="fas fa-map-marker"></i></span>
                 <input type="apply-now-city" class="form-control input-clear-cls" id="apply-now-state"
-                  placeholder="District">
+                  placeholder="State">
               </div>
             </div>
-            <div class="mb-3  col-md-3">
+            <!-- <div class="mb-3  col-md-3">
               <label class="form-label">Present Employer </label>
               <div class="input-group mb-3">
                 <span class="input-icon"><i class="fas fa-briefcase"></i></span>
                 <input type="text" class="form-control input-clear-cls" id="present_employer"
                   placeholder="Present Employer">
               </div>
-            </div>
-            <div class="mb-3  col-md-3">
+            </div> -->
+            <!-- <div class="mb-3  col-md-3">
               <label class="form-label">Self employed </label>
               <div class="input-group mb-3">
                 <span class="input-icon"><i class="fas fa-briefcase"></i></span>
                 <input type="text" class="form-control input-clear-cls" id="present_employer"
                   placeholder="Self employed ">
               </div>
-            </div>
-            <div class="mb-3  col-md-3">
+            </div> -->
+            <div class="mb-3  col-md-6">
               <label class="form-label">Loan Type <span class="text-danger">*</span></label>
               <select class="form-select me-3 h-40px input-clear-cls" id="loan_type_select"
                 aria-label="Default select example">
                 <option value="default">Select</option>
-                <option value="loan-against-property">loan-against-property</option>
-                <option value="home-construction-loan">home-construction-loan</option>
-                <option value="commercial-vehicle-loan">commercial-vehicle-loan</option>
-                <option value="personal-loan">personal-loan</option>
-                <option value="business-loan">business-loan</option>
-                <option value="education-loan">education-loan</option>
+                <option value="loan-against-property">Loan Against Property</option>
+                <option value="home-construction-loan">Home Construction Loan</option>
+                <option value="commercial-vehicle-loan">Commercial Vehicle Loan</option>
+                <option value="personal-loan">Personal Loan</option>
+                <option value="business-loan">Business Loan</option>
               </select>
             </div>
-            <div class="mb-3  col-md-3">
+            <!-- <div class="mb-3  col-md-3">
               <label class="form-label">Desired Loan Amount <span class="text-danger">*</span></label>
               <div class="input-group mb-3">
                 <span class="input-icon"><i class="fas fa-receipt"></i></span>
@@ -115,22 +121,22 @@
                 <input type="number" class="form-control input-clear-cls" id="desired_loan_amount"
                   placeholder="Desired Loan Amount">
               </div>
-            </div>
-            <div class="mb-3  col-md-3">
+            </div> -->
+            <!-- <div class="mb-3  col-md-3">
               <label class="form-label">Annual Income</label>
               <div class="input-group mb-3">
                 <span class="input-icon"><i class="fas fa-hand-holding-usd"></i></span>
                 <input type="number" class="form-control input-clear-cls" id="annual_income"
                   placeholder="Annual Income">
               </div>
-            </div>
-            <div class="mb-3  col-md-4">
+            </div> -->
+            <!-- <div class="mb-3  col-md-4">
               <label class="form-label">Birth Date</label>
               <div class="input-group mb-3">
                 <input type="date" class="form-control input-clear-cls" id="birth_date" placeholder="Birth  Date">
               </div>
-            </div>
-            <div class="mb-4  col-md-4">
+            </div> -->
+            <!-- <div class="mb-4  col-md-4">
               <label class="form-label">Marital Status</label>
               <select class="form-select me-3 h-40px input-clear-cls" id="marital_status"
                 aria-label="Default select example">
@@ -138,52 +144,59 @@
                 <option value="Single">Single</option>
                 <option value="Married">Married</option>
               </select>
-            </div>
+            </div> -->
 
-            <div class="mb-4  col-md-4">
+            <!-- <div class="mb-4  col-md-4">
               <label class="form-label">Occupation</label>
               <div class="input-group mb-3">
                 <span class="input-icon"><i class="fas fa-chalkboard-teacher"></i></span>
                 <input type="text" class="form-control input-clear-cls" id="occupation" placeholder="Occupation">
               </div>
-            </div>
+            </div> -->
 
-            <div class="mb-3 col-md-6">
+            <!-- <div class="mb-3 col-md-6">
               <label for="exampleFormControlTextarea1" class="form-label">Address Line 1</label>
-              <div class="input-group mb-3">
-                <!-- <span class="input-icon"><i class="fas fa-map-marker"></i></span> -->
-                <textarea class="form-control input-clear-cls" id="address" rows="2"></textarea>
+              <div class="input-group mb-3"> -->
+            <!-- <span class="input-icon"><i class="fas fa-map-marker"></i></span> -->
+            <!-- <textarea class="form-control input-clear-cls" id="address" rows="2"></textarea>
               </div>
             </div>
             <div class="mb-3 col-md-6">
               <label for="exampleFormControlTextarea1" class="form-label">Address Line 2</label>
-              <div class="input-group mb-3">
-                <!-- <span class="input-icon"><i class="fas fa-map-marker"></i></span> -->
-                <textarea class="form-control input-clear-cls" id="apply-now-address1" rows="2"></textarea>
+              <div class="input-group mb-3"> -->
+            <!-- <span class="input-icon"><i class="fas fa-map-marker"></i></span> -->
+            <!-- <textarea class="form-control input-clear-cls" id="apply-now-address1" rows="2"></textarea>
               </div>
-            </div>
+            </div> -->
 
           </div>
-          <div class="mb-3">
+          <!-- <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Comments</label>
             <div class="input-group mb-3">
               <span class="input-icon"><i class="fas fa-comment-alt"></i></span>
               <textarea class="form-control input-clear-cls" id="comments" rows="3"></textarea>
             </div>
-          </div>
-          <div>
+          </div> -->
+          <p class="text-dark mt-3"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              I authorize Tiffany Finance representatives to call, SMS or email me towards the above application and
+              other Tiffany Finance’s products/services.
+            </label>
+          </p>
+          <div class="d-flex justify-content-center align-items-center">
             <button class="btn btn-theme btn-sm mt-2" onclick="submitApplication()"> <a
                 herf="javascript:void(0)">Save</a></button>
           </div>
 
         </div>
       </div>
+
     </div>
     <div class="d-none card p-5 m-5   text-center mt-5" id='after-loan-message'>
 
     </div>
   </div>
-  <?php include('footer.php') ?>
+  <?php include ('footer.php') ?>
 </body>
 
 </html>
