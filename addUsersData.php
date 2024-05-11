@@ -1,40 +1,110 @@
 <?php
 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+//required files
+require 'phpmailer/PHPMailer/src/Exception.php';
+require 'phpmailer/PHPMailer/src/PHPMailer.php';
+require 'phpmailer/PHPMailer/src/SMTP.php';
 
 class AddUsersData
 {
     function addLoanApplicant()
     {
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $first_name = isset($_POST['first_name']) ? $_POST['first_name'] : '';
-            $last_name = isset($_POST['last_name']) ? $_POST['last_name'] : '';
-            $phone = isset($_POST['phone']) ? $_POST['phone'] : '';
-            $email = isset($_POST['email']) ? $_POST['email'] : '';
-            $loan_type = isset($_POST['loan_type']) ? $_POST['loan_type'] : '';
-            $desired_loan_amount = isset($_POST['desired_loan_amount']) ? $_POST['desired_loan_amount'] : '';
-            $annual_income = isset($_POST['annual_income']) ? $_POST['annual_income'] : '';
-            $birth_date = isset($_POST['birth_date']) ? $_POST['birth_date'] : '';
-            $marital_status = isset($_POST['marital_status']) ? $_POST['marital_status'] : '';
-            $address = isset($_POST['address']) ? $_POST['address'] : '';
-            $present_employer = isset($_POST['present_employer']) ? $_POST['present_employer'] : '';
-            $occupation = isset($_POST['occupation']) ? $_POST['occupation'] : '';
-            $loan_status = isset($_POST['loan_status']) ? $_POST['loan_status'] : '';
-            $comments = isset($_POST['comments']) ? $_POST['comments'] : '';
-            $address1 = isset($_POST['address1']) ? $_POST['address1'] : '';
-            $city = isset($_POST['city']) ? $_POST['city'] : '';
-            $district = isset($_POST['district']) ? $_POST['district'] : '';
-            $state = isset($_POST['state']) ? $_POST['state'] : '';
-            $referenceNumber = isset($_POST['referenceNumber']) ? $_POST['referenceNumber'] : '';
-            $created_at = date('Y-m-d H:i:s');
+        // Mail functionality start
+        // $mail = new PHPMailer(true);
+        // $mailer = 'Tiffany finance';
+        // try {
+        //     //Server settings
+        //     $mail->SMTPDebug = 2;                                 
+        //     $mail->isSMTP();                                      
+        //     $mail->Host = 'smtp.gmail.com';                     
+        //     $mail->SMTPAuth = true;                               
+        //     $mail->Username = 'babeljainmb18@gmail.com';           
+        //     $mail->Password = 'xliauglxxnyhwmwn';                    
+        //     $mail->SMTPSecure = 'tls';                            
+        //     $mail->Port = 587;                                    
+        
+        //     //Recipients
+        //     $mail->setFrom('babeljainmb18@gmail.com', );
+        //     $mail->addAddress('babeljainmb18@gmail.com', $mailer);  
+        //     $mail->addReplyTo('babeljainmb18@gmail.com', 'Information');
+    
+        //     //Content
+        //     $mail->isHTML(true);                                  // Set email format to HTML
+        //     $mail->Subject = 'New Inquiry Received';
+            
+        //     $mail->Body    = $mail->Body    = <<<EOD
+        //     <html>
+        //         <head>
+        //         <title>New Inquiry Notification</title>
+        //         </head>
+        //         <body>
+        //         <h1>New Inquiry Received</h1>
+        //         <p>Dear Administrator,</p>
+        //         <p>We have received a new inquiry through our website. Here are the details:</p>
+        //         <p>Please visit the administration panel to respond.</p>
+        //         <p><a href="https://www.tiffanyfinance.com/">Click here to view the inquiry.</a></p>
+        //         <p>Tiffany Finance</p>
+        //         </body>
+        //     </html>
+        //     EOD;
 
-            if (isEmailUnique($email)) {
-                insertIntoDatabase($first_name, $last_name, $email, $phone, $loan_type, $desired_loan_amount, $annual_income, $birth_date, $marital_status, $address, $present_employer, $occupation, $loan_status, $comments, $created_at, $address1, $city, $district, $state, $referenceNumber);
-                echo json_encode(array('success' => true, 'message' => 'Loan applicant added successfully'));
+        //     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+        
+        //     $mail->send();
+        //     echo 'Message has been sent';
+        // } catch (Exception $e) {
+        //     echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
+        // }
+        // mail functionality end
+        
+        // Google recaptcha code.
+        // localhost secret key kindly change for live 
+        $secret_key = '6LcCncMpAAAAANnb097oGgZ9oQ2fiIUHlZGkozKz';
+
+        $secret = $secret_key;
+        // The response from reCAPTCHA
+        $response = $_POST['recaptchaResponse'];
+        // Verify the response
+        $verifyResponse = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$secret}&response={$response}");
+        $responseData = json_decode($verifyResponse);
+
+        if($responseData->success == 1) {
+            if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                $first_name = isset($_POST['first_name']) ? $_POST['first_name'] : '';
+                $last_name = isset($_POST['last_name']) ? $_POST['last_name'] : '';
+                $phone = isset($_POST['phone']) ? $_POST['phone'] : '';
+                $email = isset($_POST['email']) ? $_POST['email'] : '';
+                $loan_type = isset($_POST['loan_type']) ? $_POST['loan_type'] : '';
+                $desired_loan_amount = isset($_POST['desired_loan_amount']) ? $_POST['desired_loan_amount'] : '';
+                $annual_income = isset($_POST['annual_income']) ? $_POST['annual_income'] : '';
+                $birth_date = isset($_POST['birth_date']) ? $_POST['birth_date'] : '';
+                $marital_status = isset($_POST['marital_status']) ? $_POST['marital_status'] : '';
+                $address = isset($_POST['address']) ? $_POST['address'] : '';
+                $present_employer = isset($_POST['present_employer']) ? $_POST['present_employer'] : '';
+                $occupation = isset($_POST['occupation']) ? $_POST['occupation'] : '';
+                $loan_status = isset($_POST['loan_status']) ? $_POST['loan_status'] : '';
+                $comments = isset($_POST['comments']) ? $_POST['comments'] : '';
+                $address1 = isset($_POST['address1']) ? $_POST['address1'] : '';
+                $city = isset($_POST['city']) ? $_POST['city'] : '';
+                $district = isset($_POST['district']) ? $_POST['district'] : '';
+                $state = isset($_POST['state']) ? $_POST['state'] : '';
+                $referenceNumber = isset($_POST['referenceNumber']) ? $_POST['referenceNumber'] : '';
+                $created_at = date('Y-m-d H:i:s');
+    
+                if (isEmailUnique($email)) {
+                    insertIntoDatabase($first_name, $last_name, $email, $phone, $loan_type, $desired_loan_amount, $annual_income, $birth_date, $marital_status, $address, $present_employer, $occupation, $loan_status, $comments, $created_at, $address1, $city, $district, $state, $referenceNumber);
+                    echo json_encode(array('success' => true, 'message' => 'Loan applicant added successfully'));
+                } else {
+                    echo json_encode(array('success' => false, 'message' => 'Email already exists'));
+                }
             } else {
-                echo json_encode(array('success' => false, 'message' => 'Email already exists'));
+                echo "Invalid request method";
             }
         } else {
-            echo "Invalid request method";
+            echo json_encode(array('success' => false, 'message' => 'You are robot.'));
         }
     }
     function addUserComplaint()

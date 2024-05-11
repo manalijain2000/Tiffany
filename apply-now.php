@@ -113,6 +113,8 @@
                 <option value="business-loan">Business Loan</option>
               </select>
             </div>
+
+            <div class="g-recaptcha" data-sitekey="6LcCncMpAAAAABDV0lQvwABFq7GuOoR5rHkEgSA8"></div>
             <!-- <div class="mb-3  col-md-3">
               <label class="form-label">Desired Loan Amount <span class="text-danger">*</span></label>
               <div class="input-group mb-3">
@@ -204,6 +206,7 @@
 <script type="text/javascript" src="js/jquery-min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
@@ -252,26 +255,28 @@
 
     var refNum = generateReferenceNumber(first_name, birth_date)
     // first_name phone email loan type desired loan amoutn address
+
     var requestData = {
-      first_name: first_name,
-      last_name: last_name,
-      phone: phone,
-      email: email,
-      loan_type: loan_type,
-      annual_income: annual_income,
-      birth_date: birth_date,
-      marital_status: marital_status,
-      address: address,
-      present_employer: present_employer,
-      occupation: occupation,
-      comments: comments,
-      loan_status: loan_status,
-      desired_loan_amount: desired_loan_amount,
-      address1: address1,
-      city: city,
-      district: district,
-      state: state,
-      referenceNumber: refNum
+      first_name: 'first_name',
+      last_name: 'last_name',
+      phone: 'phone',
+      email: 'email',
+      loan_type: 'loan_type',
+      annual_income: 'annual_income',
+      birth_date: 'birth_date',
+      marital_status: 'marital_status',
+      address: 'address',
+      present_employer: 'present_employer',
+      occupation: 'occupation',
+      comments: 'comments',
+      loan_status: 'loan_status',
+      desired_loan_amount: 'desired_loan_amount',
+      address1: 'address1',
+      city: 'city',
+      district: 'district',
+      state: 'state',
+      referenceNumber: 'refNum',
+      recaptchaResponse: grecaptcha.getResponse(),
     };
 
     $.ajax({
@@ -303,7 +308,10 @@
         }
       },
       error: function (error) {
-        console.error('Error adding data:', error);
+        Swal.fire({
+            text: error.message,
+            icon: "error"
+          });
       }
     });
   }

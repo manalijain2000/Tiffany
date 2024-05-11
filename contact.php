@@ -256,13 +256,14 @@
 
   function setMapIframe(el) {
     $('#tiffany-finance-google-map-location').empty() 
-    if(el == '') {
+    if(el != '') {
       if(el.value == 1) {
         var location = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.5714207768588!2d74.63343939999996!3d25.35215870000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3968c24a7e6b0a01%3A0x694af048c56bacb2!2sTiffany%20Finance%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1713809049633!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
       } else {
-        var location = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.5714207768588!2d74.63343939999996!3d25.35215870000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3968c24a7e6b0a01%3A0x694af048c56bacb2!2sTiffany%20Finance%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1713809049633!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+        var location = '<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3609.621937853386!2d74.25459667538243!3d25.215969077698897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDEyJzU3LjUiTiA3NMKwMTUnMjUuOCJF!5e0!3m2!1sen!2sin!4v1713985187451!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
       }
     } else {
+      
       var location = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.5714207768588!2d74.63343939999996!3d25.35215870000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3968c24a7e6b0a01%3A0x694af048c56bacb2!2sTiffany%20Finance%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1713809049633!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
     }
     $('#tiffany-finance-google-map-location').append(location);
