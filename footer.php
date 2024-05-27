@@ -5,7 +5,7 @@
                <h4>Quick Links</h4>
                <ul>
                   <li><a class=" <?= basename($_SERVER['REQUEST_URI']) == 'About.php' ? 'active' : '' ?>"  href="About.php">About </a></li>
-                  <li><a class=" <?= basename($_SERVER['REQUEST_URI']) == 'About.php' ? 'active' : '' ?>"  href="About.php">Vission and Mission </a></li>
+                  <li><a class=" <?= basename($_SERVER['REQUEST_URI']) == 'About.php' ? 'active' : '' ?>"  href="About.php">Vision and Mission </a></li>
                   <li><a class=" <?= basename($_SERVER['REQUEST_URI']) == 'About.php' ? 'active' : '' ?>"  href="About.php">Core Values </a></li>
                   <li><a class=" <?= basename($_SERVER['REQUEST_URI']) == 'About.php' ? 'active' : '' ?>"  href="About.php">Our team </a></li>
                   <li><a class=" <?= basename($_SERVER['REQUEST_URI']) == 'Career.php' ? 'active' : '' ?>"  href="Career.php">Life at Tiffany Finance </a></li>
@@ -27,7 +27,7 @@
             <div class="footer-col  ">
                <h4 class="third">Useful Links</h4>
                <ul class="third">
-                  <li><a class=" <?= basename($_SERVER['REQUEST_URI']) == 'Fair-Practice-Code.php' ? 'active' : '' ?>"  href="Fair-Practice-Code.php">Fair Pratice Code</a></li>
+                  <li><a class=" <?= basename($_SERVER['REQUEST_URI']) == 'Fair-Practice-Code.php' ? 'active' : '' ?>"  href="Fair-Practice-Code.php">Fair Practice Code</a></li>
                   <li><a class=" <?= basename($_SERVER['REQUEST_URI']) == 'privacy-policy.php' ? 'active' : '' ?>"  href="privacy-policy.php">Privacy Policy</a></li>
                   <li><a class=" <?= basename($_SERVER['REQUEST_URI']) == 'terms-use.php' ? 'active' : '' ?>"  href="terms-use.php">Terms & Conditions</a></li>
                   <li><a class=" <?= basename($_SERVER['REQUEST_URI']) == 'disclaimer.php' ? 'active' : '' ?>"  href="disclaimer.php">Disclaimer</a></li>

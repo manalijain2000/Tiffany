@@ -121,8 +121,8 @@ $conn->close();
                 <h3 class="mt-4 fs-4 ms-1">Your EMI (Monthly)</h3>
                 <br>
                 <div class="d-flex justify-content-start">
-                  <img src="img/rupee.jpg" width="40px" height="40px">
-                  <p id="lap-total-payble-amt-id" class="fw-bold mb-0 paragraph fs-4 mt-1">343420</p>
+                  <img src="img/rupee.jpg" width="40px" height="33px">
+                  <p id="lap-total-payble-amt-id" class="fw-bold mb-0 paragraph fs-4">343420</p>
                 </div>
               </div>
             </div>
@@ -252,7 +252,7 @@ $conn->close();
               <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                   aria-expanded="true" aria-controls="collapseOne">
-                  Photo Identity Proof <sup class="ms-2 fs-4 mt-3">*</sup>
+                  Photo Identity Proof <sup class="ms-2 fs-4 mt-3"></sup>
                 </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
@@ -274,7 +274,7 @@ $conn->close();
               <h2 class="accordion-header" id="headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Address Proof <sup class="ms-2 fs-4 mt-3">*</sup>
+                  Address Proof <sup class="ms-2 fs-4 mt-3"></sup>
                 </button>
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
@@ -375,7 +375,7 @@ $conn->close();
   
   <div class="container mt-5" id="howtoapply">
     <div class="row feature ">
-      <h4 class="fw-bolder bottom-line mb-5 text-center">How To Apply</h4>
+      <h4 class="fw-bolder bottom-line mb-4 text-center">How To Apply</h4>
       <p class="text-dark mt-3 mb-5">Process of applying for loan against property is easy and fast with us. Some of the
         ways
         you can apply for loan are :</p>
@@ -384,41 +384,45 @@ $conn->close();
         <div class="how-to-apply-box text-center">
           <img src="img/website.png" class="mt-3" width="50px" height="50px">
           <br>
-         
-          <p class="text-dark mt-2 ">Through website</p>
-          <a  class="loan-apply-btn <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"  href="apply-now.php">Apply Now</a>
+
+          <p class="text-dark mt-3 ">Through Website</p>
+          <a class="loan-apply-btn <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
+            href="apply-now.php">Apply Now</a>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="how-to-apply-box text-center">
-          <img src="img/call.png" class="mt-3 mb-2" width="40px" height="40px">
-          <br>
-          <br>
-          <a href="tel:1800-890-6544" >You can call us on our customer care number @ 1800-890-6544</a>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="how-to-apply-box text-center">
-          <img src="img/email.png" class="mt-3 mb-4" width="50px" height="40px">
+          <img src="img/call.png" class="mt-3 mb-4" width="40px" height="40px">
           <br>
           
-          <a href="mailto:support@tiffanyfinance.com" >Email us on support@tiffanyfinance.com and we will get in touch with
+          <a href="tel:1800-890-6544">You can call us on <br>our customer care number <br>@ 1800-890-6544</a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-2">
+        <div class="how-to-apply-box text-center">
+          <img src="img/email.png" class="mt-3 " width="50px" height="40px">
+          <br>
+          <br>
+          <a href="mailto:support@tiffanyfinance.com">Email us on support@tiffanyfinance.com and we will get in touch
+            with
             you.</a>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="how-to-apply-box text-center">
-          <img src="img/whatsappp.png" class="mt-3" width="50px" height="50px" >
+          <img src="img/whatsappp.png" class="mt-3" width="50px" height="50px">
           <br>
-          <br>
-          <a href="https://wa.me/6377965063" >Through Whatsapp </a>
+
+          <p class="text-dark mt-3 ">Through Whatsapp</p>
+          <a class="loan-apply-btn "
+            href="https://wa.me/6377965063">Apply Now</a>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="container mt-5">
-    <h4 class="heading mb-5"> FAQs </h4>
+  <div class="container mt-5 feature">
+  <h4 class="fw-bolder bottom-line  mb-5 text-center">FAQ</h4>
     <?php foreach ($faqs as $faq) { ?>
         <div class="accordion mb-2" id="accordionExample<?= $faq['faq_id'] ?>">
             <div class="accordion-item">

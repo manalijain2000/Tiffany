@@ -47,7 +47,7 @@
                                 <a class="dropdown-item <?= basename($_SERVER['REQUEST_URI']) == 'commercial-vehicle-loan.php' ? 'active' : '' ?>" href="commercial-vehicle-loan.php">Commerical Vehicle Loan </a>
                             </li>
                             <li>
-                                <a class="dropdown-item <?= basename($_SERVER['REQUEST_URI']) == 'two-vehicle-loan.php' ? 'active' : '' ?>" href="two-vehicle-loan.php">Two Vehicle Loan </a>
+                                <a class="dropdown-item <?= basename($_SERVER['REQUEST_URI']) == 'two-vehicle-loan.php' ? 'active' : '' ?>" href="two-vehicle-loan.php">Two Wheeler Loan </a>
                             </li>
                             <li>
                                 <a class="dropdown-item <?= basename($_SERVER['REQUEST_URI']) == 'personal-loan.php' ? 'active' : '' ?>" href="personal-loan.php">Personal Loan </a>
@@ -82,7 +82,7 @@
                         <a class="nav-link <?= basename($_SERVER['REQUEST_URI']) == 'gallary.php' ? 'active' : '' ?>"  href="gallary.php">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link <?= basename($_SERVER['REQUEST_URI']) == 'contact.php' ? 'active' : '' ?>" href="contact.php">Contact</a>
+                        <a class="nav-link <?= basename($_SERVER['REQUEST_URI']) == 'contact.php' ? 'active' : '' ?>" href="contact.php">Contact Us</a>
                     </li>
                 </ul>
             </div>

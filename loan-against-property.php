@@ -18,7 +18,7 @@
 
 <?php
 // Include the database connection file
-include ("db_connection.php");
+include "db_connection.php";
 // SQL query to select all products from the 'products' table
 $faqsSql = "SELECT * FROM faq_section where category = 'loan-against-property'";
 $faqs = $conn->query($faqsSql);
@@ -27,11 +27,11 @@ $conn->close();
 ?>
 
 <body>
-  <?php include ('header.php') ?>
+  <?php include 'header.php'?>
   <div class="container-fluid p-0 banner-header">
     <div class=" header-slider">
       <img src="img/tifinay1.png" class="d-block w-100" alt="Privacy-policy">
-      <h3 class="heading">Home Construction Loan</h3>
+      <h3 class="heading">Loan Against  Property</h3>
     </div>
   </div>
 
@@ -40,9 +40,9 @@ $conn->close();
     <div class="products-header ">
       <div class="row">
         <div class="col-md-6 p-5 ">
-          <h4 class="fs-2 fw-bolder products-header-h4">Loan Aganist Property</h4>
+          <h4 class="fs-2 fw-bolder products-header-h4">Loan Against  Property</h4>
           <p class="text-dark fs-6">Turn Your Property into Cash with Ease with our Loan Against Property </p>
-          <a class="product-apply-now <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
+          <a class="product-apply-now <?=basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : ''?>"
             href="apply-now.php">Apply Now</a>
         </div>
         <div class="col-md-6 col-lg-6 p-5">
@@ -123,8 +123,8 @@ $conn->close();
                 <h3 class="mt-4 fs-4 ms-1">Your EMI (Monthly)</h3>
                 <br>
                 <div class="d-flex justify-content-start">
-                  <img src="img/rupee.jpg" width="40px" height="40px">
-                  <p id="lap-total-payble-amt-id" class="fw-bold mb-0 paragraph fs-4 mt-1">343420</p>
+                  <img src="img/rupee.jpg" width="40px" height="33px">
+                  <p id="lap-total-payble-amt-id" class="fw-bold mb-0 paragraph fs-4">343420</p>
                 </div>
               </div>
             </div>
@@ -135,9 +135,9 @@ $conn->close();
   </div>
 
   <!-- Dynamic ready to fullfill dreams -->
-  <?php include('enquiry.php') ?>
+  <?php include 'enquiry.php'?>
    <!-- end -->
-   
+
   <div class="container-fluid mt-4">
     <div class="menu">
       <div class="menu-item"><a href="#overview" class="fw-bolder fs-4 ms-3">Overview</a></div>
@@ -174,7 +174,7 @@ $conn->close();
 
   <div class="container mt-5">
     <div class="row feature ">
-      <h4 class=" mb-4 fw-bolder text-center bottom-line">Features & Benefits for Loan Aganist Property</h4>
+      <h4 class=" mb-4 fw-bolder text-center bottom-line">Features & Benefits for Loan Against  Property</h4>
       <div class="featuresandbenefits">
         <div class="text-center mt-5 mb-5">
           <img src="img/fblap.jpg" class="img-fluid me-5  ">
@@ -205,7 +205,7 @@ $conn->close();
             </div>
           </div>
           <BR>
-<div class="d-flex align-items-start">
+        <div class="d-flex align-items-start">
             <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
             <div><strong>Transparent Process :</strong>No hidden fees or charges throughout the loan procedure.
             </div>
@@ -218,7 +218,7 @@ $conn->close();
           </div>
         </div>
       </div>
-<p class="text-danger">
+      <p class="text-danger">
         <i>*Terms & Conditions Apply</i>
       </p>
     </div>
@@ -301,8 +301,8 @@ $conn->close();
 
   <div class="container mt-5" iid="document">
     <div class="row">
-      <div class="col">
-        <h4 class="heading mb-5">Documents Required For LAP</h4>
+      <div class="col feature">
+      <h4 class="fw-bolder bottom-line  mb-5 text-center">Document Require for LAP</h4>
         <div class="row">
 
           <div class="accordion" id="accordionExample">
@@ -453,17 +453,17 @@ $conn->close();
           <img src="img/website.png" class="mt-3" width="50px" height="50px">
           <br>
 
-          <p class="text-dark mt-2 ">Through website</p>
-          <a class="loan-apply-btn <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
+          <p class="text-dark mt-3 ">Through Website</p>
+          <a class="loan-apply-btn <?=basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : ''?>"
             href="apply-now.php">Apply Now</a>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="how-to-apply-box text-center">
-          <img src="img/call.png" class="mt-3 mb-2" width="40px" height="40px">
+          <img src="img/call.png" class="mt-3 mb-4" width="40px" height="40px">
           <br>
-          <br>
-          <a href="tel:1800-890-6544">You can call us on our customer care number @ 1800-890-6544</a>
+
+          <a href="tel:1800-890-6544" >You can call us on <br>our customer care number <br>@ 1800-890-6544</a>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 mb-2">
@@ -480,39 +480,41 @@ $conn->close();
         <div class="how-to-apply-box text-center">
           <img src="img/whatsappp.png" class="mt-3" width="50px" height="50px">
           <br>
-          <br>
-          <a href="https://wa.me/6377965063">Through Whatsapp </a>
+
+          <p class="text-dark mt-2 ">Through Whatsapp</p>
+          <a class="loan-apply-btn "
+            href="https://wa.me/6377965063">Apply Now</a>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="container mt-5">
-    <h4 class="heading mb-5"> FAQs </h4>
-    <?php foreach ($faqs as $faq) { ?>
-      <div class="accordion mb-2" id="accordionExample<?= $faq['faq_id'] ?>">
+  <div class="container mt-5 feature">
+  <h4 class="fw-bolder bottom-line  mb-5 text-center">FAQ</h4>
+    <?php foreach ($faqs as $faq) {?>
+      <div class="accordion mb-2" id="accordionExample<?=$faq['faq_id']?>">
         <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne<?= $faq['faq_id'] ?>">
+          <h2 class="accordion-header" id="headingOne<?=$faq['faq_id']?>">
             <button class="accordion-button" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseOne<?= $faq['faq_id'] ?>" aria-expanded="false"
-              aria-controls="collapseOne<?= $faq['faq_id'] ?>">
-              <?= $faq['question'] ?>
+              data-bs-target="#collapseOne<?=$faq['faq_id']?>" aria-expanded="false"
+              aria-controls="collapseOne<?=$faq['faq_id']?>">
+              <?=$faq['question']?>
             </button>
           </h2>
-          <div id="collapseOne<?= $faq['faq_id'] ?>" class="accordion-collapse collapse"
-            aria-labelledby="headingOne<?= $faq['faq_id'] ?>" data-bs-parent="#accordionExample<?= $faq['faq_id'] ?>">
+          <div id="collapseOne<?=$faq['faq_id']?>" class="accordion-collapse collapse"
+            aria-labelledby="headingOne<?=$faq['faq_id']?>" data-bs-parent="#accordionExample<?=$faq['faq_id']?>">
             <div class="accordion-body">
               <p class="paragraph">
-                <?= $faq['answer'] ?>
+                <?=$faq['answer']?>
               </p>
             </div>
           </div>
         </div>
       </div>
-    <?php } ?>
+    <?php }?>
   </div>
 
-  <?php include ('footer.php') ?>
+  <?php include 'footer.php'?>
 </body>
 
 </html>

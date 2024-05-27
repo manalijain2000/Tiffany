@@ -121,8 +121,8 @@ $conn->close();
                 <h3 class="mt-4 fs-4 ms-1">Your EMI (Monthly)</h3>
                 <br>
                 <div class="d-flex justify-content-start">
-                  <img src="img/rupee.jpg" width="40px" height="40px">
-                  <p id="lap-total-payble-amt-id" class="fw-bold mb-0 paragraph fs-4 mt-1">343420</p>
+                  <img src="img/rupee.jpg" width="40px" height="px">
+                  <p id="lap-total-payble-amt-id" class="fw-bold mb-0 paragraph fs-4 ">343420</p>
                 </div>
               </div>
             </div>
@@ -167,34 +167,53 @@ $conn->close();
 
 
   <div class="container mt-5">
-    <div class="row">
-      <h4 class="heading mb-3 text-center">Features & Benefits for Two Wheeler Loan</h4>
+    <div class="row feature ">
+      <h4 class=" mb-4 fw-bolder text-center bottom-line">Features & Benefits for Two-Wheeler Loan</h4>
       <div class="featuresandbenefits">
-        <div class="text-center ">
-          <img src="img/fbtwl.jpg" class="img-fluid me-5 mt-5 ">
+        <div class="text-center mt-5 mb-5">
+          <img src="img/fbtwl.jpg" class="img-fluid me-5  ">
         </div>
-        <div class="mt-5">
-          <p class="text-dark fs-6">
-            <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">Flexible Loan Tenure from 12 months to 60
-            months
-          </p>
-          <p class="text-dark fs-6">
-            <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">Attractive Interest Rates ranging from 12% to
-            22%
-          </p>
-
-          <p class="text-dark">
-            <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">Fast Processing
-          </p>
-          <p class="text-dark">
-            <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">Quick Loan Approval
-          </p>
-          <p class="text-dark">
-            <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">Loan amount starting from ₹50,000* onwards up
-            to ₹2 lakhs
-          </p>
+        <div class="mt-5 ms-5 ">
+          <div class="d-flex align-items-start">
+            <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
+            <div><strong> Flexible Loan Tenure:</strong> Enjoy the flexibility of choosing a repayment period that suits your needs, ranging from 12 months to 60 months.
+            </div>
+          </div>
+          <BR>
+          <div class="d-flex align-items-start">
+            <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
+            <div><strong> Attractive Interest Rates:</strong> Benefit from competitive interest rates starting as low as 12% and going up to 22%, ensuring affordable EMIs.
+            </div>
+          </div>
+          <BR>
+          <div class="d-flex align-items-start">
+            <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
+            <div><strong> Fast Processing: </strong> Experience a streamlined and efficient loan processing system designed to save you time and hassle.
+            </div>
+          </div>
+          <br>
+          <div class="d-flex align-items-start">
+            <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
+            <div><strong> Quick Loan Approval:</strong> Get your loan approved swiftly with our fast and efficient approval process, ensuring you get the funds when you need them.
+            </div>
+          </div>
+          <BR>
+        <div class="d-flex align-items-start">
+            <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
+            <div><strong> Loan Amount:</strong> Avail loans starting from ₹50,000*, with options to borrow up to ₹2 lakhs, catering to various financial needs.
+            </div>
+          </div>
+          <br>
+          <!-- <div class="d-flex align-items-start">
+            <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
+            <div><strong>Quick Disbursal :</strong>Smooth and timely loan approval with minimal documentation hassle.
+            </div>
+          </div> -->
         </div>
       </div>
+      <p class="text-danger">
+        <i>*Terms & Conditions Apply</i>
+      </p>
     </div>
   </div>
 
@@ -236,7 +255,7 @@ $conn->close();
             <h2 class="accordion-header" id="headingOne">
               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                 aria-expanded="true" aria-controls="collapseOne">
-                Photo Identity Proof <sup class="ms-2 fs-4 mt-3">*</sup>
+                Photo Identity Proof <sup class="ms-2 fs-4 mt-3"></sup>
               </button>
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
@@ -258,7 +277,7 @@ $conn->close();
             <h2 class="accordion-header" id="headingTwo">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Address Proof <sup class="ms-2 fs-4 mt-3">*</sup>
+                Address Proof <sup class="ms-2 fs-4 mt-3"></sup>
               </button>
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
@@ -333,7 +352,7 @@ $conn->close();
   </div>
   <div class="container mt-5" id="howtoapply">
     <div class="row feature ">
-      <h4 class="fw-bolder bottom-line mb-5 text-center">How To Apply</h4>
+      <h4 class="fw-bolder bottom-line mb-4 text-center">How To Apply</h4>
       <p class="text-dark mt-3 mb-5">Process of applying for loan against property is easy and fast with us. Some of the
         ways
         you can apply for loan are :</p>
@@ -343,20 +362,20 @@ $conn->close();
           <img src="img/website.png" class="mt-3" width="50px" height="50px">
           <br>
 
-          <p class="text-dark mt-2 ">Through website</p>
+          <p class="text-dark mt-3 ">Through Website</p>
           <a class="loan-apply-btn <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
             href="apply-now.php">Apply Now</a>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="how-to-apply-box text-center">
-          <img src="img/call.png" class="mt-3 mb-2" width="40px" height="40px">
+          <img src="img/call.png" class="mt-3 mb-4" width="40px" height="40px">
           <br>
-          <br>
-          <a href="tel:1800-890-6544">You can call us on our customer care number @ 1800-890-6544</a>
+         
+          <a href="tel:1800-890-6544">You can call us on <br>our customer care number <br>@ 1800-890-6544</a>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6 mb-4">
+      <div class="col-lg-3 col-md-6 mb-2">
         <div class="how-to-apply-box text-center">
           <img src="img/email.png" class="mt-3 " width="50px" height="40px">
           <br>
@@ -370,16 +389,19 @@ $conn->close();
         <div class="how-to-apply-box text-center">
           <img src="img/whatsappp.png" class="mt-3" width="50px" height="50px">
           <br>
-          <br>
-          <a href="https://wa.me/6377965063">Through Whatsapp </a>
+
+          <p class="text-dark mt-3 ">Through Whatsapp</p>
+          <a class="loan-apply-btn "
+            href="https://wa.me/6377965063">Apply Now</a>
         </div>
       </div>
     </div>
   </div>
 
 
-  <div class="container mt-5">
-    <h4 class="heading mb-5"> FAQs </h4>
+
+  <div class="container mt-5 feature">
+  <h4 class="fw-bolder bottom-line  mb-5 text-center">FAQ</h4>
     <?php foreach ($faqs as $faq) { ?>
       <div class="accordion mb-2" id="accordionExample<?= $faq['faq_id'] ?>">
         <div class="accordion-item">

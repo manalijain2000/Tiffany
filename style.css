@@ -4100,3 +4100,24 @@ right: 0;
 .menu-item a:active::after {
   width: 100%;
 }
+.text-yellow-enquiry {
+  color: #ffcc29;
+}
+.accordion-button:focus , .accordion-button:not(.collapsed),.accordion-button{
+  color:white !important;
+  background-color: #2c2e53 !important;
+  box-shadow: none;
+  border: 1px solid #2c2e53;
+}
+.accordion-button::after{
+  background-image:url('img/downarrow.png') !important;
+  width:1.25rem;
+  height:1.25rem;
+}
+.accordion-button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+#lap-total-payble-amt-id{
+  margin-left: -3%;
+}
