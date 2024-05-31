@@ -2,14 +2,14 @@
     <div class="p-2 p-md-5 ms-md-5">
         <div class="row">
             <div class="col-md-6 me-md-5">
-                <p class="text-white fs-3 me-5" path="<?= basename($_SERVER["REQUEST_URI"]) ?>" id="test-dynamic-content">
+                <p class="text-white fs-4 me-5" path="<?= basename($_SERVER["REQUEST_URI"]) ?>" id="test-dynamic-content">
                     <span class="text-yellow-enquiry" id="dynamic-text"></span>
                     <span class="text-white"> Just enter your Email or Phone Number</span>
                 </p>
             </div>
             <div class="col-md-5">
                 <div class="d-flex flex-wrap justify-content-between bg-white mb-3 p-2 input">
-                    <input type="email" class="formInput border-0" placeholder="Enter Email or Phone Number" value="">
+                    <input type="email" class="formInput " placeholder="Enter Email or Phone Number" value="">
                     <button type="button" class="btn btn-sm btn-theme">Submit</button>
                 </div>
                 <p class="text-white executive pb-0">Our Executive will get in touch with you shortly.</p>

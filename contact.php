@@ -25,23 +25,30 @@
     </div>
   </div>
   <div class="container-fluid contact-us-content">
-    <img src="img/contacttiffany.jpg" class="image-fluid contact-tiffany-image">
-    <h4 class="fs-1 fw-bolder">Contact Us</h4>
-    <p class="text-dark fs-4">We're Here To Assist You</p>
+    <!-- <img src="img/contacus.jpeg" class="image-fluid contact-tiffany-image"> -->
+
+    <div class="text-white contact-content">
+      <h4 class="fs-1 fw-bolder">Contact Us</h4>
+      <hr class="custom-line">
+      <h5 class="fw-bolder">We're Here To Assist You</h5>
+    </div>
   </div>
   <div class="container-fluid p-0 py-3  contact-box">
     <ul class="nav nav-pills pt-3 mb-3 justify-content-center " id="pills-tab" role="tablist">
       <li class="nav-item fs-4 tabs-reach-us" role="presentation">
-        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-          type="button" role="tab" aria-controls="pills-home" aria-selected="true">Reach Us</button>
+        <button class="nav-link active contact-link" id="pills-home-tab" data-bs-toggle="pill"
+          data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Reach
+          Us</button>
       </li>
       <li class="nav-item fs-4" role="presentation">
-        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-          type="button" role="tab" onclick="setMapIframe('')" aria-controls="pills-profile" aria-selected="false">Branch Locator</button>
+        <button class="nav-link contact-link" id="pills-profile-tab" data-bs-toggle="pill"
+          data-bs-target="#pills-profile" type="button" role="tab" onclick="setMapIframe('')"
+          aria-controls="pills-profile" aria-selected="false">Branch Locator</button>
       </li>
       <li class="nav-item fs-4" role="presentation">
-        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
-          type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Suggestions/Feedback</button>
+        <button class="nav-link contact-link" id="pills-contact-tab" data-bs-toggle="pill"
+          data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+          aria-selected="false">Suggestions/Feedback</button>
       </li>
       <!-- <li class="nav-item" role="presentation">
         <button class="nav-link" id="pills-g-tab" data-bs-toggle="pill" data-bs-target="#pills-g" type="button"
@@ -50,15 +57,15 @@
     </ul>
     <div class="tab-content px-5" id="pills-tabContent">
       <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-        <h5 class="text-center mb-4">Reach Us</h5>
-        <div class="row">
+        <h5 class="text-center mb-4"></h5>
+        <div class="row col-contact">
           <div class="col-md-4">
             <div class="card  h-100">
               <div class="card-header"> Call Us </div>
               <div class="card-body">
                 <div class="d-flex align-items-center">
                   <i class="fas fa-phone-alt"></i>
-                  <p class="mb-0 ms-4 paragraph">Toll Free <a href="tel:+1800-890-6544"
+                  <p class="mb-0 ms-2 paragraph email-font ">Toll Free <a href="tel:+1800-890-6544"
                       class="d-block text-dark">1800-890-6544</a>
                   </p>
                 </div>
@@ -71,8 +78,9 @@
               <div class="card-body">
                 <div class="d-flex align-items-center">
                   <i class="fas fa-envelope"></i>
-                  <p class="mb-0 ms-4">
-                    <a href="mailto:info@tiffanyfinance.com" class="text-dark">info@tiffanyfinance.com</a>
+                  <p class="mb-0 ms-2">
+                    <a href="mailto:customercare@tiffanyfinance.com"
+                      class="text-dark email-font">customercare@tiffanyfinance.com</a>
                   </p>
                 </div>
               </div>
@@ -84,7 +92,8 @@
               <div class="card-body">
                 <div class="d-flex align-items-center">
                   <i class="fas fa-map-marker-alt"></i>
-                  <p class="mb-0 ms-4 paragraph"> 1 st Floor, Tiffany Finance, Tiffany Tower, Bhilwara, Rajasthan,
+                  <p class="mb-0 ms-2 paragraph email-font"> 1 st Floor, Tiffany Finance, Tiffany Tower, Bhilwara,
+                    Rajasthan,
                     311001 </p>
                 </div>
               </div>
@@ -92,29 +101,31 @@
           </div>
         </div>
       </div>
-      <div class="tab-pane fade " id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
         <h5 class="text-center mb-4 ms-2">Select Nearest Tiffany Branch</h5>
         <div class="branch-selection">
-          <select class="form-select me-3 h-40px select-branch-contact" aria-label="Default select example">
+          <select class="form-select me-3 h-30px select-branch-contact w-30" aria-label="Default select example"
+            onchange="setMapIframe(this)">
             <option value="1">Rajasthan</option>
-
           </select>
-          <select class="form-select me-3 h-40px select-branch-contact" onchange = "setMapIframe(this)" aria-label="Default select example">
+          <select class="form-select me-3 h-30px select-branch-contact w-30" onchange="setMapIframe(this)"
+            aria-label="Default select example">
             <option value="1">Bhilwara</option>
             <option value="2">Gangapur</option>
-
           </select>
-          <div class="input-group me-3 h-40px select-branch-contact ">
-            <div class="input-group-text bg-white py-0 search-input-filed">
+          <!-- <div class="input-group me-3 h-40px select-branch-contact">
+            <div class="input-group-text bg-white py-0 search-input-field">
               <i class="fas fa-search"></i>
-              <input type="text" class="form-control border-0 form-control-sm " aria-label="Text input with checkbox">
+              <input type="text" class="form-control border-0 form-control-sm" aria-label="Text input with checkbox"
+                oninput="searchLocation(this.value)">
             </div>
-          </div>
+          </div> -->
         </div>
-        <div class = 'google-map-location justify-content-center'>
-          <div id = 'tiffany-finance-google-map-location'></div>
+        <div class="google-map-location justify-content-center">
+          <div id="tiffany-finance-google-map-location"></div>
         </div>
       </div>
+
       <!-- feedback form -->
 
 
@@ -232,7 +243,7 @@
         <p> If the compliant remains unsolved, visit your nearest Tiffany Finance Branch and register
           your compliant there. Our team will get back to you with their final resolution. If you
           are still not satisfied with the solution, email us on: <a
-            href="mailto:info@tiffanyfinance.com">info@tiffanyfinance.com</a> or call us on
+            href="mailto:customercare@tiffanyfinance.com">customercare@tiffanyfinance.com</a> or call us on
           <a href="tel:+9184325-63335" class="text-primary "> 9184325-63335</a>
           .
         </p>
@@ -255,16 +266,34 @@
 <script>
 
   function setMapIframe(el) {
-    $('#tiffany-finance-google-map-location').empty() 
-    if(el == '') {
-      if(el.value == 1) {
-        var location = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.5714207768588!2d74.63343939999996!3d25.35215870000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3968c24a7e6b0a01%3A0x694af048c56bacb2!2sTiffany%20Finance%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1713809049633!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
-      } else {
-        var location = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.5714207768588!2d74.63343939999996!3d25.35215870000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3968c24a7e6b0a01%3A0x694af048c56bacb2!2sTiffany%20Finance%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1713809049633!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
-      }
-    } else {
-      var location = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.5714207768588!2d74.63343939999996!3d25.35215870000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3968c24a7e6b0a01%3A0x694af048c56bacb2!2sTiffany%20Finance%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1713809049633!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+    $('#tiffany-finance-google-map-location').empty();
+
+    let location = '';
+
+    if (el.value == "1") { // Bhilwara
+      location = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.5714207768588!2d74.63343939999996!3d25.35215870000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3968c24a7e6b0a01%3A0x694af048c56bacb2!2sTiffany%20Finance%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1713809049633!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+    } else if (el.value == "2") { // Gangapur
+      location = '<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2552.387821763302!2d74.25537599141646!3d25.215984713969448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDEyJzU3LjUiTiA3NMKwMTUnMjUuOCJF!5e0!3m2!1sen!2sin!4v1717047219049!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+    } else if (el.value == "3") { // Rajasthan
+      location = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.5714207768588!2d74.63343939999996!3d25.35215870000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3968c24a7e6b0a01%3A0x694af048c56bacb2!2sTiffany%20Finance%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1713809049633!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
     }
+
+    $('#tiffany-finance-google-map-location').append(location);
+  }
+
+  function searchLocation(query) {
+    $('#tiffany-finance-google-map-location').empty();
+
+    let location = '';
+
+    if (query.toLowerCase().includes('bhilwara')) {
+      location = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.5714207768588!2d74.63343939999996!3d25.35215870000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3968c24a7e6b0a01%3A0x694af048c56bacb2!2sTiffany%20Finance%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1713809049633!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+    } else if (query.toLowerCase().includes('gangapur')) {
+      location = '<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2552.387821763302!2d74.25537599141646!3d25.215984713969448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDEyJzU3LjUiTiA3NMKwMTUnMjUuOCJF!5e0!3m2!1sen!2sin!4v1717047219049!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+    } else if (query.toLowerCase().includes('rajasthan')) {
+      location = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.5714207768588!2d74.63343939999996!3d25.35215870000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3968c24a7e6b0a01%3A0x694af048c56bacb2!2sTiffany%20Finance%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1713809049633!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>';
+    }
+
     $('#tiffany-finance-google-map-location').append(location);
   }
 

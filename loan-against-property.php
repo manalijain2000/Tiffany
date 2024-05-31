@@ -27,11 +27,11 @@ $conn->close();
 ?>
 
 <body>
-  <?php include 'header.php'?>
+  <?php include 'header.php' ?>
   <div class="container-fluid p-0 banner-header">
     <div class=" header-slider">
       <img src="img/tifinay1.png" class="d-block w-100" alt="Privacy-policy">
-      <h3 class="heading">Loan Against  Property</h3>
+      <h3 class="heading">Loan Against Property</h3>
     </div>
   </div>
 
@@ -40,9 +40,9 @@ $conn->close();
     <div class="products-header ">
       <div class="row">
         <div class="col-md-6 p-5 ">
-          <h4 class="fs-2 fw-bolder products-header-h4">Loan Against  Property</h4>
+          <h4 class="fs-2 fw-bolder products-header-h4">Loan Against Property</h4>
           <p class="text-dark fs-6">Turn Your Property into Cash with Ease with our Loan Against Property </p>
-          <a class="product-apply-now <?=basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : ''?>"
+          <a class="product-apply-now <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
             href="apply-now.php">Apply Now</a>
         </div>
         <div class="col-md-6 col-lg-6 p-5">
@@ -52,13 +52,13 @@ $conn->close();
               <div class="col-md-6 p-4">
                 <div class="wrapper mb-2 ">
                   <div class="d-flex justify-content-between align-items-center mb-3">
-                    <p class="mb-0 paragraph me-5">Amount</p>
+                    <p class="mb-0 paragraph me-4">Amount</p>
                     <div class="input-group w-fit-200">
                       <input onfocusout="LAPsetInputUsFormat()" onfocusin="LAPsetInputNormalForm()" type="text"
                         value="10,00,000" id='lap-set-amount-loan-against-property'
-                        class="form-control form-control-sm">
+                        class="form-control form-control-sm ">
                       <div class="input-group-append  d-flex">
-                        <span class="input-group-text">RS </span>
+                        <span class="input-group-text ruppee-sign">₹ </span>
                       </div>
                     </div>
                   </div>
@@ -67,21 +67,25 @@ $conn->close();
                       max="50000000" value='1000000' />
                   </div>
                   <div class="d-flex justify-content-between">
-                    <div>500000</div>
-                    <div>50000000</div>
+                    <div>1 L</div>
+                    <div>50 L</div>
                   </div>
                 </div>
                 <br>
                 <div class="wrapper mb-2 ">
                   <div class="d-flex justify-content-between align-items-center mb-3">
-                    <p class="mb-0 paragraph me-5">Tenure</p>
+                    <p class="mb-0 paragraph me-4">Tenure</p>
                     <div class="input-group w-fit-200">
                       <input type="text" onfocusout='LAPsetInputRangeVal(this)' value="60"
-                        id='lap-set-tenur-loan-against-propertye' class="form-control form-control-sm">
-                      <div class="input-group-append d-flex">
+                        id='lap-set-tenur-loan-against-propertye' class="form-control form-control-sm ">
+                      <!-- <div class="input-group-append d-flex">
                         <span onclick='LAPconvertMonthToYear(this)' id="lap-month-id"
                           class="input-group-text text-white bg-dark">Mo</span>
 
+                      </div> -->
+                      <div class="input-group-append  d-flex">
+                        <span onclick='LAPconvertMonthToYear(this)' id="lap-month-id"
+                          class="input-group-text ">MTH</span>
                       </div>
                     </div>
                   </div>
@@ -90,19 +94,19 @@ $conn->close();
                       value='60' />
                   </div>
                   <div class="d-flex justify-content-between">
-                    <div>12 Months</div>
-                    <div>180 Months</div>
+                    <div>12 M</div>
+                    <div>180 M</div>
                   </div>
                 </div>
                 <br>
                 <div class="wrapper mb-2 ">
                   <div class="d-flex justify-content-between align-items-center mb-3">
-                    <p class="mb-0 paragraph me-5">Interest</p>
+                    <p class="mb-0 paragraph me-4">Interest</p>
                     <div class="input-group w-fit-200">
                       <input type="text" onfocusout='LAPsetInputRangeVal(this)' value="18"
-                        id='lap-set-interest-loan-against-property' class="form-control form-control-sm">
+                        id='lap-set-interest-loan-against-property' class="form-control form-control-sm ">
                       <div class="input-group-append d-flex">
-                        <span class="input-group-text ">% </span>
+                        <span class="input-group-text fw-bolder ">% </span>
                       </div>
                     </div>
                   </div>
@@ -111,20 +115,23 @@ $conn->close();
                       value="18" />
                   </div>
                   <div class="d-flex justify-content-between">
-                    <div>9%</div>
-                    <div>24%</div>
+                    <div>9 %</div>
+                    <div>24 %</div>
                   </div>
                 </div>
               </div>
               <div class=" col-lg-6 p-4">
-                <img src="img/calculator.png" class="product-emi-box-image">
-                <br>
-                <br>
-                <h3 class="mt-4 fs-4 ms-1">Your EMI (Monthly)</h3>
-                <br>
-                <div class="d-flex justify-content-start">
-                  <img src="img/rupee.jpg" width="40px" height="33px">
-                  <p id="lap-total-payble-amt-id" class="fw-bold mb-0 paragraph fs-4">343420</p>
+                <div class="calculate-box-emi text-center">
+                  <img src="img/calculator1.png" class="product-emi-box-image">
+
+                  <h3 class="mt-4 fs-5  text-dark your-emi">Your EMI (Monthly)</h3>
+                  
+                  <div class="d-flex justify-content-start caluclate-emi-rs pe-1 p-2">
+                    <img src="img/ruppee.png" width="19px" height="19px" class="ruppee-emi">
+                   
+                   <p id="lap-total-payble-amt-id" class="fw-bold mb-0 text-white fs-4 ms-1">343420</p>
+                   </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -135,16 +142,15 @@ $conn->close();
   </div>
 
   <!-- Dynamic ready to fullfill dreams -->
-  <?php include 'enquiry.php'?>
-   <!-- end -->
+  <?php include 'enquiry.php' ?>
+  <!-- end -->
 
-  <div class="container-fluid mt-4">
+  <div class="container mt-4">
     <div class="menu">
-      <div class="menu-item"><a href="#overview" class="fw-bolder fs-4 ms-3">Overview</a></div>
-      <div class="menu-item"><a href="#eligibilty" class="fw-bolder fs-4">Eligibility</a></div>
-      <div class="menu-item"><a href="#document" class="fw-bolder fs-4">Document</a></div>
-      <div class="menu-item"><a href="#howtoapply" class="fw-bolder fs-4">How To Apply</a></div>
-
+      <div class="menu-item"><a href="#overview" class="nav-link1 fw-bolder fs-5 active">Overview</a></div>
+      <div class="menu-item"><a href="#eligibilty" class="nav-link1 fw-bolder fs-5">Eligibility</a></div>
+      <div class="menu-item"><a href="#document" class="nav-link1 fw-bolder fs-5">Documentation</a></div>
+      <div class="menu-item"><a href="#howtoapply" class="nav-link1 fw-bolder fs-5">How To Apply</a></div>
       <!-- Add more items here -->
     </div>
   </div>
@@ -174,53 +180,53 @@ $conn->close();
 
   <div class="container mt-5">
     <div class="row feature ">
-      <h4 class=" mb-4 fw-bolder text-center bottom-line">Features & Benefits for Loan Against  Property</h4>
+      <h4 class=" mb-4 fw-bolder text-center bottom-line">Features & Benefits for Loan Against Property</h4>
       <div class="featuresandbenefits">
         <div class="text-center mt-5 mb-5">
-          <img src="img/fblap.jpg" class="img-fluid me-5  ">
+          <img src="img/flap.jpg" class="img-fluid me-5  ">
         </div>
-        <div class="mt-5 ms-5 ">
-          <div class="d-flex align-items-start">
+        <div class="mt-5  fbc">
+          <div class="d-flex align-items-start mb-3">
             <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
-            <div><strong> High LTV:</strong>Get up to 60% loan for residential and 70% for commercial properties.
+            <div><strong> High LTV : </strong>Get up to 60% loan for residential and 70% for commercial properties.
             </div>
           </div>
-          <BR>
-          <div class="d-flex align-items-start">
+
+          <div class="d-flex align-items-start mb-3">
             <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
-            <div><strong>12-Year* Loan Tenure :</strong>Enjoy a flexible repayment period spanning up to 12 years*.
+            <div><strong>Upto 12 Year Loan Tenure : </strong>Enjoy a flexible repayment period spanning upto 12 years.
             </div>
           </div>
-          <BR>
-          <div class="d-flex align-items-start">
+
+          <div class="d-flex align-items-start mb-3">
             <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
-            <div><strong>Insurance Options: </strong>Property insurance and credit shield available for added security.
+            <div><strong>Insurance Options : </strong>Property insurance and credit shield available for added security.
             </div>
           </div>
-          <br>
-          <div class="d-flex align-items-start">
+
+          <div class="d-flex align-items-start mb-3">
             <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
-            <div><strong> Versatile Loan Options :</strong> Explore various options for customization and adjustment
+            <div><strong> Versatile Loan Options : </strong> Explore various options for customization and adjustment
               according to your needs.
             </div>
           </div>
-          <BR>
-        <div class="d-flex align-items-start">
+
+          <div class="d-flex align-items-start mb-3">
             <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
-            <div><strong>Transparent Process :</strong>No hidden fees or charges throughout the loan procedure.
+            <div><strong>Transparent Process : </strong>No hidden fees or charges throughout the loan procedure.
             </div>
           </div>
-          <br>
+
           <div class="d-flex align-items-start">
             <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
-            <div><strong>Quick Disbursal :</strong>Smooth and timely loan approval with minimal documentation hassle.
+            <div><strong>Quick Disbursal : </strong>Smooth and timely loan approval with minimal documentation hassle.
             </div>
           </div>
         </div>
       </div>
-      <p class="text-danger">
+      <!-- <p class="text-danger">
         <i>*Terms & Conditions Apply</i>
-      </p>
+      </p> -->
     </div>
   </div>
   <div class="container mt-5" id="eligibilty">
@@ -250,13 +256,13 @@ $conn->close();
             </thead>
             <tbody>
               <tr>
-                <th style="background-color: #2c2e53; color :white;">Ownership of Property</th>
+                <th>Ownership of Property</th>
                 <td>Must be Self-Occupied</td>
                 <td>Must be Self-Occupied </td>
                 <td>Must be Self-Occupied</td>
               </tr>
               <tr>
-                <th style="background-color: #2c2e53; color :white;">Age</th>
+                <th>Age</th>
                 <td>Minimum 21 years - 65<br>
                   years at the time of loan
                   maturity</td>
@@ -266,7 +272,7 @@ $conn->close();
                 <td>2 Years Old</td>
               </tr>
               <tr>
-                <th style="background-color: #2c2e53; color :white;">CIBIL Score</th>
+                <th>CIBIL Score</th>
                 <td>650+ </td>
                 <td>650+</td>
                 <td>Over the last 2 years,
@@ -279,7 +285,7 @@ $conn->close();
                   Accountant.</td>
               </tr>
               <tr>
-                <th style="background-color: #2c2e53; color :white;">Nationality</th>
+                <th>Nationality</th>
                 <td>Indian and must be a
                   resident of India</td>
                 <td>Indian and must be a
@@ -299,10 +305,10 @@ $conn->close();
   </div>
   </div>
 
-  <div class="container mt-5" iid="document">
+  <div class="container mt-5" id="document">
     <div class="row">
       <div class="col feature">
-      <h4 class="fw-bolder bottom-line  mb-5 text-center">Document Require for LAP</h4>
+        <h4 class="fw-bolder bottom-line  mb-5 text-center">Document Require for LAP</h4>
         <div class="row">
 
           <div class="accordion" id="accordionExample">
@@ -362,13 +368,13 @@ $conn->close();
                 <div class="accordion-body">
                   <ul style="list-style-type:disc;">
                     <li>Last 6 months Bank Statement(Mandatory)</li>
-                    <li>Latest ITR <sup>*</sup></li>
-                    <li>Latest Audited Financial <sup>*</sup></li>
-                    <li>Latest GST Returns <sup>*</sup></li>
+                    <li>Latest ITR </li>
+                    <li>Latest Audited Financial </li>
+                    <li>Latest GST Returns </li>
 
 
                   </ul>
-                  ( * If available)
+                  <!-- ( * If available) -->
 
                 </div>
               </div>
@@ -415,17 +421,10 @@ $conn->close();
 
 
           </div>
-
-
-
-
-          <p class="text-danger mt-3">
-            <i>*Terms & Conditions Apply</i>
-          </p>
           <p class="text-dark mt-3">
             <b>Note</b>: This is just an indicative list additional criteria and documents may be required at the time
             of
-            loan application.Self-attested copy of relevant documents <sup>*</sup>
+            loan application.Self-attested copy of relevant documents.<sup></sup>
           </p>
 
         </div>
@@ -434,10 +433,10 @@ $conn->close();
     </div>
 
 
-    <p>
+    <!-- <p>
       <b>Note</b>: This is just an indicative list. Additional criteria and documents may be required at the time of
       loan application.
-    </p>
+    </p> -->
   </div>
 
 
@@ -454,7 +453,7 @@ $conn->close();
           <br>
 
           <p class="text-dark mt-3 ">Through Website</p>
-          <a class="loan-apply-btn <?=basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : ''?>"
+          <a class="loan-apply-btn <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
             href="apply-now.php">Apply Now</a>
         </div>
       </div>
@@ -463,7 +462,7 @@ $conn->close();
           <img src="img/call.png" class="mt-3 mb-4" width="40px" height="40px">
           <br>
 
-          <a href="tel:1800-890-6544" >You can call us on <br>our customer care number <br>@ 1800-890-6544</a>
+          <a href="tel:1800-890-6544">You can call us on <br>our customer care number <br>@ 1800-890-6544</a>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 mb-2">
@@ -471,7 +470,8 @@ $conn->close();
           <img src="img/email.png" class="mt-3 " width="50px" height="40px">
           <br>
           <br>
-          <a href="mailto:support@tiffanyfinance.com">Email us on support@tiffanyfinance.com and we will get in touch
+          <a href="mailto:customercare@tiffanyfinance.com">Email us on customercare@tiffanyfinance.com and we will get
+            in touch
             with
             you.</a>
         </div>
@@ -482,39 +482,38 @@ $conn->close();
           <br>
 
           <p class="text-dark mt-2 ">Through Whatsapp</p>
-          <a class="loan-apply-btn "
-            href="https://wa.me/6377965063">Apply Now</a>
+          <a class="loan-apply-btn " href="https://wa.me/6377965063">Apply Now</a>
         </div>
       </div>
     </div>
   </div>
 
   <div class="container mt-5 feature">
-  <h4 class="fw-bolder bottom-line  mb-5 text-center">FAQ</h4>
-    <?php foreach ($faqs as $faq) {?>
-      <div class="accordion mb-2" id="accordionExample<?=$faq['faq_id']?>">
+    <h4 class="fw-bolder bottom-line  mb-5 text-center">FAQ</h4>
+    <?php foreach ($faqs as $faq) { ?>
+      <div class="accordion mb-2" id="accordionExample<?= $faq['faq_id'] ?>">
         <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne<?=$faq['faq_id']?>">
+          <h2 class="accordion-header" id="headingOne<?= $faq['faq_id'] ?>">
             <button class="accordion-button" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseOne<?=$faq['faq_id']?>" aria-expanded="false"
-              aria-controls="collapseOne<?=$faq['faq_id']?>">
-              <?=$faq['question']?>
+              data-bs-target="#collapseOne<?= $faq['faq_id'] ?>" aria-expanded="false"
+              aria-controls="collapseOne<?= $faq['faq_id'] ?>">
+              <?= $faq['question'] ?>
             </button>
           </h2>
-          <div id="collapseOne<?=$faq['faq_id']?>" class="accordion-collapse collapse"
-            aria-labelledby="headingOne<?=$faq['faq_id']?>" data-bs-parent="#accordionExample<?=$faq['faq_id']?>">
+          <div id="collapseOne<?= $faq['faq_id'] ?>" class="accordion-collapse collapse"
+            aria-labelledby="headingOne<?= $faq['faq_id'] ?>" data-bs-parent="#accordionExample<?= $faq['faq_id'] ?>">
             <div class="accordion-body">
               <p class="paragraph">
-                <?=$faq['answer']?>
+                <?= $faq['answer'] ?>
               </p>
             </div>
           </div>
         </div>
       </div>
-    <?php }?>
+    <?php } ?>
   </div>
 
-  <?php include 'footer.php'?>
+  <?php include 'footer.php' ?>
 </body>
 
 </html>
@@ -528,5 +527,28 @@ $conn->close();
   $(document).ready(function () {
     LAPemiCalculator()
     emiCalculator()
+  });
+  document.addEventListener('DOMContentLoaded', function () {
+    const links = document.querySelectorAll('.nav-link');
+
+    links.forEach(link => {
+      link.addEventListener('click', function () {
+        // Remove active class from all links
+        links.forEach(link => link.classList.remove('active'));
+
+        // Add active class to the clicked link
+        this.classList.add('active');
+      });
+
+      link.addEventListener('mouseenter', function () {
+        // Add hover class to the hovered link
+        this.classList.add('hover');
+      });
+
+      link.addEventListener('mouseleave', function () {
+        // Remove hover class from the hovered link
+        this.classList.remove('hover');
+      });
+    });
   });
 </script>

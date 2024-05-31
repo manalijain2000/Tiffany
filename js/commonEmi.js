@@ -92,7 +92,7 @@
 
     $('#lap-principal-amt-id').text(amount.toLocaleString('en-IN') + ' ' + 'Rs.')
     $('#lap-interest-amt-id').text(totalInterestPaid.toLocaleString('en-IN'))
-    $('#lap-total-payble-amt-id').text(totalAmountPaid.toFixed(2).toLocaleString('en-IN') + ' ' + '')
+    $('#lap-total-payble-amt-id').text(totalAmountPaid.toFixed(0).toLocaleString('en-IN') + ' ' + '')
     $('#lap-monthly-payble-amt-id').text(emi.toLocaleString('en-IN') + ' ' + 'Rs.')
 
     // var amountPaid = 5000;

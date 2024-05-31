@@ -49,7 +49,8 @@ $conn->close();
           <div id="carouselExampleControls" class="carousel slide pe-0 pb-1" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <p class="text-dark p-5">Incorporated in 2017, Tiffany Finance is a fast-growing NBFC (Non-Banking Finance
+                <p class="text-dark p-5">Incorporated in 2017, Tiffany Finance is a fast-growing NBFC (Non-Banking
+                  Finance
                   Company) based out of Bhilwara, Rajasthan with a niche leadership in retail financing.
                   We are a Non-Banking Financial Company – Non-Systemically Important Non-Deposit taking Company
                   (NBFC-ND), registered with Reserve Bank of India (“RBI”) under section 45- IA of the Reserve Bank of
@@ -90,18 +91,19 @@ $conn->close();
     <div class="row">
       <div class="col-md-6">
         <div class="our-story-image">
-          <img src="img/arrow-img.jpg" alt="our story">
+          <img src="img/logo.jpeg" alt="our story">
         </div>
       </div>
       <div class="col-md-6 p-5">
         <h4 class="mb-4 fw-bolder fs-2 text-dark mt-3"><img src="img/TIF.jpg" width="30px" height="30px"
-            class="me-2">Our Logo Story</h4>
-        <p Class="text-dark">Our logo features a sleek, upward-pointing arrow, poised to ascend towards the sky. The
+            class="me-1">Our Logo Story</h4>
+        <p Class="text-dark pe-5 ourlogostory">Our logo features a sleek, upward-pointing arrow, poised to ascend
+          towards the sky. The
           arrow represents the journey of growth and advancement that our customers embark upon with our support. Its
           sharp lines convey precision and determination, reflecting our commitment to helping our customers overcome
           obstacles and soar to new heights. As they navigate their path to success, we stand by them as a trusted
-          partner, providing the support and resources they need to thrive.</p>
-        <p class="text-dark">Our logo is more than just a visual representation; it is a symbol of our values, our
+          partner, providing the support and resources they need to thrive.
+          Our logo is more than just a visual representation; it is a symbol of our values, our
           mission, and our unwavering dedication to supporting our customers on their journey towards success.</p>
       </div>
     </div>
@@ -111,7 +113,8 @@ $conn->close();
     <h4 class="heading text-center  mt-5 mb-5 ">Our Values</h4>
     <div class="row">
       <div class="col-md-6  ">
-        <p class="text-dark p-5 d-flex justify-content-center align-items-center mt-5">At Tiffany Finance, our core values are the guiding principles that underpin our
+        <p class="text-dark p-5 d-flex justify-content-center align-items-center mt-5 ">At Tiffany Finance, our core
+          values are the guiding principles that underpin our
           commitment to excellence. Rooted in our vision to lead the financial industry through innovation and uphold
           unwavering integrity, our mission drives us to serve the underserved while aspiring to be India's most trusted
           financier. These values shape our identity and dictate every aspect of our operations, ensuring transparency,
@@ -134,18 +137,27 @@ $conn->close();
         <div class="col-md-12 col-lg-6 p-5 vission-content "> <!-- Changed col-md-5 to col-md-12 and added col-lg-6 -->
           <h4 class="mb-4 fw-bolder fs-2 text-dark mt-5"><img src="img/headpoint.png" width="30px" height="30px"
               class="me-2">Vision</h4>
-          <p class="d-flex justify-content-center align-items-center ps-2  text-dark ">To be at the forefront of
-            financial
-            innovation, adopting new technologies and approaches to better serve customers and to uphold the highest
-            standards of ethics and integrity in all financial dealings, ensuring trust and transparency with customers,
-            regulators, and stakeholders.</p>
+          <p class="d-flex justify-content-center align-items-center ps-2 pe-5 text-dark ourlogostory">We strive to lead the
+            way in financial innovation. Our commitment to adopting new technologies and modern approaches allows us to
+            better serve our customers. Upholding the highest standards of ethics and integrity is fundamental to our
+            operations. We ensure that all financial dealings are conducted with utmost transparency. Our goal is to
+            build and maintain trust with our customers, regulators, and stakeholders. By focusing on innovation, we aim
+            to enhance the customer experience continually. Ethical conduct is at the core of everything we do. We are
+            dedicated to maintaining transparency in all transactions. Trust and reliability are the cornerstones of our
+            relationships. Our vision is to be recognized as the most trusted and innovative financial institution in
+            the industry.</p>
         </div>
         <div class="col-md-12 col-lg-6 p-5 vission-content "> <!-- Changed col-md-5 to col-md-12 and added col-lg-6 -->
           <h4 class="mb-4 fw-bolder fs-2 text-dark mt-5"><img src="img/headpoint.png" width="30px" height="30px"
               class="me-2">Mission</h4>
-          <p class="d-flex justify-content-center align-items-center  text-dark ">To offer financial services to the
-            underserved and under resourced market and transform into a most trusted financier in India serving a large
-            number of customers.</p>
+          <p class="d-flex justify-content-center align-items-center pe-5  text-dark ourlogostory">Our mission at Tiffany
+            Finance Pvt. Ltd. is to provide essential financial services to underserved markets, striving for
+            inclusivity and empowerment. We aspire to become India's most trusted financier, serving a vast customer
+            base with integrity and reliability. Through transparency, empathy, and professionalism, we aim to earn the
+            trust of every client we serve. Our commitment to ethical conduct and customer satisfaction guides our
+            actions at every step. By understanding and addressing the unique needs of our customers, we endeavor to
+            make a meaningful impact on their financial well-being. Tiffany Finance Pvt. Ltd. is dedicated to fostering
+            economic growth and prosperity, building lasting relationships grounded in trust and integrity.</p>
         </div>
         <div class="col-md-12 col-lg-6 p-3 bg-theme vission-mission d-flex justify-content-center align-items-center">
           <!-- Changed col-md-5 to col-md-12 and added col-lg-6 -->
@@ -171,9 +183,7 @@ $conn->close();
               <h6>
                 <?= $teamMember['first_name'] . ($teamMember['middle_name'] ? " " . $teamMember['middle_name'] : '') . ($teamMember['last_name'] ? " " . $teamMember['last_name'] : '') ?>
               </h6>
-              <label class="team-position fw-bold ">
-                <?= $teamMember['designation'] ?>
-              </label>
+              <label class="team-position fw-bold"><?= $teamMember['designation'] ?></label>
             </div>
           </div>
         </div>
@@ -210,6 +220,7 @@ $conn->close();
       </div>
     </div>
   </div>
+
   <!-- Remove the container if you want to extend the Footer to full width. -->
   <?php include ('footer.php') ?>
 </body>
@@ -221,11 +232,12 @@ $conn->close();
 <script type="text/javascript" src="js/custom.js"></script>
 <script>
   function viewDetail(name, designation, image, description) {
-    $('#member-name').text(name)
-    $('#member-designation').text(designation)
-    $('#member-description').text(description)
-    $('#member-image').attr('src', image)
-    $('#userDetailModal').modal('show')
+    document.getElementById('member-name').innerText = name;
+    document.getElementById('member-designation').innerText = designation;
+    document.getElementById('member-image').src = image;
+    document.getElementById('member-description').innerText = description;
+    var myModal = new bootstrap.Modal(document.getElementById('userDetailModal'));
+    myModal.show();
   }
 
   $(document).ready(function () {

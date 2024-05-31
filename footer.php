@@ -43,12 +43,15 @@
                   <a href="https://www.youtube.com/@TiffanyFinance"><i class="fab fa-youtube"></i></a>
                   <a href="#"><svg class="fab fa-whatsapp" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 18px; height: 18px; opacity:0.5;">
     <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></a>
-                  <br><br>
+    <!-- <a href="https://www.youtube.com/@TiffanyFinance"><i class="fab fa-youtube"></i></a> -->
+   <br> <a href="tel:1800-890-6544" class="phone-icon"><i class="fa fa-phone"></i></a>
+    <a href="mailto:support@tiffanyfinance.com"><i class="fas fa-envelope"></i></a>
+                  <br>
                   <p class="address">Tiffany Finance Private Limited</p>
                   <p class="cin">CIN - U67190RJ2017PTC057988<br>
                   <span class="me-1">HO</span> - 1<sup>st</sup> Floor, Tiffany Tower, Bhilwara-311001, Rajasthan </p>
-                  <a href="tel:1800-890-6544" class="phone-icon"><i class="fa fa-phone"></i></a><span>1800-890-6544</span><br>
-                  <a href="mailto:support@tiffanyfinance.com"><i class="fas fa-envelope"></i></a><span>support@tiffanyfinance.com</span>
+                  
+                  
                </div>
             </div>
 

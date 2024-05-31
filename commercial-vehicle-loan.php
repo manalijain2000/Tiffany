@@ -39,7 +39,7 @@ $conn->close();
       <div class="row">
         <div class="col-md-6 p-5 ">
           <h4 class="fs-2 fw-bolder products-header-h4">Commercial Vehicle Loan </h4>
-          <p class="text-dark fs-6">On the Road to Prosperity: Let Our CV Loan Accelerate Your Growth	 </p>
+          <p class="text-dark fs-6">On the Road to Prosperity: Let Our CV Loan Accelerate Your Growth </p>
           <a class="product-apply-now <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
             href="apply-now.php">Apply Now</a>
         </div>
@@ -56,13 +56,13 @@ $conn->close();
                         value="10,00,000" id='lap-set-amount-loan-against-property'
                         class="form-control form-control-sm">
                       <div class="input-group-append  d-flex">
-                        <span class="input-group-text">RS </span>
+                        <span class="input-group-text">Rs </span>
                       </div>
                     </div>
                   </div>
                   <div class="range">
-                    <input onchange='LAPsetInputValue(this)' id="lap-amount-id" type="range" min="10000  "
-                      max="150000" value='1000000' />
+                    <input onchange='LAPsetInputValue(this)' id="lap-amount-id" type="range" min="10000  " max="150000"
+                      value='1000000' />
                   </div>
                   <div class="d-flex justify-content-between">
                     <div>10000 </div>
@@ -133,28 +133,32 @@ $conn->close();
   </div>
 
   <!-- Dynamic ready to fullfill dreams -->
-  <?php include('enquiry.php') ?>
-   <!-- end -->
-   
-  <div class="container-fluid mt-4">
-    <div class="menu">
-      <div class="menu-item"><a href="#overview" class="fw-bolder fs-4 ms-3">Overview</a></div>
-      <div class="menu-item"><a href="#eligibilty" class="fw-bolder fs-4">Eligibility</a></div>
-      <div class="menu-item"><a href="#document" class="fw-bolder fs-4">Document</a></div>
-      <div class="menu-item"><a href="#howtoapply" class="fw-bolder fs-4">How To Apply</a></div>
+  <?php include ('enquiry.php') ?>
+  <!-- end -->
 
+  <div class="container mt-4">
+    <div class="menu">
+      <div class="menu-item"><a href="#overview" class="nav-link1 fw-bolder fs-5 active">Overview</a></div>
+      <div class="menu-item"><a href="#eligibilty" class="nav-link1 fw-bolder fs-5">Eligibility</a></div>
+      <div class="menu-item"><a href="#document" class="nav-link1 fw-bolder fs-5">Documentation</a></div>
+      <div class="menu-item"><a href="#howtoapply" class="nav-link1 fw-bolder fs-5">How To Apply</a></div>
       <!-- Add more items here -->
     </div>
   </div>
   <div class="container mt-5" id="overview">
     <div class="row ">
       <div class="col-md-7 ">
-        
-        <p class="text-dark">Self-Start your journey with your own commercial vehicle and grab opportunity now to earn your independent income. You don’t have to be dependent on anyone to make your living, freedom and flexibility is what you can get with your own commercial vehicle. 
+
+        <p class="text-dark">Self-Start your journey with your own commercial vehicle and grab opportunity now to earn
+          your independent income. You don’t have to be dependent on anyone to make your living, freedom and flexibility
+          is what you can get with your own commercial vehicle.
         </p>
-        <p class="text-dark">If you are self-employed and have your own transport business or are planning to start something of your own, Tiffany Finance’s commercial vehicle loan is best for you as we offer loan for various types of commercial vehicles from light to heavy like Autos, Mini Trucks and Tractors.
+        <p class="text-dark">If you are self-employed and have your own transport business or are planning to start
+          something of your own, Tiffany Finance’s commercial vehicle loan is best for you as we offer loan for various
+          types of commercial vehicles from light to heavy like Autos, Mini Trucks and Tractors.
         </p>
-        <p class="text-dark">Self-Employes individuals can apply this loan to buy a new vehicle, to buy a used vehicle and to refinance of commercial vehicle.  </p>
+        <p class="text-dark">Self-Employes individuals can apply this loan to buy a new vehicle, to buy a used vehicle
+          and to refinance of commercial vehicle. </p>
       </div>
       <div class="col-md-5 text-end mt-4 ">
         <div class="image-container ms-5">
@@ -170,36 +174,44 @@ $conn->close();
       <h4 class=" mb-4 fw-bolder text-center bottom-line">Features & Benefits for Commercial Vehicle Loan</h4>
       <div class="featuresandbenefits">
         <div class="text-center mt-5 mb-5">
-          <img src="img/fbcvl.jpg" class="img-fluid me-5  ">
+          <img src="img/fbcvl.jpg" class="img-fluid  ">
         </div>
-        <div class="mt-5 ms-5 ">
-          <div class="d-flex align-items-start mt-2">
+        <!-- <div class=" text-center mt-5 mb-5">
+          <img src="img/PL5.jpg" class="img-fluid me-5 ">
+        </div> -->
+        <div class="mt-5 fbc">
+          <div class="d-flex align-items-start mb-4 ">
             <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
-            <div><strong> Flexible Loan Tenure and Amounts:</strong> Loan tenure up to 60 months with amounts starting from ₹50,000* onwards up to ₹5 lakhs.
+            <div><strong> Flexible Loan Tenure and Amounts : </strong> Loan tenure up to 60 months with amounts starting
+              from ₹50,000* onwards up to ₹5 lakhs.
             </div>
           </div>
-          <BR>
-          <div class="d-flex align-items-start mb-2">
+
+          <div class="d-flex align-items-start mb-4">
             <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
-            <div><strong>	Attractive Interest Rates:</strong> Enjoy rates ranging from 12% to 22%.
+            <div><strong> Attractive Interest Rates : </strong> Enjoy rates ranging from 12% to 22%.
             </div>
           </div>
-          <BR>
-          <div class="d-flex align-items-start mb-2">
+
+          <div class="d-flex align-items-start mb-4">
             <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
-            <div><strong> Comfortable EMI Installments: </strong> Tailored as per your feasibility.
+            <div><strong> Comfortable EMI Installments : </strong> Tailored as per your feasibility.
             </div>
           </div>
-          <br>
-          <div class="d-flex align-items-start mb-2">
+
+          <div class="d-flex align-items-start mb-4">
             <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
-            <div><strong> Inclusive Loan Options:</strong> Available for first-time purchasers and buyers with no income proof.
+            <div><strong> Inclusive Loan Options : </strong> Available for first-time purchasers and buyers with no
+              income
+              proof.
             </div>
           </div>
-          <BR>
-        <div class="d-flex align-items-start">
+
+          <div class="d-flex align-items-start">
             <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
-            <div><strong> Additional Benefits:</strong> Vehicle insurance cover options available and loans up to 90% of the asset's value.
+            <div><strong> Additional Benefits : </strong> Vehicle insurance cover options available and loans up to 90%
+              of
+              the asset's value.
             </div>
           </div>
           <br>
@@ -210,50 +222,128 @@ $conn->close();
           </div> -->
         </div>
       </div>
-      <p class="text-danger">
+      <!-- <p class="text-danger">
         <i>*Terms & Conditions Apply</i>
-      </p>
+      </p> -->
     </div>
   </div>
-
   <div class="container mt-5" id="eligibilty">
-    <div class="row feature">
-
+    <div class="row feature ">
       <h4 class="fw-bolder bottom-line  mb-5 text-center">Eligibility Criteria for Commercial Vehicle Loan</h4>
-      
-      <div class="">
-        <div class=" p-2">
-          <h5>Eligibility for New Commercial Vehicle Loan: </h5>
-          <br>
-          <ul style="list-style-type:disc;">
-            <li>For salaried individuals – 2 years of employment and for self-employed – at least 2-year experience in
-              their business. </li>
-            <li>Salaried individuals must be working in – Private/Limited companies, Partnership companies, trusts,
-              associations and societies and these companies must be in operations for minimum two years. </li>
-            <li>Private/Limited companies, Partnership companies, trusts, associations and societies should have at
-              least 2 year audited financial statements as a proof.</li>
-            <li>We may require guarantors – internal/external in few cases. Guarantors may be neglected if the candidate
-              has a good CIBIL Score with a good track of repayments. </li>
-            <li>Anyone who is applying for commercial vehicle loan must be residing at his/her present address for at
-              least 2 years. </li>
-            <li>First time purchasers must have minimum three years of driving experience.</li>
-            <li>For light commercial vehicles, multi utility vehicles and tractor loan, own house is required to go
-              ahead for the loan. </li>
-          </ul>
-          <br>
-          <h5>Eligibility for Used Commercial Vehicle Loan: </h5>
-          <ul style="list-style-type:disc;">
-            <li>Applicants must have prior experience of 3-5 years in running commercial vehicles.</li>
-            <li>They should have a good credit history in the past and a satisfactory track record of repayments. </li>
-            <li>Their stability at a place where they are living whether in city, village or town matters. </li>
-            <li>Applicants must fulfill Tiffany Finance credit policies to get Used Commercial Vehicle Loan.</li>
-            <li>Applicants must own minimum 2 vehicles for at least one year. </li>
-          </ul>
+      <p class="paragraph">Whether you're expanding your fleet or purchasing your first commercial vehicle, our loan options are
+          designed to make the process easy and affordable. To ensure you can access the financing you need, we've
+          outlined the key eligibility criteria for both new and used commercial vehicle loans below:</p>
+      <div class="container mt-3 ">
+        <h5 class="fw-bolder">Eligibility for New Commercial Vehicle Loan:</h5><br>
+        
+        <div class="table-responsive-sm table-responsive-md">
+          <table class="table table-bordered mb-0">
+            <thead>
+              <tr>
+                <th style="background-color: #2c2e53; color :white;">Criteria </th>
+                <th style="background-color: #2c2e53; color :white;">Details</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Employment Requirement</th>
+                <td>Salaried: 2 years employment; Self-employed: 2 years business experience</td>
+
+              </tr>
+              <tr>
+                <th>Employment Type (Salaried)</th>
+                <td>Private/Limited companies, Partnership companies, trusts, associations, societies</td>
+
+              </tr>
+              <tr>
+                <th>Company Operation Duration</th>
+                <td>Minimum 2 years</td>
+
+              </tr>
+              <tr>
+                <th>Financial Statements</th>
+                <td>Minimum 2 years of audited financial statements</td>
+
+
+              </tr>
+              <tr>
+                <th>Guarantors Requirement</th>
+                <td>May be required; waived with good CIBIL Score and repayment history</td>
+
+
+              </tr>
+              <tr>
+                <th>Residence Requirement</th>
+                <td>Minimum 2 years at current address</td>
+
+
+              </tr>
+              <tr>
+                <th>Driving Experience (First-Time Purchasers)</th>
+                <td>Minimum 3 years</td>
+
+
+              </tr>
+              <tr>
+                <th>Property Requirement (Specific Vehicle Loans)</th>
+                <td>Own house required for light commercial vehicles, multi-utility vehicles, and tractor loans</td>
+
+
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <br>
+        <h5 class="fw-bolder">Eligibility for Used Commercial Vehicle Loan:</h5><br>
+        <div class="container mt-3 d-flex justify-content-center">
+        <div class="table-responsive-sm table-responsive-md w-70">
+          <table class="table table-bordered mb-0">
+            <thead>
+              <tr>
+                <th style="background-color: #2c2e53; color :white;">Criteria </th>
+                <th style="background-color: #2c2e53; color :white;">Details</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Prior Experience</th>
+                <td>3-5 years running commercial vehicles</td>
+
+              </tr>
+              <tr>
+                <th>Credit History</th>
+                <td>Good credit history and satisfactory repayment track</td>
+
+              </tr>
+              <tr>
+                <th>Residence Stability</th>
+                <td>Stability in current place (city, village, town)</td>
+
+              </tr>
+              <tr>
+                <th>Credit Policies</th>
+                <td>Must fulfill Tiffany Finance credit policies</td>
+
+
+              </tr>
+              <tr>
+                <th>Vehicle Ownership</th>
+                <td>Must own minimum 2 vehicles for at least one year</td>
+
+
+              </tr>
+
+
+
+            </tbody>
+          </table>
         </div>
       </div>
-
-
     </div>
+  </div>
+  <div class="container mt-5">
     <div class="row mt-5 feature" id="document">
 
       <h4 class="fw-bolder bottom-line  mb-5 text-center">Documents Required for Commercial Vehicle Loan</h4>
@@ -277,7 +367,7 @@ $conn->close();
                 <li>Driving License</li>
                 <li>Aadhar Card </li>
               </ul>
-              <span class="text-dark mt-3">( <sup>*</sup> Any 2)</span>
+              <!-- <span class="text-dark mt-3">( <sup>*</sup> Any 2)</span> -->
 
             </div>
           </div>
@@ -302,7 +392,7 @@ $conn->close();
                 <li>Sale Deed/Property Purchase Agreement (for owned properties)</li>
                 <li>Driving License</li>
                 <br>
-                <span class="text-dark mt-3">( <sup>*</sup> Any 2)</span>
+                <!-- <span class="text-dark mt-3">( <sup>*</sup> Any 2)</span> -->
 
               </ul>
             </div>
@@ -345,15 +435,12 @@ $conn->close();
           </div>
         </div>
       </div>
-      <p class="text-danger mt-3">
-        <i>*Terms & Conditions Apply</i>
+      <p class="text-dark mt-3">
+        <b>Note</b>: This is just an indicative list additional criteria and documents may be required at the time of
+        loan application.Self-attested copy of relevant documents.
       </p>
-      <span class="text-dark">
-        <b>Note:</b> This is just an indicative list additional criteria and documents may be required at the time of
-        loan
-        application.Self-attested copy of relevant documents <sup class="">*</sup>
 
-      </span>
+
     </div>
   </div>
   <div class="container mt-5" id="howtoapply">
@@ -377,7 +464,7 @@ $conn->close();
         <div class="how-to-apply-box text-center">
           <img src="img/call.png" class="mt-3 mb-4" width="40px" height="40px">
           <br>
-          
+
           <a href="tel:1800-890-6544">You can call us on <br>our customer care number <br>@ 1800-890-6544</a>
         </div>
       </div>
@@ -386,7 +473,8 @@ $conn->close();
           <img src="img/email.png" class="mt-3 " width="50px" height="40px">
           <br>
           <br>
-          <a href="mailto:support@tiffanyfinance.com">Email us on support@tiffanyfinance.com and we will get in touch
+          <a href="mailto:customercare@tiffanyfinance.com">Email us on customercare@tiffanyfinance.com and we will get
+            in touch
             with
             you.</a>
         </div>
@@ -397,8 +485,7 @@ $conn->close();
           <br>
 
           <p class="text-dark mt-2 ">Through Whatsapp</p>
-          <a class="loan-apply-btn "
-            href="https://wa.me/6377965063">Apply Now</a>
+          <a class="loan-apply-btn " href="https://wa.me/6377965063">Apply Now</a>
         </div>
       </div>
     </div>
@@ -407,7 +494,7 @@ $conn->close();
 
 
   <div class="container mt-5 feature">
-  <h4 class="fw-bolder bottom-line  mb-5 text-center">FAQ</h4>
+    <h4 class="fw-bolder bottom-line  mb-5 text-center">FAQ</h4>
     <?php foreach ($faqs as $faq) { ?>
       <div class="accordion mb-2" id="accordionExample<?= $faq['faq_id'] ?>">
         <div class="accordion-item">

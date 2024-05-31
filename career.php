@@ -412,16 +412,16 @@
       Swal.fire({
         icon: 'error',
         title: 'File is required',
-        text: 'File size exceeds the allowed limit (' + '300' + ' KB)',
+        text: 'File size exceeds the allowed limit (' + '500' + ' MB)',
       });
     } else {
       var file_size = resumeFile.size / 1024;
       console.log(file_size);
-      if (file_size >= 300) {
+      if (file_size >= 500) {
         Swal.fire({
           icon: 'error',
           title: 'File Size Error',
-          text: 'File size exceeds the allowed limit (' + '300' + ' KB)',
+          text: 'File size exceeds the allowed limit (' + '500' + ' MB)',
         });
       }
     }
@@ -448,12 +448,12 @@
     formData.append('last_name', document.getElementById('last_name').value);
     formData.append('phone', document.getElementById('phone').value);
     formData.append('email', document.getElementById('email').value);
-    formData.append('current_designation', document.getElementById('current_designation').value);
-    formData.append('last_current_company', document.getElementById('last_current_company').value);
-    formData.append('designation_applying_for', document.getElementById('designation_applying_for').value);
-    formData.append('preferred_location', document.getElementById('preferred_location').value);
-    formData.append('current_ctc', document.getElementById('current_ctc').value);
-    formData.append('experience_type', document.getElementById('experience_type').value);
+    // formData.append('current_designation', document.getElementById('current_designation').value);
+    // formData.append('last_current_company', document.getElementById('last_current_company').value);
+    // formData.append('designation_applying_for', document.getElementById('designation_applying_for').value);
+    // formData.append('preferred_location', document.getElementById('preferred_location').value);
+    // formData.append('current_ctc', document.getElementById('current_ctc').value);
+    // formData.append('experience_type', document.getElementById('experience_type').value);
     formData.append('resume_location', document.getElementById('resume_location').files[0]);
 
     $.ajax({

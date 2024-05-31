@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Business Loan - Tiffany Finance Private Limited</title>
-   <link rel="shortcut icon" href="img/dark-logo-sm.png">
- <link rel="stylesheet" href="style.css">
- <link rel="stylesheet" href="footer.css">
+  <link rel="shortcut icon" href="img/dark-logo-sm.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="footer.css">
   <!-- <link rel="stylesheet" href="bootstrap/font-awesome-min.css"> -->
   <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css" />
   <link rel="stylesheet" type="text/css" href="custom-bootstrap/bootstrap.css" />
@@ -18,7 +18,7 @@
 
 <?php
 // Include the database connection file
-include("db_connection.php");
+include ("db_connection.php");
 // SQL query to select all products from the 'products' table
 $faqsSql = "SELECT * FROM faq_section where category = 'business-loan'";
 $faqs = $conn->query($faqsSql);
@@ -27,7 +27,7 @@ $conn->close();
 ?>
 
 <body>
-  <?php include('header.php') ?>
+  <?php include ('header.php') ?>
   <div class="container-fluid p-0 banner-header">
     <div class=" header-slider">
       <img src="img/tifinay1.png" class="d-block w-100" alt="Privacy-policy">
@@ -56,13 +56,13 @@ $conn->close();
                         value="10,00,000" id='lap-set-amount-loan-against-property'
                         class="form-control form-control-sm">
                       <div class="input-group-append  d-flex">
-                        <span class="input-group-text">RS </span>
+                        <span class="input-group-text">Rs </span>
                       </div>
                     </div>
                   </div>
                   <div class="range">
-                    <input onchange='LAPsetInputValue(this)' id="lap-amount-id" type="range" min="10000  "
-                      max="150000" value='1000000' />
+                    <input onchange='LAPsetInputValue(this)' id="lap-amount-id" type="range" min="10000  " max="150000"
+                      value='1000000' />
                   </div>
                   <div class="d-flex justify-content-between">
                     <div>10000 </div>
@@ -133,28 +133,34 @@ $conn->close();
   </div>
 
   <!-- Dynamic ready to fullfill dreams -->
-  <?php include('enquiry.php') ?>
-   <!-- end -->
-   
-  <div class="container-fluid mt-4">
-    <div class="menu">
-      <div class="menu-item"><a href="#overview" class="fw-bolder fs-4 ms-3">Overview</a></div>
-      <div class="menu-item"><a href="#eligibilty" class="fw-bolder fs-4">Eligibility</a></div>
-      <div class="menu-item"><a href="#document" class="fw-bolder fs-4">Document</a></div>
-      <div class="menu-item"><a href="#howtoapply" class="fw-bolder fs-4">How To Apply</a></div>
+  <?php include ('enquiry.php') ?>
+  <!-- end -->
 
+  <div class="container mt-4">
+    <div class="menu">
+      <div class="menu-item"><a href="#overview" class="nav-link1 fw-bolder fs-5 active">Overview</a></div>
+      <div class="menu-item"><a href="#eligibilty" class="nav-link1 fw-bolder fs-5">Eligibility</a></div>
+      <div class="menu-item"><a href="#document" class="nav-link1 fw-bolder fs-5">Documentation</a></div>
+      <div class="menu-item"><a href="#howtoapply" class="nav-link1 fw-bolder fs-5">How To Apply</a></div>
       <!-- Add more items here -->
     </div>
   </div>
   <div class="container mt-5" id="overview">
     <div class="row ">
       <div class="col-md-7 ">
-        
-        <p class="text-dark">Our business loan serves as a vital resource for entrepreneurs, whether they're launching a new venture or expanding an existing one. With funding options of up to ₹90 lakhs*, businesses can secure the necessary capital for essential assets, equipment, and facilities. 
+
+        <p class="text-dark">Our business loan serves as a vital resource for entrepreneurs, whether they're launching a
+          new venture or expanding an existing one. With funding options of up to ₹90 lakhs*, businesses can secure the
+          necessary capital for essential assets, equipment, and facilities.
         </p>
-        <p class="text-dark">We provide both secured and unsecured loan options, ensuring flexibility and accessibility for businesses of all sizes and risk profiles. In addition to financing initial investments, our loan covers working capital needs, including inventory management, marketing, hiring, and equipment purchases, facilitating smooth daily operations and short-term growth. 
+        <p class="text-dark">We provide both secured and unsecured loan options, ensuring flexibility and accessibility
+          for businesses of all sizes and risk profiles. In addition to financing initial investments, our loan covers
+          working capital needs, including inventory management, marketing, hiring, and equipment purchases,
+          facilitating smooth daily operations and short-term growth.
         </p>
-        <p class="text-dark">What sets our financing apart is its customization; businesses can tailor their loan according to their specific needs, whether it's through term loans, lines of credit, or equipment financing.</p>
+        <p class="text-dark">What sets our financing apart is its customization; businesses can tailor their loan
+          according to their specific needs, whether it's through term loans, lines of credit, or equipment financing.
+        </p>
       </div>
       <div class="col-md-5 text-end ">
         <div class="image-container ms-5">
@@ -165,214 +171,250 @@ $conn->close();
   </div>
   <div class="container mt-5">
     <div class="row feature">
-    <h4 class=" mb-4 fw-bolder text-center bottom-line">Features & Benefits for Business Loan</h4>
-    <div class="featuresandbenefits">
-        <div class="text-center me-5">
-          <img src="img/fbbl.jpg" class="img-fluid me-5 mt-5 ">
+      <h4 class=" mb-4 fw-bolder text-center bottom-line">Features & Benefits for Business Loan</h4>
+      <div class="featuresandbenefits mt-5">
+        <!-- <div class="text-center">
+          <img src="img/fbbl.jpg" class="img-fluid  ">
+        </div> -->
+        <div class="me-4">
+          <img src="img/FBL.jpg" class="img-fluid me-5 ">
         </div>
-        <div class="mt-5 ">
-        <div class="d-flex align-items-start">
-              <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
-              <div><strong>Collateral options :</strong>Choose between secured and unsecured loans to match your risk tolerance.
-              </div>
+        <div class=" fbc">
+          <div class="d-flex align-items-start">
+            <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
+            <div><strong>Collateral options : </strong>Choose between secured and unsecured loans to match your risk
+              tolerance.
             </div>
-          <!-- <div class="d-flex align-items-start">
-              <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
-              <div><strong>Customized financing :</strong>Various loan types available including term loans, working capital loans, equipment loans, and trade finance tailored as per your needs.
-              </div>
-            </div> -->
-            <div class="d-flex align-items-start mb-2">
-              <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
-              <div><strong>Versatile Repayment Periods :</strong>Repay over 12 to 60 months for added flexibility.</div>
+          </div><br>
+          <div class="d-flex align-items-start ">
+            <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
+            <div><strong>Versatile Repayment Periods : </strong>Repay over 12 to 60 months for added flexibility.</div>
+          </div><br>
+          <div class="d-flex align-items-start">
+            <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
+            <div><strong>Loan Amounts : </strong>Secure funding up to ₹90 lakhs based on your credit and business
+              profile.</div>
+          </div><br>
+          <div class="d-flex align-items-start ">
+            <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
+            <div><strong>Competitive Interest Rates : </strong>Enjoy rates between 16% to 35% to minimize borrowing
+              costs.</div>
+          </div><br>
+          <div class="d-flex align-items-start">
+            <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
+            <div><strong>Efficient Approval Process : </strong>Experience quick approval and streamlined procedures for
+              prompt access to funds.
             </div>
-            <div class="d-flex align-items-start">
-              <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
-              <div><strong>Loan Amounts :</strong>Secure funding up to ₹90 lakhs* based on your credit and business profile.</div>
-            </div>
-            <div class="d-flex align-items-start mb-2">
-              <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
-              <div><strong>Competitive Interest Rates :</strong>Enjoy rates between 16% to 35% to minimize borrowing costs.</div>
-            </div>
-            <div class="d-flex align-items-start">
-              <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
-              <div><strong>Efficient Approval Process :</strong>Experience quick approval and streamlined procedures for prompt access to funds. 
-              </div>
-            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <div class="container mt-5" id="eligibilty">
-    <div class="row feature">
-      <div class="">
-        <div class=" p-2 h-100">
-        
-        <h4 class="fw-bolder bottom-line  mb-5 text-center">Eligibility Criteria for Business Loan</h4>
-          <ul style="list-style-type:disc;">
-            <li>
-              <b> Nationality and Age Eligibility</b>: You must be an Indian resident with minimum 21 years old when
-              applying for the loan and no older than 65 at the time the loan matures.
-            </li>
-            <li>
-              <b>Eligible entities include</b>
-              <ol>
-                <li>Entities: Partnership Firms, Trusts, Limited Liability Partnerships (LLPs) and Private Limited
-                  Companies.</li>
-                <li> Self-employed professionals - Chartered Accountants, Doctors, Lawyers, Architects, Company
-                  Secretaries and more </li>
-                <li> Self-employed non-professionals – Retailers, Manufacturers, Traders, Sole Proprietors and Service
-                  Providers </li>
-              </ol>
-            </li>
-            <li>
-              <b>Credit score:</b> Credit score should be at least 650 or above.
-            </li>
-            <li>
-              <b>Business Annual Turnover:</b>Turnover of minimum Rs.10 lakhs is required annually
-            </li>
-            <li>
-              <b>Business Vintage</b> Applicants must have a business vintage of minimum of 2 years with profits.
-            </li>
-            <li>
-              <b>Loan Repayment Tenure : </b>You get maximum 60 months to repay the loan
-            </li>
-            <li>
-              <b>Business Experience : </b>You should hold at least 3-year experience in your current business at same
-              location with stable profits for last 2 years
-            </li>
-          </ul>
+    <div class="row feature ">
+      <h4 class="fw-bolder bottom-line  mb-5 text-center">Eligibility Criteria for Business Loan</h4>
+      <p class="paragraph">Applying for a business loan with us is straightforward and hassle-free. Our eligibility criteria are designed
+        to accommodate a wide range of business needs, ensuring you have access to the financial resources essential for
+        growth and success.Here are the main requirements to qualify for our business loans:</p>
+      <div class="container mt-3 d-flex justify-content-center">
+        <div class="table-responsive-sm table-responsive-md w-70">
+          <table class="table table-bordered mb-0">
+            <thead>
+              <tr>
+                <th style="background-color: #2c2e53; color :white;">Criteria </th>
+                <th style="background-color: #2c2e53; color :white;">Details</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Nationality & Age</th>
+                <td>Indian, 21-65 years</td>
+
+              </tr>
+              <tr>
+                <th>Eligible Entities</th>
+                <td>Partnerships, Trusts, LLPs, Pvt. Ltd. Companies</td>
+
+              </tr>
+              <tr>
+                <th>Professionals</th>
+                <td>CA, Doctors, Lawyers, Architects, etc.</td>
+
+              </tr>
+              <tr>
+                <th>Non-Professionals</th>
+                <td>Retailers, Manufacturers, Traders, etc.</td>
+
+
+              </tr>
+              <tr>
+                <th>Credit Score</th>
+                <td>Minimum 650</td>
+
+
+              </tr>
+              <tr>
+                <th>Annual Turnover</th>
+                <td>Minimum ₹10 lakhs</td>
+
+
+              </tr>
+              <tr>
+                <th>Business Vintage</th>
+                <td>Minimum 2 years with profits</td>
+
+
+              </tr>
+              <tr>
+                <th>Repayment Tenure</th>
+                <td>Up to 60 months</td>
+
+
+              </tr>
+              <tr>
+                <th>Business Experience</th>
+                <td>Minimum 3 years at same location, stable profits last 2 years</td>
+
+
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-      <div class="">
-        <div class=" p-2 h-100 feature" id="document">
-        <h4 class="fw-bolder bottom-line  mb-5 text-center">Documents Required for Two Wheeler Loan</h4>
-        <br> 
-        <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                  aria-expanded="true" aria-controls="collapseOne">
-                  Photo Identity Proof <sup class="ms-2 fs-4 mt-3"></sup>
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <ul style="list-style-type:disc;">
-                    <li>Passport</li>
-                    <li>Pan Card</li>
-                    <li>Voter Identity Card</li>
-                    <li>Driving License</li>
-                    <li>Aadhar Card</li>
-                    <br>
-                    <span class="text-dark mt-3">( <sup>*</sup> Any 2)</span>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Address Proof <sup class="ms-2 fs-4 mt-3"></sup>
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <ul style="list-style-type:disc;">
-                    <li>Passport</li>
-                    <li>Electricity Bill</li>
-                    <li>Bank Account Statement</li>
-                    <li>Telephne Bill</li>
-                    <li>Ration Card</li>
-                    <li>Aadhaar Card</li>
-                    <li>Sale Deed/Property Purchase Agreement (for owned properties)</li>
-                    <li>Driving License</li>
-                    <br>
-
-                    <span class="text-dark mt-3">( <sup>*</sup> Any 2)</span>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Income Proof
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <ul style="list-style-type:disc;">
-                    <li>Last 6 months Bank Statement(Mandatory)</li>
-                    <li>Latest ITR <sup>*</sup></li>
-                    <li>Latest Audited Financial <sup>*</sup></li>
-                    <li>Latest GST Returns <sup>*</sup></li>
-
-
-                  </ul>
-                  ( * If available)
-
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingFour">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                  Business Proof
-                </button>
-              </h2>
-              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-
-                  <ul style="list-style-type:disc;">
-                    <li>Qualification Certificate/Certificate of Practice (COP)</li>
-                    <li>Shop Act License/ MOA & AOA/ Sales Tax/ Vat registration/ Partnership Deed</li>
-
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingFive">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                  Property Proof
-                </button>
-              </h2>
-              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <ul style="list-style-type:disc;">
-                    <li>Title Deed</li>
-                    <li>Latest Tax Receipt</li>
-                    <li>Sanction Plan/Approved Map</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-
-          </div>
-        </div>
-      </div>
-      <p class="text-danger">
-        <i>*Terms & Conditions Apply</i>
-      </p>
-      <span class="text-dark">
-      <b>Note:</b> This is just an indicative list. Additional criteria and documents may be required at the time of
-        loan application.Requirement of business loan documents might vary according to the scheme chosen
-        <sup>*</sup>Requirement of business loan documents might vary according to the scheme chosen
-        <sup>*</sup> </span>
     </div>
   </div>
-  
+  <div class="container mt-5" id="document">
+
+    <div class="">
+      <div class=" p-2 h-100 feature" id="document">
+        <h4 class="fw-bolder bottom-line  mb-5 text-center">Documents Required for Two Wheeler Loan</h4>
+        <br>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Photo Identity Proof <sup class="ms-2 fs-4 mt-3"></sup>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul style="list-style-type:disc;">
+                  <li>Passport</li>
+                  <li>Pan Card</li>
+                  <li>Voter Identity Card</li>
+                  <li>Driving License</li>
+                  <li>Aadhar Card</li>
+                  <br>
+                  <!-- <span class="text-dark mt-3">( <sup>*</sup> Any 2)</span> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Address Proof <sup class="ms-2 fs-4 mt-3"></sup>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul style="list-style-type:disc;">
+                  <li>Passport</li>
+                  <li>Electricity Bill</li>
+                  <li>Bank Account Statement</li>
+                  <li>Telephne Bill</li>
+                  <li>Ration Card</li>
+                  <li>Aadhaar Card</li>
+                  <li>Sale Deed/Property Purchase Agreement (for owned properties)</li>
+                  <li>Driving License</li>
+                  <br>
+
+                  <!-- <span class="text-dark mt-3">( <sup>*</sup> Any 2)</span> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Income Proof
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul style="list-style-type:disc;">
+                  <li>Last 6 months Bank Statement(Mandatory)</li>
+                  <li>Latest ITR <sup></sup></li>
+                  <li>Latest Audited Financial <sup></sup></li>
+                  <li>Latest GST Returns <sup></sup></li>
+
+
+                </ul>
+                <!-- ( * If available) -->
+
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Business Proof
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+
+                <ul style="list-style-type:disc;">
+                  <li>Qualification Certificate/Certificate of Practice (COP)</li>
+                  <li>Shop Act License/ MOA & AOA/ Sales Tax/ Vat registration/ Partnership Deed</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Property Proof
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul style="list-style-type:disc;">
+                  <li>Title Deed</li>
+                  <li>Latest Tax Receipt</li>
+                  <li>Sanction Plan/Approved Map</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <!-- <p class="text-danger">
+        <i>*Terms & Conditions Apply</i>
+      </p> -->
+    <p class="text-dark mt-3">
+      <b>Note</b>: This is just an indicative list additional criteria and documents may be required at the time of
+      loan application.Self-attested copy of relevant documents.
+    </p>
+  </div>
+  </div>
+
   <div class="container mt-5" id="howtoapply">
     <div class="row feature ">
       <h4 class="fw-bolder bottom-line mb-4 text-center">How To Apply</h4>
@@ -394,7 +436,7 @@ $conn->close();
         <div class="how-to-apply-box text-center">
           <img src="img/call.png" class="mt-3 mb-4" width="40px" height="40px">
           <br>
-          
+
           <a href="tel:1800-890-6544">You can call us on <br>our customer care number <br>@ 1800-890-6544</a>
         </div>
       </div>
@@ -403,7 +445,8 @@ $conn->close();
           <img src="img/email.png" class="mt-3 " width="50px" height="40px">
           <br>
           <br>
-          <a href="mailto:support@tiffanyfinance.com">Email us on support@tiffanyfinance.com and we will get in touch
+          <a href="mailto:customercare@tiffanyfinance.com">Email us on customercare@tiffanyfinance.com and we will get
+            in touch
             with
             you.</a>
         </div>
@@ -414,34 +457,34 @@ $conn->close();
           <br>
 
           <p class="text-dark mt-3 ">Through Whatsapp</p>
-          <a class="loan-apply-btn "
-            href="https://wa.me/6377965063">Apply Now</a>
+          <a class="loan-apply-btn " href="https://wa.me/6377965063">Apply Now</a>
         </div>
       </div>
     </div>
   </div>
 
   <div class="container mt-5 feature">
-  <h4 class="fw-bolder bottom-line  mb-5 text-center">FAQ</h4>
+    <h4 class="fw-bolder bottom-line  mb-5 text-center">FAQ</h4>
     <?php foreach ($faqs as $faq) { ?>
-        <div class="accordion mb-2" id="accordionExample<?= $faq['faq_id'] ?>">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne<?= $faq['faq_id'] ?>">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne<?= $faq['faq_id'] ?>"
-                        aria-expanded="false" aria-controls="collapseOne<?= $faq['faq_id'] ?>"> <?= $faq['question'] ?> </button>
-                </h2>
-                <div id="collapseOne<?= $faq['faq_id'] ?>" class="accordion-collapse collapse" aria-labelledby="headingOne<?= $faq['faq_id'] ?>"
-                    data-bs-parent="#accordionExample<?= $faq['faq_id'] ?>">
-                    <div class="accordion-body">
-                        <p class="paragraph"> <?= $faq['answer'] ?> </p>
-                    </div>
-                </div>
+      <div class="accordion mb-2" id="accordionExample<?= $faq['faq_id'] ?>">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne<?= $faq['faq_id'] ?>">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne<?= $faq['faq_id'] ?>" aria-expanded="false"
+              aria-controls="collapseOne<?= $faq['faq_id'] ?>"> <?= $faq['question'] ?> </button>
+          </h2>
+          <div id="collapseOne<?= $faq['faq_id'] ?>" class="accordion-collapse collapse"
+            aria-labelledby="headingOne<?= $faq['faq_id'] ?>" data-bs-parent="#accordionExample<?= $faq['faq_id'] ?>">
+            <div class="accordion-body">
+              <p class="paragraph"> <?= $faq['answer'] ?> </p>
             </div>
+          </div>
         </div>
+      </div>
     <?php } ?>
   </div>
   <!-- Remove the container if you want to extend the Footer to full width. -->
-  <?php include('footer.php') ?>
+  <?php include ('footer.php') ?>
 </body>
 
 </html>
@@ -452,7 +495,7 @@ $conn->close();
 <script type="text/javascript" src="js/custom.js"></script>
 <script type="text/javascript" src="js/commonEmi.js"></script>
 <script>
-  $(document).ready(function() {
+  $(document).ready(function () {
     LAPemiCalculator()
     emiCalculator()
   });

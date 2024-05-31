@@ -1,21 +1,21 @@
 <div class="side-calculate">
   <div class="emi-box ">
     <button type="button" class="btn  emi-btn float-right" data-bs-toggle="modal" data-bs-target="#CalculateEMI">
-    <img src="img/values/calc.png" class="side-clc">
+      <img src="img/values/calc.png" class="side-clc">
       <span>Calculate EMI</span>
     </button>
     <button type="button" class="btn  emi-btn" onclick="redirectToApplyNowPage('')">
-    <img src="img/values/apply.png" class="side-clc">
+      <img src="img/values/apply.png" class="side-clc">
       <span>Apply Now</span>
     </button>
     <button type="button" class="btn  emi-btn float-right" onclick='redirectToAnotherPage("pay-emi.php")'>
       <img src="img/values/pay.png" class="side-icon">
       <span>Pay EMI</span>
     </button>
-     <button type="button" class="btn emi-btn" onclick="window.location.href = 'tel:1800-890-6544'">
-    <img src="img/values/phone.png" class="side-icon1">
-    <span>Contact Us</span>
-</button>
+    <button type="button" class="btn emi-btn" onclick="window.location.href = 'tel:1800-890-6544'">
+      <img src="img/values/phone.png" class="side-icon1">
+      <span>Contact Us</span>
+    </button>
   </div>
   <!-- Modal -->
   <div class="modal fade" id="CalculateEMI" tabindex="-1" aria-labelledby="CalculateEMILabel" aria-hidden="true">
@@ -44,18 +44,18 @@
                         <input onfocusout="setInputUsFormat()" onfocusin="setInputNormalForm()" type="text"
                           value="10,00,000" id='set-amount-loan-against-property' class="form-control form-control-sm">
                         <div class="input-group-append  d-flex">
-                          <span class="input-group-text">RS </span>
+                          <span class="input-group-text">Rs </span>
                         </div>
                       </div>
                     </div>
                     <div class="range">
-                      <input onchange='setInputValue(this)' id="amount-id" type="range" min="500000"
-                      max="50000000" value='1000000' />
+                      <input onchange='setInputValue(this)' id="amount-id" type="range" min="500000" max="50000000"
+                        value='1000000' />
                     </div>
                     <div class="d-flex justify-content-between">
-                    <div>500000</div>
-                    <div>50000000</div>
-                  </div>
+                      <div>500000</div>
+                      <div>50000000</div>
+                    </div>
                   </div>
                   <br>
                   <div class="wrapper mb-2 ">
@@ -64,19 +64,23 @@
                       <div class="input-group w-fit-200">
                         <input type="text" onfocusout='setInputRangeVal(this)' value="60"
                           id='set-tenur-loan-against-propertye' class="form-control form-control-sm">
-                        <div class="input-group-append d-flex">
+                        <!-- <div class="input-group-append d-flex">
                           <span onclick='convertMonthToYear(this)' id="month-id"
                             class="input-group-text text-white bg-dark">Mo</span>
+                        </div> -->
+                        <div class="input-group-append  d-flex">
+                          <span class="input-group-text">Rs </span>
                         </div>
                       </div>
                     </div>
                     <div class="range">
-                      <input onchange='setInputValue(this)' id="tenure-id" type="range" min="12" max="120 " value='60' />
+                      <input onchange='setInputValue(this)' id="tenure-id" type="range" min="12" max="120 "
+                        value='60' />
                     </div>
                     <div class="d-flex justify-content-between">
-                    <div>12 Months</div>
-                    <div>120 Months</div>
-                  </div>
+                      <div>12 Months</div>
+                      <div>120 Months</div>
+                    </div>
                   </div>
                   <br>
                   <div class="wrapper mb-2 ">
@@ -91,7 +95,8 @@
                       </div>
                     </div>
                     <div class="range">
-                      <input onchange='setInputValue(this)' id="interest-id" type="range" min="11.99" max="36" value="18" />
+                      <input onchange='setInputValue(this)' id="interest-id" type="range" min="11.99" max="36"
+                        value="18" />
                     </div>
                     <div class="d-flex justify-content-between">
                       <div>11.99%</div>
@@ -122,17 +127,18 @@
                   </div>
                 </div> -->
                 <div class="col-md-6">
-                <img src="img/calculator.png" class="product-emi-box-image-sideemi">
-                <br>
-               
-                <h3 class="mt-4 fs-4 ms-1">Your EMI (Monthly)</h3>
-                
-                <div class="d-flex justify-content-start emi-box-ruppes">
-                  <img src="img/rupee.jpg" width="40px" height="40px">
-                  <p id="total-payble-amt-id" class="fw-bold mb-0 paragraph fs-4 mt-1">343420</p>
-                </div>
-                <br>
-                <a class="product-apply-now emi-box-main <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>" href="apply-now.php">Apply Now</a>
+                  <img src="img/calculator.png" class="product-emi-box-image-sideemi">
+                  <br>
+
+                  <h3 class="mt-4 fs-4 ms-1">Your EMI (Monthly)</h3>
+
+                  <div class="d-flex justify-content-start emi-box-ruppes">
+                    <img src="img/rupee.png" width="40px" height="33px">
+                    <p id="total-payble-amt-id" class="fw-bold mb-0 paragraph fs-4 ">343420</p>
+                  </div>
+                  <br>
+                  <a class="product-apply-now <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
+                    href="apply-now.php">Apply Now</a>
                 </div>
               </div>
               <div>

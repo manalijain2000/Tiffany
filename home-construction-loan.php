@@ -34,13 +34,13 @@ $conn->close();
       <h3 class="heading">Home Construction Loan</h3>
     </div>
   </div>
-  
+
   <div class="container-fluid">
     <div class="products-header-hcl ">
       <div class="row">
         <div class="col-md-6 p-5 ">
           <h4 class="fs-2 fw-bolder products-header-h4">Home Construction Loan</h4>
-          <p class="text-dark fs-6">Crafting Homes, Crafting Dreams: Building Your Dream Home Together	 </p>
+          <p class="text-dark fs-6">Crafting Homes, Crafting Dreams: Building Your Dream Home Together </p>
           <a class="product-apply-now <?= basename($_SERVER['REQUEST_URI']) == 'apply-now.php' ? 'active' : '' ?>"
             href="apply-now.php">Apply Now</a>
         </div>
@@ -57,13 +57,13 @@ $conn->close();
                         value="10,00,000" id='lap-set-amount-loan-against-property'
                         class="form-control form-control-sm">
                       <div class="input-group-append  d-flex">
-                        <span class="input-group-text">RS </span>
+                        <span class="input-group-text">Rs </span>
                       </div>
                     </div>
                   </div>
                   <div class="range">
-                    <input onchange='LAPsetInputValue(this)' id="lap-amount-id" type="range" min="10000  "
-                      max="150000" value='1000000' />
+                    <input onchange='LAPsetInputValue(this)' id="lap-amount-id" type="range" min="10000  " max="150000"
+                      value='1000000' />
                   </div>
                   <div class="d-flex justify-content-between">
                     <div>10000 </div>
@@ -133,30 +133,34 @@ $conn->close();
     </div>
   </div>
 
-   <!-- Dynamic ready to fullfill dreams -->
-   <?php include('enquiry.php') ?>
-   <!-- end -->
-   
-  <div class="container-fluid mt-4">
-    <div class="menu">
-      <div class="menu-item"><a href="#overview" class="fw-bolder fs-4 ms-3">Overview</a></div>
-      <div class="menu-item"><a href="#eligibilty" class="fw-bolder fs-4">Eligibility</a></div>
-      <div class="menu-item"><a href="#document" class="fw-bolder fs-4">Document</a></div>
-      <div class="menu-item"><a href="#howtoapply" class="fw-bolder fs-4">How To Apply</a></div>
+  <!-- Dynamic ready to fullfill dreams -->
+  <?php include ('enquiry.php') ?>
+  <!-- end -->
 
+  <div class="container mt-4">
+    <div class="menu">
+      <div class="menu-item"><a href="#overview" class="nav-link1 fw-bolder fs-5 active">Overview</a></div>
+      <div class="menu-item"><a href="#eligibilty" class="nav-link1 fw-bolder fs-5">Eligibility</a></div>
+      <div class="menu-item"><a href="#document" class="nav-link1 fw-bolder fs-5">Documentation</a></div>
+      <div class="menu-item"><a href="#howtoapply" class="nav-link1 fw-bolder fs-5">How To Apply</a></div>
       <!-- Add more items here -->
     </div>
   </div>
   <div class="container mt-5" id="overview">
     <div class="row">
       <div class="col-md-7 ">
-        
-        <p class="text-dark">Our specialized home construction loan transforms your dream home into reality. Our construction loan is tailored for new builds, releasing funds in stages to align with construction progress. 
+
+        <p class="text-dark">Our specialized home construction loan transforms your dream home into reality. Our
+          construction loan is tailored for new builds, releasing funds in stages to align with construction progress.
         </p>
-        <p class="text-dark">You pay interest only on the amount used per phase, easing financial management. This loan caters to diverse needs: plot purchase, custom design, material procurement, remodeling, upgrades, tear-downs, rebuilds, and masonry services.
+        <p class="text-dark">You pay interest only on the amount used per phase, easing financial management. This loan
+          caters to diverse needs: plot purchase, custom design, material procurement, remodeling, upgrades, tear-downs,
+          rebuilds, and masonry services.
         </p>
-        <p class="text-dark">Benefit from competitive rates, minimal documentation, fast approvals, and quick disbursals. Use our EMI Calculator for effective planning. Start building your dream home today. Contact us for seamless construction financing. </p>
-       
+        <p class="text-dark">Benefit from competitive rates, minimal documentation, fast approvals, and quick
+          disbursals. Use our EMI Calculator for effective planning. Start building your dream home today. Contact us
+          for seamless construction financing. </p>
+
       </div>
       <div class="col-md-5 text-end mt-3 ">
         <div class="image-container ms-5">
@@ -171,74 +175,117 @@ $conn->close();
       <h4 class=" mb-4 fw-bolder text-center bottom-line">Features & Benefits for Home Construction Loan</h4>
     </div>
     <div class="featuresandbenefits">
-        <div class="text-center mt-5 mb-5">
-          <img src="img/fbhcl.jpg" class="img-fluid me-5  ">
-        </div>
-        <div class="mt-5 ms-5 ">
-          <div class="d-flex align-items-start">
-            <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
-            <div><strong>Phased Disbursements  :</strong>Funds released gradually as construction progresses.
-            </div>
+      <!-- <div class="">
+          <img src="img/fbhcl.jpg" class="img-fluid   ">
+        </div> -->
+      <div class=" text-center mt-5 mb-5">
+        <img src="img/PL4.jpg" class="img-fluid me-5">
+      </div>
+      <div class="mt-5 fbc">
+        <div class="d-flex align-items-start mt-2">
+          <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
+          <div><strong>Phased Disbursements : </strong>Funds released gradually as construction progresses.
           </div>
-         
-          <!-- <div class="d-flex align-items-start">
+        </div>
+
+        <!-- <div class="d-flex align-items-start">
             <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
             <div><strong>Interest-Only Payments :</strong>During construction, pay interest only on the disbursed
               amount, aiding in managing initial expenses.
             </div>
           </div> -->
-          <BR>
-          <div class="d-flex align-items-start">
-            <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
-            <div><strong>Interest-Only Payments  :</strong>Pay interest only on the disbursed funds and ease upfront costs.
-             
-            </div>
+        <BR>
+        <div class="d-flex align-items-start">
+          <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
+          <div><strong>Interest-Only Payments : </strong>Pay interest only on the disbursed funds and ease upfront
+            costs.
+
           </div>
-          <BR>
-          <div class="d-flex align-items-start">
-            <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
-            <div><strong>Flexible Loan Tenure  :</strong>Up to 12 years for building your dream home.
-            </div>
+        </div>
+        <BR>
+        <div class="d-flex align-items-start">
+          <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
+          <div><strong>Flexible Loan Tenure : </strong>Up to 12 years for building your dream home.
           </div>
-          <br>
-          <div class="d-flex align-items-start">
-            <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
-            <div><strong>Top-Up Options :</strong>Access additional funds to cover rising construction costs.
-            </div>
+        </div>
+        <br>
+        <div class="d-flex align-items-start">
+          <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
+          <div><strong>Top-Up Options : </strong>Access additional funds to cover rising construction costs.
           </div>
-          <BR>
-          
-          <div class="d-flex align-items-start">
-            <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
-            <div><strong>Loan Amount  :</strong>Starting from ₹2 lakhs up to ₹30 lakhs*.
-            </div>
+        </div>
+        <BR>
+
+        <div class="d-flex align-items-start">
+          <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
+          <div><strong>Loan Amount : </strong>Starting from ₹2 lakhs up to ₹30 lakhs.
           </div>
-          <br>
-          <div class="d-flex align-items-start">
-            <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
-            <div><strong>Attractive Interest Rates :</strong>Beginning at 15% per annum*.
-            </div>
+        </div>
+        <br>
+        <div class="d-flex align-items-start">
+          <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
+          <div><strong>Attractive Interest Rates : </strong>Beginning at 15% per annum.
           </div>
         </div>
       </div>
     </div>
   </div>
+  </div>
 
 
   <div class="container mt-5" id="eligibilty">
-    <div class="row feature">
-      <div class="col-md-12">
-        <h4 class="fw-bolder bottom-line  mb-5 text-center">Eligibility Criteria for Home Construction Loan</h4>
-        <br>
-        <ul style="list-style-type:disc;">
-          <li>Your age should be 21 at the time of loan application and 65 at the time of loan maturity. </li>
-          <li>Minimum loan tenure is 2 year and maximum are 12 years. </li>
-          <li>For salaried individuals, ₹30,000 salary monthly and a minimum of three-year work experience is required.
-          </li>
-          <li>For self-employed professionals, business vintage of at least three year is required. </li>
-          <li>CIBIL Score must be 650 or above.</li>
-          <li>Minimum loan amount value is ₹2 lakhs</li>
-        </ul>
+    <div class="row feature ">
+      <h4 class="fw-bolder bottom-line  mb-5 text-center">Eligibility Criteria for Home Construction Loan</h4>
+      <p class="paragraph">Building your dream home starts with securing the right financing. Our home construction loan process is
+        designed to be simple and transparent, with eligibility criteria that ensure you can get the support you need.
+        Here are the key requirements to qualify for our home construction loans:</p>
+      <div class="container mt-3 d-flex justify-content-center">
+        <div class="table-responsive-sm table-responsive-md w-70">
+          <table class="table table-bordered mb-0">
+            <thead>
+              <tr>
+                <th style="background-color: #2c2e53; color :white;">Criteria </th>
+                <th style="background-color: #2c2e53; color :white;">Details</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Age Requirement</th>
+                <td>21 at application, 65 at loan maturity</td>
+
+              </tr>
+              <tr>
+                <th>Loan Tenure</th>
+                <td>Minimum 2 years, maximum 12 years</td>
+
+              </tr>
+              <tr>
+                <th>Salaried Individuals</th>
+                <td>₹30,000 monthly salary, 3 years experience </td>
+
+              </tr>
+              <tr>
+                <th>Self-Employed Professionals</th>
+                <td>3 years business vintage</td>
+
+
+              </tr>
+              <tr>
+                <th>CIBIL Score</th>
+                <td>650 or above</td>
+
+
+              </tr>
+              <tr>
+                <th>Minimum Loan Amount</th>
+                <td>₹2 lakhs</td>
+
+
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </div>
@@ -312,11 +359,11 @@ $conn->close();
             <div class="accordion-body">
               <ul style="list-style-type:disc;">
                 <li>Last 6 months Bank Statement(Mandatory)</li>
-                <li>Latest ITR <sup>*</sup></li>
-                <li>Latest Audited Financial <sup>*</sup></li>
-                <li>Latest GST Returns <sup>*</sup></li>
+                <li>Latest ITR </li>
+                <li>Latest Audited Financial </li>
+                <li>Latest GST Returns</li>
               </ul>
-              ( * If available)
+              <!-- ( * If available) -->
             </div>
           </div>
         </div>
@@ -359,17 +406,12 @@ $conn->close();
             </div>
           </div>
         </div>
-
-
       </div>
-<p class="text-danger mt-3">
-        <i>*Terms & Conditions Apply</i>
-      </p>
       <p class="text-dark mt-3">
         <b>Note</b>: This is just an indicative list additional criteria and documents may be required at the time of
-        loan application.Self-attested copy of relevant documents <sup>*</sup>
+        loan application.Self-attested copy of relevant documents.
       </p>
-      
+
     </div>
   </div>
 
@@ -394,7 +436,7 @@ $conn->close();
         <div class="how-to-apply-box text-center">
           <img src="img/call.png" class="mt-3 mb-4" width="40px" height="40px">
           <br>
-          
+
           <a href="tel:1800-890-6544">You can call us on <br>our customer care number <br>@ 1800-890-6544</a>
         </div>
       </div>
@@ -403,7 +445,8 @@ $conn->close();
           <img src="img/email.png" class="mt-3 " width="50px" height="40px">
           <br>
           <br>
-          <a href="mailto:support@tiffanyfinance.com">Email us on support@tiffanyfinance.com and we will get in touch
+          <a href="mailto:customercare@tiffanyfinance.com">Email us on customercare@tiffanyfinance.com and we will get
+            in touch
             with
             you.</a>
         </div>
@@ -414,15 +457,14 @@ $conn->close();
           <br>
 
           <p class="text-dark mt-2 ">Through Whatsapp</p>
-          <a class="loan-apply-btn "
-            href="https://wa.me/6377965063">Apply Now</a>
+          <a class="loan-apply-btn " href="https://wa.me/6377965063">Apply Now</a>
         </div>
       </div>
     </div>
   </div>
 
   <div class="container mt-5 feature">
-  <h4 class="fw-bolder bottom-line  mb-5 text-center">FAQ</h4>
+    <h4 class="fw-bolder bottom-line  mb-5 text-center">FAQ</h4>
     <?php foreach ($faqs as $faq) { ?>
       <div class="accordion mb-2" id="accordionExample<?= $faq['faq_id'] ?>">
         <div class="accordion-item">

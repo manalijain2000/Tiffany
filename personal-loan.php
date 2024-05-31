@@ -56,13 +56,13 @@ $conn->close();
                         value="10,00,000" id='lap-set-amount-loan-against-property'
                         class="form-control form-control-sm">
                       <div class="input-group-append  d-flex">
-                        <span class="input-group-text">RS </span>
+                        <span class="input-group-text">Rs </span>
                       </div>
                     </div>
                   </div>
                   <div class="range">
-                    <input onchange='LAPsetInputValue(this)' id="lap-amount-id" type="range" min="10000  "
-                      max="150000" value='1000000' />
+                    <input onchange='LAPsetInputValue(this)' id="lap-amount-id" type="range" min="10000  " max="150000"
+                      value='1000000' />
                   </div>
                   <div class="d-flex justify-content-between">
                     <div>10000 </div>
@@ -133,28 +133,31 @@ $conn->close();
   </div>
 
   <!-- Dynamic ready to fullfill dreams -->
-  <?php include('enquiry.php') ?>
-   <!-- end -->
-   
-  <div class="container-fluid mt-4">
-    <div class="menu">
-      <div class="menu-item"><a href="#overview" class="fw-bolder fs-4 ms-3">Overview</a></div>
-      <div class="menu-item"><a href="#eligibilty" class="fw-bolder fs-4">Eligibility</a></div>
-      <div class="menu-item"><a href="#document" class="fw-bolder fs-4">Document</a></div>
-      <div class="menu-item"><a href="#howtoapply" class="fw-bolder fs-4">How To Apply</a></div>
+  <?php include ('enquiry.php') ?>
+  <!-- end -->
 
+  <div class="container mt-4">
+    <div class="menu">
+      <div class="menu-item"><a href="#overview" class="nav-link1 fw-bolder fs-5 active">Overview</a></div>
+      <div class="menu-item"><a href="#eligibilty" class="nav-link1 fw-bolder fs-5">Eligibility</a></div>
+      <div class="menu-item"><a href="#document" class="nav-link1 fw-bolder fs-5">Documentation</a></div>
+      <div class="menu-item"><a href="#howtoapply" class="nav-link1 fw-bolder fs-5">How To Apply</a></div>
       <!-- Add more items here -->
     </div>
   </div>
   <div class="container mt-5" id="overview">
     <div class="row ">
       <div class="col-md-7 ">
-        
-        <p class="text-dark">Dreams do come true! You can achieve whatever you have wished for. Your dream university, dream wedding, dream destination to travel, you can make these dreams a reality with our personal loan. 
+
+        <p class="text-dark">Dreams do come true! You can achieve whatever you have wished for. Your dream university,
+          dream wedding, dream destination to travel, you can make these dreams a reality with our personal loan.
         </p>
-        <p class="text-dark">We offer secure financing for all your immediate financial objectives, including travel, education, weddings, healthcare crisis, business needs, shopping, and more.
+        <p class="text-dark">We offer secure financing for all your immediate financial objectives, including travel,
+          education, weddings, healthcare crisis, business needs, shopping, and more.
         </p>
-        <p class="text-dark">Our tailored solutions are designed according to your specific requirements with minimal documentation, appealing interest rates, and a flexible loan repayment period. Personal loans are unsecured, meaning no collateral is required.</p>
+        <p class="text-dark">Our tailored solutions are designed according to your specific requirements with minimal
+          documentation, appealing interest rates, and a flexible loan repayment period. Personal loans are unsecured,
+          meaning no collateral is required.</p>
       </div>
       <div class="col-md-5 text-end mt-4 ">
         <div class="image-container ms-5">
@@ -168,36 +171,40 @@ $conn->close();
       <h4 class=" mb-4 fw-bolder text-center bottom-line">Features & Benefits for Personal Loan</h4>
       <div class="featuresandbenefits">
         <div class="text-center mt-5 mb-5">
-          <img src="img/fbpl.jpg" class="img-fluid me-5  ">
+          <img src="img/fpl.jpg" class="img-fluid me-5  ">
         </div>
-        <div class="mt-5 ms-5 ">
+
+        <div class="mt-5 fbc ">
           <div class="d-flex align-items-start">
             <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
-            <div><strong> No Collateral Required:</strong> Get a personal loan without the need for collateral.
+            <div><strong> No Collateral Required : </strong> Get a personal loan without the need for collateral.
             </div>
           </div>
-          <BR><br>
+          <BR>
           <div class="d-flex align-items-start">
             <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
-            <div><strong> Flexible Repayment Tenure:</strong> Choose a repayment period spanning from 12 to 60 months.
+            <div><strong> Flexible Repayment Tenure : </strong> Choose a repayment period spanning from 12 to 60 months.
             </div>
           </div>
-          <BR><br>
+          <BR>
           <div class="d-flex align-items-start">
             <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
-            <div><strong> Versatile Loan Usage: </strong> Achieve your immediate goals such as education, wedding, healthcare crisis, and more.
+            <div><strong> Versatile Loan Usage : </strong> Achieve your immediate goals such as education, wedding,
+              healthcare crisis, and more.
             </div>
           </div>
-          <br><br>
+          <br>
           <div class="d-flex align-items-start">
             <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
-            <div><strong> Loan Amount Range:</strong> Avail loan amounts starting at ₹50,000* and extending up to ₹5 lakhs.
+            <div><strong> Loan Amount Range : </strong> Avail loan amounts starting at ₹50,000* and extending up to ₹5
+              lakhs.
             </div>
           </div>
-          <BR><br>
-        <div class="d-flex align-items-start">
+          <BR>
+          <div class="d-flex align-items-start">
             <img src="img/TIF.jpg" width="25px" height="25px" class="me-2">
-            <div><strong> Competitive Interest Rates:</strong> Enjoy interest rates ranging from 16% to 35%, with special advantages for current customers.
+            <div><strong> Competitive Interest Rates : </strong> Enjoy interest rates ranging from 16% to 35%, with
+              special advantages for current customers.
             </div>
           </div>
           <br>
@@ -208,29 +215,67 @@ $conn->close();
           </div> -->
         </div>
       </div>
-      <p class="text-danger">
+      <!-- <p class="text-danger">
         <i>*Terms & Conditions Apply</i>
-      </p>
+      </p> -->
     </div>
   </div>
   <div class="container mt-5" id="eligibilty">
-    <div class="row feature">
-      <div class="">
-        <div class=" p-2 h-100">
+    <div class="row feature ">
+      <h4 class="fw-bolder bottom-line  mb-5 text-center">Eligibility Criteria for Personal Loan</h4>
+    <p class="paragraph">Securing a personal loan with us is simple and straightforward. Our eligibility criteria are designed to be inclusive and accessible, ensuring that you can easily meet the requirements.Here’s a quick overview of what you need to qualify for a personal loan:</p>
+      <div class="container mt-3 d-flex justify-content-center">
+        <div class="table-responsive-sm table-responsive-md w-70">
+          <table class="table table-bordered mb-0">
+            <thead>
+              <tr>
+                <th style="background-color: #2c2e53; color :white;">Criteria </th>
+                <th style="background-color: #2c2e53; color :white;">Details</th>
+               
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th >Residency</th>
+                <td>Indian Resident</td>
+               
+              </tr>
+              <tr>
+                <th >Age Requirement</th>
+                <td>21 years at application, 60 years at loan maturity</td>
+                
+              </tr>
+              <tr>
+                <th >Employment Status</th>
+                <td>Salaried or self-employed </td>
+               
+              </tr>
+              <tr>
+                <th >Work Experience</th>
+                <td>Minimum 1 year</td>
+               
 
-          <h4 class="fw-bolder bottom-line  mb-5 text-center">Eligibility Criteria for Personal Loan</h4>
-          <ul style="list-style-type:disc;">
-            <li>Indian residency is a mandatory requirement.</li>
-            <li>To apply for a personal loan, you need to be between 21 years at the time of loan application and 60
-              years at the time of loan maturity. </li>
-            <li>You should have a status of either a salaried individual or a self-employed professional.</li>
-            <li>A minimum work experience of one year is necessary </li>
-            <li>Your CIBIL Score must surpass 650, with a commendable credit history.</li>
-            <li>First time purchasers must have minimum three years of driving experience.</li>
-            <li>Loan repayment tenure ranges from a minimum of 12 months to a maximum of 60 months.</li>
-          </ul>
+              </tr>
+              <tr>
+                <th >CIBIL Score</th>
+                <td>Above 650 with a good credit history</td>
+               
+
+              </tr>
+              <tr>
+                <th >Loan Repayment Tenure</th>
+                <td>12 to 60 months</td>
+               
+
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="container mt-5" id="document">
+    <div class="row feature">
       <div class="">
         <div class=" p-2 h-100 feature" id="document">
           <h4 class="fw-bolder bottom-line  mb-5 text-center">Documents Required for Two Wheeler Loan</h4>
@@ -254,7 +299,7 @@ $conn->close();
                     <li>Driving License</li>
                     <li>Aadhar Card</li>
                     <br>
-                    <span class="text-dark mt-3">( <sup>*</sup> Any 2)</span>
+                    <!-- <span class="text-dark mt-3">( <sup>*</sup> Any 2)</span> -->
                   </ul>
                 </div>
               </div>
@@ -280,7 +325,7 @@ $conn->close();
                     <li>Driving License</li>
                     <br>
 
-                    <span class="text-dark mt-3">( <sup>*</sup> Any 2)</span>
+                    <!-- <span class="text-dark mt-3">( <sup>*</sup> Any 2)</span> -->
                   </ul>
                 </div>
               </div>
@@ -297,13 +342,13 @@ $conn->close();
                 <div class="accordion-body">
                   <ul style="list-style-type:disc;">
                     <li>Last 6 months Bank Statement(Mandatory)</li>
-                    <li>Latest ITR <sup>*</sup></li>
-                    <li>Latest Audited Financial <sup>*</sup></li>
-                    <li>Latest GST Returns <sup>*</sup></li>
+                    <li>Latest ITR <sup></sup></li>
+                    <li>Latest Audited Financial <sup></sup></li>
+                    <li>Latest GST Returns <sup></sup></li>
 
 
                   </ul>
-                  ( * If available)
+                  <!-- ( * If available) -->
 
                 </div>
               </div>
@@ -351,15 +396,14 @@ $conn->close();
           </div>
         </div>
       </div>
-      <p class="text-danger mt-3">
+      <!-- <p class="text-danger mt-3">
         <i>*Terms & Conditions Apply</i>
+      </p> -->
+      <p class="text-dark mt-3">
+        <b>Note</b>: This is just an indicative list additional criteria and documents may be required at the time of
+        loan application.Self-attested copy of relevant documents.
       </p>
-      <span class="text-dark">
-        <b>Note:</b> This is just an indicative list. Additional criteria and documents may be required at the time of
-        loan application.Requirement of business loan documents might vary according to the scheme chosen
-        <sup>*</sup>Requirement of business loan documents might vary according to the scheme chosen
-        <sup>*</sup> </span>
-      
+
     </div>
   </div>
   <div class="container mt-5" id="howtoapply">
@@ -383,7 +427,7 @@ $conn->close();
         <div class="how-to-apply-box text-center">
           <img src="img/call.png" class="mt-3 mb-4" width="40px" height="40px">
           <br>
-          
+
           <a href="tel:1800-890-6544">You can call us on <br>our customer care number <br>@ 1800-890-6544</a>
         </div>
       </div>
@@ -392,7 +436,8 @@ $conn->close();
           <img src="img/email.png" class="mt-3 " width="50px" height="40px">
           <br>
           <br>
-          <a href="mailto:support@tiffanyfinance.com">Email us on support@tiffanyfinance.com and we will get in touch
+          <a href="mailto:customercare@tiffanyfinance.com">Email us on customercare@tiffanyfinance.com and we will get
+            in touch
             with
             you.</a>
         </div>
@@ -403,8 +448,7 @@ $conn->close();
           <br>
 
           <p class="text-dark mt-2 ">Through Whatsapp</p>
-          <a class="loan-apply-btn "
-            href="https://wa.me/6377965063">Apply Now</a>
+          <a class="loan-apply-btn " href="https://wa.me/6377965063">Apply Now</a>
         </div>
       </div>
     </div>
@@ -412,7 +456,7 @@ $conn->close();
 
 
   <div class="container mt-5 feature">
-  <h4 class="fw-bolder bottom-line  mb-5 text-center">FAQ</h4>
+    <h4 class="fw-bolder bottom-line  mb-5 text-center">FAQ</h4>
     <?php foreach ($faqs as $faq) { ?>
       <div class="accordion mb-2" id="accordionExample<?= $faq['faq_id'] ?>">
         <div class="accordion-item">
